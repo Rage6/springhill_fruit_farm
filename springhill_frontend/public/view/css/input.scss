@@ -5,6 +5,7 @@ html {
     font-size: 16px;
     background-image: url('img/row-1.jpg');
     background-size: cover;
+    // START: Index page
     #title {
       margin: 30px 5% 0 5%;
       padding-top: 10px;
@@ -54,23 +55,27 @@ html {
       top: 370px;
       text-align: center;
       width: 80%;
-      .oneTopic {
-        .oneText {
-          margin: 10px 0%;
-          // border: 1px solid red;
-          z-index: 1;
-          position: absolute;
-          font-size: 1.7rem;
-          font-family: 'Walter Turncoat', cursive;
-          text-align: center;
-          width: 100%;
-        }
-        .oneOpac {
-          margin-bottom: 30px;
-          border-radius: 5px;
-          background-color: white;
-          opacity: 0.7;
-          height: 60px;
+      a {
+        color: black;
+        text-decoration: none;
+        .oneTopic {
+          .oneText {
+            margin: 10px 0%;
+            // border: 1px solid red;
+            z-index: 1;
+            position: absolute;
+            font-size: 1.7rem;
+            font-family: 'Walter Turncoat', cursive;
+            text-align: center;
+            width: 100%;
+          }
+          .oneOpac {
+            margin-bottom: 30px;
+            border-radius: 5px;
+            background-color: white;
+            opacity: 0.7;
+            height: 60px;
+          }
         }
       }
     }
@@ -99,6 +104,46 @@ html {
         width: 100%;
       }
     }
+    // END: Index Page
+
+    // START: Produce Page
+    #menuBox {
+      position: absolute;
+      color: white;
+      text-align: center;
+      width: 100%;
+      #menuBar {
+        padding: 5px 0;
+        font-size: 1.5rem;
+        background-color: black;
+      }
+      #allButtons {
+        a {
+          color: white;
+          text-decoration: none;
+          .menuButton {
+            margin: 0 5%;
+            font-size: 0rem;
+            background-color: black;
+            width: 90%;
+            height: 0px;
+            animation-name: none;
+            animation-duration: 300ms;
+            animation-fill-mode: forwards;
+            @keyframes slideDown {
+              0% {padding: 0 0; font-size: 0rem; height: 0px}
+              100% {padding: 8px 0; font-size: 1.7rem; height: 43px}
+            }
+            @keyframes slideUp {
+              0% {padding: 8px 0; font-size: 1.7rem; height: 43px}
+              100% {padding: 0 0; font-size: 0rem; height: 0px}
+            }
+          }
+        }
+      }
+    }
+    // END: Produce Page
+
   }
   @import '360px';
   @import '375px';

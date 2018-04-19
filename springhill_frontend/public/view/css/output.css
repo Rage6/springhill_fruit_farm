@@ -46,20 +46,23 @@ html body {
     top: 370px;
     text-align: center;
     width: 80%; }
-    html body #allTopics .oneTopic .oneText {
-      margin: 10px 0%;
-      z-index: 1;
-      position: absolute;
-      font-size: 1.7rem;
-      font-family: 'Walter Turncoat', cursive;
-      text-align: center;
-      width: 100%; }
-    html body #allTopics .oneTopic .oneOpac {
-      margin-bottom: 30px;
-      border-radius: 5px;
-      background-color: white;
-      opacity: 0.7;
-      height: 60px; }
+    html body #allTopics a {
+      color: black;
+      text-decoration: none; }
+      html body #allTopics a .oneTopic .oneText {
+        margin: 10px 0%;
+        z-index: 1;
+        position: absolute;
+        font-size: 1.7rem;
+        font-family: 'Walter Turncoat', cursive;
+        text-align: center;
+        width: 100%; }
+      html body #allTopics a .oneTopic .oneOpac {
+        margin-bottom: 30px;
+        border-radius: 5px;
+        background-color: white;
+        opacity: 0.7;
+        height: 60px; }
   html body #rollApple {
     margin: 0 20%;
     margin-left: 20%;
@@ -88,5 +91,44 @@ html body {
     transform: translate(0px, -70px) scale(0); } }
     html body #rollApple #rollImg {
       width: 100%; }
+  html body #menuBox {
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%; }
+    html body #menuBox #menuBar {
+      padding: 5px 0;
+      font-size: 1.5rem;
+      background-color: black; }
+    html body #menuBox #allButtons a {
+      color: white;
+      text-decoration: none; }
+      html body #menuBox #allButtons a .menuButton {
+        margin: 0 5%;
+        font-size: 0rem;
+        background-color: black;
+        width: 90%;
+        height: 0px;
+        animation-name: none;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards; }
+@keyframes slideDown {
+  0% {
+    padding: 0 0;
+    font-size: 0rem;
+    height: 0px; }
+  100% {
+    padding: 8px 0;
+    font-size: 1.7rem;
+    height: 43px; } }
+@keyframes slideUp {
+  0% {
+    padding: 8px 0;
+    font-size: 1.7rem;
+    height: 43px; }
+  100% {
+    padding: 0 0;
+    font-size: 0rem;
+    height: 0px; } }
 
 /*# sourceMappingURL=output.css.map */
