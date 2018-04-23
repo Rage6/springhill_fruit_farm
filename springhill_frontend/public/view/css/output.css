@@ -5,8 +5,9 @@ html body {
   background-image: url("img/row-1.jpg");
   background-size: cover; }
   html body #title {
-    margin: 30px 5% 0 5%;
+    margin: 25px 5% 0 5%;
     padding-top: 10px;
+    border: 1px solid black;
     border-radius: 10px;
     font-family: 'Stardos Stencil', cursive;
     color: white;
@@ -92,7 +93,6 @@ html body {
     html body #rollApple #rollImg {
       width: 100%; }
   html body #menuBox {
-    position: absolute;
     color: white;
     text-align: center;
     width: 100%; }
@@ -100,18 +100,21 @@ html body {
       padding: 5px 0;
       font-size: 1.5rem;
       background-color: black; }
-    html body #menuBox #allButtons a {
-      color: white;
-      text-decoration: none; }
-      html body #menuBox #allButtons a .menuButton {
-        margin: 0 5%;
-        font-size: 0rem;
-        background-color: black;
-        width: 90%;
-        height: 0px;
-        animation-name: none;
-        animation-duration: 300ms;
-        animation-fill-mode: forwards; }
+    html body #menuBox #allButtons {
+      position: absolute;
+      width: 100%; }
+      html body #menuBox #allButtons a {
+        color: white;
+        text-decoration: none; }
+        html body #menuBox #allButtons a .menuButton {
+          margin: 0 5%;
+          font-size: 0rem;
+          background-color: black;
+          width: 90%;
+          height: 0px;
+          animation-name: none;
+          animation-duration: 300ms;
+          animation-fill-mode: forwards; }
 @keyframes slideDown {
   0% {
     padding: 0 0;
@@ -130,5 +133,39 @@ html body {
     padding: 0 0;
     font-size: 0rem;
     height: 0px; } }
+  html body .subpageTitle {
+    margin: 30px 5% 0 5%;
+    padding-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 2.5rem;
+    font-family: 'Stardos Stencil', cursive;
+    color: white;
+    text-align: center;
+    background-image: url("img/wood-background.jpg");
+    background-size: cover; }
+  html body #timeBox {
+    margin: 20px 10% 0 10%; }
+    html body #timeBox #timeShade {
+      border-radius: 8px;
+      background-color: white;
+      opacity: 0.7;
+      height: 220px; }
+    html body #timeBox #timeContent {
+      border: 1px solid orange;
+      padding: 0 5%;
+      position: absolute;
+      z-index: 1;
+      top: 100px; }
+      html body #timeBox #timeContent #timeIntro {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        font-family: 'Walter Turncoat', cursive; }
+      html body #timeBox #timeContent .dateContent {
+        margin: 5px 0;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Stardos Stencil', cursive;
+        color: green; }
 
 /*# sourceMappingURL=output.css.map */

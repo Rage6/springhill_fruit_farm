@@ -7,8 +7,9 @@ html {
     background-size: cover;
     // START: Index page
     #title {
-      margin: 30px 5% 0 5%;
+      margin: 25px 5% 0 5%;
       padding-top: 10px;
+      border: 1px solid black;
       border-radius: 10px;
       font-family: 'Stardos Stencil', cursive;
       color: white;
@@ -106,9 +107,8 @@ html {
     }
     // END: Index Page
 
-    // START: Produce Page
+    // START: Menu bar
     #menuBox {
-      position: absolute;
       color: white;
       text-align: center;
       width: 100%;
@@ -118,6 +118,8 @@ html {
         background-color: black;
       }
       #allButtons {
+        position: absolute;
+        width: 100%;
         a {
           color: white;
           text-decoration: none;
@@ -142,7 +144,55 @@ html {
         }
       }
     }
-    // END: Produce Page
+    // END: Menu Bar
+
+    // START: Directions page
+    .subpageTitle {
+      margin: 30px 5% 0 5%;
+      padding-top: 10px;
+      border: 1px solid black;
+      border-radius: 10px;
+      font-size: 2.5rem;
+      font-family: 'Stardos Stencil', cursive;
+      color: white;
+      text-align: center;
+      background-image: url('img/wood-background.jpg');
+      background-size: cover;
+    }
+    #timeBox {
+      margin: 20px 10% 0 10%;
+      // border: 1px solid yellow;
+      #timeShade {
+        // border: 1px solid red;
+        border-radius: 8px;
+        background-color: white;
+        opacity: 0.7;
+        height: 220px;
+      }
+      #timeContent {
+        border: 1px solid orange;
+        padding: 0 5%;
+        position: absolute;
+        z-index: 1;
+        top: 100px;
+        #timeIntro {
+          margin-bottom: 20px;
+          font-size: 1.2rem;
+          font-family: 'Walter Turncoat', cursive;
+        }
+        .dateContent {
+          margin: 5px 0;
+          text-align: center;
+          font-size: 1.5rem;
+          font-family: 'Stardos Stencil', cursive;
+          color: green;
+        }
+        table {
+          // border: 1px solid yellow;
+        }
+      }
+    }
+    // END: Directions page
 
   }
   @import '360px';
