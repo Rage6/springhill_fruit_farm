@@ -3,6 +3,7 @@ html body {
   padding: 0;
   font-size: 16px;
   background-image: url("img/row-1.jpg");
+  background-attachment: fixed;
   background-size: cover; }
   html body #title {
     margin: 25px 5% 0 5%;
@@ -97,19 +98,25 @@ html body {
     text-align: center;
     width: 100%; }
     html body #menuBox #menuBar {
+      border-bottom: 1px solid black;
       padding: 5px 0;
       font-size: 1.5rem;
-      background-color: black; }
+      font-family: 'Walter Turncoat', cursive;
+      background-image: url("img/chalkboard.jpg"); }
     html body #menuBox #allButtons {
       position: absolute;
+      z-index: 2;
       width: 100%; }
       html body #menuBox #allButtons a {
         color: white;
         text-decoration: none; }
         html body #menuBox #allButtons a .menuButton {
           margin: 0 5%;
+          border-left: 1px solid black;
+          border-right: 1px solid black;
           font-size: 0rem;
-          background-color: black;
+          font-family: 'Walter Turncoat', cursive;
+          background-color: grey;
           width: 90%;
           height: 0px;
           animation-name: none;
@@ -119,20 +126,24 @@ html body {
   0% {
     padding: 0 0;
     font-size: 0rem;
-    height: 0px; }
+    height: 0px;
+    border-bottom: 0px; }
   100% {
     padding: 8px 0;
     font-size: 1.7rem;
-    height: 43px; } }
+    height: 43px;
+    border-bottom: 1px solid black; } }
 @keyframes slideUp {
   0% {
     padding: 8px 0;
     font-size: 1.7rem;
-    height: 43px; }
+    height: 43px;
+    border-bottom: 1px solid black; }
   100% {
     padding: 0 0;
     font-size: 0rem;
-    height: 0px; } }
+    height: 0px;
+    border-bottom: 0px; } }
   html body .subpageTitle {
     margin: 30px 5% 0 5%;
     padding-top: 10px;
@@ -145,27 +156,43 @@ html body {
     background-image: url("img/wood-background.jpg");
     background-size: cover; }
   html body #timeBox {
-    margin: 20px 10% 0 10%; }
+    margin-top: 20px; }
     html body #timeBox #timeShade {
+      margin: 0 10% 20px 10%;
       border-radius: 8px;
       background-color: white;
       opacity: 0.7;
-      height: 220px; }
+      height: 622px; }
     html body #timeBox #timeContent {
-      border: 1px solid orange;
+      margin: 0 10%;
       padding: 0 5%;
+      text-align: center;
       position: absolute;
       z-index: 1;
-      top: 100px; }
+      top: 218px; }
+      html body #timeBox #timeContent img {
+        margin-top: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 100%; }
       html body #timeBox #timeContent #timeIntro {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-size: 1.2rem;
         font-family: 'Walter Turncoat', cursive; }
       html body #timeBox #timeContent .dateContent {
         margin: 5px 0;
-        text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-family: 'Stardos Stencil', cursive;
         color: green; }
+      html body #timeBox #timeContent table {
+        margin-top: 20px;
+        border-radius: 7px;
+        border-spacing: 10px 2px;
+        color: white;
+        font-size: 1.5rem;
+        font-family: 'Gamja Flower', cursive;
+        text-align: center;
+        background-image: url("img/chalkboard.jpg");
+        width: 100%; }
 
 /*# sourceMappingURL=output.css.map */
