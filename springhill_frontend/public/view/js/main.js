@@ -82,6 +82,7 @@ $(()=>{
   $("#appleButton").click(()=>{
     unselectAll();
     $("#appleButton").css('color','black').css('background-color','white');
+    listFruit(apples);
   })
   $("#pearButton").click(()=>{
     unselectAll();
@@ -97,6 +98,10 @@ $(()=>{
   })
   $("#allButton").click(()=>{
     unselectAll();
+    listFruit(apples);
+    listFruit(pears);
+    listFruit(peaches);
+    listFruit(pumpkins);
   })
 
 })
