@@ -309,15 +309,8 @@ html {
     }
     .fruitList {
       color: white;
-      #appleList {
-        .oneApple {
-
-        }
-      }
-      #pearList {
-        .onePear {
-
-        }
+      .showOne {
+        border: 1px solid red;
       }
     }
     // END: Produce page

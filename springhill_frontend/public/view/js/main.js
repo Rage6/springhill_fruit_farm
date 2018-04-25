@@ -64,7 +64,7 @@ $(()=>{
   // For listing all fruit in Produce Page
   const listFruit = (typeList) => {
     for (var a = 0; a < typeList.length; a++) {
-      console.log(typeList[a].name);
+      $(".fruitList").append("<div class='showOne'>" + typeList[a].name + "</div>")
     }
   };
   listFruit(apples);

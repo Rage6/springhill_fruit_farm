@@ -262,5 +262,7 @@ html body {
         width: 40%; }
   html body .fruitList {
     color: white; }
+    html body .fruitList .showOne {
+      border: 1px solid red; }
 
 /*# sourceMappingURL=output.css.map */
