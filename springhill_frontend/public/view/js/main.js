@@ -5,6 +5,7 @@ $(()=>{
   const apples = [
     {
       name: "Gold Rush",
+      picture: null,
       description: "As a hard & very tart apple, it is excellent for baking for things like pies, or simply for eating them by hand.",
       cost: 6.00,
       byDozen: true,
@@ -76,7 +77,8 @@ $(()=>{
   const listFruit = (typeList) => {
     for (var a = 0; a < typeList.length; a++) {
       var fruitType = typeList[a].type;
-      $(".fruitList").append("<div class='showOne' id='" + fruitType + a + "'>" + typeList[a].name + "</div>")
+      $(".fruitList").append("<div class='oneFruitBox' id='" + fruitType + a + "'></div>");
+      $(".oneFruitBox").append("<div class='fruitName'>" + fruitType[a].name + "</div>");
     }
   };
   listFruit(apples);
