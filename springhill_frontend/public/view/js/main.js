@@ -80,6 +80,9 @@ $(()=>{
       $(".fruitList").append("<div class='oneFruitBox' id='" + fruitType + a + "'></div>");
       var fruitID = "#" + fruitType + a;
       $(fruitID).append("<div class='fruitName'>" + typeList[a].name + "</div>");
+      $(fruitID).append("<div class='fruitPicture'>" + typeList[a].picture + "</div>");
+      $(fruitID).append("<div class='fruitDescription'>" + typeList[a].description + "</div>");
+      $(fruitID).append("<div class='fruitPrice'>" + typeList[a].cost + "</div>");
     }
   };
   listFruit(apples);

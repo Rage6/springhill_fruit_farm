@@ -260,9 +260,11 @@ html body {
         font-size: 1.3rem;
         text-align: center;
         width: 40%; }
-  html body .fruitList {
-    color: white; }
-    html body .fruitList .oneFruitBox {
-      border: 1px solid red; }
+  html body .fruitList .oneFruitBox {
+    margin: 0 10% 30px 10%;
+    border-radius: 8px;
+    padding: 15px 5%;
+    color: black;
+    background-color: white; }
 
 /*# sourceMappingURL=output.css.map */
