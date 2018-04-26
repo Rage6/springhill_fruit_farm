@@ -7,7 +7,8 @@ $(()=>{
       name: "Gold Rush",
       description: "As a hard & very tart apple, it is excellent for baking for things like pies, or simply for eating them by hand.",
       cost: 6.00,
-      byDozen: true
+      byDozen: true,
+      type: "apple"
     }
   ];
   const pears = [
@@ -15,15 +16,24 @@ $(()=>{
       name: "Bosc",
       description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
       cost: 5.50,
-      byDozen: true
+      byDozen: true,
+      type: "pear"
     }
   ];
   const peaches = [
     {
-      name: "some peach",
+      name: "first peach",
       description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
       cost: 5.50,
-      byDozen: true
+      byDozen: true,
+      type: "peach"
+    },
+    {
+      name: "second peach",
+      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      cost: 5.50,
+      byDozen: true,
+      type: "peach"
     }
   ];
   const pumpkins = [
@@ -31,7 +41,8 @@ $(()=>{
       name: "some pumpkin",
       description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
       cost: 5.50,
-      byDozen: true
+      byDozen: true,
+      type: "pumpkin"
     }
   ];
 
@@ -64,13 +75,28 @@ $(()=>{
   // For listing all fruit in Produce Page
   const listFruit = (typeList) => {
     for (var a = 0; a < typeList.length; a++) {
-      $(".fruitList").append("<div class='showOne'>" + typeList[a].name + "</div>")
+      var fruitType = typeList[a].type;
+      $(".fruitList").append("<div class='showOne' id='" + fruitType + a + "'>" + typeList[a].name + "</div>")
     }
   };
   listFruit(apples);
   listFruit(pears);
   listFruit(peaches);
   listFruit(pumpkins);
+
+  // For removing the entire list when changing the selected fruit
+  const clearOneTypeList = (typeList) => {
+    for (var b = 0; b < typeList.length; b++) {
+      var attrName = "#" + typeList[b].type + b;
+      $(attrName).remove();
+    }
+  }
+  const clearAllTypeList = () => {
+    clearOneTypeList(apples);
+    clearOneTypeList(peaches);
+    clearOneTypeList(pears);
+    clearOneTypeList(pumpkins);
+  }
 
   // For selecting the fruit types
   const unselectAll = () => {
@@ -81,23 +107,31 @@ $(()=>{
   }
   $("#appleButton").click(()=>{
     unselectAll();
+    clearAllTypeList();
     $("#appleButton").css('color','black').css('background-color','white');
     listFruit(apples);
   })
   $("#pearButton").click(()=>{
     unselectAll();
+    clearAllTypeList();
     $("#pearButton").css('color','black').css('background-color','white');
+    listFruit(pears);
   })
   $("#peachButton").click(()=>{
     unselectAll();
+    clearAllTypeList();
     $("#peachButton").css('color','black').css('background-color','white');
+    listFruit(peaches);
   })
   $("#pumpkinButton").click(()=>{
     unselectAll();
+    clearAllTypeList();
     $("#pumpkinButton").css('color','black').css('background-color','white');
+    listFruit(pumpkins);
   })
   $("#allButton").click(()=>{
     unselectAll();
+    clearAllTypeList();
     listFruit(apples);
     listFruit(pears);
     listFruit(peaches);
