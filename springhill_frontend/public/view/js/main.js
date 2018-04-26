@@ -2,6 +2,7 @@ $(()=>{
 
   //Starting variables
   var menuUp = true;
+  var contactDown = true;
   const apples = [
     {
       name: "Gold Rush",
@@ -50,6 +51,7 @@ $(()=>{
       type: "pumpkin"
     }
   ];
+  var bodyHeight = 0;
 
   // For throwing the apple and revealing the buttons
   $("#allTopics").hide();
@@ -120,24 +122,28 @@ $(()=>{
     clearAllTypeList();
     $("#appleButton").css('color','black').css('background-color','white');
     listFruit(apples);
+    findHeight();
   })
   $("#pearButton").click(()=>{
     unselectAll();
     clearAllTypeList();
     $("#pearButton").css('color','black').css('background-color','white');
     listFruit(pears);
+    findHeight();
   })
   $("#peachButton").click(()=>{
     unselectAll();
     clearAllTypeList();
     $("#peachButton").css('color','black').css('background-color','white');
     listFruit(peaches);
+    findHeight();
   })
   $("#pumpkinButton").click(()=>{
     unselectAll();
     clearAllTypeList();
     $("#pumpkinButton").css('color','black').css('background-color','white');
     listFruit(pumpkins);
+    findHeight();
   })
   $("#allButton").click(()=>{
     unselectAll();
@@ -146,6 +152,28 @@ $(()=>{
     listFruit(pears);
     listFruit(peaches);
     listFruit(pumpkins);
+    findHeight();
   })
+
+  // For scrolling Contact tab up and down
+  $("#contactTab").click(()=>{
+    if (contactDown == true) {
+      $("#contactContent").css('animation-name','tabUp');
+      $(".shadePage").css('display','block');
+      contactDown = false;
+    } else {
+      $("#contactContent").css('animation-name','tabDown');
+      $(".shadePage").css('display','none');
+      contactDown = true;
+    }
+  })
+
+  //For finding a page's full height
+  const findHeight = () =>{
+    bodyHeight = $("body").height() + "px";
+    console.log(bodyHeight);
+    $(".shadePage").css('height',bodyHeight);
+  };
+  findHeight();
 
 })

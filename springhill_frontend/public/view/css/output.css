@@ -1,10 +1,19 @@
 html body {
   margin: 0;
-  padding: 0;
+  padding: 0 0 20px 0;
   font-size: 16px;
   background-image: url("img/row-1.jpg");
   background-attachment: fixed;
   background-size: cover; }
+  html body .shadePage {
+    display: none;
+    opacity: 0.5;
+    background-color: black;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0px; }
   html body .subtitle {
     margin: 0 10% 10px 10%;
     border-radius: 5px;
@@ -283,5 +292,60 @@ html body {
       text-align: left; }
     html body .fruitList .oneFruitBox .fruitPrice {
       font-size: 1.7rem; }
+  html body #contactBox {
+    font-family: 'Stardos Stencil', cursive;
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    width: 100%; }
+    html body #contactBox #contactTab {
+      margin: 0 30%;
+      border: 1px solid black;
+      border-bottom: none;
+      border-radius: 9px 9px 0 0;
+      padding: 2px 0;
+      background-color: lightgrey;
+      font-size: 1.5rem;
+      color: black;
+      text-align: center;
+      width: 40%; }
+    html body #contactBox #contactContent {
+      margin: 0 5%;
+      border: none;
+      border-bottom: none;
+      border-radius: 9px 9px 0 0;
+      padding: 0 0;
+      font-size: 0rem;
+      background-color: lightgrey;
+      width: 70%;
+      height: 0;
+      animation-name: none;
+      animation-duration: 300ms;
+      animation-fill-mode: forwards; }
+@keyframes tabUp {
+  0% {
+    height: 0;
+    padding: 0 0;
+    font-size: 0rem;
+    border: none; }
+  100% {
+    height: inherit;
+    padding: 20px 10%;
+    font-size: 1.2rem;
+    border: 1px solid black; } }
+@keyframes tabDown {
+  0% {
+    height: inherit;
+    padding: 20px 10%;
+    font-size: 1.2rem;
+    border: 1px solid black; }
+  100% {
+    height: 0;
+    padding: 0 0;
+    font-size: 0rem;
+    border: none; } }
+      html body #contactBox #contactContent .contactList {
+        margin-top: 5px;
+        text-align: center; }
 
 /*# sourceMappingURL=output.css.map */
