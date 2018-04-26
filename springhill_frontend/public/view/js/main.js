@@ -171,7 +171,6 @@ $(()=>{
   //For finding a page's full height
   const findHeight = () =>{
     bodyHeight = $("body").height() + "px";
-    console.log(bodyHeight);
     $(".shadePage").css('height',bodyHeight);
   };
   findHeight();
