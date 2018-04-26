@@ -5,8 +5,8 @@ $(()=>{
   const apples = [
     {
       name: "Gold Rush",
-      picture: null,
-      description: "As a hard & very tart apple, it is excellent for baking for things like pies, or simply for eating them by hand.",
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
       cost: 6.00,
       byDozen: true,
       type: "apple"
@@ -79,10 +79,10 @@ $(()=>{
       var fruitType = typeList[a].type;
       $(".fruitList").append("<div class='oneFruitBox' id='" + fruitType + a + "'></div>");
       var fruitID = "#" + fruitType + a;
-      $(fruitID).append("<div class='fruitName'>" + typeList[a].name + "</div>");
-      $(fruitID).append("<div class='fruitPicture'>" + typeList[a].picture + "</div>");
+      $(fruitID).append("<div class='fruitName'><u>" + typeList[a].name + "</u></div>");
+      $(fruitID).append("<img class='fruitPicture' src='" + typeList[a].picture + "'>");
       $(fruitID).append("<div class='fruitDescription'>" + typeList[a].description + "</div>");
-      $(fruitID).append("<div class='fruitPrice'>" + typeList[a].cost + "</div>");
+      $(fruitID).append("<div class='fruitPrice'>$" + typeList[a].cost.toFixed(2) + "</div>");
     }
   };
   listFruit(apples);
