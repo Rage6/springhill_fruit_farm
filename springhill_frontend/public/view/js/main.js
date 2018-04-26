@@ -78,7 +78,8 @@ $(()=>{
     for (var a = 0; a < typeList.length; a++) {
       var fruitType = typeList[a].type;
       $(".fruitList").append("<div class='oneFruitBox' id='" + fruitType + a + "'></div>");
-      $(".oneFruitBox").append("<div class='fruitName'>" + fruitType[a].name + "</div>");
+      var fruitID = "#" + fruitType + a;
+      $(fruitID).append("<div class='fruitName'>" + typeList[a].name + "</div>");
     }
   };
   listFruit(apples);
