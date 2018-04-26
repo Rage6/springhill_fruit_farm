@@ -15,6 +15,7 @@ $(()=>{
   const pears = [
     {
       name: "Bosc",
+      picture: "http://www.specialtyproduce.com/sppics/7242.png",
       description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
       cost: 5.50,
       byDozen: true,
@@ -24,6 +25,7 @@ $(()=>{
   const peaches = [
     {
       name: "first peach",
+      picture: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Autumn_Red_peaches.jpg",
       description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
       cost: 5.50,
       byDozen: true,
@@ -31,6 +33,7 @@ $(()=>{
     },
     {
       name: "second peach",
+      picture: "https://wonderopolis.org/wp-content/uploads/2016/10/Why_Are_Peaches_Fuzzy_fruit_background_xl_20352201_(Custom).jpg",
       description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
       cost: 5.50,
       byDozen: true,
@@ -40,6 +43,7 @@ $(()=>{
   const pumpkins = [
     {
       name: "some pumpkin",
+      picture: "http://demandware.edgesuite.net/sits_pod32/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dwa6425655/images/products/vegetables/03978t_01_cargopmr.jpg?sw=774&cx=302&cy=0&cw=1196&ch=1196",
       description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
       cost: 5.50,
       byDozen: true,
