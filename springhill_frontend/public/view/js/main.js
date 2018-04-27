@@ -163,7 +163,6 @@ $(()=>{
       $(".shadePage").css('display','block');
       contactDown = false;
     } else {
-      // findHeight();
       $("#contactContent").css('animation-name','tabDown');
       $(".shadePage").css('display','none');
       contactDown = true;
