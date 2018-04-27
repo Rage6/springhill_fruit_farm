@@ -14,6 +14,7 @@
     <script src="js/main.js"></script>
   </head>
   <body>
+    <div class="shadePage"></div>
     <div id="menuBox">
       <div id="menuBar">
         Menu
@@ -21,21 +22,76 @@
       <div id="allButtons">
         <a href="index.html">
           <div class="menuButton">
-            Home Page
+            Welcome
+          </div>
+        </a>
+        <a href="produce.html">
+          <div class="menuButton">
+            Fruit & More
           </div>
         </a>
         <a href="directions.html">
           <div class="menuButton">
-            Directions & Hours
+            Where & When
           </div>
         </a>
         <a href="history.html">
           <div class="menuButton">
-            Farm History
+            Family & Farm
           </div>
         </a>
       </div>
     </div>
-    produce
+    <div class="subpageTitle">
+      Fruit & More
+    </div>
+    <div id="chooseFruit">
+      <div id="fruitIntro">
+        Choose a type:
+      </div>
+      <div id="allFruit">
+        <div class="oneFruit" id="appleButton">
+          Apple
+        </div>
+        <div class="oneFruit" id="peachButton">
+          Peach
+        </div>
+        <div class="oneFruit" id="pearButton">
+          Pear
+        </div>
+        <div class="oneFruit" id="pumpkinButton">
+          Pumpkin
+        </div>
+        <div class="oneFruit" id="allButton">
+          All
+        </div>
+      </div>
+    </div>
+    <div class="fruitList">
+      <!-- The fruit will be added by .attr() or taken away by .remove() here -->
+    </div>
+    <div id="contactBox">
+      <div id="contactTab">
+        Contact
+      </div>
+      <div id="contactContent">
+        Have any questions? Give us a call at 419-896-2866, or see our updates on Facebook!
+        <div class="contactList">
+          <a href="tel:419-896-2866">
+            <span><img id="phoneLogo" src="http://icons.iconarchive.com/icons/icons8/windows-8/72/Mobile-Phone-icon.png"></span>
+          </a>
+          <a href="https://www.facebook.com/pg/springhillfruitfarm/reviews/?ref=page_internal">
+            <span><img id="facebookLogo" src="http://icons.iconarchive.com/icons/icons8/windows-8/96/Social-Networks-Facebook-icon.png"></span>
+          </a>
+        </div>
+        Want to stop check our selection? You can find us at the address below:
+        <div class="contactList">
+          <div id="contactAddress">
+            5646 Ganger-Five Points Rd.</br>
+            Shiloh, OH 44878</br>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
