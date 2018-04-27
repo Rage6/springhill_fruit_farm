@@ -158,10 +158,12 @@ $(()=>{
   // For scrolling Contact tab up and down
   $("#contactTab").click(()=>{
     if (contactDown == true) {
+      findHeight();
       $("#contactContent").css('animation-name','tabUp');
       $(".shadePage").css('display','block');
       contactDown = false;
     } else {
+      // findHeight();
       $("#contactContent").css('animation-name','tabDown');
       $(".shadePage").css('display','none');
       contactDown = true;
@@ -173,6 +175,5 @@ $(()=>{
     bodyHeight = $("body").height() + "px";
     $(".shadePage").css('height',bodyHeight);
   };
-  findHeight();
 
 })

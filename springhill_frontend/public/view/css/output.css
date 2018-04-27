@@ -9,7 +9,7 @@ html body {
     display: none;
     opacity: 0.5;
     background-color: black;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     top: 0;
     width: 100%;
@@ -181,14 +181,14 @@ html body {
       border-radius: 8px;
       background-color: white;
       opacity: 0.7;
-      height: 610px; }
+      height: 555px; }
     html body #locationBox #locationContent {
       margin: 0 10%;
       padding: 0 5%;
       text-align: center;
       position: absolute;
       z-index: 1;
-      top: 230px; }
+      top: 175px; }
       html body #locationBox #locationContent iframe {
         border: 1px dashed black;
         width: 100%; }
@@ -212,14 +212,14 @@ html body {
       border-radius: 8px;
       background-color: white;
       opacity: 0.7;
-      height: 690px; }
+      height: 627px; }
     html body #timeBox #timeContent {
       margin: 0 10%;
       padding: 0 5%;
       text-align: center;
       position: absolute;
       z-index: 1;
-      top: 855px; }
+      top: 736px; }
       html body #timeBox #timeContent img {
         margin-top: 15px;
         border: 1px solid black;
@@ -349,9 +349,9 @@ html body {
         text-align: center;
         display: flex;
         justify-content: space-around; }
-        html body #contactBox #contactContent .contactList a {
+        html body #contactBox #contactContent .contactList .contactLink {
           text-decoration: none; }
-          html body #contactBox #contactContent .contactList a #phoneLogo {
+          html body #contactBox #contactContent .contactList .contactLink #phoneLogo {
             border: 2px solid black;
             border-radius: 10px;
             padding: 10px; }
