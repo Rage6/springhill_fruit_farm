@@ -1,3 +1,5 @@
+// Main SCSS file
+// Designed for width <= 360px
 html {
   body {
     margin: 0;
@@ -26,6 +28,7 @@ html {
       background-image: url('img/chalkboard.jpg');
       width: 80%;
     }
+
     // START: Index page
     #title {
       margin: 25px 5% 0 5%;
@@ -349,6 +352,10 @@ html {
     }
     // END: Produce page
 
+    // START: History page
+
+    // END: History page
+
     // START: Contact tab
     #contactBox {
       font-family: 'Stardos Stencil', cursive;
@@ -429,7 +436,6 @@ html {
     }
     // END: Contact tab
   }
-  @import '360px';
   @import '375px';
   @import '414px';
   @import '768px';
