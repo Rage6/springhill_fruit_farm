@@ -361,8 +361,5 @@ html body {
           font-size: 1.4rem;
           color: lightgrey;
           background-color: black; }
-@media only screen and (min-width: 361px) and (max-width: 375px) {
-  html html body {
-    border: 1px solid red; } }
 
 /*# sourceMappingURL=output.css.map */

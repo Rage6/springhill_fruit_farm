@@ -3,14 +3,14 @@
 
 // VARIABLES
   // Minimum width:
-  $min: 361px;
+$min: 361px;
   // Maximum width:
-  $max: 375px;
+$max: 375px;
 
-html {
-  body {
+body {
+  #title {
     @media only screen and (min-width: $min) and (max-width: $max) {
-      border: 1px solid red;
+      
     }
   }
 }
