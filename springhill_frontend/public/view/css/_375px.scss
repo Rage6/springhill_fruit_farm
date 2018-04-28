@@ -8,9 +8,247 @@ $min: 361px;
 $max: 375px;
 
 body {
+
+  .shadePage {
+
+  }
+  .subtitle {
+
+  }
+
+  // START: Index page
   #title {
-    @media only screen and (min-width: $min) and (max-width: $max) {
-      
+
+    #top {
+
+    }
+    #bottomBox {
+
+      .bottom {
+
+      }
     }
   }
+  #introBox {
+
+    #introBack {
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        height: 110px;
+      }
+    }
+    #introContent {
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        top: -103px;
+        font-size: 1.4rem;
+      }
+    }
+  }
+  #allTopics {
+
+    a {
+
+      .oneTopic {
+
+        .oneText {
+
+        }
+        .oneOpac {
+
+        }
+      }
+    }
+  }
+  #rollApple {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      @keyframes wiggleApple {
+        0%   {transform: translate(0px,13px);}
+        25%  {transform: translate(0px,-50px);}
+        50%  {transform: translate(0px,13px);}
+        100% {transform: translate(0px,13px);}
+      }
+      @keyframes inAppleBox {
+        0%   {transform: translate(0px,0px) scale(1)}
+        50%  {transform: translate(0px,-200px) scale(0.5)}
+        100% {transform: translate(0px,-60px) scale(0)}
+      }
+    }
+    #rollImg {
+      width: 100%;
+    }
+  }
+  // END: Index Page
+
+  // START: Menu bar
+  #menuBox {
+
+    #menuBar {
+
+    }
+    #allButtons {
+
+      a {
+
+        .menuButton {
+
+          @keyframes slideDown {
+            0% {padding: 0 0; font-size: 0rem; height: 0px; border-bottom: 0px;}
+            100% {padding: 8px 0; font-size: 1.7rem; height: 43px; border-bottom: 1px solid black;}
+          }
+          @keyframes slideUp {
+            0% {padding: 8px 0; font-size: 1.7rem; height: 43px; border-bottom: 1px solid black;}
+            100% {padding: 0 0; font-size: 0rem; height: 0px; border-bottom: 0px;}
+          }
+        }
+      }
+    }
+  }
+  // END: Menu Bar
+
+  // START: Directions page
+  .subpageTitle {
+
+  }
+  #locationBox {
+
+    #locationShade {
+
+    }
+    #locationContent {
+
+      iframe {
+
+      }
+      #locationIntro {
+
+        #address {
+
+        }
+        a {
+
+        }
+      }
+    }
+  }
+  #timeBox {
+
+    #timeShade {
+
+    }
+    #timeContent {
+
+      img {
+
+      }
+      #timeIntro {
+
+      }
+      .dateContent {
+
+      }
+      #first {
+
+      }
+      #last {
+
+      }
+      table {
+
+        tr {
+
+          td {
+
+          }
+        }
+      }
+    }
+  }
+  // END: Directions page
+
+  // START: Produce page
+  #chooseFruit {
+
+    #fruitIntro {
+
+    }
+    #allFruit {
+
+      .oneFruit {
+
+      }
+      #appleButton {}
+      #pearButton {}
+      #peachButton {}
+      #pumpkinButton {}
+    }
+  }
+  .fruitList {
+
+    .oneFruitBox {
+
+      .fruitName {
+
+      }
+      .fruitPicture {
+
+      }
+      .fruitDescription {
+
+      }
+      .fruitPrice {
+
+      }
+    }
+  }
+  // END: Produce page
+
+  // START: History page
+
+  // END: History page
+
+  // START: Contact tab
+  #contactBox {
+
+    #contactTab {
+
+    }
+    #contactContent {
+
+      @keyframes tabUp {
+        0%   {height: 0;
+              padding: 0 0;
+              font-size: 0rem;
+              border: none;}
+        100% {height: inherit;
+              padding: 20px 10%;
+              font-size: 1.1rem;
+              border: 1px solid black;}
+      }
+      @keyframes tabDown {
+        0%   {height: inherit;
+              padding: 20px 10%;
+              font-size: 1.1rem;
+              border: 1px solid black;}
+        100% {height: 0;
+              padding: 0 0;
+              font-size: 0rem;
+              border: none;}
+      }
+      .contactList {
+
+        a {
+
+          #phoneLogo {
+
+          }
+          #facebookLogo {
+
+          }
+        }
+        #contactAddress {
+
+        }
+      }
+    }
+  }
+// END: Contact tab
 }
