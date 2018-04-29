@@ -157,6 +157,7 @@ $(()=>{
 
   // For scrolling Contact tab up and down
   $("#contactTab").click(()=>{
+    console.log("#contactTab works");
     if (contactDown == true) {
       findHeight();
       $("#contactContent").css('animation-name','tabUp');
