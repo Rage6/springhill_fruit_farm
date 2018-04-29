@@ -161,10 +161,16 @@ $(()=>{
       findHeight();
       $("#contactContent").css('animation-name','tabUp');
       $(".shadePage").css('display','block');
+      $("#contactAddress").css('animation-name','openAddress');
+      $("#phoneLogo").show();
+      $("#facebookLogo").show();
       contactDown = false;
     } else {
       $("#contactContent").css('animation-name','tabDown');
       $(".shadePage").css('display','none');
+      $("#contactAddress").css('animation-name','closeAddress');
+      $("#phoneLogo").hide();
+      $("#facebookLogo").hide();
       contactDown = true;
     }
   })

@@ -356,10 +356,26 @@ html body {
             padding: 10px; }
         html body #contactBox #contactContent .contactList #contactAddress {
           border-radius: 8px;
-          padding: 5px 0;
-          font-size: 1.4rem;
+          font-size: 0;
           color: lightgrey;
-          background-color: black; }
+          background-color: black;
+          animation-name: none;
+          animation-duration: 300ms;
+          animation-fill-mode: forwards; }
+@keyframes openAddress {
+  0% {
+    font-size: 0rem;
+    padding: 0; }
+  100% {
+    font-size: 1.4rem;
+    padding: 5px 0; } }
+@keyframes closeAddress {
+  0% {
+    font-size: 1.4rem;
+    padding: 5px 0; }
+  100% {
+    font-size: 0rem;
+    padding: 0; } }
 @media only screen and (min-width: 361px) and (max-width: 375px) {
   html body #introBox #introBack {
     height: 110px; } }
