@@ -42,45 +42,50 @@ body {
       }
     }
   }
-  #allTopics {
-    @media only screen and (min-width: $min) and (max-width: $max) {
-      top: 446px;
-    }
-    a {
+  #allImages {
+    #allTopics {
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        top: 446px;
+      }
+      a {
 
-      .oneTopic {
+        .oneTopic {
 
-        .oneText {
+          .oneText {
 
+          }
+          .oneOpac {
+
+          }
         }
-        .oneOpac {
-
+      }
+    }
+    #removeApple {
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        margin: 0 21%;
+        width: 58%;
+        position: absolute;
+        bottom: 0px;
+      }
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        @keyframes wiggleApple {
+          0%   {transform: translate(0px,0px);}
+          25%  {transform: translate(0px,-60px);}
+          50%  {transform: translate(0px,0px);}
+          100% {transform: translate(0px,0px);}
+        }
+        @keyframes inAppleBox {
+          0%   {transform: translate(0px,0px) scale(1)}
+          50%  {transform: translate(0px,-300px) scale(0.5)}
+          100% {transform: translate(0px,-80px) scale(0)}
         }
       }
-    }
-  }
-  #rollApple {
-    @media only screen and (min-width: $min) and (max-width: $max) {
-      margin: 0 21%;
-      width: 58%;
-      position: absolute;
-      bottom: 0px;
-    }
-    @media only screen and (min-width: $min) and (max-width: $max) {
-      @keyframes wiggleApple {
-        0%   {transform: translate(0px,0px);}
-        25%  {transform: translate(0px,-60px);}
-        50%  {transform: translate(0px,0px);}
-        100% {transform: translate(0px,0px);}
-      }
-      @keyframes inAppleBox {
-        0%   {transform: translate(0px,0px) scale(1)}
-        50%  {transform: translate(0px,-200px) scale(0.5)}
-        100% {transform: translate(0px,-60px) scale(0)}
+      #rollImg {
+        width: 100%;
       }
     }
-    #rollImg {
-      width: 100%;
+    #familyPic {
+
     }
   }
   // END: Index Page

@@ -79,60 +79,65 @@ html {
         width: 70%;
       }
     }
-    #allTopics {
-      margin: 0 10%;
-      position: absolute;
-      top: 370px;
-      text-align: center;
-      width: 80%;
-      a {
-        color: black;
-        text-decoration: none;
-        .oneTopic {
-          .oneText {
-            margin: 10px 0%;
-            z-index: 1;
-            position: absolute;
-            font-size: 1.7rem;
-            font-family: 'Walter Turncoat', cursive;
-            text-align: center;
-            width: 100%;
-          }
-          .oneOpac {
-            margin-bottom: 50px;
-            border-radius: 5px;
-            background-color: white;
-            opacity: 0.7;
-            height: 90px;
+    #allImages {
+      #allTopics {
+        margin: 0 10%;
+        position: absolute;
+        top: 370px;
+        text-align: center;
+        width: 80%;
+        a {
+          color: black;
+          text-decoration: none;
+          .oneTopic {
+            .oneText {
+              margin: 10px 0%;
+              z-index: 1;
+              position: absolute;
+              font-size: 1.7rem;
+              font-family: 'Walter Turncoat', cursive;
+              text-align: center;
+              width: 100%;
+            }
+            .oneOpac {
+              margin-bottom: 25px;
+              border-radius: 5px;
+              background-color: white;
+              opacity: 0.7;
+              height: 65px;
+            }
           }
         }
+        a:hover {
+          cursor: pointer;
+        }
       }
-      a:hover {
-        cursor: pointer;
+      #removeApple {
+        margin: 0 20%;
+        display: block;
+        width: 60%;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-name: wiggleApple;
+        @keyframes wiggleApple {
+          0% {transform: translate(0px,0px);}
+          25% {transform: translate(0px,-50px);}
+          50% {transform: translate(0px,0px);}
+          100% {transform: translate(0px,0px);}
+        }
+        @keyframes inAppleBox {
+          0% {transform: translate(0px,0px) scale(1)}
+          50% {transform: translate(0px,-200px) scale(0.5)}
+          100% {transform: translate(0px,-70px) scale(0)}
+        }
+        #rollImg {
+          width: 100%;
+        }
       }
-    }
-    #rollApple {
-      margin: 0 20%;
-      display: block;
-      width: 60%;
-      animation-timing-function: linear;
-      animation-duration: 2s;
-      animation-fill-mode: forwards;
-      animation-iteration-count: infinite;
-      animation-name: wiggleApple;
-      @keyframes wiggleApple {
-        0% {transform: translate(0px,0px);}
-        25% {transform: translate(0px,-50px);}
-        50% {transform: translate(0px,0px);}
-        100% {transform: translate(0px,0px);}
-      }
-      @keyframes inAppleBox {
-        0% {transform: translate(0px,0px) scale(1)}
-        50% {transform: translate(0px,-200px) scale(0.5)}
-        100% {transform: translate(0px,-70px) scale(0)}
-      }
-      #rollImg {
-        width: 100%;
+      #familyPic {
+        display: none;
       }
     }
     // END: Index Page

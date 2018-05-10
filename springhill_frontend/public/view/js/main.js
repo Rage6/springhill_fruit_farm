@@ -57,24 +57,30 @@ $(()=>{
   // If the width is less than 768px...
   $("#allTopics").hide();
   const inAppleBox = () => {
-    $("#rollApple").css({'animation-name':'inAppleBox','animation-duration':'1.5s','animation-iteration-count':'1','animation-timing-function':'cubic-bezier(0,.5,1,.5);'});
-    $("#allTopics").delay(500).show(0);
+    $("#removeApple").css({'animation-name':'inAppleBox','animation-duration':'1.5s','animation-iteration-count':'1','animation-timing-function':'cubic-bezier(0,.5,1,.5);'});
+    $("#allTopics").delay(1500).show(0);
     appleClicked = true;
   }
-  // If the width is more than (or equal to) 768px but less than ...
+  // If the width is more than (or equal to) 768px but less than 1366px...
   const rotateApple = () => {
-    $("#rollApple").css({'animation-name':'twistApple','animation-duration':'500ms','animation-iteration-count':'1'});
-    $("#allTopics").show().css({'animation-name':'twistTopics'});
+    $("#removeApple").css({'animation-name':'twistApple','animation-duration':'500ms','animation-iteration-count':'1','animation-fill-mode':'forwards'});
+    $("#allTopics").delay(500).show().css({'animation-name':'twistTopics'});
     appleClicked = true;
   }
+  // If the width is more than (or equal to) 1366px but less than 1920px...
+  const rollApple = () => {
+    $("#removeApple").css({})
+  };
   // Carries out the correct function when clicked.
-  $("#rollApple").click(() => {
+  $("#removeApple").click(() => {
     var currentWidth = $("body").width();
     console.log(currentWidth);
     if (currentWidth < 768) {
-      inAppleBox()
-    } else if (currentWidth >= 768) {
-      rotateApple()
+      inAppleBox();
+    } else if (currentWidth >= 768 && currentWidth < 1366) {
+      rotateApple();
+    } else if (currentWidth >= 1366) {
+      rollApple();
     };
   });
 
