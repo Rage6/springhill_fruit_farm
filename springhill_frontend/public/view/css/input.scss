@@ -1,5 +1,10 @@
 // Main SCSS file
 // Designed for width <= 360px
+
+// VARIABLES
+$func_name_1: inAppleBox;
+$func_name_2: "twistApple";
+
 html {
   body {
     margin: 0;
@@ -86,7 +91,6 @@ html {
         .oneTopic {
           .oneText {
             margin: 10px 0%;
-            // border: 1px solid red;
             z-index: 1;
             position: absolute;
             font-size: 1.7rem;
@@ -95,13 +99,16 @@ html {
             width: 100%;
           }
           .oneOpac {
-            margin-bottom: 30px;
+            margin-bottom: 50px;
             border-radius: 5px;
             background-color: white;
             opacity: 0.7;
-            height: 60px;
+            height: 90px;
           }
         }
+      }
+      a:hover {
+        cursor: pointer;
       }
     }
     #rollApple {

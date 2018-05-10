@@ -78,11 +78,13 @@ html body {
         text-align: center;
         width: 100%; }
       html body #allTopics a .oneTopic .oneOpac {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         border-radius: 5px;
         background-color: white;
         opacity: 0.7;
-        height: 60px; }
+        height: 90px; }
+    html body #allTopics a:hover {
+      cursor: pointer; }
   html body #rollApple {
     margin: 0 20%;
     display: block;
@@ -584,13 +586,28 @@ html body #rollApple #rollImg {
     font-size: 2.4rem; } }
 @media only screen and (min-width: 415px) and (max-width: 768px) {
   html body #allTopics {
-    top: 570px; } }
+    margin: 0 18%;
+    top: 570px;
+    width: 64%;
+    transform: rotateY(90deg);
+    animation-name: none;
+    animation-duration: 500ms;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards; }
+  @keyframes twistTopics {
+    0% {
+      transform: rotateY(90deg); }
+    100% {
+      transform: rotateY(0deg); } } }
+html body #allTopics a .oneTopic .oneText {
+  font-size: 3rem; }
 @media only screen and (min-width: 415px) and (max-width: 768px) {
   html body #rollApple {
     margin: 0 21%;
     width: 58%;
     position: absolute;
-    bottom: 0px; }
+    bottom: 0px;
+    animation-duration: 2s; }
   @keyframes wiggleApple {
     0% {
       transform: translate(0px, 0px); }
@@ -614,28 +631,6 @@ html body #rollApple #rollImg {
       transform: rotateY(90deg); } } }
 html body #rollApple #rollImg {
   width: 100%; }
-@keyframes slideDown {
-  0% {
-    padding: 0 0;
-    font-size: 0rem;
-    height: 0px;
-    border-bottom: 0px; }
-  100% {
-    padding: 8px 0;
-    font-size: 1.7rem;
-    height: 43px;
-    border-bottom: 1px solid black; } }
-@keyframes slideUp {
-  0% {
-    padding: 8px 0;
-    font-size: 1.7rem;
-    height: 43px;
-    border-bottom: 1px solid black; }
-  100% {
-    padding: 0 0;
-    font-size: 0rem;
-    height: 0px;
-    border-bottom: 0px; } }
 @keyframes tabUp {
   0% {
     height: 0;

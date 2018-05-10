@@ -53,14 +53,30 @@ $(()=>{
   ];
   var bodyHeight = 0;
 
-  // For throwing the apple and revealing the buttons
+  // For throwing/moving the apple and revealing the buttons
+  // If the width is less than 768px...
   $("#allTopics").hide();
-  const inAppleBox = (aFunction) => {
+  const inAppleBox = () => {
     $("#rollApple").css({'animation-name':'inAppleBox','animation-duration':'1.5s','animation-iteration-count':'1','animation-timing-function':'cubic-bezier(0,.5,1,.5);'});
-    $("#allTopics").delay(1500).show(0);
+    $("#allTopics").delay(500).show(0);
     appleClicked = true;
   }
-  $("#rollApple").click(inAppleBox);
+  // If the width is more than (or equal to) 768px but less than ...
+  const rotateApple = () => {
+    $("#rollApple").css({'animation-name':'twistApple','animation-duration':'500ms','animation-iteration-count':'1'});
+    $("#allTopics").show().css({'animation-name':'twistTopics'});
+    appleClicked = true;
+  }
+  // Carries out the correct function when clicked.
+  $("#rollApple").click(() => {
+    var currentWidth = $("body").width();
+    console.log(currentWidth);
+    if (currentWidth < 768) {
+      inAppleBox()
+    } else if (currentWidth >= 768) {
+      rotateApple()
+    };
+  });
 
   // For sliding the menuBox up and down
   const dropMenu = () => {
