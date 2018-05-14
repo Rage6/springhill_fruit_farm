@@ -60,16 +60,16 @@ html body {
       font-family: 'Walter Turncoat', cursive;
       text-align: center;
       width: 70%; }
-  html body #allImages #allTopics {
+  html body #allTopics {
     margin: 0 10%;
     position: absolute;
     top: 370px;
     text-align: center;
     width: 80%; }
-    html body #allImages #allTopics a {
+    html body #allTopics a {
       color: black;
       text-decoration: none; }
-      html body #allImages #allTopics a .oneTopic .oneText {
+      html body #allTopics a .oneTopic .oneText {
         margin: 10px 0%;
         z-index: 1;
         position: absolute;
@@ -77,15 +77,15 @@ html body {
         font-family: 'Walter Turncoat', cursive;
         text-align: center;
         width: 100%; }
-      html body #allImages #allTopics a .oneTopic .oneOpac {
+      html body #allTopics a .oneTopic .oneOpac {
         margin-bottom: 25px;
         border-radius: 5px;
         background-color: white;
         opacity: 0.7;
         height: 65px; }
-    html body #allImages #allTopics a:hover {
+    html body #allTopics a:hover {
       cursor: pointer; }
-  html body #allImages #removeApple {
+  html body #removeApple {
     margin: 0 20%;
     display: block;
     width: 60%;
@@ -110,10 +110,8 @@ html body {
     transform: translate(0px, -200px) scale(0.5); }
   100% {
     transform: translate(0px, -70px) scale(0); } }
-    html body #allImages #removeApple #rollImg {
+    html body #removeApple #rollImg {
       width: 100%; }
-  html body #allImages #familyPic {
-    display: none; }
   html body #menuBox {
     color: white;
     text-align: center;
@@ -688,31 +686,16 @@ html body #allImages #removeApple #rollImg {
 @media only screen and (min-width: 769px) and (max-width: 1366px) {
   html body #allImages {
     display: flex; } }
-@media only screen and (min-width: 769px) and (max-width: 1366px) {
-  @keyframes wiggleApple {
-    0% {
-      transform: translate(0px, 13px); }
-    25% {
-      transform: translate(0px, -50px); }
-    50% {
-      transform: translate(0px, 13px); }
-    100% {
-      transform: translate(0px, 13px); } }
-  @keyframes inAppleBox {
-    0% {
-      transform: translate(0px, 0px) scale(1); }
-    50% {
-      transform: translate(0px, -200px) scale(0.5); }
-    100% {
-      transform: translate(0px, -60px) scale(0); } } }
-@media only screen and (min-width: 769px) and (max-width: 1366px) {
-  html body #allImages #rollApple #rollImg {
-    height: 450px;
-    width: auto; } }
+html body #allImages #removeApple {
+  display: none; }
 @media only screen and (min-width: 769px) and (max-width: 1366px) {
   html body #allImages #familyPic {
+    border: 1px solid white;
     display: flex;
-    justify-content: space-around; } }
+    width: 50%; } }
+html body #allImages #familyPic img {
+  max-height: 100%;
+  max-width: 100%; }
 @keyframes slideDown {
   0% {
     padding: 0 0;
