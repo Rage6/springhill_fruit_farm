@@ -20,73 +20,79 @@ body {
   #title {
 
     #top {
-      font-size: 4.5rem;
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        font-size: 4.5rem;
+      }
     }
     #bottomBox {
       .bottom {
-
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          font-size: 4rem;
+        }
       }
     }
   }
   #introBox {
-
     #introBack {
       @media only screen and (min-width: $min) and (max-width: $max) {
-        height: 163px;
-      }
-    }
-    #introContent {
-      @media only screen and (min-width: $min) and (max-width: $max) {
-        top: -160px;
-        font-size: 1.7rem;
+        height: 115px;
       }
     }
   }
-  #allImages {
-    #allTopics {
-      @media only screen and (min-width: $min) and (max-width: $max) {
-        top: 446px;
-      }
-      a {
-
-        .oneTopic {
-
-          .oneText {
-
+  #introContent {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      top: -160px;
+      font-size: 1.5rem;
+    }
+  }
+  #allTopics {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      top: 446px;
+    }
+    a {
+      .oneTopic {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          margin-bottom: 45px;
+        }
+        .oneText {
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            font-size: 2rem;
           }
-          .oneOpac {
-
+        }
+        .oneOpac {
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            margin-bottom: 45px;
           }
         }
       }
     }
-    #removeApple {
-      @media only screen and (min-width: $min) and (max-width: $max) {
-        margin: 0 21%;
-        width: 58%;
-        position: absolute;
-        bottom: 0px;
+  }
+  #removeApple {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      margin: 0 21%;
+      width: 58%;
+      position: absolute;
+      bottom: 0px;
+    }
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      @keyframes wiggleApple {
+        0%   {transform: translate(0px,0px);}
+        25%  {transform: translate(0px,-60px);}
+        50%  {transform: translate(0px,0px);}
+        100% {transform: translate(0px,0px);}
       }
-      @media only screen and (min-width: $min) and (max-width: $max) {
-        @keyframes wiggleApple {
-          0%   {transform: translate(0px,0px);}
-          25%  {transform: translate(0px,-60px);}
-          50%  {transform: translate(0px,0px);}
-          100% {transform: translate(0px,0px);}
-        }
-        @keyframes inAppleBox {
-          0%   {transform: translate(0px,0px) scale(1)}
-          50%  {transform: translate(0px,-300px) scale(0.5)}
-          100% {transform: translate(0px,-80px) scale(0)}
-        }
-      }
-      #rollImg {
-        width: 100%;
+      @keyframes inAppleBox {
+        0%   {transform: translate(0px,0px) scale(1)}
+        50%  {transform: translate(0px,-300px) scale(0.5)}
+        100% {transform: translate(0px,-80px) scale(0)}
       }
     }
-    #familyPic {
+    #rollImg {
+      width: 100%;
+    }
+  }
+  #familyPic {
 
-    }
   }
   // END: Index Page
 

@@ -17,23 +17,29 @@ body {
   }
 
   // START: Index page
-  #title {
+  #indexPage {
+    #title {
 
-    #top {
+      #top {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          font-size: 4rem;
+        }
+      }
+      #bottomBox {
 
-    }
-    #bottomBox {
-
-      .bottom {
-
+        .bottom {
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            font-size: 3.7
+          }
+        }
       }
     }
-  }
-  #introBox {
+    #introBox {
 
-    #introBack {
-      @media only screen and (min-width: $min) and (max-width: $max) {
-        height: 110px;
+      #introBack {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          height: 110px;
+        }
       }
     }
     #introContent {
@@ -42,16 +48,18 @@ body {
         font-size: 1.4rem;
       }
     }
-  }
-  #allImages {
     #allTopics {
 
       a {
 
         .oneTopic {
-          top: 382px;
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            top: 382px;
+          }
           .oneText {
-            font-size: 1.9rem;
+            @media only screen and (min-width: $min) and (max-width: $max) {
+              font-size: 1.9rem;
+            }
           }
           .oneOpac {
             @media only screen and (min-width: $min) and (max-width: $max) {

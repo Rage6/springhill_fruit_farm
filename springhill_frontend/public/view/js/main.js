@@ -53,8 +53,6 @@ $(()=>{
   ];
   var browserHeight = 0;
 
-
-
   // For throwing/moving the apple and revealing the buttons
   $("#allTopics").hide();
   const inAppleBox = () => {
@@ -181,10 +179,21 @@ $(()=>{
     }
   })
 
-  //For finding a page's full height
+  //For finding the browser's height
   const findHeight = () =>{
     browserHeight = $(window).height() + "px";
     $(".shadePage").css('height',browserHeight);
+    // console.log(browserHeight);
   };
   findHeight();
+
+  const setIndexHeight = () => {
+    console.log(browserHeight);
+    $("body").css('height',browserHeight);
+    console.log($("body").height());
+    $("#indexPage").css('height',browserHeight);
+    console.log($("#indexPage").height());
+  }
+  setIndexHeight();
+
 })

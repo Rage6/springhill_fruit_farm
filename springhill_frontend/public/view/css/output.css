@@ -1,6 +1,6 @@
 html body {
   margin: 0;
-  padding: 0 0 0 0;
+  padding: 0;
   font-size: 16px;
   background-image: url("img/row-1.jpg");
   background-attachment: fixed;
@@ -23,35 +23,37 @@ html body {
     color: white;
     background-image: url("img/chalkboard.jpg");
     width: 80%; }
-  html body #title {
-    margin: 25px 5% 0 5%;
-    padding-top: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-    font-family: 'Stardos Stencil', cursive;
-    color: white;
-    text-align: center;
-    background-image: url("img/wood-background.jpg");
-    background-size: cover; }
-    html body #title #top {
-      margin-bottom: 5px;
-      font-size: 4rem; }
-    html body #title #bottomBox {
-      display: flex;
-      justify-content: space-around; }
-      html body #title #bottomBox .bottom {
-        font-size: 3.5rem;
-        width: 45%; }
-  html body #introBox {
-    margin: 0 5%;
-    width: 90%; }
-    html body #introBox #introBack {
-      margin: 20px 10% 0 10%;
-      border-radius: 20px;
-      background-color: white;
-      opacity: 0.7;
-      height: 100px; }
-    html body #introBox #introContent {
+  html body #indexPage {
+    border: 1px solid black; }
+    html body #indexPage #title {
+      margin: 25px 5% 0 5%;
+      padding-top: 10px;
+      border: 1px solid black;
+      border-radius: 10px;
+      font-family: 'Stardos Stencil', cursive;
+      color: white;
+      text-align: center;
+      background-image: url("img/wood-background.jpg");
+      background-size: cover; }
+      html body #indexPage #title #top {
+        margin-bottom: 5px;
+        font-size: 3.8rem; }
+      html body #indexPage #title #bottomBox {
+        display: flex;
+        justify-content: space-around; }
+        html body #indexPage #title #bottomBox .bottom {
+          font-size: 3.5rem;
+          width: 45%; }
+    html body #indexPage #introBox {
+      margin: 0 5%;
+      width: 90%; }
+      html body #indexPage #introBox #introBack {
+        margin: 20px 10% 0 10%;
+        border-radius: 20px;
+        background-color: white;
+        opacity: 0.7;
+        height: 100px; }
+    html body #indexPage #introContent {
       border-radius: 20px;
       position: relative;
       top: -95px;
@@ -60,40 +62,40 @@ html body {
       font-family: 'Walter Turncoat', cursive;
       text-align: center;
       width: 70%; }
-  html body #allTopics {
-    margin: 0 10%;
-    position: absolute;
-    top: 370px;
-    text-align: center;
-    width: 80%; }
-    html body #allTopics a {
-      color: black;
-      text-decoration: none; }
-      html body #allTopics a .oneTopic .oneText {
-        margin: 10px 0%;
-        z-index: 1;
-        position: absolute;
-        font-size: 1.7rem;
-        font-family: 'Walter Turncoat', cursive;
-        text-align: center;
-        width: 100%; }
-      html body #allTopics a .oneTopic .oneOpac {
-        margin-bottom: 25px;
-        border-radius: 5px;
-        background-color: white;
-        opacity: 0.7;
-        height: 65px; }
-    html body #allTopics a:hover {
-      cursor: pointer; }
-  html body #removeApple {
-    margin: 0 20%;
-    display: block;
-    width: 60%;
-    animation-timing-function: linear;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-name: wiggleApple; }
+    html body #indexPage #allTopics {
+      margin: 0 10%;
+      position: absolute;
+      top: 370px;
+      text-align: center;
+      width: 80%; }
+      html body #indexPage #allTopics a {
+        color: black;
+        text-decoration: none; }
+        html body #indexPage #allTopics a .oneTopic .oneText {
+          margin: 10px 0%;
+          z-index: 1;
+          position: absolute;
+          font-size: 1.7rem;
+          font-family: 'Walter Turncoat', cursive;
+          text-align: center;
+          width: 100%; }
+        html body #indexPage #allTopics a .oneTopic .oneOpac {
+          margin-bottom: 25px;
+          border-radius: 5px;
+          background-color: white;
+          opacity: 0.7;
+          height: 65px; }
+      html body #indexPage #allTopics a:hover {
+        cursor: pointer; }
+    html body #indexPage #removeApple {
+      margin: 0 20%;
+      display: block;
+      width: 60%;
+      animation-timing-function: linear;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      animation-name: wiggleApple; }
 @keyframes wiggleApple {
   0% {
     transform: translate(0px, 0px); }
@@ -110,8 +112,8 @@ html body {
     transform: translate(0px, -200px) scale(0.5); }
   100% {
     transform: translate(0px, -70px) scale(0); } }
-    html body #removeApple #rollImg {
-      width: 100%; }
+      html body #indexPage #removeApple #rollImg {
+        width: 100%; }
   html body #menuBox {
     color: white;
     text-align: center;
@@ -379,22 +381,30 @@ html body {
     font-size: 0rem;
     padding: 0; } }
 @media only screen and (min-width: 361px) and (max-width: 375px) {
-  html body #introBox #introBack {
+  html body #indexPage #title #top {
+    font-size: 4rem; } }
+@media only screen and (min-width: 361px) and (max-width: 375px) {
+  html body #indexPage #title #bottomBox .bottom {
+    font-size: 3.7; } }
+@media only screen and (min-width: 361px) and (max-width: 375px) {
+  html body #indexPage #introBox #introBack {
     height: 110px; } }
 @media only screen and (min-width: 361px) and (max-width: 375px) {
-  html body #introBox #introContent {
+  html body #indexPage #introContent {
     top: -103px;
     font-size: 1.4rem; } }
-html body #allImages #allTopics a .oneTopic {
-  top: 382px; }
-  html body #allImages #allTopics a .oneTopic .oneText {
-    font-size: 1.9rem; }
-  @media only screen and (min-width: 361px) and (max-width: 375px) {
-    html body #allImages #allTopics a .oneTopic .oneOpac {
-      margin-bottom: 35px;
-      height: 65px; } }
 @media only screen and (min-width: 361px) and (max-width: 375px) {
-  html body #allImages #removeApple {
+  html body #indexPage #allTopics a .oneTopic {
+    top: 382px; } }
+@media only screen and (min-width: 361px) and (max-width: 375px) {
+  html body #indexPage #allTopics a .oneTopic .oneText {
+    font-size: 1.9rem; } }
+@media only screen and (min-width: 361px) and (max-width: 375px) {
+  html body #indexPage #allTopics a .oneTopic .oneOpac {
+    margin-bottom: 35px;
+    height: 65px; } }
+@media only screen and (min-width: 361px) and (max-width: 375px) {
+  html body #indexPage #removeApple {
     margin: 0 22%;
     width: 56%; } }
 @media only screen and (min-width: 361px) and (max-width: 375px) {
@@ -414,7 +424,7 @@ html body #allImages #allTopics a .oneTopic {
       transform: translate(0px, -200px) scale(0.5); }
     100% {
       transform: translate(0px, -60px) scale(0); } } }
-html body #allImages #removeApple #rollImg {
+html body #indexPage #removeApple #rollImg {
   width: 100%; }
 @keyframes slideDown {
   0% {
@@ -474,20 +484,33 @@ html body #allImages #removeApple #rollImg {
   100% {
     font-size: 0rem;
     padding: 0; } }
-html body #title #top {
-  font-size: 4.5rem; }
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+  html body #title #top {
+    font-size: 4.5rem; } }
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+  html body #title #bottomBox .bottom {
+    font-size: 4rem; } }
 @media only screen and (min-width: 376px) and (max-width: 414px) {
   html body #introBox #introBack {
-    height: 163px; } }
+    height: 115px; } }
 @media only screen and (min-width: 376px) and (max-width: 414px) {
-  html body #introBox #introContent {
+  html body #introContent {
     top: -160px;
-    font-size: 1.7rem; } }
+    font-size: 1.5rem; } }
 @media only screen and (min-width: 376px) and (max-width: 414px) {
-  html body #allImages #allTopics {
+  html body #allTopics {
     top: 446px; } }
 @media only screen and (min-width: 376px) and (max-width: 414px) {
-  html body #allImages #removeApple {
+  html body #allTopics a .oneTopic {
+    margin-bottom: 45px; } }
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+  html body #allTopics a .oneTopic .oneText {
+    font-size: 2rem; } }
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+  html body #allTopics a .oneTopic .oneOpac {
+    margin-bottom: 45px; } }
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+  html body #removeApple {
     margin: 0 21%;
     width: 58%;
     position: absolute;
@@ -509,7 +532,7 @@ html body #title #top {
       transform: translate(0px, -300px) scale(0.5); }
     100% {
       transform: translate(0px, -80px) scale(0); } } }
-html body #allImages #removeApple #rollImg {
+html body #removeApple #rollImg {
   width: 100%; }
 @keyframes slideDown {
   0% {
