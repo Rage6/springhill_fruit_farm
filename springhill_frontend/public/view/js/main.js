@@ -51,10 +51,13 @@ $(()=>{
       type: "pumpkin"
     }
   ];
-  var browserHeight = 0;
+  var browserHeight = null;
   var heightNum = 0;
-  var browserWidth = 0;
+  var browserWidth = null;
   var widthNum = 0;
+  var indexPageHeight = null;
+  var indexNum = 0;
+
 
   //For finding the browser's height
   const findHeight = () =>{
@@ -205,7 +208,11 @@ $(()=>{
 
   const setIndexHeight = () => {
     $("body").css('height',browserHeight);
-    $("#indexPage").css('height',browserHeight);
+    indexNum = heightNum - 25;
+    indexPageHeight = indexNum + "px";
+    $("#indexPage").css('height',indexPageHeight);
+    console.log("browserHeight: " + browserHeight);
+    console.log("indexPageHeight: " + indexPageHeight);
   }
   setIndexHeight();
 
