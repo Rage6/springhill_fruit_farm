@@ -51,16 +51,44 @@ $(()=>{
       type: "pumpkin"
     }
   ];
-  var bodyHeight = 0;
+  var browserHeight = 0;
+  var heightNum = 0;
+  var browserWidth = 0;
+  var widthNum = 0;
 
-  // For throwing the apple and revealing the buttons
+  //For finding the browser's height
+  const findHeight = () =>{
+    heightNum = $(document).height();
+    browserHeight = heightNum + "px";
+    $(".shadePage").css('height',browserHeight);
+    // console.log(browserHeight);
+  };
+  findHeight();
+
+  //For finding the browser's height
+  const findWidth = () =>{
+    widthNum = $(document).width();
+    browserWidth = widthNum + "px";
+    // console.log(browserWidth);
+  };
+  findWidth();
+
+  // For throwing/moving the apple and revealing the buttons
   $("#allTopics").hide();
-  const inAppleBox = (aFunction) => {
-    $("#rollApple").css({'animation-name':'inAppleBox','animation-duration':'1.5s','animation-iteration-count':'1','animation-timing-function':'cubic-bezier(0,.5,1,.5);'});
+  const inAppleBox = () => {
+    $("#removeApple").css({'animation-name':'inAppleBox','animation-duration':'1.5s','animation-iteration-count':'1','animation-timing-function':'cubic-bezier(0,.5,1,.5);'});
     $("#allTopics").delay(1500).show(0);
     appleClicked = true;
   }
-  $("#rollApple").click(inAppleBox);
+  // Carries out the correct function when clicked.
+  $("#removeApple").click(() => {
+    inAppleBox();
+  });
+  // To hide the apple when the browser width is >= 768px
+  if (widthNum >= 768) {
+    $("#removeApple").hide();
+    $("#allTopics").show(0);
+  };
 
   // For sliding the menuBox up and down
   const dropMenu = () => {
@@ -161,18 +189,24 @@ $(()=>{
       findHeight();
       $("#contactContent").css('animation-name','tabUp');
       $(".shadePage").css('display','block');
+      $("#contactAddress").css('animation-name','openAddress');
+      $("#phoneLogo").show();
+      $("#facebookLogo").show();
       contactDown = false;
     } else {
       $("#contactContent").css('animation-name','tabDown');
       $(".shadePage").css('display','none');
+      $("#contactAddress").css('animation-name','closeAddress');
+      $("#phoneLogo").hide();
+      $("#facebookLogo").hide();
       contactDown = true;
     }
   })
 
-  //For finding a page's full height
-  const findHeight = () =>{
-    bodyHeight = $("body").height() + "px";
-    $(".shadePage").css('height',bodyHeight);
-  };
+  const setIndexHeight = () => {
+    $("body").css('height',browserHeight);
+    $("#indexPage").css('height',browserHeight);
+  }
+  setIndexHeight();
 
 })

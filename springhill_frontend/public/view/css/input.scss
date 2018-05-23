@@ -1,7 +1,14 @@
+// Main SCSS file
+// Designed for width <= 360px
+
+// VARIABLES
+$func_name_1: inAppleBox;
+$func_name_2: "twistApple";
+
 html {
   body {
     margin: 0;
-    padding: 0 0 20px 0;
+    padding: 0;
     font-size: 16px;
     background-image: url('img/row-1.jpg');
     background-attachment: fixed;
@@ -26,39 +33,44 @@ html {
       background-image: url('img/chalkboard.jpg');
       width: 80%;
     }
+
     // START: Index page
-    #title {
-      margin: 25px 5% 0 5%;
-      padding-top: 10px;
+    #indexPage {
       border: 1px solid black;
-      border-radius: 10px;
-      font-family: 'Stardos Stencil', cursive;
-      color: white;
-      text-align: center;
-      background-image: url('img/wood-background.jpg');
-      background-size: cover;
-      #top {
-        margin-bottom: 5px;
-        font-size: 4rem;
-      }
-      #bottomBox {
-        display: flex;
-        justify-content: space-around;
-        .bottom {
-          font-size: 3.5rem;
-          width: 45%;
+      #title {
+        margin: 25px 5% 0 5%;
+        padding-top: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-family: 'Stardos Stencil', cursive;
+        color: white;
+        text-align: center;
+        background-image: url('img/wood-background.jpg');
+        background-size: cover;
+        #top {
+          margin-bottom: 5px;
+          color: white;
+          font-size: 3.8rem;
+        }
+        #bottomBox {
+          display: flex;
+          justify-content: space-around;
+          .bottom {
+            font-size: 3.5rem;
+            width: 45%;
+          }
         }
       }
-    }
-    #introBox {
-      margin: 0 5%;
-      width: 90%;
-      #introBack {
-        margin: 20px 10% 0 10%;
-        border-radius: 20px;
-        background-color: white;
-        opacity: 0.7;
-        height: 100px;
+      #introBox {
+        margin: 0 5%;
+        width: 90%;
+        #introBack {
+          margin: 20px 10% 0 10%;
+          border-radius: 20px;
+          background-color: white;
+          opacity: 0.7;
+          height: 100px;
+        }
       }
       #introContent {
         border-radius: 20px;
@@ -70,60 +82,61 @@ html {
         text-align: center;
         width: 70%;
       }
-    }
-    #allTopics {
-      margin: 0 10%;
-      position: absolute;
-      top: 370px;
-      text-align: center;
-      width: 80%;
-      a {
-        color: black;
-        text-decoration: none;
-        .oneTopic {
-          .oneText {
-            margin: 10px 0%;
-            // border: 1px solid red;
-            z-index: 1;
-            position: absolute;
-            font-size: 1.7rem;
-            font-family: 'Walter Turncoat', cursive;
-            text-align: center;
-            width: 100%;
-          }
-          .oneOpac {
-            margin-bottom: 30px;
-            border-radius: 5px;
-            background-color: white;
-            opacity: 0.7;
-            height: 60px;
+      #allTopics {
+        margin: 0 10%;
+        position: absolute;
+        top: 370px;
+        text-align: center;
+        width: 80%;
+        a {
+          color: black;
+          text-decoration: none;
+          .oneTopic {
+            .oneText {
+              margin: 10px 0%;
+              z-index: 1;
+              position: absolute;
+              font-size: 1.7rem;
+              font-family: 'Walter Turncoat', cursive;
+              text-align: center;
+              width: 100%;
+            }
+            .oneOpac {
+              margin-bottom: 25px;
+              border-radius: 5px;
+              background-color: white;
+              opacity: 0.7;
+              height: 65px;
+            }
           }
         }
+        a:hover {
+          cursor: pointer;
+        }
       }
-    }
-    #rollApple {
-      margin: 0 20%;
-      margin-left: 20%;
-      display: block;
-      width: 60%;
-      animation-timing-function: linear;
-      animation-duration: 2s;
-      animation-fill-mode: forwards;
-      animation-iteration-count: infinite;
-      animation-name: wiggleApple;
-      @keyframes wiggleApple {
-        0% {transform: translate(0px,0px);}
-        25% {transform: translate(0px,-50px);}
-        50% {transform: translate(0px,0px);}
-        100% {transform: translate(0px,0px);}
-      }
-      @keyframes inAppleBox {
-        0% {transform: translate(0px,0px) scale(1)}
-        50% {transform: translate(0px,-200px) scale(0.5)}
-        100% {transform: translate(0px,-70px) scale(0)}
-      }
-      #rollImg {
-        width: 100%;
+      #removeApple {
+        margin: 0 20%;
+        display: block;
+        width: 60%;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-name: wiggleApple;
+        @keyframes wiggleApple {
+          0%   {transform: translate(0px,0px);}
+          25%  {transform: translate(0px,-50px);}
+          50%  {transform: translate(0px,0px);}
+          100% {transform: translate(0px,0px);}
+        }
+        @keyframes inAppleBox {
+          0%   {transform: translate(0px,0px) scale(1)}
+          50%  {transform: translate(0px,-200px) scale(0.5)}
+          100% {transform: translate(0px,-70px) scale(0)}
+        }
+        #rollImg {
+          width: 100%;
+        }
       }
     }
     // END: Index Page
@@ -349,6 +362,10 @@ html {
     }
     // END: Produce page
 
+    // START: History page
+
+    // END: History page
+
     // START: Contact tab
     #contactBox {
       font-family: 'Stardos Stencil', cursive;
@@ -406,7 +423,7 @@ html {
           text-align: center;
           display: flex;
           justify-content: space-around;
-          .contactLink {
+          a {
             text-decoration: none;
             #phoneLogo {
               border: 2px solid black;
@@ -419,17 +436,26 @@ html {
           }
           #contactAddress {
             border-radius: 8px;
-            padding: 5px 0;
-            font-size: 1.4rem;
+            font-size: 0;
             color: lightgrey;
             background-color: black;
+            animation-name: none;
+            animation-duration: 300ms;
+            animation-fill-mode: forwards;
+            @keyframes openAddress {
+              0%   {font-size: 0rem; padding: 0;}
+              100% {font-size: 1.4rem; padding: 5px 0;}
+            }
+            @keyframes closeAddress {
+              0%   {font-size: 1.4rem; padding: 5px 0;}
+              100% {font-size: 0rem; padding: 0;}
+            }
           }
         }
       }
     }
     // END: Contact tab
   }
-  @import '360px';
   @import '375px';
   @import '414px';
   @import '768px';
