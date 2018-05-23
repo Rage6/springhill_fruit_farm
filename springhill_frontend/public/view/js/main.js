@@ -52,6 +52,26 @@ $(()=>{
     }
   ];
   var browserHeight = 0;
+  var heightNum = 0;
+  var browserWidth = 0;
+  var widthNum = 0;
+
+  //For finding the browser's height
+  const findHeight = () =>{
+    heightNum = $(document).height();
+    browserHeight = heightNum + "px";
+    $(".shadePage").css('height',browserHeight);
+    // console.log(browserHeight);
+  };
+  findHeight();
+
+  //For finding the browser's height
+  const findWidth = () =>{
+    widthNum = $(document).width();
+    browserWidth = widthNum + "px";
+    // console.log(browserWidth);
+  };
+  findWidth();
 
   // For throwing/moving the apple and revealing the buttons
   $("#allTopics").hide();
@@ -64,6 +84,11 @@ $(()=>{
   $("#removeApple").click(() => {
     inAppleBox();
   });
+  // To hide the apple when the browser width is >= 768px
+  if (widthNum >= 768) {
+    $("#removeApple").hide();
+    $("#allTopics").show(0);
+  };
 
   // For sliding the menuBox up and down
   const dropMenu = () => {
@@ -160,7 +185,6 @@ $(()=>{
 
   // For scrolling Contact tab up and down
   $("#contactTab").click(()=>{
-    console.log("#contactTab works");
     if (contactDown == true) {
       findHeight();
       $("#contactContent").css('animation-name','tabUp');
@@ -179,20 +203,9 @@ $(()=>{
     }
   })
 
-  //For finding the browser's height
-  const findHeight = () =>{
-    browserHeight = $(window).height() + "px";
-    $(".shadePage").css('height',browserHeight);
-    // console.log(browserHeight);
-  };
-  findHeight();
-
   const setIndexHeight = () => {
-    console.log(browserHeight);
     $("body").css('height',browserHeight);
-    console.log($("body").height());
     $("#indexPage").css('height',browserHeight);
-    console.log($("#indexPage").height());
   }
   setIndexHeight();
 
