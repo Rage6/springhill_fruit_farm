@@ -42,6 +42,8 @@ html {
           margin-bottom: 5px;
           color: white;
           font-size: 3.8rem; }
+        html body #indexPage #title .bottomWide {
+          display: none; }
         html body #indexPage #title #bottomBox {
           display: flex;
           justify-content: space-around; }
@@ -50,7 +52,7 @@ html {
             width: 45%; }
       html body #indexPage #introBox {
         margin: 0 5%;
-        width: 90%; }
+        width: 92%; }
         html body #indexPage #introBox #introBack {
           margin: 20px 10% 0 10%;
           border-radius: 20px;
@@ -629,6 +631,101 @@ html {
       height: 95px; } }
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     html body #indexPage #removeApple {
+      display: none; } }
+@keyframes tabUp {
+  0% {
+    height: 0;
+    padding: 0 0;
+    font-size: 0rem;
+    border: none; }
+  100% {
+    height: inherit;
+    padding: 20px 10%;
+    font-size: 1.1rem;
+    border: 1px solid black; } }
+@keyframes tabDown {
+  0% {
+    height: inherit;
+    padding: 20px 10%;
+    font-size: 1.1rem;
+    border: 1px solid black; }
+  100% {
+    height: 0;
+    padding: 0 0;
+    font-size: 0rem;
+    border: none; } }
+@keyframes openAddress {
+  0% {
+    font-size: 0rem;
+    padding: 0; }
+  100% {
+    font-size: 1.4rem;
+    padding: 5px 0; } }
+@keyframes closeAddress {
+  0% {
+    font-size: 1.4rem;
+    padding: 5px 0; }
+  100% {
+    font-size: 0rem;
+    padding: 0; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body {
+      background-image: url("img/tractor-sunset-full copy.jpg"); } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #indexPage #title {
+      display: flex;
+      justify-content: space-around; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #indexPage #title #top {
+      font-size: 6rem; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #indexPage #title .bottomWide {
+      display: inherit;
+      font-size: 5.5rem; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #indexPage #title #bottomBox {
+      margin: 0;
+      display: none; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #indexPage #title #bottomBox .bottom {
+      font-size: 5.5rem; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #indexPage #introBox {
+      margin: 0 5%;
+      width: 50%; } }
+  @media only screen and (min-width: 769px) and (max-width: 1305px) {
+    html body #indexPage #introBox #introBack {
+      margin-top: 40px;
+      height: 150px; } }
+  @media only screen and (min-width: 1306px) and (max-width: 1366px) {
+    html body #indexPage #introBox #introBack {
+      height: 130px; } }
+  @media only screen and (min-width: 769px) and (max-width: 1305px) {
+    html body #indexPage #introContent {
+      top: -147px;
+      left: 12%;
+      font-size: 2.2rem;
+      width: 36%; } }
+  @media only screen and (min-width: 1306px) and (max-width: 1366px) {
+    html body #indexPage #introContent {
+      top: -117px;
+      left: 11%;
+      font-size: 2.2rem;
+      width: 36%; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #indexPage #allTopics {
+      top: 383px;
+      left: 555px;
+      width: 40%; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #indexPage #allTopics a .oneTopic .oneText {
+      font-size: 3rem; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #indexPage #allTopics a .oneTopic .oneOpac {
+      margin-bottom: 30px;
+      height: 95px; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #indexPage #removeApple {
       display: none;
       margin: 0 21%;
       width: 58%;
@@ -656,7 +753,7 @@ html {
         transform: rotateY(0deg); }
       100% {
         transform: rotateY(90deg); } } }
-  @media only screen and (min-width: 415px) and (max-width: 768px) {
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #indexPage #removeApple #rollImg {
       width: 100%; } }
 @keyframes tabUp {
@@ -695,130 +792,91 @@ html {
   100% {
     font-size: 0rem;
     padding: 0; } }
-  @media only screen and (min-width: 769px) and (max-width: 1366px) {
-    html body #introBox #introBack {
-      height: 110px; } }
-  @media only screen and (min-width: 769px) and (max-width: 1366px) {
-    html body #introBox #introContent {
-      top: -103px;
-      font-size: 1.4rem; } }
-  @media only screen and (min-width: 769px) and (max-width: 1366px) {
-    html body #allImages {
-      display: flex; } }
-  html body #allImages #removeApple {
-    display: none; }
-  @media only screen and (min-width: 769px) and (max-width: 1366px) {
-    html body #allImages #familyPic {
-      border: 1px solid white;
-      display: flex;
-      width: 50%; } }
-  html body #allImages #familyPic img {
-    max-height: 100%;
-    max-width: 100%; }
-@keyframes slideDown {
-  0% {
-    padding: 0 0;
-    font-size: 0rem;
-    height: 0px;
-    border-bottom: 0px; }
-  100% {
-    padding: 8px 0;
-    font-size: 1.7rem;
-    height: 43px;
-    border-bottom: 1px solid black; } }
-@keyframes slideUp {
-  0% {
-    padding: 8px 0;
-    font-size: 1.7rem;
-    height: 43px;
-    border-bottom: 1px solid black; }
-  100% {
-    padding: 0 0;
-    font-size: 0rem;
-    height: 0px;
-    border-bottom: 0px; } }
-@keyframes tabUp {
-  0% {
-    height: 0;
-    padding: 0 0;
-    font-size: 0rem;
-    border: none; }
-  100% {
-    height: inherit;
-    padding: 20px 10%;
-    font-size: 1.1rem;
-    border: 1px solid black; } }
-@keyframes tabDown {
-  0% {
-    height: inherit;
-    padding: 20px 10%;
-    font-size: 1.1rem;
-    border: 1px solid black; }
-  100% {
-    height: 0;
-    padding: 0 0;
-    font-size: 0rem;
-    border: none; } }
-@keyframes openAddress {
-  0% {
-    font-size: 0rem;
-    padding: 0; }
-  100% {
-    font-size: 1.4rem;
-    padding: 5px 0; } }
-@keyframes closeAddress {
-  0% {
-    font-size: 1.4rem;
-    padding: 5px 0; }
-  100% {
-    font-size: 0rem;
-    padding: 0; } }
-  @media only screen and (min-width: 1367px) and (max-width: 1366px) {
-    html body #introBox #introBack {
-      height: 110px; } }
-  @media only screen and (min-width: 1367px) and (max-width: 1366px) {
-    html body #introBox #introContent {
-      top: -103px;
-      font-size: 1.4rem; } }
   @media only screen and (min-width: 1367px) {
+    html body {
+      background-image: none;
+      background-color: white; } }
+  @media only screen and (min-width: 1367px) {
+    html body #indexPage {
+      margin: 0 auto;
+      background-image: url("img/tractor-sunset-full copy.jpg");
+      background-size: cover;
+      width: 1366px; } }
+  @media only screen and (min-width: 1367px) {
+    html body #indexPage #title {
+      display: flex;
+      justify-content: space-around; } }
+  @media only screen and (min-width: 1367px) {
+    html body #indexPage #title #top {
+      font-size: 6rem; } }
+  @media only screen and (min-width: 1367px) {
+    html body #indexPage #title .bottomWide {
+      display: inherit;
+      font-size: 5.5rem; } }
+  @media only screen and (min-width: 1367px) {
+    html body #indexPage #title #bottomBox {
+      margin: 0;
+      display: none; } }
+  @media only screen and (min-width: 1367px) {
+    html body #indexPage #title #bottomBox .bottom {
+      font-size: 5.5rem; } }
+  @media only screen and (min-width: 1367px) {
+    html body #indexPage #introBox {
+      margin: 0 5%;
+      width: 50%; } }
+  @media only screen and (min-width: 1367px) {
+    html body #indexPage #introBox #introBack {
+      height: 165px; } }
+  @media only screen and (min-width: 1367px) {
+    html body #indexPage #introContent {
+      top: -168px;
+      left: 11%;
+      font-size: 2.5rem;
+      width: 36%; } }
+  @media only screen and (min-width: 1367px) {
+    html body #indexPage #allTopics {
+      top: 470px;
+      left: 633px;
+      width: 35%; } }
+  @media only screen and (min-width: 1367px) {
+    html body #indexPage #allTopics a .oneTopic .oneText {
+      font-size: 3rem; } }
+  @media only screen and (min-width: 1367px) {
+    html body #indexPage #allTopics a .oneTopic .oneOpac {
+      margin-bottom: 30px;
+      height: 95px; } }
+  @media only screen and (min-width: 1367px) {
+    html body #indexPage #removeApple {
+      display: none;
+      margin: 0 21%;
+      width: 58%;
+      position: absolute;
+      bottom: 0px;
+      animation-duration: 2s; }
     @keyframes wiggleApple {
       0% {
-        transform: translate(0px, 13px); }
+        transform: translate(0px, 0px); }
       25% {
-        transform: translate(0px, -50px); }
+        transform: translate(0px, -100px); }
       50% {
-        transform: translate(0px, 13px); }
+        transform: translate(0px, 0px); }
       100% {
-        transform: translate(0px, 13px); } }
+        transform: translate(0px, 0px); } }
     @keyframes inAppleBox {
       0% {
         transform: translate(0px, 0px) scale(1); }
       50% {
         transform: translate(0px, -200px) scale(0.5); }
       100% {
-        transform: translate(0px, -60px) scale(0); } } }
-@keyframes slideDown {
-  0% {
-    padding: 0 0;
-    font-size: 0rem;
-    height: 0px;
-    border-bottom: 0px; }
-  100% {
-    padding: 8px 0;
-    font-size: 1.7rem;
-    height: 43px;
-    border-bottom: 1px solid black; } }
-@keyframes slideUp {
-  0% {
-    padding: 8px 0;
-    font-size: 1.7rem;
-    height: 43px;
-    border-bottom: 1px solid black; }
-  100% {
-    padding: 0 0;
-    font-size: 0rem;
-    height: 0px;
-    border-bottom: 0px; } }
+        transform: translate(0px, -60px) scale(0); } }
+    @keyframes twistApple {
+      0% {
+        transform: rotateY(0deg); }
+      100% {
+        transform: rotateY(90deg); } } }
+  @media only screen and (min-width: 1367px) {
+    html body #indexPage #removeApple #rollImg {
+      width: 100%; } }
 @keyframes tabUp {
   0% {
     height: 0;

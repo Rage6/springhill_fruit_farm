@@ -54,6 +54,9 @@ html {
           color: white;
           font-size: 3.8rem;
         }
+        .bottomWide {
+          display: none;
+        }
         #bottomBox {
           display: flex;
           justify-content: space-around;
@@ -65,7 +68,7 @@ html {
       }
       #introBox {
         margin: 0 5%;
-        width: 90%;
+        width: 92%;
         #introBack {
           margin: 20px 10% 0 10%;
           border-radius: 20px;

@@ -211,8 +211,6 @@ $(()=>{
     indexNum = heightNum - 25;
     indexPageHeight = indexNum + "px";
     $("#indexPage").css('height',indexPageHeight);
-    console.log("browserHeight: " + browserHeight);
-    console.log("indexPageHeight: " + indexPageHeight);
   }
   setIndexHeight();
 

@@ -5,260 +5,307 @@
   // Minimum width:
   $min: 1367px;
 
-body {
-
-  .shadePage {
-
-  }
-  .subtitle {
-
-  }
-
-  // START: Index page
-  #title {
-
-    #top {
+  body {
+    @media only screen and (min-width: $min) {
+      background-image: none;
+      background-color: white;
+    }
+    .shadePage {
 
     }
-    #bottomBox {
+    .subtitle {
 
-      .bottom {
-
-      }
     }
-  }
-  #introBox {
 
-    #introBack {
-      @media only screen and (min-width: $min) and (max-width: $max) {
-        height: 110px;
-      }
-    }
-    #introContent {
-      @media only screen and (min-width: $min) and (max-width: $max) {
-        top: -103px;
-        font-size: 1.4rem;
-      }
-    }
-  }
-  #allImages {
-    #allTopics {
-
-      a {
-
-        .oneTopic {
-
-          .oneText {
-
-          }
-          .oneOpac {
-
-          }
-        }
-      }
-    }
-    #rollApple {
+    // START: Index page
+    #indexPage {
       @media only screen and (min-width: $min) {
-        @keyframes wiggleApple {
-          0%   {transform: translate(0px,13px);}
-          25%  {transform: translate(0px,-50px);}
-          50%  {transform: translate(0px,13px);}
-          100% {transform: translate(0px,13px);}
-        }
-        @keyframes inAppleBox {
-          0%   {transform: translate(0px,0px) scale(1)}
-          50%  {transform: translate(0px,-200px) scale(0.5)}
-          100% {transform: translate(0px,-60px) scale(0)}
-        }
+        margin: 0 auto;
+        background-image: url('img/tractor-sunset-full copy.jpg');
+        background-size: cover;
+        width: 1366px;
       }
-      #rollImg {
-
-      }
-    }
-    #familyPic {
-
-    }
-  }
-  // END: Index Page
-
-  // START: Menu bar
-  #menuBox {
-
-    #menuBar {
-
-    }
-    #allButtons {
-
-      a {
-
-        .menuButton {
-
-          @keyframes slideDown {
-            0% {padding: 0 0; font-size: 0rem; height: 0px; border-bottom: 0px;}
-            100% {padding: 8px 0; font-size: 1.7rem; height: 43px; border-bottom: 1px solid black;}
+      #title {
+        @media only screen and (min-width: $min) {
+          display: flex;
+          justify-content: space-around;
+        }
+        #top {
+          @media only screen and (min-width: $min) {
+            // border: 1px solid red;
+            font-size: 6rem;
           }
-          @keyframes slideUp {
-            0% {padding: 8px 0; font-size: 1.7rem; height: 43px; border-bottom: 1px solid black;}
-            100% {padding: 0 0; font-size: 0rem; height: 0px; border-bottom: 0px;}
+        }
+        .bottomWide {
+          @media only screen and (min-width: $min) {
+            display: inherit;
+            // border: 1px solid red;
+            font-size: 5.5rem;
+          }
+        }
+        #bottomBox {
+          @media only screen and (min-width: $min) {
+            margin: 0;
+            // border: 1px solid red;
+            display: none;
+          }
+          .bottom {
+            @media only screen and (min-width: $min) {
+              // border: 1px solid red;
+              font-size: 5.5rem;
+            }
           }
         }
       }
-    }
-  }
-  // END: Menu Bar
-
-  // START: Directions page
-  .subpageTitle {
-
-  }
-  #locationBox {
-
-    #locationShade {
-
-    }
-    #locationContent {
-
-      iframe {
-
+      #introBox {
+        @media only screen and (min-width: $min) {
+          margin: 0 5%;
+          width: 50%;
+        }
+        #introBack {
+          @media only screen and (min-width: $min) {
+            height: 165px;
+          }
+        }
       }
-      #locationIntro {
-
-        #address {
-
+      #introContent {
+        @media only screen and (min-width: $min){
+          top: -168px;
+          left: 11%;
+          font-size: 2.5rem;
+          width: 36%;
+        }
+      }
+      #allTopics {
+        @media only screen and (min-width: $min) {
+          top: 470px;
+          left: 633px;
+          width: 35%;
         }
         a {
 
-        }
-      }
-    }
-  }
-  #timeBox {
+          .oneTopic {
 
-    #timeShade {
-
-    }
-    #timeContent {
-
-      img {
-
-      }
-      #timeIntro {
-
-      }
-      .dateContent {
-
-      }
-      #first {
-
-      }
-      #last {
-
-      }
-      table {
-
-        tr {
-
-          td {
-
+            .oneText {
+              @media only screen and (min-width: $min) {
+                font-size: 3rem;
+              }
+            }
+            .oneOpac {
+              @media only screen and (min-width: $min) {
+                margin-bottom: 30px;
+                height: 95px;
+              }
+            }
           }
         }
       }
-    }
-  }
-  // END: Directions page
-
-  // START: Produce page
-  #chooseFruit {
-
-    #fruitIntro {
-
-    }
-    #allFruit {
-
-      .oneFruit {
-
+      #removeApple {
+        @media only screen and (min-width: $min) {
+          display: none;
+          margin: 0 21%;
+          width: 58%;
+          position: absolute;
+          bottom: 0px;
+          animation-duration: 2s;
+          @keyframes wiggleApple {
+            0%   {transform: translate(0px,0px);}
+            25%  {transform: translate(0px,-100px);}
+            50%  {transform: translate(0px,0px);}
+            100% {transform: translate(0px,0px);}
+          }
+          @keyframes inAppleBox {
+            0%   {transform: translate(0px,0px) scale(1)}
+            50%  {transform: translate(0px,-200px) scale(0.5)}
+            100% {transform: translate(0px,-60px) scale(0)}
+          }
+          @keyframes twistApple {
+            0% {transform: rotateY(0deg); }
+            100% {transform: rotateY(90deg); }
+          }
+        }
+        #rollImg {
+          @media only screen and (min-width: $min) {
+            width: 100%;
+          }
+        }
       }
-      #appleButton {}
-      #pearButton {}
-      #peachButton {}
-      #pumpkinButton {}
-    }
-  }
-  .fruitList {
-
-    .oneFruitBox {
-
-      .fruitName {
-
-      }
-      .fruitPicture {
-
-      }
-      .fruitDescription {
-
-      }
-      .fruitPrice {
+      #familyPic {
 
       }
     }
-  }
-  // END: Produce page
+    // END: Index Page
 
-  // START: History page
+    // START: Menu bar
+    #menuBox {
 
-  // END: History page
+      #menuBar {
 
-  // START: Contact tab
-  #contactBox {
-
-    #contactTab {
-
-    }
-    #contactContent {
-
-      @keyframes tabUp {
-        0%   {height: 0;
-              padding: 0 0;
-              font-size: 0rem;
-              border: none;}
-        100% {height: inherit;
-              padding: 20px 10%;
-              font-size: 1.1rem;
-              border: 1px solid black;}
       }
-      @keyframes tabDown {
-        0%   {height: inherit;
-              padding: 20px 10%;
-              font-size: 1.1rem;
-              border: 1px solid black;}
-        100% {height: 0;
-              padding: 0 0;
-              font-size: 0rem;
-              border: none;}
-      }
-      .contactList {
+      #allButtons {
 
         a {
 
-          #phoneLogo {
+          .menuButton {
 
-          }
-          #facebookLogo {
-
-          }
-        }
-        #contactAddress {
-          @keyframes openAddress {
-            0%   {font-size: 0rem; padding: 0;}
-            100% {font-size: 1.4rem; padding: 5px 0;}
-          }
-          @keyframes closeAddress {
-            0%   {font-size: 1.4rem; padding: 5px 0;}
-            100% {font-size: 0rem; padding: 0;}
           }
         }
       }
     }
+    // END: Menu Bar
+
+    // START: Directions page
+    .subpageTitle {
+
+    }
+    #locationBox {
+
+      #locationShade {
+
+      }
+      #locationContent {
+
+        iframe {
+
+        }
+        #locationIntro {
+
+          #address {
+
+          }
+          a {
+
+          }
+        }
+      }
+    }
+    #timeBox {
+
+      #timeShade {
+
+      }
+      #timeContent {
+
+        img {
+
+        }
+        #timeIntro {
+
+        }
+        .dateContent {
+
+        }
+        #first {
+
+        }
+        #last {
+
+        }
+        table {
+
+          tr {
+
+            td {
+
+            }
+          }
+        }
+      }
+    }
+    // END: Directions page
+
+    // START: Produce page
+    #chooseFruit {
+
+      #fruitIntro {
+
+      }
+      #allFruit {
+
+        .oneFruit {
+
+        }
+        #appleButton {}
+        #pearButton {}
+        #peachButton {}
+        #pumpkinButton {}
+      }
+    }
+    .fruitList {
+
+      .oneFruitBox {
+
+        .fruitName {
+
+        }
+        .fruitPicture {
+
+        }
+        .fruitDescription {
+
+        }
+        .fruitPrice {
+
+        }
+      }
+    }
+    // END: Produce page
+
+    // START: History page
+
+    // END: History page
+
+    // START: Contact tab
+    #contactBox {
+
+      #contactTab {
+
+      }
+      #contactContent {
+
+        @keyframes tabUp {
+          0%   {height: 0;
+                padding: 0 0;
+                font-size: 0rem;
+                border: none;}
+          100% {height: inherit;
+                padding: 20px 10%;
+                font-size: 1.1rem;
+                border: 1px solid black;}
+        }
+        @keyframes tabDown {
+          0%   {height: inherit;
+                padding: 20px 10%;
+                font-size: 1.1rem;
+                border: 1px solid black;}
+          100% {height: 0;
+                padding: 0 0;
+                font-size: 0rem;
+                border: none;}
+        }
+        .contactList {
+
+          a {
+
+            #phoneLogo {
+
+            }
+            #facebookLogo {
+
+            }
+          }
+          #contactAddress {
+            @keyframes openAddress {
+              0%   {font-size: 0rem; padding: 0;}
+              100% {font-size: 1.4rem; padding: 5px 0;}
+            }
+            @keyframes closeAddress {
+              0%   {font-size: 1.4rem; padding: 5px 0;}
+              100% {font-size: 0rem; padding: 0;}
+            }
+          }
+        }
+      }
+    }
+  // END: Contact tab
   }
-// END: Contact tab
-}
