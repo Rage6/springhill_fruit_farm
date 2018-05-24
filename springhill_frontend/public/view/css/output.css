@@ -183,70 +183,70 @@ html {
       text-align: center;
       background-image: url("img/wood-background.jpg");
       background-size: cover; }
-    html body #locationBox {
+    html body #setDisplay #locationBox {
       margin-top: 15px; }
-      html body #locationBox #locationShade {
+      html body #setDisplay #locationBox #locationShade {
         margin: 0 10% 20px 10%;
         border-radius: 8px;
         background-color: white;
         opacity: 0.7;
         height: 555px; }
-      html body #locationBox #locationContent {
+      html body #setDisplay #locationBox #locationContent {
         margin: 0 10%;
         padding: 0 5%;
         text-align: center;
         position: absolute;
         z-index: 1;
         top: 175px; }
-        html body #locationBox #locationContent iframe {
+        html body #setDisplay #locationBox #locationContent iframe {
           border: 1px dashed black;
           width: 100%; }
-        html body #locationBox #locationContent #locationIntro {
+        html body #setDisplay #locationBox #locationContent #locationIntro {
           margin-top: 20px;
           border-radius: 10px;
           padding: 20px 2%;
           font-family: 'Gamja Flower', cursive;
           color: white;
           background-image: url("img/chalkboard.jpg"); }
-          html body #locationBox #locationContent #locationIntro #address {
+          html body #setDisplay #locationBox #locationContent #locationIntro #address {
             margin-bottom: 15px;
             font-size: 1.3rem; }
-          html body #locationBox #locationContent #locationIntro a {
+          html body #setDisplay #locationBox #locationContent #locationIntro a {
             font-size: 1.5rem;
             color: orange; }
-    html body #timeBox {
+    html body #setDisplay #timeBox {
       margin-top: 20px; }
-      html body #timeBox #timeShade {
+      html body #setDisplay #timeBox #timeShade {
         margin: 0 10% 20px 10%;
         border-radius: 8px;
         background-color: white;
         opacity: 0.7;
         height: 627px; }
-      html body #timeBox #timeContent {
+      html body #setDisplay #timeBox #timeContent {
         margin: 0 10%;
         padding: 0 5%;
         text-align: center;
         position: absolute;
         z-index: 1;
         top: 736px; }
-        html body #timeBox #timeContent img {
+        html body #setDisplay #timeBox #timeContent img {
           margin-top: 15px;
           border: 1px solid black;
           border-radius: 5px;
           width: 100%; }
-        html body #timeBox #timeContent #timeIntro {
+        html body #setDisplay #timeBox #timeContent #timeIntro {
           margin-bottom: 10px;
           font-size: 1.2rem;
           font-family: 'Walter Turncoat', cursive; }
-        html body #timeBox #timeContent .dateContent {
+        html body #setDisplay #timeBox #timeContent .dateContent {
           margin: 5px 0;
           font-size: 1.3rem;
           font-family: 'Stardos Stencil', cursive; }
-        html body #timeBox #timeContent #first {
+        html body #setDisplay #timeBox #timeContent #first {
           color: green; }
-        html body #timeBox #timeContent #last {
+        html body #setDisplay #timeBox #timeContent #last {
           color: red; }
-        html body #timeBox #timeContent table {
+        html body #setDisplay #timeBox #timeContent table {
           margin-top: 20px;
           border-radius: 7px;
           border-spacing: 10px 2px;
@@ -632,6 +632,40 @@ html {
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     html body #indexPage #removeApple {
       display: none; } }
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    html body .subpageTitle {
+      font-size: 4.5rem; } }
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    html body #setDisplay #locationBox #locationShade {
+      height: 764px; } }
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    html body #setDisplay #locationBox #locationContent {
+      top: 230px;
+      width: 70%; } }
+  html body #setDisplay #locationBox #locationContent iframe {
+    height: 430px; }
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    html body #setDisplay #locationBox #locationContent #locationIntro #address {
+      font-size: 2rem; } }
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    html body #setDisplay #timeBox {
+      margin-top: 36px; } }
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    html body #setDisplay #timeBox #timeShade {
+      margin-bottom: 46px;
+      height: 1020px; } }
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    html body #setDisplay #timeBox #timeContent img {
+      margin-top: 300px; } }
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    html body #setDisplay #timeBox #timeContent #timeIntro {
+      margin: 0 10%;
+      font-size: 2rem; } }
+  html body #setDisplay #timeBox #timeContent .dateContent {
+    font-size: 2.2rem; }
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    html body #setDisplay #timeBox #timeContent table {
+      font-size: 2.3rem; } }
 @keyframes tabUp {
   0% {
     height: 0;

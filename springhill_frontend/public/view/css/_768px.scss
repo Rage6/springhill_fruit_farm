@@ -82,7 +82,7 @@ body {
         display: none;
       }
       #rollImg {
-        
+
       }
     }
     #familyPic {
@@ -111,57 +111,81 @@ body {
 
   // START: Directions page
   .subpageTitle {
-
-  }
-  #locationBox {
-
-    #locationShade {
-
-    }
-    #locationContent {
-
-      iframe {
-
-      }
-      #locationIntro {
-
-        #address {
-
-        }
-        a {
-
-        }
-      }
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      font-size: 4.5rem;
     }
   }
-  #timeBox {
+  #setDisplay {
 
-    #timeShade {
+    #locationBox {
 
+      #locationShade {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          height: 764px;
+        }
+      }
+      #locationContent {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          top: 230px;
+          width: 70%;
+        }
+        iframe {
+          height: 430px;
+        }
+        #locationIntro {
+
+          #address {
+            @media only screen and (min-width: $min) and (max-width: $max) {
+              font-size: 2rem;
+            }
+          }
+          a {
+
+          }
+        }
+      }
     }
-    #timeContent {
-
-      img {
-
+    #timeBox {
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        margin-top: 36px;
       }
-      #timeIntro {
-
+      #timeShade {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          margin-bottom: 46px;
+          height: 1020px;
+        }
       }
-      .dateContent {
+      #timeContent {
 
-      }
-      #first {
+        img {
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            margin-top: 300px;
+          }
+        }
+        #timeIntro {
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            margin: 0 10%;
+            font-size: 2rem;
+          }
+        }
+        .dateContent {
+          font-size: 2.2rem;
+        }
+        #first {
 
-      }
-      #last {
+        }
+        #last {
 
-      }
-      table {
+        }
+        table {
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            font-size: 2.3rem;
+          }
+          tr {
 
-        tr {
+            td {
 
-          td {
-
+            }
           }
         }
       }
