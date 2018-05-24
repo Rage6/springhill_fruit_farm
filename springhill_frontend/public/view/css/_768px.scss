@@ -80,31 +80,9 @@ body {
     #removeApple {
       @media only screen and (min-width: $min) and (max-width: $max) {
         display: none;
-        margin: 0 21%;
-        width: 58%;
-        position: absolute;
-        bottom: 0px;
-        animation-duration: 2s;
-        @keyframes wiggleApple {
-          0%   {transform: translate(0px,0px);}
-          25%  {transform: translate(0px,-100px);}
-          50%  {transform: translate(0px,0px);}
-          100% {transform: translate(0px,0px);}
-        }
-        @keyframes inAppleBox {
-          0%   {transform: translate(0px,0px) scale(1)}
-          50%  {transform: translate(0px,-200px) scale(0.5)}
-          100% {transform: translate(0px,-60px) scale(0)}
-        }
-        @keyframes twistApple {
-          0% {transform: rotateY(0deg); }
-          100% {transform: rotateY(90deg); }
-        }
       }
       #rollImg {
-        @media only screen and (min-width: $min) and (max-width: $max) {
-          width: 100%;
-        }
+
       }
     }
     #familyPic {
@@ -133,57 +111,81 @@ body {
 
   // START: Directions page
   .subpageTitle {
-
-  }
-  #locationBox {
-
-    #locationShade {
-
-    }
-    #locationContent {
-
-      iframe {
-
-      }
-      #locationIntro {
-
-        #address {
-
-        }
-        a {
-
-        }
-      }
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      font-size: 4.5rem;
     }
   }
-  #timeBox {
+  #setDisplay {
 
-    #timeShade {
+    #locationBox {
 
+      #locationShade {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          height: 764px;
+        }
+      }
+      #locationContent {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          top: 230px;
+          width: 70%;
+        }
+        iframe {
+          height: 430px;
+        }
+        #locationIntro {
+
+          #address {
+            @media only screen and (min-width: $min) and (max-width: $max) {
+              font-size: 2rem;
+            }
+          }
+          a {
+
+          }
+        }
+      }
     }
-    #timeContent {
-
-      img {
-
+    #timeBox {
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        margin-top: 36px;
       }
-      #timeIntro {
-
+      #timeShade {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          margin-bottom: 46px;
+          height: 1020px;
+        }
       }
-      .dateContent {
+      #timeContent {
 
-      }
-      #first {
+        img {
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            margin-top: 300px;
+          }
+        }
+        #timeIntro {
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            margin: 0 10%;
+            font-size: 2rem;
+          }
+        }
+        .dateContent {
+          font-size: 2.2rem;
+        }
+        #first {
 
-      }
-      #last {
+        }
+        #last {
 
-      }
-      table {
+        }
+        table {
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            font-size: 2.3rem;
+          }
+          tr {
 
-        tr {
+            td {
 
-          td {
-
+            }
           }
         }
       }
