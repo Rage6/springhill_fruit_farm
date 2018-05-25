@@ -53,18 +53,17 @@ $(()=>{
   ];
   var browserHeight = null;
   var heightNum = 0;
-  var browserWidth = null;
+  var browserWidth = 0;
   var widthNum = 0;
-  var indexPageHeight = null;
+  var indexPageHeight = 0;
   var indexNum = 0;
-
 
   //For finding the browser's height
   const findHeight = () =>{
-    heightNum = $(document).height();
+    heightNum = $(document).outerHeight();
     browserHeight = heightNum + "px";
     $(".shadePage").css('height',browserHeight);
-    // console.log(browserHeight);
+    console.log(browserHeight);
   };
   findHeight();
 
@@ -72,7 +71,7 @@ $(()=>{
   const findWidth = () =>{
     widthNum = $(document).width();
     browserWidth = widthNum + "px";
-    // console.log(browserWidth);
+    console.log(browserWidth);
   };
   findWidth();
 
