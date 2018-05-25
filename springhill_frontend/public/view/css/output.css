@@ -709,13 +709,20 @@ html {
     html body #indexPage #title {
       display: flex;
       justify-content: space-around; } }
-  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+  @media only screen and (min-width: 769px) and (max-width: 1100px) {
+    html body #indexPage #title #top {
+      font-size: 4.5rem; } }
+  @media only screen and (min-width: 1101px) and (max-width: 1366px) {
     html body #indexPage #title #top {
       font-size: 6rem; } }
-  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+  @media only screen and (min-width: 769px) and (max-width: 1100px) {
     html body #indexPage #title .bottomWide {
       display: inherit;
-      font-size: 5.5rem; } }
+      font-size: 4.5rem; } }
+  @media only screen and (min-width: 1101px) and (max-width: 1366px) {
+    html body #indexPage #title .bottomWide {
+      display: inherit;
+      font-size: 6rem; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #indexPage #title #bottomBox {
       margin: 0;
@@ -738,25 +745,46 @@ html {
     html body #indexPage #introContent {
       top: -147px;
       left: 12%;
-      font-size: 2.2rem;
       width: 36%; } }
   @media only screen and (min-width: 1306px) and (max-width: 1366px) {
     html body #indexPage #introContent {
       top: -117px;
       left: 11%;
-      font-size: 2.2rem;
       width: 36%; } }
-  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+  @media only screen and (min-width: 769px) and (max-width: 958px) {
+    html body #indexPage #introContent {
+      font-size: 1.75rem; } }
+  @media only screen and (min-width: 959px) and (max-width: 1366px) {
+    html body #indexPage #introContent {
+      font-size: 2.2rem; } }
+  @media only screen and (min-width: 769px) and (max-width: 1110px) {
     html body #indexPage #allTopics {
-      top: 383px;
+      left: 40%;
+      width: 40%; } }
+  @media only screen and (min-width: 1111px) and (max-width: 1366px) {
+    html body #indexPage #allTopics {
       left: 555px;
       width: 40%; } }
-  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+  @media only screen and (min-width: 769px) and (max-width: 1000px) {
+    html body #indexPage #allTopics {
+      top: 400px; } }
+  @media only screen and (min-width: 1001px) and (max-width: 1366px) {
+    html body #indexPage #allTopics {
+      top: 383px; } }
+  @media only screen and (min-width: 769px) and (max-width: 1000px) {
+    html body #indexPage #allTopics a .oneTopic .oneText {
+      font-size: 2.5rem; } }
+  @media only screen and (min-width: 1001px) and (max-width: 1366px) {
     html body #indexPage #allTopics a .oneTopic .oneText {
       font-size: 3rem; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #indexPage #allTopics a .oneTopic .oneOpac {
-      margin-bottom: 30px;
+      margin-bottom: 30px; } }
+  @media only screen and (min-width: 769px) and (max-width: 1000px) {
+    html body #indexPage #allTopics a .oneTopic .oneOpac {
+      height: 75px; } }
+  @media only screen and (min-width: 1001px) and (max-width: 1366px) {
+    html body #indexPage #allTopics a .oneTopic .oneOpac {
       height: 95px; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #indexPage #removeApple {
@@ -828,8 +856,7 @@ html {
     padding: 0; } }
   @media only screen and (min-width: 1367px) {
     html body {
-      background-image: none;
-      background-color: white; } }
+      background-image: url("img/bkgrd_apples.jpg"); } }
   @media only screen and (min-width: 1367px) {
     html body #indexPage {
       margin: 0 auto;

@@ -27,16 +27,25 @@ body {
         justify-content: space-around;
       }
       #top {
-        @media only screen and (min-width: $min) and (max-width: $max) {
+        @media only screen and (min-width: $min) and (max-width: 1100px) {
           // border: 1px solid red;
+          font-size: 4.5rem;
+        }
+        @media only screen and (min-width: 1101px) and (max-width: $max) {
+          // border: 1px solid green;
           font-size: 6rem;
         }
       }
       .bottomWide {
-        @media only screen and (min-width: $min) and (max-width: $max) {
+        @media only screen and (min-width: $min) and (max-width: 1100px) {
           display: inherit;
           // border: 1px solid red;
-          font-size: 5.5rem;
+          font-size: 4.5rem;
+        }
+        @media only screen and (min-width: 1101px) and (max-width: $max) {
+          display: inherit;
+          // border: 1px solid red;
+          font-size: 6rem;
         }
       }
       #bottomBox {
@@ -72,34 +81,57 @@ body {
       @media only screen and (min-width: $min) and (max-width: 1305px) {
         top: -147px;
         left: 12%;
-        font-size: 2.2rem;
+        // font-size: 2.2rem;
         width: 36%;
       }
       @media only screen and (min-width: 1306px) and (max-width: $max) {
         top: -117px;
         left: 11%;
-        font-size: 2.2rem;
+        // font-size: 2.2rem;
         width: 36%;
+      }
+      @media only screen and (min-width: $min) and (max-width: 958px) {
+        font-size: 1.75rem;
+      }
+      @media only screen and (min-width: 959px) and (max-width: $max) {
+        font-size: 2.2rem;
       }
     }
     #allTopics {
-      @media only screen and (min-width: $min) and (max-width: $max) {
-        top: 383px;
+      @media only screen and (min-width: $min) and (max-width: 1110px) {
+        left: 40%;
+        width: 40%;
+      }
+      @media only screen and (min-width: 1111px) and (max-width: $max) {
         left: 555px;
         width: 40%;
+      }
+      @media only screen and (min-width: $min) and (max-width: 1000px) {
+        top: 400px;
+      }
+      @media only screen and (min-width: 1001px) and (max-width: $max) {
+        top: 383px;
       }
       a {
 
         .oneTopic {
 
           .oneText {
-            @media only screen and (min-width: $min) and (max-width: $max) {
+            @media only screen and (min-width: $min) and (max-width: 1000px) {
+              font-size: 2.5rem;
+            }
+            @media only screen and (min-width: 1001px) and (max-width: $max) {
               font-size: 3rem;
             }
           }
           .oneOpac {
             @media only screen and (min-width: $min) and (max-width: $max) {
               margin-bottom: 30px;
+            }
+            @media only screen and (min-width: $min) and (max-width: 1000px) {
+              height: 75px;
+            }
+            @media only screen and (min-width: 1001px) and (max-width: $max) {
               height: 95px;
             }
           }
