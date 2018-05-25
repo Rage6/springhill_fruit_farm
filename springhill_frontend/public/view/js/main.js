@@ -3,7 +3,7 @@ $(()=>{
   //Starting variables
   var menuUp = true;
   var contactDown = true;
-  const apples = [
+  const apples        = [
     {
       name: "Gold Rush",
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
@@ -13,7 +13,7 @@ $(()=>{
       type: "apple"
     }
   ];
-  const pears = [
+  const pears         = [
     {
       name: "Bosc",
       picture: "http://www.specialtyproduce.com/sppics/7242.png",
@@ -23,7 +23,7 @@ $(()=>{
       type: "pear"
     }
   ];
-  const peaches = [
+  const peaches       = [
     {
       name: "first peach",
       picture: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Autumn_Red_peaches.jpg",
@@ -41,7 +41,7 @@ $(()=>{
       type: "peach"
     }
   ];
-  const pumpkins = [
+  const pumpkins      = [
     {
       name: "some pumpkin",
       picture: "http://demandware.edgesuite.net/sits_pod32/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dwa6425655/images/products/vegetables/03978t_01_cargopmr.jpg?sw=774&cx=302&cy=0&cw=1196&ch=1196",
@@ -51,12 +51,12 @@ $(()=>{
       type: "pumpkin"
     }
   ];
-  var browserHeight = null;
-  var heightNum = 0;
-  var browserWidth = 0;
-  var widthNum = 0;
+  var browserHeight   = null;
+  var heightNum       = 0;
+  var browserWidth    = null;
+  var widthNum        = 0;
   var indexPageHeight = 0;
-  var indexNum = 0;
+  var indexNum        = 0;
 
   //For finding the browser's height
   const findHeight = () =>{
@@ -66,7 +66,7 @@ $(()=>{
     console.log(browserHeight);
   };
   findHeight();
-  $("body").css('margin','0');
+  $('body').css('height',browserHeight);
 
   //For finding the browser's height
   const findWidth = () =>{
