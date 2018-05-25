@@ -60,13 +60,13 @@ $(()=>{
 
   //For finding the browser's height
   const findHeight = () =>{
-    heightNum = $(document).outerHeight();
+    heightNum = $(document).height();
     browserHeight = heightNum + "px";
     $(".shadePage").css('height',browserHeight);
     console.log(browserHeight);
   };
   findHeight();
-  $("body").css("height",browserHeight);
+  $("body").css('margin','0');
 
   //For finding the browser's height
   const findWidth = () =>{
