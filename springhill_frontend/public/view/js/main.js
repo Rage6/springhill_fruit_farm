@@ -66,6 +66,7 @@ $(()=>{
     console.log(browserHeight);
   };
   findHeight();
+  $("body").css("height",browserHeight);
 
   //For finding the browser's height
   const findWidth = () =>{
