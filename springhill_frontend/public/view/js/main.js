@@ -88,7 +88,7 @@ $(()=>{
     inAppleBox();
   });
   // To hide the apple when the browser width is >= 768px
-  if (widthNum >= 768) {
+  if (widthNum > 414) {
     $("#removeApple").hide();
     $("#allTopics").show(0);
   };

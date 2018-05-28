@@ -7,9 +7,6 @@ html {
     font-size: 16px;
     background-image: url("img/row-1.jpg");
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover; }
     html body .shadePage {
       display: none;
@@ -613,10 +610,19 @@ html {
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     html body #indexPage #title #bottomBox .bottom {
       font-size: 4.5rem; } }
-  @media only screen and (min-width: 415px) and (max-width: 768px) {
+  @media only screen and (min-width: 415px) and (max-width: 713px) {
+    html body #indexPage #introBox #introBack {
+      height: 104px; } }
+  @media only screen and (min-width: 714px) and (max-width: 768px) {
     html body #indexPage #introBox #introBack {
       height: 175px; } }
-  @media only screen and (min-width: 415px) and (max-width: 768px) {
+  @media only screen and (min-width: 415px) and (max-width: 713px) {
+    html body #indexPage #introContent {
+      top: -92px;
+      left: 22.5%;
+      font-size: 1.8rem;
+      width: 55%; } }
+  @media only screen and (min-width: 714px) and (max-width: 768px) {
     html body #indexPage #introContent {
       top: -168px;
       left: 22.5%;
@@ -624,7 +630,7 @@ html {
       width: 55%; } }
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     html body #indexPage #allTopics {
-      top: 550px; } }
+      top: 560px; } }
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     html body #indexPage #allTopics a .oneTopic .oneText {
       font-size: 3rem; } }
@@ -737,16 +743,19 @@ html {
     html body #indexPage #introBox {
       margin: 0 5%;
       width: 50%; } }
-  @media only screen and (min-width: 769px) and (max-width: 1305px) {
+  @media only screen and (min-width: 769px) and (max-width: 958px) {
     html body #indexPage #introBox #introBack {
       margin-top: 40px;
-      height: 150px; } }
+      height: 168px; } }
+  @media only screen and (min-width: 959px) and (max-width: 1305px) {
+    html body #indexPage #introBox #introBack {
+      height: 145px; } }
   @media only screen and (min-width: 1306px) and (max-width: 1366px) {
     html body #indexPage #introBox #introBack {
       height: 130px; } }
   @media only screen and (min-width: 769px) and (max-width: 1305px) {
     html body #indexPage #introContent {
-      top: -147px;
+      top: -145px;
       left: 12%;
       width: 36%; } }
   @media only screen and (min-width: 1306px) and (max-width: 1366px) {
@@ -899,8 +908,9 @@ html {
       width: 36%; } }
   @media only screen and (min-width: 1367px) {
     html body #indexPage #allTopics {
-      top: 470px;
-      left: 633px;
+      position: relative;
+      left: 52%;
+      top: -90px;
       width: 35%; } }
   @media only screen and (min-width: 1367px) {
     html body #indexPage #allTopics a .oneTopic .oneText {

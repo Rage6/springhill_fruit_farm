@@ -77,8 +77,9 @@
       }
       #allTopics {
         @media only screen and (min-width: $min) {
-          top: 470px;
-          left: 633px;
+          position: relative;
+          left: 52%;
+          top: -90px;
           width: 35%;
         }
         a {
