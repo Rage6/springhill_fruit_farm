@@ -135,6 +135,7 @@ body {
       }
       #locationContent {
         @media only screen and (min-width: $min) and (max-width: $max) {
+          margin-top: 25px;
           top: 230px;
           width: 70%;
         }
@@ -165,7 +166,7 @@ body {
         }
       }
       #timeContent {
-
+        margin-top: 25px;
         img {
           @media only screen and (min-width: $min) and (max-width: $max) {
             margin-top: 300px;

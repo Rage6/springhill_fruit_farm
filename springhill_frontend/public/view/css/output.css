@@ -229,24 +229,24 @@ html {
         position: absolute;
         z-index: 1;
         top: 736px; }
-        html body #setDisplay #timeBox #timeContent img {
+        html body #setDisplay #timeBox #timeContent #imgFlex img {
           margin-top: 15px;
           border: 1px solid black;
           border-radius: 5px;
           width: 100%; }
-        html body #setDisplay #timeBox #timeContent #timeIntro {
+        html body #setDisplay #timeBox #timeContent #imgFlex #timeIntro {
           margin-bottom: 10px;
           font-size: 1.2rem;
           font-family: 'Walter Turncoat', cursive; }
-        html body #setDisplay #timeBox #timeContent .dateContent {
+        html body #setDisplay #timeBox #timeContent #timeFlex .dateContent {
           margin: 5px 0;
           font-size: 1.3rem;
           font-family: 'Stardos Stencil', cursive; }
-        html body #setDisplay #timeBox #timeContent #first {
+        html body #setDisplay #timeBox #timeContent #timeFlex #first {
           color: green; }
-        html body #setDisplay #timeBox #timeContent #last {
+        html body #setDisplay #timeBox #timeContent #timeFlex #last {
           color: red; }
-        html body #setDisplay #timeBox #timeContent table {
+        html body #setDisplay #timeBox #timeContent #timeFlex table {
           margin-top: 20px;
           border-radius: 7px;
           border-spacing: 10px 2px;
@@ -649,6 +649,7 @@ html {
       height: 764px; } }
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     html body #setDisplay #locationBox #locationContent {
+      margin-top: 25px;
       top: 230px;
       width: 70%; } }
   html body #setDisplay #locationBox #locationContent iframe {
@@ -663,18 +664,20 @@ html {
     html body #setDisplay #timeBox #timeShade {
       margin-bottom: 46px;
       height: 1020px; } }
-  @media only screen and (min-width: 415px) and (max-width: 768px) {
-    html body #setDisplay #timeBox #timeContent img {
-      margin-top: 300px; } }
-  @media only screen and (min-width: 415px) and (max-width: 768px) {
-    html body #setDisplay #timeBox #timeContent #timeIntro {
-      margin: 0 10%;
-      font-size: 2rem; } }
-  html body #setDisplay #timeBox #timeContent .dateContent {
-    font-size: 2.2rem; }
-  @media only screen and (min-width: 415px) and (max-width: 768px) {
-    html body #setDisplay #timeBox #timeContent table {
-      font-size: 2.3rem; } }
+  html body #setDisplay #timeBox #timeContent {
+    margin-top: 25px; }
+    @media only screen and (min-width: 415px) and (max-width: 768px) {
+      html body #setDisplay #timeBox #timeContent img {
+        margin-top: 300px; } }
+    @media only screen and (min-width: 415px) and (max-width: 768px) {
+      html body #setDisplay #timeBox #timeContent #timeIntro {
+        margin: 0 10%;
+        font-size: 2rem; } }
+    html body #setDisplay #timeBox #timeContent .dateContent {
+      font-size: 2.2rem; }
+    @media only screen and (min-width: 415px) and (max-width: 768px) {
+      html body #setDisplay #timeBox #timeContent table {
+        font-size: 2.3rem; } }
 @keyframes tabUp {
   0% {
     height: 0;
@@ -830,6 +833,42 @@ html {
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #indexPage #removeApple #rollImg {
       width: 100%; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body .subpageTitle {
+      font-size: 4.5rem; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #directionsTitle {
+      margin: 30px 15% 0 15%; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #setDisplay #locationBox #locationShade {
+      height: 480px; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #setDisplay #locationBox #locationContent {
+      display: flex;
+      justify-content: space-between;
+      top: 250px; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #setDisplay #timeBox #timeShade {
+      margin-bottom: 50px;
+      height: 480px; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #setDisplay #timeBox #timeContent {
+      display: flex;
+      justify-content: space-around;
+      top: 736px; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #setDisplay #timeBox #timeContent #imgFlex {
+      width: 55%; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #setDisplay #timeBox #timeContent #imgFlex #timeIntro {
+      margin: 20px 0;
+      font-size: 2rem; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #setDisplay #timeBox #timeContent #timeFlex {
+      display: block; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #setDisplay #timeBox #timeContent #timeFlex .dateContent {
+      font-size: 2rem; } }
 @keyframes tabUp {
   0% {
     height: 0;

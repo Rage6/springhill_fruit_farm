@@ -197,16 +197,29 @@ body {
 
   // START: Directions page
   .subpageTitle {
-
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      font-size: 4.5rem;
+    }
+  }
+  #directionsTitle {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      margin: 30px 15% 0 15%;
+    }
   }
   #setDisplay {
     #locationBox {
 
       #locationShade {
-
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          height: 480px;
+        }
       }
       #locationContent {
-
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          display: flex;
+          justify-content: space-between;
+          top: 250px;
+        }
         iframe {
 
         }
@@ -224,31 +237,58 @@ body {
     #timeBox {
 
       #timeShade {
-
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          margin-bottom: 50px;
+          height: 480px;
+        }
       }
       #timeContent {
-
-        img {
-
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          display: flex;
+          justify-content: space-around;
+          top: 736px;
         }
-        #timeIntro {
+        #imgFlex {
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            width: 55%;
+          }
+          img {
+            @media only screen and (min-width: $min) and (max-width: $max) {
 
+            }
+          }
+          #timeIntro {
+            @media only screen and (min-width: $min) and (max-width: $max) {
+              margin: 20px 0;
+              font-size: 2rem;
+            }
+          }
         }
-        .dateContent {
+        #timeFlex {
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            display: block;
+          }
+          // #timeIntro {
+          //
+          // }
+          .dateContent {
+            @media only screen and (min-width: $min) and (max-width: $max) {
+              font-size: 2rem;
+            }
+          }
+          #first {
 
-        }
-        #first {
+          }
+          #last {
 
-        }
-        #last {
+          }
+          table {
 
-        }
-        table {
+            tr {
 
-          tr {
+              td {
 
-            td {
-
+              }
             }
           }
         }
