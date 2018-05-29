@@ -916,6 +916,17 @@ html {
   @media only screen and (min-width: 1200px) and (max-width: 1366px) {
     html body #setDisplay #timeBox #timeContent #timeFlex .dateContent {
       font-size: 2rem; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #chooseFruit #allFruit .oneFruit {
+      width: 20%; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body .fruitList {
+      display: flex;
+      flex-wrap: wrap; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body .fruitList .oneFruitBox {
+      margin: 0 0 30px 4%;
+      width: 18%; } }
 @keyframes tabUp {
   0% {
     height: 0;

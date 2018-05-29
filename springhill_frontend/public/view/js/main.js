@@ -51,12 +51,12 @@ $(()=>{
       type: "pumpkin"
     }
   ];
-  var browserHeight   = null;
-  var heightNum       = 0;
-  var browserWidth    = null;
-  var widthNum        = 0;
+  var browserHeight = null;
+  var heightNum = 0;
+  var browserWidth = null;
+  var widthNum = 0;
   var indexPageHeight = 0;
-  var indexNum        = 0;
+  var indexNum = 0;
 
   //For finding the browser's height
   const findHeight = () =>{
@@ -111,7 +111,10 @@ $(()=>{
   })
 
   // For listing all fruit in Produce Page
-  const listFruit = (typeList) => {
+  const listFruit = (typeList,fruitType) => {
+    // if (allDisplayed == true) {
+    //   $(".fruitList").append("<div>" + fruitType + "</div>");
+    // };
     for (var a = 0; a < typeList.length; a++) {
       var fruitType = typeList[a].type;
       $(".fruitList").append("<div class='oneFruitBox' id='" + fruitType + a + "'></div>");
@@ -122,10 +125,10 @@ $(()=>{
       $(fruitID).append("<div class='fruitPrice'>$" + typeList[a].cost.toFixed(2) + "</div>");
     }
   };
-  listFruit(apples);
-  listFruit(pears);
-  listFruit(peaches);
-  listFruit(pumpkins);
+  listFruit(apples,"APPLES");
+  listFruit(pears,"PEARS");
+  listFruit(peaches,"PEACHES");
+  listFruit(pumpkins,"PUMPKINS");
 
   // For removing the entire list when changing the selected fruit
   const clearOneTypeList = (typeList) => {
