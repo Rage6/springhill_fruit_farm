@@ -212,18 +212,29 @@ body {
     #allFruit {
 
       .oneFruit {
-
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          width: 20%;
+        }
       }
       #appleButton {}
       #pearButton {}
       #peachButton {}
       #pumpkinButton {}
     }
+    #allButton {
+
+    }
   }
   .fruitList {
-
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      display: flex;
+      flex-wrap: wrap;
+    }
     .oneFruitBox {
-
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        margin: 0 0 30px 4%;
+        width: 34%;
+      }
       .fruitName {
 
       }

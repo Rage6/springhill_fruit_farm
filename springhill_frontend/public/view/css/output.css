@@ -278,6 +278,13 @@ html {
           font-size: 1.3rem;
           text-align: center;
           width: 40%; }
+      html body #chooseFruit #allButton {
+        margin: 15px auto 5px auto;
+        border: 1px solid white;
+        border-radius: 8px;
+        font-size: 1.3rem;
+        text-align: center;
+        width: 40%; }
     html body .fruitList .oneFruitBox {
       margin: 0 10% 30px 10%;
       border-radius: 8px;
@@ -678,6 +685,17 @@ html {
     @media only screen and (min-width: 415px) and (max-width: 768px) {
       html body #setDisplay #timeBox #timeContent table {
         font-size: 2.3rem; } }
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    html body #chooseFruit #allFruit .oneFruit {
+      width: 20%; } }
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    html body .fruitList {
+      display: flex;
+      flex-wrap: wrap; } }
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    html body .fruitList .oneFruitBox {
+      margin: 0 0 30px 4%;
+      width: 34%; } }
 @keyframes tabUp {
   0% {
     height: 0;

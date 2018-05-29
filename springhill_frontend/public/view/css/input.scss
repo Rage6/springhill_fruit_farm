@@ -340,6 +340,14 @@ html {
         #peachButton {}
         #pumpkinButton {}
       }
+      #allButton {
+        margin: 15px auto 5px auto;
+        border: 1px solid white;
+        border-radius: 8px;
+        font-size: 1.3rem;
+        text-align: center;
+        width: 40%;
+      }
     }
     .fruitList {
       .oneFruitBox {
