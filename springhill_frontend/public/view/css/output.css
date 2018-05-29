@@ -841,21 +841,47 @@ html {
       margin: 30px 15% 0 15%; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #setDisplay #locationBox #locationShade {
-      height: 480px; } }
+      height: 330px; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #setDisplay #locationBox #locationContent {
       display: flex;
-      justify-content: space-between;
-      top: 250px; } }
+      justify-content: space-around;
+      top: 250px;
+      width: 70%; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #setDisplay #locationBox #locationContent iframe {
+      margin-top: 20px;
+      width: 50%;
+      height: 250px; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #setDisplay #locationBox #locationContent #locationIntro {
+      width: 40%; } }
+  @media only screen and (min-width: 1206px) and (max-width: 1366px) {
+    html body #setDisplay #locationBox #locationContent #locationIntro #address {
+      font-size: 2rem; } }
+  @media only screen and (min-width: 769px) and (max-width: 1205px) {
+    html body #setDisplay #locationBox #locationContent #locationIntro #address {
+      font-size: 1.5rem; } }
+  @media only screen and (min-width: 1206px) and (max-width: 1366px) {
+    html body #setDisplay #locationBox #locationContent #locationIntro a {
+      font-size: 2rem; } }
+  @media only screen and (min-width: 769px) and (max-width: 1205px) {
+    html body #setDisplay #locationBox #locationContent #locationIntro a {
+      font-size: 1.5rem; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #setDisplay #timeBox #timeShade {
-      margin-bottom: 50px;
+      margin-bottom: 50px; } }
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    html body #setDisplay #timeBox #timeShade {
+      height: 440px; } }
+  @media only screen and (min-width: 1200px) and (max-width: 1366px) {
+    html body #setDisplay #timeBox #timeShade {
       height: 480px; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #setDisplay #timeBox #timeContent {
       display: flex;
       justify-content: space-around;
-      top: 736px; } }
+      top: 575px; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #setDisplay #timeBox #timeContent #imgFlex {
       width: 55%; } }
@@ -866,7 +892,10 @@ html {
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #setDisplay #timeBox #timeContent #timeFlex {
       display: block; } }
-  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    html body #setDisplay #timeBox #timeContent #timeFlex .dateContent {
+      font-size: 1.4rem; } }
+  @media only screen and (min-width: 1200px) and (max-width: 1366px) {
     html body #setDisplay #timeBox #timeContent #timeFlex .dateContent {
       font-size: 2rem; } }
 @keyframes tabUp {

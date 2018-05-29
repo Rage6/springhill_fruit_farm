@@ -211,25 +211,42 @@ body {
 
       #locationShade {
         @media only screen and (min-width: $min) and (max-width: $max) {
-          height: 480px;
+          height: 330px;
         }
       }
       #locationContent {
         @media only screen and (min-width: $min) and (max-width: $max) {
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
           top: 250px;
+          width: 70%;
         }
         iframe {
-
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            margin-top: 20px;
+            width: 50%;
+            height: 250px;
+          }
         }
         #locationIntro {
-
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            width: 40%;
+          }
           #address {
-
+            @media only screen and (min-width: 1206px) and (max-width: $max) {
+              font-size: 2rem;
+            }
+            @media only screen and (min-width: $min) and (max-width: 1205px) {
+              font-size: 1.5rem;
+            }
           }
           a {
-
+            @media only screen and (min-width: 1206px) and (max-width: $max) {
+              font-size: 2rem;
+            }
+            @media only screen and (min-width: $min) and (max-width: 1205px) {
+              font-size: 1.5rem;
+            }
           }
         }
       }
@@ -239,6 +256,12 @@ body {
       #timeShade {
         @media only screen and (min-width: $min) and (max-width: $max) {
           margin-bottom: 50px;
+          // height: 480px;
+        }
+        @media only screen and (min-width: $min) and (max-width: 1199px) {
+          height: 440px;
+        }
+        @media only screen and (min-width: 1200px) and (max-width: $max) {
           height: 480px;
         }
       }
@@ -246,7 +269,7 @@ body {
         @media only screen and (min-width: $min) and (max-width: $max) {
           display: flex;
           justify-content: space-around;
-          top: 736px;
+          top: 575px;
         }
         #imgFlex {
           @media only screen and (min-width: $min) and (max-width: $max) {
@@ -272,7 +295,10 @@ body {
           //
           // }
           .dateContent {
-            @media only screen and (min-width: $min) and (max-width: $max) {
+            @media only screen and (min-width: $min) and (max-width: 1199px) {
+              font-size: 1.4rem;
+            }
+            @media only screen and (min-width: 1200px) and (max-width: $max) {
               font-size: 2rem;
             }
           }
