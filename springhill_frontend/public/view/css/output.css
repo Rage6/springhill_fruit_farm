@@ -746,7 +746,15 @@ html {
     html body {
       background-image: url("img/tractor-sunset-full copy.jpg"); } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #indexPage {
+      margin: 0 auto;
+      padding: 25px 0 0 0;
+      background-image: url("img/tractor-sunset-full copy.jpg");
+      background-size: cover;
+      background-attachment: fixed; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #indexPage #title {
+      margin-top: 0;
       display: flex;
       justify-content: space-around; } }
   @media only screen and (min-width: 769px) and (max-width: 1100px) {
@@ -861,6 +869,9 @@ html {
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #indexPage #removeApple #rollImg {
       width: 100%; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #menuBox {
+      margin-top: -25px; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body .subpageTitle {
       font-size: 4.5rem; } }

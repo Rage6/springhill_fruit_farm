@@ -22,9 +22,16 @@ body {
 
   // START: Index page
   #indexPage {
-
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      margin: 0 auto;
+      padding: 25px 0 0 0;
+      background-image: url('img/tractor-sunset-full copy.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
     #title {
       @media only screen and (min-width: $min) and (max-width: $max) {
+        margin-top: 0;
         display: flex;
         justify-content: space-around;
       }
@@ -181,7 +188,9 @@ body {
 
   // START: Menu bar
   #menuBox {
-
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      margin-top: -25px;
+    }
     #menuBar {
 
     }

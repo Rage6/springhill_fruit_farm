@@ -191,10 +191,15 @@ $(()=>{
   //For finding the browser's height
   const findHeight = () =>{
     heightNum = $(document).height();
+    console.log(heightNum + "px");
     browserHeight = heightNum + "px";
     $(".shadePage").css('height',browserHeight);
     $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
+  };
+  // Setting the heights for every page EXCEPT produce.html
+  if (window.location.href != 'http://localhost:4000/produce.html') {
+    findHeight();
   };
 
   //For finding the browser's height
@@ -257,10 +262,12 @@ $(()=>{
     $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
   };
-  listFruit(apples,"APPLES");
-  listFruit(pears,"PEARS");
-  listFruit(peaches,"PEACHES");
-  listFruit(pumpkins,"PUMPKINS");
+  if (window.location.href == 'http://localhost:4000/produce.html') {
+    listFruit(apples,"APPLES");
+    listFruit(pears,"PEARS");
+    listFruit(peaches,"PEACHES");
+    listFruit(pumpkins,"PUMPKINS");
+  }
 
   // For removing the entire list when changing the selected fruit
   const clearOneTypeList = (typeList) => {
