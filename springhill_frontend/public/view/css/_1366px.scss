@@ -1,6 +1,8 @@
 // Alterations for input.scss
 // 768px < width <= 1366px
 
+// Dimensions: 1366 x 768
+
 // VARIABLES
   // Minimum width:
 $min: 769px;
@@ -201,12 +203,15 @@ body {
       font-size: 4.5rem;
     }
   }
+  #setDisplay {
+
   #directionsTitle {
     @media only screen and (min-width: $min) and (max-width: $max) {
       margin: 30px 15% 0 15%;
     }
   }
-  #setDisplay {
+  // #setDisplay {
+
     #locationBox {
 
       #locationShade {
@@ -291,9 +296,6 @@ body {
           @media only screen and (min-width: $min) and (max-width: $max) {
             display: block;
           }
-          // #timeIntro {
-          //
-          // }
           .dateContent {
             @media only screen and (min-width: $min) and (max-width: 1199px) {
               font-size: 1.4rem;

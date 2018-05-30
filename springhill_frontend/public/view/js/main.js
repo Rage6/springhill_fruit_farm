@@ -10,7 +10,7 @@ $(()=>{
       description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
       cost: 6.00,
       byDozen: true,
-      type: "apple"
+      type: "APPLES"
     }
   ];
   const pears         = [
@@ -20,7 +20,7 @@ $(()=>{
       description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
       cost: 5.50,
       byDozen: true,
-      type: "pear"
+      type: "PEARS"
     }
   ];
   const peaches       = [
@@ -30,7 +30,7 @@ $(()=>{
       description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
       cost: 5.50,
       byDozen: true,
-      type: "peach"
+      type: "PEACHES"
     },
     {
       name: "second peach",
@@ -38,7 +38,7 @@ $(()=>{
       description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
       cost: 5.50,
       byDozen: true,
-      type: "peach"
+      type: "PEACHES"
     }
   ];
   const pumpkins      = [
@@ -48,7 +48,7 @@ $(()=>{
       description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
       cost: 5.50,
       byDozen: true,
-      type: "pumpkin"
+      type: "PUMPKINS"
     }
   ];
   var browserHeight = null;
@@ -58,21 +58,24 @@ $(()=>{
   var indexPageHeight = 0;
   var indexNum = 0;
 
+
+
   //For finding the browser's height
   const findHeight = () =>{
     heightNum = $(document).height();
     browserHeight = heightNum + "px";
     $(".shadePage").css('height',browserHeight);
-    console.log(browserHeight);
+    $('body').css('height',browserHeight);
+    $('#indexPage').css('height',browserHeight);
   };
-  findHeight();
-  $('body').css('height',browserHeight);
+  // findHeight();
+  // $('body').css('height',browserHeight);
+  // $('#indexPage').css('height',browserHeight);
 
   //For finding the browser's height
   const findWidth = () =>{
     widthNum = $(document).width();
     browserWidth = widthNum + "px";
-    console.log(browserWidth);
   };
   findWidth();
 
@@ -112,18 +115,24 @@ $(()=>{
 
   // For listing all fruit in Produce Page
   const listFruit = (typeList,fruitType) => {
-    // if (allDisplayed == true) {
-    //   $(".fruitList").append("<div>" + fruitType + "</div>");
-    // };
+    var idLabel = " id='" + fruitType + "' "
+    $("<div class='fruitTitle'>" + fruitType + "</div>").appendTo("#typeName");
+    $("#typeName").append("<div class='fruitList' " + idLabel + "></div>");
     for (var a = 0; a < typeList.length; a++) {
-      var fruitType = typeList[a].type;
-      $(".fruitList").append("<div class='oneFruitBox' id='" + fruitType + a + "'></div>");
-      var fruitID = "#" + fruitType + a;
-      $(fruitID).append("<div class='fruitName'><u>" + typeList[a].name + "</u></div>");
-      $(fruitID).append("<img class='fruitPicture' src='" + typeList[a].picture + "'>");
-      $(fruitID).append("<div class='fruitDescription'>" + typeList[a].description + "</div>");
-      $(fruitID).append("<div class='fruitPrice'>$" + typeList[a].cost.toFixed(2) + "</div>");
+      if (typeList[a].type == fruitType) {
+        var fruitID = "#" + fruitType + a;
+        $("#" + fruitType).append("<div class='oneFruitBox' id=" + fruitType + a + "><div>");
+        $(fruitID).append("<div class='fruitName'><u>" + typeList[a].name + "</u></div>");
+        $(fruitID).append("<img class='fruitPicture' src='" + typeList[a].picture + "'>");
+        $(fruitID).append("<div class='fruitDescription'>" + typeList[a].description + "</div>");
+        $(fruitID).append("<div class='fruitPrice'>$" + typeList[a].cost.toFixed(2) + "</div>");
+      }
     }
+    findHeight();
+    $('body').css('height',browserHeight);
+    $('#indexPage').css('height',browserHeight);
+    // console.log("body height: " + browserHeight);
+    // console.log("indexPage height: " + browserHeight);
   };
   listFruit(apples,"APPLES");
   listFruit(pears,"PEARS");
@@ -142,6 +151,22 @@ $(()=>{
     clearOneTypeList(peaches);
     clearOneTypeList(pears);
     clearOneTypeList(pumpkins);
+    $(".fruitTitle").remove();
+    $(".fruitList").remove();
+  }
+
+  // To get the new height after selecting a different fruit type
+  var newHeight = () => {
+    heightNum = $("#menuBox").height() + $(".subpageTitle").height() + $("#chooseFruit").height() + $("#typeName").height() + 70;
+    var screenHeight = $(window).height();
+    if (screenHeight > heightNum) {
+      heightNum = screenHeight;
+    };
+    browserHeight = heightNum + "px";
+    $(".shadePage").css('height',browserHeight);
+    $('body').css('height',browserHeight);
+    $('#indexPage').css('height',browserHeight);
+    console.log("browserHeight: " + browserHeight);
   }
 
   // For selecting the fruit types
@@ -155,38 +180,43 @@ $(()=>{
     unselectAll();
     clearAllTypeList();
     $("#appleButton").css('color','black').css('background-color','white');
-    listFruit(apples);
-    findHeight();
+    listFruit(apples,"APPLES");
+    // findHeight();
+    newHeight();
   })
   $("#pearButton").click(()=>{
     unselectAll();
     clearAllTypeList();
     $("#pearButton").css('color','black').css('background-color','white');
-    listFruit(pears);
-    findHeight();
+    listFruit(pears,"PEARS");
+    // findHeight();
+    newHeight();
   })
   $("#peachButton").click(()=>{
     unselectAll();
     clearAllTypeList();
     $("#peachButton").css('color','black').css('background-color','white');
-    listFruit(peaches);
-    findHeight();
+    listFruit(peaches,"PEACHES");
+    // findHeight();
+    newHeight();
   })
   $("#pumpkinButton").click(()=>{
     unselectAll();
     clearAllTypeList();
     $("#pumpkinButton").css('color','black').css('background-color','white');
-    listFruit(pumpkins);
-    findHeight();
+    listFruit(pumpkins,"PUMPKINS");
+    // findHeight();
+    newHeight();
   })
   $("#allButton").click(()=>{
     unselectAll();
     clearAllTypeList();
-    listFruit(apples);
-    listFruit(pears);
-    listFruit(peaches);
-    listFruit(pumpkins);
-    findHeight();
+    listFruit(apples,"APPLES");
+    listFruit(pears,"PEARS");
+    listFruit(peaches,"PEACHES");
+    listFruit(pumpkins,"PUMPKINS");
+    // findHeight();
+    newHeight();
   })
 
   // For scrolling Contact tab up and down

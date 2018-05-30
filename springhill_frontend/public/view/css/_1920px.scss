@@ -1,6 +1,8 @@
 // Alterations for input.scss
 // 1366px < width
 
+// Dimensions: 1920 x 1080
+
 // VARIABLES
   // Minimum width:
   $min: 1367px;
@@ -20,8 +22,10 @@
     #indexPage {
       @media only screen and (min-width: $min) {
         margin: 0 auto;
+        padding: 0;
         background-image: url('img/tractor-sunset-full copy.jpg');
         background-size: cover;
+        background-attachment: fixed;
         width: 1366px;
       }
       #title {
@@ -140,10 +144,15 @@
     #menuBox {
 
       #menuBar {
-
+        @media only screen and (min-width: $min) {
+          font-size: 3rem;
+        }
       }
       #allButtons {
-
+        @media only screen and (min-width: $min) {
+          position: absolute;
+          width: 71%;
+        }
         a {
 
           .menuButton {
@@ -156,58 +165,107 @@
 
     // START: Directions page
     .subpageTitle {
-
+      @media only screen and (min-width: $min) {
+        font-size: 5rem;
+      }
     }
     #setDisplay {
+
       #locationBox {
 
         #locationShade {
-
+          @media only screen and (min-width: $min) {
+            height: 330px;
+          }
         }
         #locationContent {
-
+          @media only screen and (min-width: $min) {
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            top: 250px;
+            width: 63%;
+          }
           iframe {
-
+            @media only screen and (min-width: $min) {
+              margin-top: 20px;
+              width: 50%;
+              height: 250px;
+            }
           }
           #locationIntro {
-
+            @media only screen and (min-width: $min) {
+              width: 40%;
+            }
             #address {
-
+              @media only screen and (min-width: $min) {
+                font-size: 2rem;
+              }
             }
             a {
-
+              @media only screen and (min-width: $min) {
+                font-size: 2rem;
+              }
             }
           }
         }
       }
       #timeBox {
-
+        @media only screen and (min-width: $min) {
+          margin-bottom: 30px;
+        }
         #timeShade {
-
+          @media only screen and (min-width: $min) {
+            margin-bottom: 50px;
+            height: 480px;
+          }
         }
         #timeContent {
-
-          img {
-
+          @media only screen and (min-width: $min) {
+            margin: 0 5%;
+            margin-bottom: 30px;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            top: 620px;
+            width: 73%;
           }
-          #timeIntro {
+          #imgFlex {
+            @media only screen and (min-width: $min) {
+              width: 44%;
+            }
+            img {
 
+            }
+            #timeIntro {
+              @media only screen and (min-width: $min) {
+                margin: 20px 0;
+                font-size: 2rem;
+              }
+            }
           }
-          .dateContent {
+          #timeFlex {
+            @media only screen and (min-width: $min) {
+              display: block;
+            }
+            .dateContent {
+              @media only screen and (min-width: $min) {
+                font-size: 2rem;
+              }
+            }
+            #first {
 
-          }
-          #first {
+            }
+            #last {
 
-          }
-          #last {
+            }
+            table {
 
-          }
-          table {
+              tr {
 
-            tr {
+                td {
 
-              td {
-
+                }
               }
             }
           }
@@ -225,7 +283,9 @@
       #allFruit {
 
         .oneFruit {
-
+          @media only screen and (min-width: $min) {
+            width: 20%;
+          }
         }
         #appleButton {}
         #pearButton {}
@@ -237,9 +297,15 @@
       }
     }
     .fruitList {
-
+      @media only screen and (min-width: $min) {
+        display: flex;
+        flex-wrap: wrap;
+      }
       .oneFruitBox {
-
+        @media only screen and (min-width: $min) {
+          margin: 0 0 30px 4%;
+          width: 18%;
+        }
         .fruitName {
 
         }

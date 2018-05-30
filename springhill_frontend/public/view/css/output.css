@@ -26,82 +26,80 @@ html {
       color: white;
       background-image: url("img/chalkboard.jpg");
       width: 80%; }
-    html body #indexPage {
-      padding-top: 25px; }
-      html body #indexPage #title {
-        margin: 0 5% 0 5%;
-        padding-top: 10px;
-        border: 1px solid black;
-        border-radius: 10px;
-        font-family: 'Stardos Stencil', cursive;
+    html body #indexPage #title {
+      margin: 25px 5% 0 5%;
+      padding-top: 10px;
+      border: 1px solid black;
+      border-radius: 10px;
+      font-family: 'Stardos Stencil', cursive;
+      color: white;
+      text-align: center;
+      background-image: url("img/wood-background.jpg");
+      background-size: cover; }
+      html body #indexPage #title #top {
+        margin-bottom: 5px;
         color: white;
-        text-align: center;
-        background-image: url("img/wood-background.jpg");
-        background-size: cover; }
-        html body #indexPage #title #top {
-          margin-bottom: 5px;
-          color: white;
-          font-size: 3.8rem; }
-        html body #indexPage #title .bottomWide {
-          display: none; }
-        html body #indexPage #title #bottomBox {
-          display: flex;
-          justify-content: space-around; }
-          html body #indexPage #title #bottomBox .bottom {
-            font-size: 3.5rem;
-            width: 45%; }
-      html body #indexPage #introBox {
-        margin: 0 5%;
-        width: 92%; }
-        html body #indexPage #introBox #introBack {
-          margin: 20px 10% 0 10%;
-          border-radius: 20px;
+        font-size: 3.8rem; }
+      html body #indexPage #title .bottomWide {
+        display: none; }
+      html body #indexPage #title #bottomBox {
+        display: flex;
+        justify-content: space-around; }
+        html body #indexPage #title #bottomBox .bottom {
+          font-size: 3.5rem;
+          width: 45%; }
+    html body #indexPage #introBox {
+      margin: 0 5%;
+      width: 92%; }
+      html body #indexPage #introBox #introBack {
+        margin: 20px 10% 0 10%;
+        border-radius: 20px;
+        background-color: white;
+        opacity: 0.7;
+        height: 100px; }
+    html body #indexPage #introContent {
+      border-radius: 20px;
+      position: relative;
+      top: -95px;
+      left: 15%;
+      font-size: 1.3rem;
+      font-family: 'Walter Turncoat', cursive;
+      text-align: center;
+      width: 70%; }
+    html body #indexPage #allTopics {
+      margin: 0 10%;
+      position: absolute;
+      top: 370px;
+      text-align: center;
+      width: 80%; }
+      html body #indexPage #allTopics a {
+        color: black;
+        text-decoration: none; }
+        html body #indexPage #allTopics a .oneTopic .oneText {
+          margin: 10px 0%;
+          z-index: 1;
+          position: absolute;
+          font-size: 1.7rem;
+          font-family: 'Walter Turncoat', cursive;
+          text-align: center;
+          width: 100%; }
+        html body #indexPage #allTopics a .oneTopic .oneOpac {
+          margin-bottom: 25px;
+          border-radius: 5px;
           background-color: white;
           opacity: 0.7;
-          height: 100px; }
-      html body #indexPage #introContent {
-        border-radius: 20px;
-        position: relative;
-        top: -95px;
-        left: 15%;
-        font-size: 1.3rem;
-        font-family: 'Walter Turncoat', cursive;
-        text-align: center;
-        width: 70%; }
-      html body #indexPage #allTopics {
-        margin: 0 10%;
-        position: absolute;
-        top: 370px;
-        text-align: center;
-        width: 80%; }
-        html body #indexPage #allTopics a {
-          color: black;
-          text-decoration: none; }
-          html body #indexPage #allTopics a .oneTopic .oneText {
-            margin: 10px 0%;
-            z-index: 1;
-            position: absolute;
-            font-size: 1.7rem;
-            font-family: 'Walter Turncoat', cursive;
-            text-align: center;
-            width: 100%; }
-          html body #indexPage #allTopics a .oneTopic .oneOpac {
-            margin-bottom: 25px;
-            border-radius: 5px;
-            background-color: white;
-            opacity: 0.7;
-            height: 65px; }
-        html body #indexPage #allTopics a:hover {
-          cursor: pointer; }
-      html body #indexPage #removeApple {
-        margin: 0 20%;
-        display: block;
-        width: 60%;
-        animation-timing-function: linear;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: infinite;
-        animation-name: wiggleApple; }
+          height: 65px; }
+      html body #indexPage #allTopics a:hover {
+        cursor: pointer; }
+    html body #indexPage #removeApple {
+      margin: 0 20%;
+      display: block;
+      width: 60%;
+      animation-timing-function: linear;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      animation-name: wiggleApple; }
 @keyframes wiggleApple {
   0% {
     transform: translate(0px, 0px); }
@@ -118,8 +116,8 @@ html {
     transform: translate(0px, -200px) scale(0.5); }
   100% {
     transform: translate(0px, -70px) scale(0); } }
-        html body #indexPage #removeApple #rollImg {
-          width: 100%; }
+      html body #indexPage #removeApple #rollImg {
+        width: 100%; }
     html body #menuBox {
       color: white;
       text-align: center;
@@ -285,29 +283,38 @@ html {
         font-size: 1.3rem;
         text-align: center;
         width: 40%; }
-    html body .fruitList .oneFruitBox {
-      margin: 0 10% 30px 10%;
-      border-radius: 8px;
-      padding: 15px 5%;
+    html body .fruitTitle {
+      margin-bottom: 20px;
+      padding: 5px 0;
       color: white;
       text-align: center;
-      font-family: 'Walter Turncoat', cursive;
-      background-image: url("img/wood-background.jpg");
-      background-size: cover; }
-      html body .fruitList .oneFruitBox .fruitName {
-        margin-bottom: 15px;
-        font-size: 2rem; }
-      html body .fruitList .oneFruitBox .fruitPicture {
-        margin-bottom: 10px;
-        border: 2px solid white;
+      font-size: 2rem;
+      background-color: orange; }
+    html body .fruitList {
+      padding-bottom: 20px; }
+      html body .fruitList .oneFruitBox {
+        margin: 0 10% 30px 10%;
         border-radius: 8px;
-        width: 100%; }
-      html body .fruitList .oneFruitBox .fruitDescription {
-        margin-bottom: 10px;
-        font-size: 1.2rem;
-        text-align: left; }
-      html body .fruitList .oneFruitBox .fruitPrice {
-        font-size: 1.7rem; }
+        padding: 15px 5%;
+        color: white;
+        text-align: center;
+        font-family: 'Walter Turncoat', cursive;
+        background-image: url("img/wood-background.jpg");
+        background-size: cover; }
+        html body .fruitList .oneFruitBox .fruitName {
+          margin-bottom: 15px;
+          font-size: 2rem; }
+        html body .fruitList .oneFruitBox .fruitPicture {
+          margin-bottom: 10px;
+          border: 2px solid white;
+          border-radius: 8px;
+          width: 100%; }
+        html body .fruitList .oneFruitBox .fruitDescription {
+          margin-bottom: 10px;
+          font-size: 1.2rem;
+          text-align: left; }
+        html body .fruitList .oneFruitBox .fruitPrice {
+          font-size: 1.7rem; }
     html body #contactBox {
       font-family: 'Stardos Stencil', cursive;
       z-index: 2;
@@ -855,7 +862,7 @@ html {
     html body .subpageTitle {
       font-size: 4.5rem; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
-    html body #directionsTitle {
+    html body #setDisplay #directionsTitle {
       margin: 30px 15% 0 15%; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #setDisplay #locationBox #locationShade {
@@ -969,8 +976,10 @@ html {
   @media only screen and (min-width: 1367px) {
     html body #indexPage {
       margin: 0 auto;
+      padding: 0;
       background-image: url("img/tractor-sunset-full copy.jpg");
       background-size: cover;
+      background-attachment: fixed;
       width: 1366px; } }
   @media only screen and (min-width: 1367px) {
     html body #indexPage #title {
@@ -1048,6 +1057,80 @@ html {
   @media only screen and (min-width: 1367px) {
     html body #indexPage #removeApple #rollImg {
       width: 100%; } }
+  @media only screen and (min-width: 1367px) {
+    html body #menuBox #menuBar {
+      font-size: 3rem; } }
+  @media only screen and (min-width: 1367px) {
+    html body #menuBox #allButtons {
+      position: absolute;
+      width: 71%; } }
+  @media only screen and (min-width: 1367px) {
+    html body .subpageTitle {
+      font-size: 5rem; } }
+  @media only screen and (min-width: 1367px) {
+    html body #setDisplay #locationBox #locationShade {
+      height: 330px; } }
+  @media only screen and (min-width: 1367px) {
+    html body #setDisplay #locationBox #locationContent {
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      top: 250px;
+      width: 63%; } }
+  @media only screen and (min-width: 1367px) {
+    html body #setDisplay #locationBox #locationContent iframe {
+      margin-top: 20px;
+      width: 50%;
+      height: 250px; } }
+  @media only screen and (min-width: 1367px) {
+    html body #setDisplay #locationBox #locationContent #locationIntro {
+      width: 40%; } }
+  @media only screen and (min-width: 1367px) {
+    html body #setDisplay #locationBox #locationContent #locationIntro #address {
+      font-size: 2rem; } }
+  @media only screen and (min-width: 1367px) {
+    html body #setDisplay #locationBox #locationContent #locationIntro a {
+      font-size: 2rem; } }
+  @media only screen and (min-width: 1367px) {
+    html body #setDisplay #timeBox {
+      margin-bottom: 30px; } }
+  @media only screen and (min-width: 1367px) {
+    html body #setDisplay #timeBox #timeShade {
+      margin-bottom: 50px;
+      height: 480px; } }
+  @media only screen and (min-width: 1367px) {
+    html body #setDisplay #timeBox #timeContent {
+      margin: 0 5%;
+      margin-bottom: 30px;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      top: 620px;
+      width: 73%; } }
+  @media only screen and (min-width: 1367px) {
+    html body #setDisplay #timeBox #timeContent #imgFlex {
+      width: 44%; } }
+  @media only screen and (min-width: 1367px) {
+    html body #setDisplay #timeBox #timeContent #imgFlex #timeIntro {
+      margin: 20px 0;
+      font-size: 2rem; } }
+  @media only screen and (min-width: 1367px) {
+    html body #setDisplay #timeBox #timeContent #timeFlex {
+      display: block; } }
+  @media only screen and (min-width: 1367px) {
+    html body #setDisplay #timeBox #timeContent #timeFlex .dateContent {
+      font-size: 2rem; } }
+  @media only screen and (min-width: 1367px) {
+    html body #chooseFruit #allFruit .oneFruit {
+      width: 20%; } }
+  @media only screen and (min-width: 1367px) {
+    html body .fruitList {
+      display: flex;
+      flex-wrap: wrap; } }
+  @media only screen and (min-width: 1367px) {
+    html body .fruitList .oneFruitBox {
+      margin: 0 0 30px 4%;
+      width: 18%; } }
 @keyframes tabUp {
   0% {
     height: 0;
