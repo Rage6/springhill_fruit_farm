@@ -11,9 +11,73 @@ $(()=>{
       cost: 6.00,
       byDozen: true,
       type: "APPLES"
+    },
+    {
+      name: "Gold Rush",
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      cost: 6.00,
+      byDozen: true,
+      type: "APPLES"
+    },
+    {
+      name: "Gold Rush",
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      cost: 6.00,
+      byDozen: true,
+      type: "APPLES"
+    },
+    {
+      name: "Gold Rush",
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      cost: 6.00,
+      byDozen: true,
+      type: "APPLES"
+    },
+    {
+      name: "Gold Rush",
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      cost: 6.00,
+      byDozen: true,
+      type: "APPLES"
     }
   ];
   const pears         = [
+    {
+      name: "Bosc",
+      picture: "http://www.specialtyproduce.com/sppics/7242.png",
+      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      cost: 5.50,
+      byDozen: true,
+      type: "PEARS"
+    },
+    {
+      name: "Bosc",
+      picture: "http://www.specialtyproduce.com/sppics/7242.png",
+      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      cost: 5.50,
+      byDozen: true,
+      type: "PEARS"
+    },
+    {
+      name: "Bosc",
+      picture: "http://www.specialtyproduce.com/sppics/7242.png",
+      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      cost: 5.50,
+      byDozen: true,
+      type: "PEARS"
+    },
+    {
+      name: "Bosc",
+      picture: "http://www.specialtyproduce.com/sppics/7242.png",
+      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      cost: 5.50,
+      byDozen: true,
+      type: "PEARS"
+    },
     {
       name: "Bosc",
       picture: "http://www.specialtyproduce.com/sppics/7242.png",
@@ -39,9 +103,73 @@ $(()=>{
       cost: 5.50,
       byDozen: true,
       type: "PEACHES"
+    },
+    {
+      name: "first peach",
+      picture: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Autumn_Red_peaches.jpg",
+      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      cost: 5.50,
+      byDozen: true,
+      type: "PEACHES"
+    },
+    {
+      name: "second peach",
+      picture: "https://wonderopolis.org/wp-content/uploads/2016/10/Why_Are_Peaches_Fuzzy_fruit_background_xl_20352201_(Custom).jpg",
+      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      cost: 5.50,
+      byDozen: true,
+      type: "PEACHES"
+    },
+    {
+      name: "first peach",
+      picture: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Autumn_Red_peaches.jpg",
+      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      cost: 5.50,
+      byDozen: true,
+      type: "PEACHES"
+    },
+    {
+      name: "second peach",
+      picture: "https://wonderopolis.org/wp-content/uploads/2016/10/Why_Are_Peaches_Fuzzy_fruit_background_xl_20352201_(Custom).jpg",
+      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      cost: 5.50,
+      byDozen: true,
+      type: "PEACHES"
     }
   ];
   const pumpkins      = [
+    {
+      name: "some pumpkin",
+      picture: "http://demandware.edgesuite.net/sits_pod32/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dwa6425655/images/products/vegetables/03978t_01_cargopmr.jpg?sw=774&cx=302&cy=0&cw=1196&ch=1196",
+      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      cost: 5.50,
+      byDozen: true,
+      type: "PUMPKINS"
+    },
+    {
+      name: "some pumpkin",
+      picture: "http://demandware.edgesuite.net/sits_pod32/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dwa6425655/images/products/vegetables/03978t_01_cargopmr.jpg?sw=774&cx=302&cy=0&cw=1196&ch=1196",
+      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      cost: 5.50,
+      byDozen: true,
+      type: "PUMPKINS"
+    },
+    {
+      name: "some pumpkin",
+      picture: "http://demandware.edgesuite.net/sits_pod32/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dwa6425655/images/products/vegetables/03978t_01_cargopmr.jpg?sw=774&cx=302&cy=0&cw=1196&ch=1196",
+      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      cost: 5.50,
+      byDozen: true,
+      type: "PUMPKINS"
+    },
+    {
+      name: "some pumpkin",
+      picture: "http://demandware.edgesuite.net/sits_pod32/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dwa6425655/images/products/vegetables/03978t_01_cargopmr.jpg?sw=774&cx=302&cy=0&cw=1196&ch=1196",
+      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      cost: 5.50,
+      byDozen: true,
+      type: "PUMPKINS"
+    },
     {
       name: "some pumpkin",
       picture: "http://demandware.edgesuite.net/sits_pod32/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dwa6425655/images/products/vegetables/03978t_01_cargopmr.jpg?sw=774&cx=302&cy=0&cw=1196&ch=1196",
@@ -68,9 +196,6 @@ $(()=>{
     $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
   };
-  // findHeight();
-  // $('body').css('height',browserHeight);
-  // $('#indexPage').css('height',browserHeight);
 
   //For finding the browser's height
   const findWidth = () =>{
@@ -131,8 +256,6 @@ $(()=>{
     findHeight();
     $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
-    // console.log("body height: " + browserHeight);
-    // console.log("indexPage height: " + browserHeight);
   };
   listFruit(apples,"APPLES");
   listFruit(pears,"PEARS");
@@ -166,7 +289,6 @@ $(()=>{
     $(".shadePage").css('height',browserHeight);
     $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
-    console.log("browserHeight: " + browserHeight);
   }
 
   // For selecting the fruit types
@@ -181,7 +303,6 @@ $(()=>{
     clearAllTypeList();
     $("#appleButton").css('color','black').css('background-color','white');
     listFruit(apples,"APPLES");
-    // findHeight();
     newHeight();
   })
   $("#pearButton").click(()=>{
@@ -189,7 +310,6 @@ $(()=>{
     clearAllTypeList();
     $("#pearButton").css('color','black').css('background-color','white');
     listFruit(pears,"PEARS");
-    // findHeight();
     newHeight();
   })
   $("#peachButton").click(()=>{
@@ -197,7 +317,6 @@ $(()=>{
     clearAllTypeList();
     $("#peachButton").css('color','black').css('background-color','white');
     listFruit(peaches,"PEACHES");
-    // findHeight();
     newHeight();
   })
   $("#pumpkinButton").click(()=>{
@@ -205,7 +324,6 @@ $(()=>{
     clearAllTypeList();
     $("#pumpkinButton").css('color','black').css('background-color','white');
     listFruit(pumpkins,"PUMPKINS");
-    // findHeight();
     newHeight();
   })
   $("#allButton").click(()=>{
@@ -215,7 +333,6 @@ $(()=>{
     listFruit(pears,"PEARS");
     listFruit(peaches,"PEACHES");
     listFruit(pumpkins,"PUMPKINS");
-    // findHeight();
     newHeight();
   })
 

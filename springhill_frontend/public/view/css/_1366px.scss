@@ -347,6 +347,15 @@ body {
 
     }
   }
+  .fruitTitle {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      border-radius: 0 25px 25px 0;
+      padding-right: 60px;
+      width: 30%;
+      text-align: right;
+      font-size: 2.8rem;
+    }
+  }
   .fruitList {
     @media only screen and (min-width: $min) and (max-width: $max) {
       display: flex;

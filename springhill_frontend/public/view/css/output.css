@@ -289,7 +289,8 @@ html {
       color: white;
       text-align: center;
       font-size: 2rem;
-      background-color: orange; }
+      font-family: 'Stardos Stencil', cursive;
+      background-color: #ff7900; }
     html body .fruitList {
       padding-bottom: 20px; }
       html body .fruitList .oneFruitBox {
@@ -927,6 +928,13 @@ html {
     html body #chooseFruit #allFruit .oneFruit {
       width: 20%; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body .fruitTitle {
+      border-radius: 0 25px 25px 0;
+      padding-right: 60px;
+      width: 30%;
+      text-align: right;
+      font-size: 2.8rem; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body .fruitList {
       display: flex;
       flex-wrap: wrap; } }
@@ -1123,6 +1131,12 @@ html {
   @media only screen and (min-width: 1367px) {
     html body #chooseFruit #allFruit .oneFruit {
       width: 20%; } }
+  @media only screen and (min-width: 1367px) {
+    html body .fruitTitle {
+      padding-right: 60px;
+      width: 30%;
+      border-radius: 0 25px 25px 0;
+      text-align: right; } }
   @media only screen and (min-width: 1367px) {
     html body .fruitList {
       display: flex;
