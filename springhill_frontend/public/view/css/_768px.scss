@@ -140,7 +140,9 @@ body {
           width: 70%;
         }
         iframe {
-          height: 430px;
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            height: 430px;
+          }
         }
         #locationIntro {
 

@@ -184,7 +184,7 @@
             display: flex;
             justify-content: space-around;
             top: 250px;
-            width: 63%;
+            width: 51%;
           }
           iframe {
             @media only screen and (min-width: $min) {
@@ -222,13 +222,13 @@
         }
         #timeContent {
           @media only screen and (min-width: $min) {
-            margin: 0 5%;
+            margin: 0 6%;
             margin-bottom: 30px;
             padding: 0;
             display: flex;
             justify-content: space-around;
             top: 620px;
-            width: 73%;
+            width: 59%;
           }
           #imgFlex {
             @media only screen and (min-width: $min) {
