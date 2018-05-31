@@ -36,7 +36,11 @@ body {
         justify-content: space-around;
       }
       #top {
-        @media only screen and (min-width: $min) and (max-width: 1100px) {
+        @media only screen and (min-width: $min) and (max-width: 849px) {
+          // border: 1px solid red;
+          font-size: 4rem;
+        }
+        @media only screen and (min-width: 850px) and (max-width: 1100px) {
           // border: 1px solid red;
           font-size: 4.5rem;
         }
@@ -46,7 +50,12 @@ body {
         }
       }
       .bottomWide {
-        @media only screen and (min-width: $min) and (max-width: 1100px) {
+        @media only screen and (min-width: $min) and (max-width: 849px) {
+          display: inherit;
+          // border: 1px solid red;
+          font-size: 4rem;
+        }
+        @media only screen and (min-width: 850px) and (max-width: 1100px) {
           display: inherit;
           // border: 1px solid red;
           font-size: 4.5rem;
@@ -192,7 +201,9 @@ body {
       margin-top: -25px;
     }
     #menuBar {
-
+      @media only screen and (min-width: $min) {
+        font-size: 2.5rem;
+      }
     }
     #allButtons {
 

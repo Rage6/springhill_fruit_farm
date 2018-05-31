@@ -43,7 +43,7 @@ body {
 
       #introBack {
         @media only screen and (min-width: $min) and (max-width: 713px) {
-          height: 104px;
+          height: 127px;
         }
         @media only screen and (min-width: 714px) and (max-width: $max) {
           height: 175px;
@@ -52,7 +52,7 @@ body {
     }
     #introContent {
       @media only screen and (min-width: $min) and (max-width: 713px) {
-        top: -92px;
+        top: -123px;
         left: 22.5%;
         font-size: 1.8rem;
         width: 55%;
