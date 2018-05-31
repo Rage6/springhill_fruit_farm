@@ -179,6 +179,7 @@ $(()=>{
       type: "PUMPKINS"
     }
   ];
+  const mobileMaxWidth = 768;
   var browserHeight = null;
   var heightNum = 0;
   var browserWidth = null;
@@ -187,27 +188,54 @@ $(()=>{
   var indexNum = 0;
 
 
-
-  //For finding the browser's height
+  //For finding the page's height
   const findHeight = () =>{
     heightNum = $(document).height();
-    console.log(heightNum + "px");
     browserHeight = heightNum + "px";
     $(".shadePage").css('height',browserHeight);
     $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
   };
+
   // Setting the heights for every page EXCEPT produce.html
-  if (window.location.href != 'http://localhost:4000/produce.html') {
+  if (window.location.href != 'http://localhost:4000/produce.html' || window.location.href != 'https://springhill-fruit-farm.herokuapp.com/produce.html') {
     findHeight();
   };
 
-  //For finding the browser's height
+  //For finding the page's width
   const findWidth = () =>{
     widthNum = $(document).width();
     browserWidth = widthNum + "px";
   };
   findWidth();
+
+  console.log(browserHeight);
+  console.log(browserWidth);
+
+  // Since mobile devices can't use background-attachment: fixed, this will adjust for it depending on the browser's width (mobileMaxWidth)
+  if (widthNum <= mobileMaxWidth) {
+    // console.log("less than mobileMaxWidth");
+    $("#indexPage").prepend("<div id='mobileBackground'></div>")
+    if (widthNum <= 414) {
+      $("#mobileBackground").css('background-image','url("./css/img/row-1.jpg")');
+    } else {
+      $("#mobileBackground").css('background-image','url("./css/img/orchard_flowers.jpg")');
+    }
+    $("#mobileBackground").
+      css('z-index','-1').
+      css('height',browserHeight).
+      css('width',browserWidth).
+      css('background-size','cover').
+      css('position','fixed');
+    if (window.location.href == 'http://localhost:4000/index.html' || window.location.href == 'https://springhill-fruit-farm.herokuapp.com/index.html') {
+      $("#mobileBackground").css('margin-top','-25px');
+    } else {
+      $("#mobileBackground").css('margin-top','0px')
+    };
+    // $("body").css('background-image','none');
+  } else {
+    console.log("greater than mobileMaxWidth");
+  };
 
   // For throwing/moving the apple and revealing the buttons
   $("#allTopics").hide();
