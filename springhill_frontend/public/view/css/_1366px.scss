@@ -1,6 +1,8 @@
 // Alterations for input.scss
 // 768px < width <= 1366px
 
+// Dimensions: 1366 x 768
+
 // VARIABLES
   // Minimum width:
 $min: 769px;
@@ -20,23 +22,48 @@ body {
 
   // START: Index page
   #indexPage {
-
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      margin: 0 auto;
+      padding: 25px 0 0 0;
+      background-image: url('img/tractor-sunset-full copy.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
     #title {
       @media only screen and (min-width: $min) and (max-width: $max) {
+        margin-top: 0;
         display: flex;
         justify-content: space-around;
       }
       #top {
-        @media only screen and (min-width: $min) and (max-width: $max) {
+        @media only screen and (min-width: $min) and (max-width: 849px) {
           // border: 1px solid red;
+          font-size: 4rem;
+        }
+        @media only screen and (min-width: 850px) and (max-width: 1100px) {
+          // border: 1px solid red;
+          font-size: 4.5rem;
+        }
+        @media only screen and (min-width: 1101px) and (max-width: $max) {
+          // border: 1px solid green;
           font-size: 6rem;
         }
       }
       .bottomWide {
-        @media only screen and (min-width: $min) and (max-width: $max) {
+        @media only screen and (min-width: $min) and (max-width: 849px) {
           display: inherit;
           // border: 1px solid red;
-          font-size: 5.5rem;
+          font-size: 4rem;
+        }
+        @media only screen and (min-width: 850px) and (max-width: 1100px) {
+          display: inherit;
+          // border: 1px solid red;
+          font-size: 4.5rem;
+        }
+        @media only screen and (min-width: 1101px) and (max-width: $max) {
+          display: inherit;
+          // border: 1px solid red;
+          font-size: 6rem;
         }
       }
       #bottomBox {
@@ -59,9 +86,12 @@ body {
         width: 50%;
       }
       #introBack {
-        @media only screen and (min-width: $min) and (max-width: 1305px) {
+        @media only screen and (min-width: $min) and (max-width: 958px) {
           margin-top: 40px;
-          height: 150px;
+          height: 168px;
+        }
+        @media only screen and (min-width: 959px) and (max-width: 1305px) {
+          height: 145px;
         }
         @media only screen and (min-width: 1306px) and (max-width: $max) {
           height: 130px;
@@ -70,36 +100,59 @@ body {
     }
     #introContent {
       @media only screen and (min-width: $min) and (max-width: 1305px) {
-        top: -147px;
+        top: -145px;
         left: 12%;
-        font-size: 2.2rem;
+        // font-size: 2.2rem;
         width: 36%;
       }
       @media only screen and (min-width: 1306px) and (max-width: $max) {
         top: -117px;
         left: 11%;
-        font-size: 2.2rem;
+        // font-size: 2.2rem;
         width: 36%;
+      }
+      @media only screen and (min-width: $min) and (max-width: 958px) {
+        font-size: 1.75rem;
+      }
+      @media only screen and (min-width: 959px) and (max-width: $max) {
+        font-size: 2.2rem;
       }
     }
     #allTopics {
-      @media only screen and (min-width: $min) and (max-width: $max) {
-        top: 383px;
+      @media only screen and (min-width: $min) and (max-width: 1110px) {
+        left: 40%;
+        width: 40%;
+      }
+      @media only screen and (min-width: 1111px) and (max-width: $max) {
         left: 555px;
         width: 40%;
+      }
+      @media only screen and (min-width: $min) and (max-width: 1000px) {
+        top: 400px;
+      }
+      @media only screen and (min-width: 1001px) and (max-width: $max) {
+        top: 383px;
       }
       a {
 
         .oneTopic {
 
           .oneText {
-            @media only screen and (min-width: $min) and (max-width: $max) {
+            @media only screen and (min-width: $min) and (max-width: 1000px) {
+              font-size: 2.5rem;
+            }
+            @media only screen and (min-width: 1001px) and (max-width: $max) {
               font-size: 3rem;
             }
           }
           .oneOpac {
             @media only screen and (min-width: $min) and (max-width: $max) {
               margin-bottom: 30px;
+            }
+            @media only screen and (min-width: $min) and (max-width: 1000px) {
+              height: 75px;
+            }
+            @media only screen and (min-width: 1001px) and (max-width: $max) {
               height: 95px;
             }
           }
@@ -144,9 +197,13 @@ body {
 
   // START: Menu bar
   #menuBox {
-
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      margin-top: -25px;
+    }
     #menuBar {
-
+      @media only screen and (min-width: $min) {
+        font-size: 2.5rem;
+      }
     }
     #allButtons {
 
@@ -162,26 +219,58 @@ body {
 
   // START: Directions page
   .subpageTitle {
-
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      font-size: 4.5rem;
+    }
   }
   #setDisplay {
+
+    #directionsTitle {
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        margin: 30px 15% 0 15%;
+      }
+    }
+
     #locationBox {
 
       #locationShade {
-
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          height: 295px;
+        }
       }
       #locationContent {
-
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          display: flex;
+          justify-content: space-around;
+          top: 220px;
+          width: 70%;
+        }
         iframe {
-
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            margin-top: 20px;
+            width: 50%;
+            height: 250px;
+          }
         }
         #locationIntro {
-
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            width: 40%;
+          }
           #address {
-
+            @media only screen and (min-width: 1206px) and (max-width: $max) {
+              font-size: 2rem;
+            }
+            @media only screen and (min-width: $min) and (max-width: 1205px) {
+              font-size: 1.5rem;
+            }
           }
           a {
-
+            @media only screen and (min-width: 1206px) and (max-width: $max) {
+              font-size: 2rem;
+            }
+            @media only screen and (min-width: $min) and (max-width: 1205px) {
+              font-size: 1.5rem;
+            }
           }
         }
       }
@@ -189,31 +278,64 @@ body {
     #timeBox {
 
       #timeShade {
-
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          margin-bottom: 50px;
+          // height: 480px;
+        }
+        @media only screen and (min-width: $min) and (max-width: 1199px) {
+          height: 440px;
+        }
+        @media only screen and (min-width: 1200px) and (max-width: $max) {
+          height: 450px;
+        }
       }
       #timeContent {
-
-        img {
-
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          display: flex;
+          justify-content: space-around;
+          top: 554px;
         }
-        #timeIntro {
+        #imgFlex {
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            width: 55%;
+          }
+          img {
+            @media only screen and (min-width: $min) and (max-width: $max) {
 
+            }
+          }
+          #timeIntro {
+            @media only screen and (min-width: $min) and (max-width: $max) {
+              margin: 20px 0;
+              font-size: 2rem;
+            }
+          }
         }
-        .dateContent {
+        #timeFlex {
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            display: block;
+          }
+          .dateContent {
+            @media only screen and (min-width: $min) and (max-width: 1199px) {
+              font-size: 1.4rem;
+            }
+            @media only screen and (min-width: 1200px) and (max-width: $max) {
+              font-size: 2rem;
+            }
+          }
+          #first {
 
-        }
-        #first {
+          }
+          #last {
 
-        }
-        #last {
+          }
+          table {
 
-        }
-        table {
+            tr {
 
-          tr {
+              td {
 
-            td {
-
+              }
             }
           }
         }
@@ -231,18 +353,38 @@ body {
     #allFruit {
 
       .oneFruit {
-
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          width: 20%;
+        }
       }
       #appleButton {}
       #pearButton {}
       #peachButton {}
       #pumpkinButton {}
     }
+    #allButton {
+
+    }
+  }
+  .fruitTitle {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      border-radius: 0 25px 25px 0;
+      padding-right: 60px;
+      width: 30%;
+      text-align: right;
+      font-size: 2.8rem;
+    }
   }
   .fruitList {
-
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      display: flex;
+      flex-wrap: wrap;
+    }
     .oneFruitBox {
-
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        margin: 0 0 30px 4%;
+        width: 18%;
+      }
       .fruitName {
 
       }

@@ -1,17 +1,20 @@
 // Alterations for input.scss
 // 1366px < width
 
+// Dimensions: 1920 x 1080
+
 // VARIABLES
   // Minimum width:
   $min: 1367px;
 
   body {
     @media only screen and (min-width: $min) {
-      background-image: none;
-      background-color: white;
+      background-image: url('img/bkgrd_apples.jpg');
     }
     .shadePage {
-
+      @media only screen and (min-width: $min) {
+        width: 1366px;
+      }
     }
     .subtitle {
 
@@ -21,12 +24,16 @@
     #indexPage {
       @media only screen and (min-width: $min) {
         margin: 0 auto;
+        padding: 0;
+        padding: 25px 0 0 0;
         background-image: url('img/tractor-sunset-full copy.jpg');
         background-size: cover;
+        background-attachment: fixed;
         width: 1366px;
       }
       #title {
         @media only screen and (min-width: $min) {
+          margin-top: 0;
           display: flex;
           justify-content: space-around;
         }
@@ -78,8 +85,9 @@
       }
       #allTopics {
         @media only screen and (min-width: $min) {
-          top: 470px;
-          left: 633px;
+          position: relative;
+          left: 52%;
+          top: -90px;
           width: 35%;
         }
         a {
@@ -138,16 +146,25 @@
 
     // START: Menu bar
     #menuBox {
-
+      @media only screen and (min-width: $min) {
+        margin-top: -25px;
+      }
       #menuBar {
-
+        @media only screen and (min-width: $min) {
+          font-size: 3rem;
+        }
       }
       #allButtons {
-
+        @media only screen and (min-width: $min) {
+          width: 1366px;
+        }
         a {
 
           .menuButton {
-
+            @media only screen and (min-width: $min) {
+              margin: 0 68.3px;
+              width: 1229.4px;
+            }
           }
         }
       }
@@ -156,58 +173,108 @@
 
     // START: Directions page
     .subpageTitle {
-
+      @media only screen and (min-width: $min) {
+        font-size: 5rem;
+      }
     }
     #setDisplay {
+
       #locationBox {
 
         #locationShade {
-
+          @media only screen and (min-width: $min) {
+            height: 330px;
+          }
         }
         #locationContent {
-
+          @media only screen and (min-width: $min) {
+            margin-left: 137px;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            top: 250px;
+            width: 1092px;
+          }
           iframe {
-
+            @media only screen and (min-width: $min) {
+              margin-top: 20px;
+              width: 470px;
+              height: 280px;
+            }
           }
           #locationIntro {
-
+            @media only screen and (min-width: $min) {
+              width: 400px;
+            }
             #address {
-
+              @media only screen and (min-width: $min) {
+                font-size: 2rem;
+              }
             }
             a {
-
+              @media only screen and (min-width: $min) {
+                font-size: 2rem;
+              }
             }
           }
         }
       }
       #timeBox {
-
+        @media only screen and (min-width: $min) {
+          margin-bottom: 30px;
+        }
         #timeShade {
-
+          @media only screen and (min-width: $min) {
+            margin-bottom: 50px;
+            height: 450px;
+          }
         }
         #timeContent {
-
-          img {
-
+          @media only screen and (min-width: $min) {
+            margin-left: 137px;
+            margin-bottom: 30px;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            top: 604px;
+            width: 1092px;
           }
-          #timeIntro {
+          #imgFlex {
+            @media only screen and (min-width: $min) {
+              width: 44%;
+            }
+            img {
 
+            }
+            #timeIntro {
+              @media only screen and (min-width: $min) {
+                margin: 20px 0;
+                font-size: 2rem;
+              }
+            }
           }
-          .dateContent {
+          #timeFlex {
+            @media only screen and (min-width: $min) {
+              display: block;
+            }
+            .dateContent {
+              @media only screen and (min-width: $min) {
+                font-size: 2rem;
+              }
+            }
+            #first {
 
-          }
-          #first {
+            }
+            #last {
 
-          }
-          #last {
+            }
+            table {
 
-          }
-          table {
+              tr {
 
-            tr {
+                td {
 
-              td {
-
+                }
               }
             }
           }
@@ -225,18 +292,37 @@
       #allFruit {
 
         .oneFruit {
-
+          @media only screen and (min-width: $min) {
+            width: 20%;
+          }
         }
         #appleButton {}
         #pearButton {}
         #peachButton {}
         #pumpkinButton {}
       }
+      #allButton {
+
+      }
+    }
+    .fruitTitle {
+      @media only screen and (min-width: $min) {
+        padding-right: 60px;
+        width: 30%;
+        border-radius: 0 25px 25px 0;
+        text-align: right;
+      }
     }
     .fruitList {
-
+      @media only screen and (min-width: $min) {
+        display: flex;
+        flex-wrap: wrap;
+      }
       .oneFruitBox {
-
+        @media only screen and (min-width: $min) {
+          margin: 0 0 30px 4%;
+          width: 18%;
+        }
         .fruitName {
 
         }
@@ -259,12 +345,17 @@
 
     // START: Contact tab
     #contactBox {
-
+      @media only screen and (min-width: $min) {
+        width: 1366px;
+      }
       #contactTab {
 
       }
       #contactContent {
-
+        @media only screen and (min-width: $min) {
+          margin-left: 20%;
+          width: 40%;
+        }
         @keyframes tabUp {
           0%   {height: 0;
                 padding: 0 0;
@@ -297,6 +388,7 @@
             }
           }
           #contactAddress {
+
             @keyframes openAddress {
               0%   {font-size: 0rem; padding: 0;}
               100% {font-size: 1.4rem; padding: 5px 0;}
