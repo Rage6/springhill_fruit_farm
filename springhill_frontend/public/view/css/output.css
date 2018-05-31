@@ -998,12 +998,14 @@ html {
     html body #indexPage {
       margin: 0 auto;
       padding: 0;
+      padding-top: 25px;
       background-image: url("img/tractor-sunset-full copy.jpg");
       background-size: cover;
       background-attachment: fixed;
       width: 1366px; } }
   @media only screen and (min-width: 1367px) {
     html body #indexPage #title {
+      margin-top: 0;
       display: flex;
       justify-content: space-around; } }
   @media only screen and (min-width: 1367px) {

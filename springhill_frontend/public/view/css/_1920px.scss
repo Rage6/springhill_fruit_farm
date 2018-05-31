@@ -23,6 +23,7 @@
       @media only screen and (min-width: $min) {
         margin: 0 auto;
         padding: 0;
+        padding-top: 25px;
         background-image: url('img/tractor-sunset-full copy.jpg');
         background-size: cover;
         background-attachment: fixed;
@@ -30,6 +31,7 @@
       }
       #title {
         @media only screen and (min-width: $min) {
+          margin-top: 0;
           display: flex;
           justify-content: space-around;
         }
