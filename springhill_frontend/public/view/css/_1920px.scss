@@ -188,22 +188,23 @@
         }
         #locationContent {
           @media only screen and (min-width: $min) {
+            margin-left: 137px;
             padding: 0;
             display: flex;
             justify-content: space-around;
             top: 250px;
-            width: 51%;
+            width: 1092px;
           }
           iframe {
             @media only screen and (min-width: $min) {
               margin-top: 20px;
-              width: 50%;
-              height: 250px;
+              width: 470px;
+              height: 280px;
             }
           }
           #locationIntro {
             @media only screen and (min-width: $min) {
-              width: 40%;
+              width: 400px;
             }
             #address {
               @media only screen and (min-width: $min) {
@@ -225,18 +226,18 @@
         #timeShade {
           @media only screen and (min-width: $min) {
             margin-bottom: 50px;
-            height: 480px;
+            height: 450px;
           }
         }
         #timeContent {
           @media only screen and (min-width: $min) {
-            margin: 0 6%;
+            margin-left: 137px;
             margin-bottom: 30px;
             padding: 0;
             display: flex;
             justify-content: space-around;
-            top: 620px;
-            width: 59%;
+            top: 604px;
+            width: 1092px;
           }
           #imgFlex {
             @media only screen and (min-width: $min) {

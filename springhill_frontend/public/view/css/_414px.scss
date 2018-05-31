@@ -154,7 +154,9 @@ body {
     #timeBox {
 
       #timeShade {
-
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          height: 645px
+        }
       }
       #timeContent {
 

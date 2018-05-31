@@ -225,12 +225,11 @@ body {
   }
   #setDisplay {
 
-  #directionsTitle {
-    @media only screen and (min-width: $min) and (max-width: $max) {
-      margin: 30px 15% 0 15%;
+    #directionsTitle {
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        margin: 30px 15% 0 15%;
+      }
     }
-  }
-  // #setDisplay {
 
     #locationBox {
 
@@ -243,7 +242,7 @@ body {
         @media only screen and (min-width: $min) and (max-width: $max) {
           display: flex;
           justify-content: space-around;
-          top: 200px;
+          top: 220px;
           width: 70%;
         }
         iframe {
@@ -294,7 +293,7 @@ body {
         @media only screen and (min-width: $min) and (max-width: $max) {
           display: flex;
           justify-content: space-around;
-          top: 500px;
+          top: 554px;
         }
         #imgFlex {
           @media only screen and (min-width: $min) and (max-width: $max) {

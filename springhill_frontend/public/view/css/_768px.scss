@@ -130,13 +130,13 @@ body {
 
       #locationShade {
         @media only screen and (min-width: $min) and (max-width: $max) {
-          height: 764px;
+          height: 770px;
         }
       }
       #locationContent {
         @media only screen and (min-width: $min) and (max-width: $max) {
           margin-top: 25px;
-          top: 230px;
+          top: 208px;
           width: 70%;
         }
         iframe {
@@ -164,11 +164,14 @@ body {
       #timeShade {
         @media only screen and (min-width: $min) and (max-width: $max) {
           margin-bottom: 46px;
-          height: 1020px;
+          height: 800px;
         }
       }
       #timeContent {
-        margin-top: 25px;
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          // margin-top: 25px;
+          top: 1028px;
+        }
         img {
           @media only screen and (min-width: $min) and (max-width: $max) {
             margin-top: 300px;
