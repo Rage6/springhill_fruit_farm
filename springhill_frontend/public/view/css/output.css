@@ -26,80 +26,83 @@ html {
       color: white;
       background-image: url("img/chalkboard.jpg");
       width: 80%; }
-    html body #indexPage #title {
-      margin: 25px 5% 0 5%;
-      padding-top: 10px;
-      border: 1px solid black;
-      border-radius: 10px;
-      font-family: 'Stardos Stencil', cursive;
-      color: white;
-      text-align: center;
-      background-image: url("img/wood-background.jpg");
+    html body #indexPage {
+      background-attachment: fixed;
       background-size: cover; }
-      html body #indexPage #title #top {
-        margin-bottom: 5px;
+      html body #indexPage #title {
+        margin: 25px 5% 0 5%;
+        padding-top: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-family: 'Stardos Stencil', cursive;
         color: white;
-        font-size: 3.8rem; }
-      html body #indexPage #title .bottomWide {
-        display: none; }
-      html body #indexPage #title #bottomBox {
-        display: flex;
-        justify-content: space-around; }
-        html body #indexPage #title #bottomBox .bottom {
-          font-size: 3.5rem;
-          width: 45%; }
-    html body #indexPage #introBox {
-      margin: 0 5%;
-      width: 92%; }
-      html body #indexPage #introBox #introBack {
-        margin: 20px 10% 0 10%;
-        border-radius: 20px;
-        background-color: white;
-        opacity: 0.7;
-        height: 100px; }
-    html body #indexPage #introContent {
-      border-radius: 20px;
-      position: relative;
-      top: -95px;
-      left: 15%;
-      font-size: 1.3rem;
-      font-family: 'Walter Turncoat', cursive;
-      text-align: center;
-      width: 70%; }
-    html body #indexPage #allTopics {
-      margin: 0 10%;
-      position: absolute;
-      top: 370px;
-      text-align: center;
-      width: 80%; }
-      html body #indexPage #allTopics a {
-        color: black;
-        text-decoration: none; }
-        html body #indexPage #allTopics a .oneTopic .oneText {
-          margin: 10px 0%;
-          z-index: 1;
-          position: absolute;
-          font-size: 1.7rem;
-          font-family: 'Walter Turncoat', cursive;
-          text-align: center;
-          width: 100%; }
-        html body #indexPage #allTopics a .oneTopic .oneOpac {
-          margin-bottom: 25px;
-          border-radius: 5px;
+        text-align: center;
+        background-image: url("img/wood-background.jpg");
+        background-size: cover; }
+        html body #indexPage #title #top {
+          margin-bottom: 5px;
+          color: white;
+          font-size: 3.8rem; }
+        html body #indexPage #title .bottomWide {
+          display: none; }
+        html body #indexPage #title #bottomBox {
+          display: flex;
+          justify-content: space-around; }
+          html body #indexPage #title #bottomBox .bottom {
+            font-size: 3.5rem;
+            width: 45%; }
+      html body #indexPage #introBox {
+        margin: 0 5%;
+        width: 92%; }
+        html body #indexPage #introBox #introBack {
+          margin: 20px 10% 0 10%;
+          border-radius: 20px;
           background-color: white;
           opacity: 0.7;
-          height: 65px; }
-      html body #indexPage #allTopics a:hover {
-        cursor: pointer; }
-    html body #indexPage #removeApple {
-      margin: 0 20%;
-      display: block;
-      width: 60%;
-      animation-timing-function: linear;
-      animation-duration: 2s;
-      animation-fill-mode: forwards;
-      animation-iteration-count: infinite;
-      animation-name: wiggleApple; }
+          height: 100px; }
+      html body #indexPage #introContent {
+        border-radius: 20px;
+        position: relative;
+        top: -95px;
+        left: 15%;
+        font-size: 1.3rem;
+        font-family: 'Walter Turncoat', cursive;
+        text-align: center;
+        width: 70%; }
+      html body #indexPage #allTopics {
+        margin: 0 10%;
+        position: absolute;
+        top: 370px;
+        text-align: center;
+        width: 80%; }
+        html body #indexPage #allTopics a {
+          color: black;
+          text-decoration: none; }
+          html body #indexPage #allTopics a .oneTopic .oneText {
+            margin: 10px 0%;
+            z-index: 1;
+            position: absolute;
+            font-size: 1.7rem;
+            font-family: 'Walter Turncoat', cursive;
+            text-align: center;
+            width: 100%; }
+          html body #indexPage #allTopics a .oneTopic .oneOpac {
+            margin-bottom: 25px;
+            border-radius: 5px;
+            background-color: white;
+            opacity: 0.7;
+            height: 65px; }
+        html body #indexPage #allTopics a:hover {
+          cursor: pointer; }
+      html body #indexPage #removeApple {
+        margin: 0 20%;
+        display: block;
+        width: 60%;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-name: wiggleApple; }
 @keyframes wiggleApple {
   0% {
     transform: translate(0px, 0px); }
@@ -116,8 +119,8 @@ html {
     transform: translate(0px, -200px) scale(0.5); }
   100% {
     transform: translate(0px, -70px) scale(0); } }
-      html body #indexPage #removeApple #rollImg {
-        width: 100%; }
+        html body #indexPage #removeApple #rollImg {
+          width: 100%; }
     html body #menuBox {
       color: white;
       text-align: center;
