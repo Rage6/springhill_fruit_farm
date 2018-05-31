@@ -190,7 +190,7 @@ $(()=>{
 
   //For finding the page's height
   const findHeight = () =>{
-    heightNum = $(document).height();
+    heightNum = $(document).height() + 30;
     browserHeight = heightNum + "px";
     $(".shadePage").css('height',browserHeight);
     $('body').css('height',browserHeight);
@@ -232,7 +232,7 @@ $(()=>{
     } else {
       $("#mobileBackground").css('margin-top','0px')
     };
-    // $("body").css('background-image','none');
+    $("#indexPage").css('background-image','none');
   } else {
     console.log("greater than mobileMaxWidth");
   };
