@@ -227,7 +227,7 @@ $(()=>{
       css('width',browserWidth).
       css('background-size','cover').
       css('position','fixed');
-    if (window.location.href == 'http://localhost:4000/index.html' || window.location.href == 'https://springhill-fruit-farm.herokuapp.com/index.html') {
+    if (window.location.href != 'http://localhost:4000/index.html' || window.location.href != 'https://springhill-fruit-farm.herokuapp.com/index.html') {
       $("#mobileBackground").css('margin-top','-25px');
     } else {
       $("#mobileBackground").css('margin-top','0px')
