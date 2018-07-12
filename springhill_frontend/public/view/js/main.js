@@ -187,12 +187,10 @@ $(()=>{
   var indexPageHeight = 0;
   var indexNum = 0;
 
-
   //For finding the page's height
   const findHeight = () =>{
-    heightNum = $(document).height() + 30;
     browserHeight = heightNum + "px";
-    $(".shadePage").css('height',browserHeight);
+    $('.shadePage').css('height',browserHeight);
     $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
   };
@@ -216,13 +214,13 @@ $(()=>{
   if (widthNum <= mobileMaxWidth) {
     $("#indexPage").prepend("<div id='mobileBackground'></div>")
     if (widthNum <= 414) {
-      $("#mobileBackground").css('background-image','url("./css/img/row-1.jpg")');
+      $("#mobileBackground").css('height','100%').css('background-image','url("./css/img/row-1.jpg")');
       if (widthNum <= 414 && widthNum > 375) {
-        $("#mobileBackground").css('height','100%').css('width','414px');
+        $("#mobileBackground").css('width','414px');
       } else if (widthNum <= 375 && widthNum > 360) {
-        $("#mobileBackground").css('height','100%').css('width','375px');
+        $("#mobileBackground").css('width','375px');
       } else if (widthNum <= 360) {
-        $("#mobileBackground").css('height','100%').css('width','360px');
+        $("#mobileBackground").css('width','360px');
       } else {
         console.log("Bug occurred.")
       };
@@ -233,11 +231,6 @@ $(()=>{
       css('z-index','-1').
       css('background-size','cover').
       css('position','fixed');
-    if (window.location.href != 'http://localhost:4000/index.html' || window.location.href != 'https://springhill-fruit-farm.herokuapp.com/index.html') {
-      $("#mobileBackground").css('margin-top','-25px');
-    } else {
-      $("#mobileBackground").css('margin-top','0px')
-    };
     $("#indexPage").css('background-image','none');
   } else {
     console.log("greater than mobileMaxWidth");
