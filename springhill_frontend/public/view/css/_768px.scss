@@ -10,6 +10,7 @@ $max: 768px;
 body {
   @media only screen and (min-width: $min) and (max-width: $max) {
     background-image: url('img/orchard_flowers.jpg');
+    background-size: cover;
   }
   .shadePage {
 

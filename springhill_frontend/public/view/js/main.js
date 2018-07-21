@@ -189,16 +189,18 @@ $(()=>{
 
   //For finding the page's height
   const findHeight = () =>{
+    heightNum = $(window).height();
     browserHeight = heightNum + "px";
     $('.shadePage').css('height',browserHeight);
     $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
   };
-
+  findHeight();
   // Setting the heights for every page EXCEPT produce.html
-  if (window.location.href != 'http://localhost:4000/produce.html' || window.location.href != 'https://springhill-fruit-farm.herokuapp.com/produce.html') {
-    findHeight();
-  };
+  // if (window.location.href != 'http://localhost:4000/produce.html' || window.location.href != 'https://springhill-fruit-farm.herokuapp.com/produce.html') {
+  //   findHeight();
+  //   console.log("this ran")
+  // };
 
   //For finding the page's width
   const findWidth = () =>{
