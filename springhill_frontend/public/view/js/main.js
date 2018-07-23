@@ -214,26 +214,32 @@ $(()=>{
 
   // Since mobile devices can't use background-attachment: fixed, this will adjust for it depending on the browser's width (mobileMaxWidth)
   if (widthNum <= mobileMaxWidth) {
-    $("#indexPage").prepend("<div id='mobileBackground'></div>")
-    if (widthNum <= 414) {
-      $("#mobileBackground").css('height','100%').css('background-image','url("./css/img/row-1.jpg")');
-      if (widthNum <= 414 && widthNum > 375) {
-        $("#mobileBackground").css('width','414px');
-      } else if (widthNum <= 375 && widthNum > 360) {
-        $("#mobileBackground").css('width','375px');
-      } else if (widthNum <= 360) {
-        $("#mobileBackground").css('width','360px');
-      } else {
-        console.log("Bug occurred.")
-      };
-    } else {
-      $("#mobileBackground").css('background-image','url("./css/img/orchard_flowers.jpg")');
-    }
-    $("#mobileBackground").
-      css('z-index','-1').
-      css('background-size','cover').
-      css('position','fixed');
-    $("#indexPage").css('background-image','none');
+    // $("#indexPage").prepend("<div id='mobileBackground'></div>")
+    console.log("the height should be " + browserHeight);
+    $("#indexPage").
+      css('width',browserWidth).
+      css('height',browserHeight).
+      css('background-image','url("./css/img/row-1.jpg")');
+    // if (widthNum <= 414) {
+    //   $("#mobileBackground").css('height','100%').css('background-image','url("./css/img/row-1.jpg")');
+    //   if (widthNum <= 414 && widthNum > 375) {
+    //     $("#mobileBackground").css('width','414px');
+    //   } else if (widthNum <= 375 && widthNum > 360) {
+    //     $("#mobileBackground").css('width','375px');
+    //   } else if (widthNum <= 360) {
+    //     $("#mobileBackground").css('width','360px');
+    //   } else {
+    //     console.log("Bug occurred.")
+    //   };
+    // } else {
+    //   // $("#mobileBackground").css('background-image','url("./css/img/orchard_flowers.jpg")');
+    //   $("#indexPage").css('background-image','url("./css/img/orchard_flowers.jpg")');
+    // }
+    // $("#mobileBackground").
+    //   css('z-index','-1').
+    //   css('background-size','cover').
+    //   css('position','fixed');
+    // $("#indexPage").css('background-image','none');
   } else {
     console.log("greater than mobileMaxWidth");
   };
@@ -390,13 +396,5 @@ $(()=>{
       contactDown = true;
     }
   })
-
-  const setIndexHeight = () => {
-    $("body").css('height',browserHeight);
-    indexNum = heightNum - 25;
-    indexPageHeight = indexNum + "px";
-    $("#indexPage").css('height',indexPageHeight);
-  }
-  setIndexHeight();
 
 })

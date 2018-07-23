@@ -412,50 +412,50 @@ html {
     font-size: 0rem;
     padding: 0; } }
   @media only screen and (min-width: 361px) and (max-width: 375px) {
-    html body #indexPage #title #top {
+    html body #title #top {
       font-size: 4rem; } }
   @media only screen and (min-width: 361px) and (max-width: 375px) {
-    html body #indexPage #title #bottomBox .bottom {
+    html body #title #bottomBox .bottom {
       font-size: 3.7; } }
   @media only screen and (min-width: 361px) and (max-width: 375px) {
-    html body #indexPage #introBox #introBack {
+    html body #introBox #introBack {
       height: 110px; } }
   @media only screen and (min-width: 361px) and (max-width: 375px) {
-    html body #indexPage #introContent {
-      top: -103px;
+    html body #introContent {
+      top: -93px;
       font-size: 1.4rem; } }
   @media only screen and (min-width: 361px) and (max-width: 375px) {
-    html body #indexPage #allTopics a .oneTopic {
+    html body #allTopics a .oneTopic {
       top: 382px; } }
   @media only screen and (min-width: 361px) and (max-width: 375px) {
-    html body #indexPage #allTopics a .oneTopic .oneText {
+    html body #allTopics a .oneTopic .oneText {
       font-size: 1.9rem; } }
   @media only screen and (min-width: 361px) and (max-width: 375px) {
-    html body #indexPage #allTopics a .oneTopic .oneOpac {
+    html body #allTopics a .oneTopic .oneOpac {
       margin-bottom: 35px;
       height: 65px; } }
   @media only screen and (min-width: 361px) and (max-width: 375px) {
-    html body #indexPage #removeApple {
+    html body #removeApple {
       margin: 0 22%;
       width: 56%; } }
   @media only screen and (min-width: 361px) and (max-width: 375px) {
     @keyframes wiggleApple {
       0% {
-        transform: translate(0px, 13px); }
+        transform: translate(0px, 0px); }
       25% {
-        transform: translate(0px, -50px); }
+        transform: translate(0px, -60px); }
       50% {
-        transform: translate(0px, 13px); }
+        transform: translate(0px, 0px); }
       100% {
-        transform: translate(0px, 13px); } }
+        transform: translate(0px, 0px); } }
     @keyframes inAppleBox {
       0% {
         transform: translate(0px, 0px) scale(1); }
       50% {
-        transform: translate(0px, -200px) scale(0.5); }
+        transform: translate(0px, -260px) scale(0.5); }
       100% {
-        transform: translate(0px, -60px) scale(0); } } }
-  html body #indexPage #removeApple #rollImg {
+        transform: translate(0px, -75px) scale(0); } } }
+  html body #removeApple #rollImg {
     width: 100%; }
 @keyframes slideDown {
   0% {
@@ -516,32 +516,35 @@ html {
     font-size: 0rem;
     padding: 0; } }
   @media only screen and (min-width: 376px) and (max-width: 414px) {
-    html body #indexPage #title #top {
+    html body #title #top {
       font-size: 4.5rem; } }
   @media only screen and (min-width: 376px) and (max-width: 414px) {
-    html body #indexPage #title #bottomBox .bottom {
+    html body #title #bottomBox .bottom {
       font-size: 4rem; } }
   @media only screen and (min-width: 376px) and (max-width: 414px) {
-    html body #indexPage #introBox #introBack {
+    html body #introBox {
+      top: 18px; } }
+  @media only screen and (min-width: 376px) and (max-width: 414px) {
+    html body #introBox #introBack {
       height: 115px; } }
   @media only screen and (min-width: 376px) and (max-width: 414px) {
-    html body #indexPage #introContent {
-      top: -108px;
+    html body #introContent {
+      top: -92px;
       font-size: 1.5rem; } }
   @media only screen and (min-width: 376px) and (max-width: 414px) {
-    html body #indexPage #allTopics {
+    html body #allTopics {
       top: 400px; } }
   @media only screen and (min-width: 376px) and (max-width: 414px) {
-    html body #indexPage #allTopics a .oneTopic {
+    html body #allTopics a .oneTopic {
       margin-bottom: 45px; } }
   @media only screen and (min-width: 376px) and (max-width: 414px) {
-    html body #indexPage #allTopics a .oneTopic .oneText {
+    html body #allTopics a .oneTopic .oneText {
       font-size: 2rem; } }
   @media only screen and (min-width: 376px) and (max-width: 414px) {
-    html body #indexPage #allTopics a .oneTopic .oneOpac {
+    html body #allTopics a .oneTopic .oneOpac {
       margin-bottom: 45px; } }
   @media only screen and (min-width: 376px) and (max-width: 414px) {
-    html body #indexPage #removeApple {
+    html body #removeApple {
       margin: 0 21%;
       width: 58%;
       position: absolute;
@@ -563,7 +566,7 @@ html {
         transform: translate(0px, -300px) scale(0.5); }
       100% {
         transform: translate(0px, -80px) scale(0); } } }
-  html body #indexPage #removeApple #rollImg {
+  html body #removeApple #rollImg {
     width: 100%; }
 @keyframes slideDown {
   0% {

@@ -43,117 +43,116 @@ html {
       height: 640px;
       width: 360px;
     }
-      #title {
-        margin: 0 5%;
-        padding-top: 10px;
-        border: 1px solid black;
-        border-radius: 10px;
-        position: relative;
-        top: 20px;
-        font-family: 'Stardos Stencil', cursive;
+    #title {
+      margin: 0 5%;
+      padding-top: 10px;
+      border: 1px solid black;
+      border-radius: 10px;
+      position: relative;
+      top: 20px;
+      font-family: 'Stardos Stencil', cursive;
+      color: white;
+      text-align: center;
+      background-image: url('img/wood-background.jpg');
+      background-size: cover;
+      #top {
+        margin-bottom: 5px;
         color: white;
-        text-align: center;
-        background-image: url('img/wood-background.jpg');
-        background-size: cover;
-        #top {
-          margin-bottom: 5px;
-          color: white;
-          font-size: 3.8rem;
-        }
-        .bottomWide {
-          display: none;
-        }
-        #bottomBox {
-          display: flex;
-          justify-content: space-around;
-          .bottom {
-            font-size: 3.5rem;
-            width: 45%;
-          }
+        font-size: 3.8rem;
+      }
+      .bottomWide {
+        display: none;
+      }
+      #bottomBox {
+        display: flex;
+        justify-content: space-around;
+        .bottom {
+          font-size: 3.5rem;
+          width: 45%;
         }
       }
-      #introBox {
-        margin: 0 5%;
-        position: relative;
-        top: 10px;
-        width: 92%;
-        #introBack {
-          margin: 20px 10% 0 10%;
-          border-radius: 20px;
-          background-color: white;
-          opacity: 0.7;
-          height: 100px;
-        }
-      }
-      #introContent {
+    }
+    #introBox {
+      margin: 0 5%;
+      position: relative;
+      top: 10px;
+      width: 92%;
+      #introBack {
+        margin: 20px 10% 0 10%;
         border-radius: 20px;
-        position: relative;
-        top: -85px;
-        left: 15%;
-        font-size: 1.3rem;
-        font-family: 'Walter Turncoat', cursive;
-        text-align: center;
-        width: 70%;
+        background-color: white;
+        opacity: 0.7;
+        height: 100px;
       }
-      #allTopics {
-        margin: 0 10%;
-        position: absolute;
-        top: 370px;
-        text-align: center;
-        width: 80%;
-        a {
-          color: black;
-          text-decoration: none;
-          .oneTopic {
-            .oneText {
-              margin: 10px 0%;
-              z-index: 1;
-              position: absolute;
-              font-size: 1.7rem;
-              font-family: 'Walter Turncoat', cursive;
-              text-align: center;
-              width: 100%;
-            }
-            .oneOpac {
-              margin-bottom: 25px;
-              border-radius: 5px;
-              background-color: white;
-              opacity: 0.7;
-              height: 65px;
-            }
+    }
+    #introContent {
+      border-radius: 20px;
+      position: relative;
+      top: -85px;
+      left: 15%;
+      font-size: 1.3rem;
+      font-family: 'Walter Turncoat', cursive;
+      text-align: center;
+      width: 70%;
+    }
+    #allTopics {
+      margin: 0 10%;
+      position: absolute;
+      top: 370px;
+      text-align: center;
+      width: 80%;
+      a {
+        color: black;
+        text-decoration: none;
+        .oneTopic {
+          .oneText {
+            margin: 10px 0%;
+            z-index: 1;
+            position: absolute;
+            font-size: 1.7rem;
+            font-family: 'Walter Turncoat', cursive;
+            text-align: center;
+            width: 100%;
+          }
+          .oneOpac {
+            margin-bottom: 25px;
+            border-radius: 5px;
+            background-color: white;
+            opacity: 0.7;
+            height: 65px;
           }
         }
-        a:hover {
-          cursor: pointer;
-        }
       }
-      #removeApple {
-        margin: 0 20%;
-        display: block;
-        position: absolute;
-        bottom: 0;
-        width: 60%;
-        animation-timing-function: linear;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: infinite;
-        animation-name: wiggleApple;
-        @keyframes wiggleApple {
-          0%   {transform: translate(0px,0px);}
-          25%  {transform: translate(0px,-50px);}
-          50%  {transform: translate(0px,0px);}
-          100% {transform: translate(0px,0px);}
-        }
-        @keyframes inAppleBox {
-          0%   {transform: translate(0px,0px) scale(1)}
-          50%  {transform: translate(0px,-200px) scale(0.5)}
-          100% {transform: translate(0px,-70px) scale(0)}
-        }
-        #rollImg {
-          width: 100%;
-        }
+      a:hover {
+        cursor: pointer;
       }
-    // }
+    }
+    #removeApple {
+      margin: 0 20%;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 60%;
+      animation-timing-function: linear;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      animation-name: wiggleApple;
+      @keyframes wiggleApple {
+        0%   {transform: translate(0px,0px);}
+        25%  {transform: translate(0px,-50px);}
+        50%  {transform: translate(0px,0px);}
+        100% {transform: translate(0px,0px);}
+      }
+      @keyframes inAppleBox {
+        0%   {transform: translate(0px,0px) scale(1)}
+        50%  {transform: translate(0px,-200px) scale(0.5)}
+        100% {transform: translate(0px,-70px) scale(0)}
+      }
+      #rollImg {
+        width: 100%;
+      }
+    }
     // END: Index Page
 
     // START: Menu bar
