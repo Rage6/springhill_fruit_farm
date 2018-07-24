@@ -501,20 +501,21 @@ html {
     padding: 0 0;
     font-size: 0rem;
     border: none; } }
-@keyframes openAddress {
-  0% {
-    font-size: 0rem;
-    padding: 0; }
-  100% {
-    font-size: 1.4rem;
-    padding: 5px 0; } }
-@keyframes closeAddress {
-  0% {
-    font-size: 1.4rem;
-    padding: 5px 0; }
-  100% {
-    font-size: 0rem;
-    padding: 0; } }
+  @media only screen and (min-width: 361px) and (max-width: 375px) {
+    @keyframes openAddress {
+      0% {
+        font-size: 0rem;
+        padding: 0; }
+      100% {
+        font-size: 1.2rem;
+        padding: 5px; } }
+    @keyframes closeAddress {
+      0% {
+        font-size: 1.2rem;
+        padding: 5px; }
+      100% {
+        font-size: 0rem;
+        padding: 0; } } }
   @media only screen and (min-width: 376px) and (max-width: 414px) {
     html body #title #top {
       font-size: 4.5rem; } }
@@ -565,7 +566,7 @@ html {
       50% {
         transform: translate(0px, -300px) scale(0.5); }
       100% {
-        transform: translate(0px, -80px) scale(0); } } }
+        transform: translate(0px, -70px) scale(0); } } }
   html body #removeApple #rollImg {
     width: 100%; }
 @keyframes slideDown {
@@ -615,20 +616,21 @@ html {
     padding: 0 0;
     font-size: 0rem;
     border: none; } }
-@keyframes openAddress {
-  0% {
-    font-size: 0rem;
-    padding: 0; }
-  100% {
-    font-size: 1.4rem;
-    padding: 5px 0; } }
-@keyframes closeAddress {
-  0% {
-    font-size: 1.4rem;
-    padding: 5px 0; }
-  100% {
-    font-size: 0rem;
-    padding: 0; } }
+  @media only screen and (min-width: 376px) and (max-width: 414px) {
+    @keyframes openAddress {
+      0% {
+        font-size: 0rem;
+        padding: 0; }
+      100% {
+        font-size: 1.2rem;
+        padding: 5px; } }
+    @keyframes closeAddress {
+      0% {
+        font-size: 1.2rem;
+        padding: 5px; }
+      100% {
+        font-size: 0rem;
+        padding: 0; } } }
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     html body {
       background-image: url("img/orchard_flowers.jpg");
@@ -745,20 +747,21 @@ html {
     padding: 0 0;
     font-size: 0rem;
     border: none; } }
-@keyframes openAddress {
-  0% {
-    font-size: 0rem;
-    padding: 0; }
-  100% {
-    font-size: 1.4rem;
-    padding: 5px 0; } }
-@keyframes closeAddress {
-  0% {
-    font-size: 1.4rem;
-    padding: 5px 0; }
-  100% {
-    font-size: 0rem;
-    padding: 0; } }
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    @keyframes openAddress {
+      0% {
+        font-size: 0rem;
+        padding: 0; }
+      100% {
+        font-size: 1.4rem;
+        padding: 5px; } }
+    @keyframes closeAddress {
+      0% {
+        font-size: 1.4rem;
+        padding: 5px; }
+      100% {
+        font-size: 0rem;
+        padding: 0; } } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body {
       background-image: url("img/tractor-sunset-full copy.jpg"); } }
@@ -1004,20 +1007,21 @@ html {
     padding: 0 0;
     font-size: 0rem;
     border: none; } }
-@keyframes openAddress {
-  0% {
-    font-size: 0rem;
-    padding: 0; }
-  100% {
-    font-size: 1.4rem;
-    padding: 5px 0; } }
-@keyframes closeAddress {
-  0% {
-    font-size: 1.4rem;
-    padding: 5px 0; }
-  100% {
-    font-size: 0rem;
-    padding: 0; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    @keyframes openAddress {
+      0% {
+        font-size: 0rem;
+        padding: 0; }
+      100% {
+        font-size: 1.4rem;
+        padding: 5px 0; } }
+    @keyframes closeAddress {
+      0% {
+        font-size: 1.4rem;
+        padding: 5px 0; }
+      100% {
+        font-size: 0rem;
+        padding: 0; } } }
   @media only screen and (min-width: 1367px) {
     html body {
       background-image: url("img/bkgrd_apples.jpg"); } }
@@ -1226,19 +1230,20 @@ html {
     padding: 0 0;
     font-size: 0rem;
     border: none; } }
-@keyframes openAddress {
-  0% {
-    font-size: 0rem;
-    padding: 0; }
-  100% {
-    font-size: 1.4rem;
-    padding: 5px 0; } }
-@keyframes closeAddress {
-  0% {
-    font-size: 1.4rem;
-    padding: 5px 0; }
-  100% {
-    font-size: 0rem;
-    padding: 0; } }
+  @media only screen and (min-width: 1367px) {
+    @keyframes openAddress {
+      0% {
+        font-size: 0rem;
+        padding: 0; }
+      100% {
+        font-size: 1.4rem;
+        padding: 5px 0; } }
+    @keyframes closeAddress {
+      0% {
+        font-size: 1.4rem;
+        padding: 5px 0; }
+      100% {
+        font-size: 0rem;
+        padding: 0; } } }
 
 /*# sourceMappingURL=output.css.map */

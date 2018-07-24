@@ -234,6 +234,8 @@ body {
   // START: Contact tab
   #contactBox {
 
+
+
     #contactTab {
 
     }
@@ -271,13 +273,15 @@ body {
           }
         }
         #contactAddress {
-          @keyframes openAddress {
-            0%   {font-size: 0rem; padding: 0;}
-            100% {font-size: 1.4rem; padding: 5px 0;}
-          }
-          @keyframes closeAddress {
-            0%   {font-size: 1.4rem; padding: 5px 0;}
-            100% {font-size: 0rem; padding: 0;}
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            @keyframes openAddress {
+              0%   {font-size: 0rem; padding: 0;}
+              100% {font-size: 1.2rem; padding: 5px;}
+            }
+            @keyframes closeAddress {
+              0%   {font-size: 1.2rem; padding: 5px;}
+              100% {font-size: 0rem; padding: 0;}
+            }
           }
         }
       }
