@@ -214,12 +214,12 @@ $(()=>{
 
   // Since mobile devices can't use background-attachment: fixed, this will adjust for it depending on the browser's width (mobileMaxWidth)
   if (widthNum <= mobileMaxWidth) {
-    // $("#indexPage").prepend("<div id='mobileBackground'></div>")
-    console.log("the height should be " + browserHeight);
-    $("#indexPage").
-      css('width',browserWidth).
-      css('height',browserHeight).
-      css('background-image','url("./css/img/row-1.jpg")');
+    $("#indexPage").css('width',browserWidth).css('height',browserHeight);
+    if (widthNum <= 414) {
+      $("#indexPage").css('background-image','url("./css/img/row-1.jpg")');
+    } else {
+      $("#indexPage").css('background-image','url("./css/img/orchard_flowers.jpg")');
+    };
     // if (widthNum <= 414) {
     //   $("#mobileBackground").css('height','100%').css('background-image','url("./css/img/row-1.jpg")');
     //   if (widthNum <= 414 && widthNum > 375) {
@@ -241,7 +241,12 @@ $(()=>{
     //   css('position','fixed');
     // $("#indexPage").css('background-image','none');
   } else {
-    console.log("greater than mobileMaxWidth");
+    console.log('This worked');
+    // if (widthNum > mobileMaxWidth && widthNum >= 1367) {
+    //   $("#indexPage").css('background-image','url("./css/img/tractor-sunset-full copy.jpg")');
+    // } else {
+    //   $("#indexPage").css('background-image','none');
+    // };
   };
 
   // For throwing/moving the apple and revealing the buttons
