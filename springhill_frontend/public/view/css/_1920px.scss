@@ -384,16 +384,25 @@
     // START: Contact tab
     #contactBox {
       @media only screen and (min-width: $min) {
-
+        margin: 0 0 0 50%;
+        position: relative;
+        right: 600px;
+        width: 1200px;
       }
       #contactTab {
         @media only screen and (min-width: $min) {
-          width: 548px;
+          // margin: 0 0 0 50%;
+          // right: 274px;
+          // position: relative;
+          // width: 548px;
         }
       }
       #contactContent {
         @media only screen and (min-width: $min) {
-          width: 955px;
+          // margin: 0 0 0 50%;
+          // right: 649px;
+          // position: relative;
+          // width: 955px;
         }
         @keyframes tabUp {
           0%   {height: 0;

@@ -341,7 +341,8 @@ html {
         font-size: 1.5rem;
         color: black;
         text-align: center;
-        width: 40%; }
+        width: 40%;
+        cursor: pointer; }
       html body #contactBox #contactContent {
         margin: 0 5%;
         border: none;
@@ -1236,11 +1237,11 @@ html {
       margin: 0 0 30px 4%;
       width: 18%; } }
   @media only screen and (min-width: 1367px) {
-    html body #contactBox #contactTab {
-      width: 548px; } }
-  @media only screen and (min-width: 1367px) {
-    html body #contactBox #contactContent {
-      width: 955px; } }
+    html body #contactBox {
+      margin: 0 0 0 50%;
+      position: relative;
+      right: 600px;
+      width: 1200px; } }
 @keyframes tabUp {
   0% {
     height: 0;
