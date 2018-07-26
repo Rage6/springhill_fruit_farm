@@ -294,7 +294,7 @@ html {
         font-size: 1.3rem;
         text-align: center;
         width: 40%; }
-    html body .fruitTitle {
+    html body #typeName .fruitTitle {
       margin-bottom: 20px;
       padding: 5px 0;
       color: white;
@@ -302,9 +302,9 @@ html {
       font-size: 2rem;
       font-family: 'Stardos Stencil', cursive;
       background-color: #ff7900; }
-    html body .fruitList {
+    html body #typeName .fruitList {
       padding-bottom: 20px; }
-      html body .fruitList .oneFruitBox {
+      html body #typeName .fruitList .oneFruitBox {
         margin: 0 10% 30px 10%;
         border-radius: 8px;
         padding: 15px 5%;
@@ -313,20 +313,18 @@ html {
         font-family: 'Walter Turncoat', cursive;
         background-image: url("img/wood-background.jpg");
         background-size: cover; }
-        html body .fruitList .oneFruitBox .fruitName {
+        html body #typeName .fruitList .oneFruitBox .fruitName {
           margin-bottom: 15px;
           font-size: 2rem; }
-        html body .fruitList .oneFruitBox .fruitPicture {
+        html body #typeName .fruitList .oneFruitBox .fruitPicture {
           margin-bottom: 10px;
           border: 2px solid white;
           border-radius: 8px;
           width: 100%; }
-        html body .fruitList .oneFruitBox .fruitDescription {
+        html body #typeName .fruitList .oneFruitBox .fruitDescription {
           margin-bottom: 10px;
           font-size: 1.2rem;
           text-align: left; }
-        html body .fruitList .oneFruitBox .fruitPrice {
-          font-size: 1.7rem; }
     html body #contactBox {
       font-family: 'Stardos Stencil', cursive;
       z-index: 2;
@@ -719,11 +717,11 @@ html {
     html body #chooseFruit #allFruit .oneFruit {
       width: 20%; } }
   @media only screen and (min-width: 415px) and (max-width: 768px) {
-    html body .fruitList {
+    html body #typeName .fruitList {
       display: flex;
       flex-wrap: wrap; } }
   @media only screen and (min-width: 415px) and (max-width: 768px) {
-    html body .fruitList .oneFruitBox {
+    html body #typeName .fruitList .oneFruitBox {
       margin: 0 0 30px 4%;
       width: 34%; } }
 @keyframes tabUp {
@@ -901,15 +899,12 @@ html {
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #removeApple #rollImg {
       width: 100%; } }
-  @media only screen and (min-width: 769px) and (max-width: 1366px) {
-    html body #menuBox {
-      margin-top: -25px; } }
   @media only screen and (min-width: 769px) {
     html body #menuBox #menuBar {
       font-size: 2.5rem; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body .subpageTitle {
-      font-size: 4.5rem; } }
+      font-size: 5rem; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #setDisplay #directionsTitle {
       margin: 30px 15% 0 15%; } }
@@ -976,18 +971,18 @@ html {
     html body #chooseFruit #allFruit .oneFruit {
       width: 20%; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
-    html body .fruitTitle {
+    html body #typeName .fruitTitle {
       border-radius: 0 25px 25px 0;
       padding-right: 60px;
       width: 30%;
       text-align: right;
       font-size: 2.8rem; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
-    html body .fruitList {
+    html body #typeName .fruitList {
       display: flex;
       flex-wrap: wrap; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
-    html body .fruitList .oneFruitBox {
+    html body #typeName .fruitList .oneFruitBox {
       margin: 0 0 30px 4%;
       width: 18%; } }
 @keyframes tabUp {
@@ -1133,9 +1128,16 @@ html {
       width: 100%; } }
   @media only screen and (min-width: 1367px) {
     html body #menuBox #menuBar {
-      font-size: 3rem; } }
+      margin-left: 50%;
+      right: 683px;
+      position: relative;
+      font-size: 2.5rem;
+      width: 1366px; } }
   @media only screen and (min-width: 1367px) {
     html body #menuBox #allButtons {
+      margin-left: 50%;
+      right: 114px;
+      z-index: 3;
       width: 1366px; } }
   @media only screen and (min-width: 1367px) {
     html body #menuBox #allButtons a .menuButton {
@@ -1203,20 +1205,34 @@ html {
     html body #setDisplay #timeBox #timeContent #timeFlex .dateContent {
       font-size: 2rem; } }
   @media only screen and (min-width: 1367px) {
+    html body #chooseFruit {
+      margin-left: 50%;
+      right: 546px;
+      position: relative;
+      z-index: 2;
+      width: 1092px; } }
+  @media only screen and (min-width: 1367px) {
     html body #chooseFruit #allFruit .oneFruit {
       width: 20%; } }
   @media only screen and (min-width: 1367px) {
-    html body .fruitTitle {
+    html body #typeName {
+      margin-left: 50%;
+      right: 683px;
+      position: relative;
+      width: 1366px; } }
+  @media only screen and (min-width: 1367px) {
+    html body #typeName .fruitTitle {
       padding-right: 60px;
       width: 30%;
       border-radius: 0 25px 25px 0;
-      text-align: right; } }
+      text-align: right;
+      font-size: 2.8rem; } }
   @media only screen and (min-width: 1367px) {
-    html body .fruitList {
+    html body #typeName .fruitList {
       display: flex;
       flex-wrap: wrap; } }
   @media only screen and (min-width: 1367px) {
-    html body .fruitList .oneFruitBox {
+    html body #typeName .fruitList .oneFruitBox {
       margin: 0 0 30px 4%;
       width: 18%; } }
   @media only screen and (min-width: 1367px) {

@@ -220,33 +220,8 @@ $(()=>{
     } else {
       $("#indexPage").css('background-image','url("./css/img/orchard_flowers.jpg")');
     };
-    // if (widthNum <= 414) {
-    //   $("#mobileBackground").css('height','100%').css('background-image','url("./css/img/row-1.jpg")');
-    //   if (widthNum <= 414 && widthNum > 375) {
-    //     $("#mobileBackground").css('width','414px');
-    //   } else if (widthNum <= 375 && widthNum > 360) {
-    //     $("#mobileBackground").css('width','375px');
-    //   } else if (widthNum <= 360) {
-    //     $("#mobileBackground").css('width','360px');
-    //   } else {
-    //     console.log("Bug occurred.")
-    //   };
-    // } else {
-    //   // $("#mobileBackground").css('background-image','url("./css/img/orchard_flowers.jpg")');
-    //   $("#indexPage").css('background-image','url("./css/img/orchard_flowers.jpg")');
-    // }
-    // $("#mobileBackground").
-    //   css('z-index','-1').
-    //   css('background-size','cover').
-    //   css('position','fixed');
-    // $("#indexPage").css('background-image','none');
   } else {
     console.log('This worked');
-    // if (widthNum > mobileMaxWidth && widthNum >= 1367) {
-    //   $("#indexPage").css('background-image','url("./css/img/tractor-sunset-full copy.jpg")');
-    // } else {
-    //   $("#indexPage").css('background-image','none');
-    // };
   };
 
   // For throwing/moving the apple and revealing the buttons

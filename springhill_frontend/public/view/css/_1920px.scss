@@ -154,25 +154,30 @@
     #familyPic {
 
     }
-    // }
     // END: Index Page
 
     // START: Menu bar
     #menuBox {
       @media only screen and (min-width: $min) {
-        // margin-top: -25px;
+        
       }
       #menuBar {
         @media only screen and (min-width: $min) {
-          font-size: 3rem;
+          margin-left: 50%;
+          right: 683px;
+          position: relative;
+          font-size: 2.5rem;
+          width: 1366px
         }
       }
       #allButtons {
         @media only screen and (min-width: $min) {
+          margin-left: 50%;
+          right: 114px;
+          z-index: 3;
           width: 1366px;
         }
         a {
-
           .menuButton {
             @media only screen and (min-width: $min) {
               margin: 0 68.3px;
@@ -303,7 +308,13 @@
 
     // START: Produce page
     #chooseFruit {
-
+      @media only screen and (min-width: $min) {
+        margin-left: 50%;
+        right: 546px;
+        position: relative;
+        z-index: 2;
+        width: 1092px;
+      }
       #fruitIntro {
 
       }
@@ -323,35 +334,44 @@
 
       }
     }
-    .fruitTitle {
+    #typeName {
       @media only screen and (min-width: $min) {
-        padding-right: 60px;
-        width: 30%;
-        border-radius: 0 25px 25px 0;
-        text-align: right;
+        margin-left: 50%;
+        right: 683px;
+        position: relative;
+        width: 1366px;
       }
-    }
-    .fruitList {
-      @media only screen and (min-width: $min) {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .oneFruitBox {
+      .fruitTitle {
         @media only screen and (min-width: $min) {
-          margin: 0 0 30px 4%;
-          width: 18%;
+          padding-right: 60px;
+          width: 30%;
+          border-radius: 0 25px 25px 0;
+          text-align: right;
+          font-size: 2.8rem;
         }
-        .fruitName {
-
+      }
+      .fruitList {
+        @media only screen and (min-width: $min) {
+          display: flex;
+          flex-wrap: wrap;
         }
-        .fruitPicture {
+        .oneFruitBox {
+          @media only screen and (min-width: $min) {
+            margin: 0 0 30px 4%;
+            width: 18%;
+          }
+          .fruitName {
 
-        }
-        .fruitDescription {
+          }
+          .fruitPicture {
 
-        }
-        .fruitPrice {
+          }
+          .fruitDescription {
 
+          }
+          .fruitPrice {
+
+          }
         }
       }
     }

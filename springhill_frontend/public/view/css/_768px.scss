@@ -21,7 +21,7 @@ body {
 
   // START: Index page
   #indexPage {
-    
+
     #title {
 
       #top {
@@ -231,27 +231,32 @@ body {
 
     }
   }
-  .fruitList {
-    @media only screen and (min-width: $min) and (max-width: $max) {
-      display: flex;
-      flex-wrap: wrap;
+  #typeName {
+    .fruitTitle {
+
     }
-    .oneFruitBox {
+    .fruitList {
       @media only screen and (min-width: $min) and (max-width: $max) {
-        margin: 0 0 30px 4%;
-        width: 34%;
+        display: flex;
+        flex-wrap: wrap;
       }
-      .fruitName {
+      .oneFruitBox {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          margin: 0 0 30px 4%;
+          width: 34%;
+        }
+        .fruitName {
 
-      }
-      .fruitPicture {
+        }
+        .fruitPicture {
 
-      }
-      .fruitDescription {
+        }
+        .fruitDescription {
 
-      }
-      .fruitPrice {
+        }
+        .fruitPrice {
 
+        }
       }
     }
   }
