@@ -159,7 +159,7 @@
     // START: Menu bar
     #menuBox {
       @media only screen and (min-width: $min) {
-        
+
       }
       #menuBar {
         @media only screen and (min-width: $min) {
@@ -384,15 +384,16 @@
     // START: Contact tab
     #contactBox {
       @media only screen and (min-width: $min) {
-        width: 1366px;
+
       }
       #contactTab {
-
+        @media only screen and (min-width: $min) {
+          width: 548px;
+        }
       }
       #contactContent {
         @media only screen and (min-width: $min) {
-          margin-left: 20%;
-          width: 40%;
+          width: 955px;
         }
         @keyframes tabUp {
           0%   {height: 0;
