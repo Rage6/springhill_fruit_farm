@@ -461,9 +461,9 @@ html {
         .contactList {
           margin: 10px 0 20px 0;
           text-align: center;
-          display: flex;
           justify-content: space-around;
           a {
+            //display: none;
             text-decoration: none;
             #phoneLogo {
               border: 2px solid black;
@@ -491,6 +491,12 @@ html {
               100% {font-size: 0rem; padding: 0;}
             }
           }
+        }
+        #firstList {
+          display: none;
+        }
+        #secondList {
+          display: none;
         }
       }
     }

@@ -9,7 +9,8 @@
 
   body {
     @media only screen and (min-width: $min) {
-      background-image: url('img/bkgrd_apples.jpg');
+      background-image: none;
+      background-color: white;
     }
     .shadePage {
       @media only screen and (min-width: $min) {
@@ -391,18 +392,12 @@
       }
       #contactTab {
         @media only screen and (min-width: $min) {
-          // margin: 0 0 0 50%;
-          // right: 274px;
-          // position: relative;
-          // width: 548px;
+
         }
       }
       #contactContent {
         @media only screen and (min-width: $min) {
-          // margin: 0 0 0 50%;
-          // right: 649px;
-          // position: relative;
-          // width: 955px;
+
         }
         @keyframes tabUp {
           0%   {height: 0;
@@ -447,6 +442,12 @@
               }
             }
           }
+        }
+        #firstList {
+
+        }
+        #secondList {
+
         }
       }
     }

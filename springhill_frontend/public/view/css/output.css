@@ -381,7 +381,6 @@ html {
         html body #contactBox #contactContent .contactList {
           margin: 10px 0 20px 0;
           text-align: center;
-          display: flex;
           justify-content: space-around; }
           html body #contactBox #contactContent .contactList a {
             text-decoration: none; }
@@ -411,6 +410,10 @@ html {
   100% {
     font-size: 0rem;
     padding: 0; } }
+        html body #contactBox #contactContent #firstList {
+          display: none; }
+        html body #contactBox #contactContent #secondList {
+          display: none; }
   @media only screen and (min-width: 361px) and (max-width: 375px) {
     html body #title #top {
       font-size: 4rem; } }
@@ -1025,7 +1028,8 @@ html {
         padding: 0; } } }
   @media only screen and (min-width: 1367px) {
     html body {
-      background-image: url("img/bkgrd_apples.jpg"); } }
+      background-image: none;
+      background-color: white; } }
   @media only screen and (min-width: 1367px) {
     html body .shadePage {
       width: 1366px; } }

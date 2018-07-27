@@ -192,15 +192,10 @@ $(()=>{
     heightNum = $(window).height();
     browserHeight = heightNum + "px";
     $('.shadePage').css('height',browserHeight);
-    $('body').css('height',browserHeight);
+    // $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
   };
   findHeight();
-  // Setting the heights for every page EXCEPT produce.html
-  // if (window.location.href != 'http://localhost:4000/produce.html' || window.location.href != 'https://springhill-fruit-farm.herokuapp.com/produce.html') {
-  //   findHeight();
-  //   console.log("this ran")
-  // };
 
   //For finding the page's width
   const findWidth = () =>{
@@ -209,8 +204,8 @@ $(()=>{
   };
   findWidth();
 
-  console.log("browserHeight: " + browserHeight);
-  console.log("browserWidth: " + browserWidth);
+  // console.log("browserHeight: " + browserHeight);
+  // console.log("browserWidth: " + browserWidth);
 
   // Since mobile devices can't use background-attachment: fixed, this will adjust for it depending on the browser's width (mobileMaxWidth)
   if (widthNum <= mobileMaxWidth) {
@@ -221,7 +216,7 @@ $(()=>{
       $("#indexPage").css('background-image','url("./css/img/orchard_flowers.jpg")');
     };
   } else {
-    console.log('This worked');
+    // console.log('This worked');
   };
 
   // For throwing/moving the apple and revealing the buttons
@@ -273,7 +268,7 @@ $(()=>{
       }
     }
     findHeight();
-    $('body').css('height',browserHeight);
+    // $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
   };
   if (window.location.href == 'http://localhost:4000/produce.html' || window.location.href == 'https://springhill-fruit-farm.herokuapp.com/produce.html') {
@@ -308,7 +303,7 @@ $(()=>{
     };
     browserHeight = heightNum + "px";
     $(".shadePage").css('height',browserHeight);
-    $('body').css('height',browserHeight);
+    // $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
   }
 
@@ -361,20 +356,42 @@ $(()=>{
   $("#contactTab").click(()=>{
     if (contactDown == true) {
       findHeight();
+      var windowWidth = $(window).outerWidth();
+      var currentTop = $(window).scrollTop();
+      var currentHeight = $(document).outerHeight();
       $("#contactContent").css('animation-name','tabUp');
       $(".shadePage").css('display','block');
       $("#contactAddress").css('animation-name','openAddress');
+      $("#firstList").css('display','flex');
+      $("#secondList").css('display','flex');
       $("#phoneLogo").show();
       $("#facebookLogo").show();
+      scrollToBottom(currentTop, currentHeight, windowWidth);
       contactDown = false;
     } else {
       $("#contactContent").css('animation-name','tabDown');
       $(".shadePage").css('display','none');
       $("#contactAddress").css('animation-name','closeAddress');
+      $("#firstList").css('display','none');
+      $("#secondList").css('display','none');
       $("#phoneLogo").hide();
       $("#facebookLogo").hide();
       contactDown = true;
     }
   })
+
+  // To scroll the window down if the view width is >1366px
+  //Note: I'm not sure why, but the heightDiff (5 lines down) would never result with the actual #contactContent height. This forced me to manually insert the correct value instead
+  const scrollToBottom = (startTop, startHeight, currentWidth) => {
+    if (currentWidth >= 1367) {
+      var newHeight = $(document).outerHeight();
+      var heightDiff = newHeight - startHeight;
+      // var newTop = startTop + heightDiff;
+      var newTop = startTop + 325;
+      $("html, body").animate({
+        scrollTop: newTop
+      }, 300);
+    }
+  }
 
 })
