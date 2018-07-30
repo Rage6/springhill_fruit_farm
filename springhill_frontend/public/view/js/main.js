@@ -2,7 +2,7 @@ $(()=>{
 
   //Starting variables
   var menuUp = true;
-  var contactDown = true;
+  var contactDown = false;
   const apples        = [
     {
       name: "Gold Rush",
@@ -353,7 +353,7 @@ $(()=>{
   })
 
   // For scrolling Contact tab up and down
-  $("#contactTab").click(()=>{
+  const contactScroll = () => {
     if (contactDown == true) {
       findHeight();
       var windowWidth = $(window).outerWidth();
@@ -366,6 +366,7 @@ $(()=>{
       $("#secondList").css('display','flex');
       $("#phoneLogo").show();
       $("#facebookLogo").show();
+      $(".contactList").show();
       scrollToBottom(currentTop, currentHeight, windowWidth);
       contactDown = false;
     } else {
@@ -376,12 +377,21 @@ $(()=>{
       $("#secondList").css('display','none');
       $("#phoneLogo").hide();
       $("#facebookLogo").hide();
+      $(".contactList").hide();
       contactDown = true;
     }
+  };
+
+  // To set up the default values on the Contact stuff
+  contactScroll();
+
+  // Using contactScroll on the #contactTab
+  $("#contactTab").click(()=>{
+    contactScroll();
   })
 
   // To scroll the window down if the view width is >1366px
-  //Note: I'm not sure why, but the heightDiff (5 lines down) would never result with the actual #contactContent height. This forced me to manually insert the correct value instead
+  //Note: I'm not sure why, but the heightDiff (5 lines down) would never result with the actual #contactContent height. This forced me to manually insert the correct value (325) instead.
   const scrollToBottom = (startTop, startHeight, currentWidth) => {
     if (currentWidth >= 1367) {
       var newHeight = $(document).outerHeight();

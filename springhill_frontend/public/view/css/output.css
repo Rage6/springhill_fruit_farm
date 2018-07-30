@@ -1141,7 +1141,7 @@ html {
   @media only screen and (min-width: 1367px) {
     html body #menuBox #allButtons {
       margin-left: 50%;
-      right: 114px;
+      left: -683px;
       z-index: 3;
       width: 1366px; } }
   @media only screen and (min-width: 1367px) {
