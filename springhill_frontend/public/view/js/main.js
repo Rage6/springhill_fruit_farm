@@ -5,43 +5,219 @@ $(()=>{
   var contactDown = false;
   const apples        = [
     {
-      name: "Gold Rush",
+      name: "Blondee",
+      estRipeMon: 9,
+      estRipeDay: 6,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
       description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
-      cost: 6.00,
-      byDozen: true,
+      type: "APPLES"
+    },
+    {
+      name: "Braeburn",
+      estRipeMon: 10,
+      estRipeDay: 31,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Cameo",
+      estRipeMon: 10,
+      estRipeDay: 25,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Cortland",
+      estRipeMon: 9,
+      estRipeDay: 9,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Crimson Crisp",
+      estRipeMon: 9,
+      estRipeDay: 25,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Early Gold",
+      estRipeMon: 10,
+      estRipeDay: 31,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Early Fuji",
+      estRipeMon: 9,
+      estRipeDay: 16,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Fuji",
+      estRipeMon: 10,
+      estRipeDay: 25,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Gala",
+      estRipeMon: 8,
+      estRipeDay: 24,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Ginger Gold",
+      estRipeMon: 8,
+      estRipeDay: 18,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
       type: "APPLES"
     },
     {
       name: "Gold Rush",
+      estRipeMon: 10,
+      estRipeDay: 31,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
       description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
-      cost: 6.00,
-      byDozen: true,
       type: "APPLES"
     },
     {
-      name: "Gold Rush",
+      name: "Granny Smith",
+      estRipeMon: 10,
+      estRipeDay: 25,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
       description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
-      cost: 6.00,
-      byDozen: true,
       type: "APPLES"
     },
     {
-      name: "Gold Rush",
+      name: "Honeycrisp",
+      estRipeMon: 9,
+      estRipeDay: 5,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
       description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
-      cost: 6.00,
-      byDozen: true,
       type: "APPLES"
     },
     {
-      name: "Gold Rush",
+      name: "Jonagold",
+      estRipeMon: 8,
+      estRipeDay: 27,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
       description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
-      cost: 6.00,
-      byDozen: true,
+      type: "APPLES"
+    },
+    {
+      name: "Jonathon",
+      estRipeMon: 9,
+      estRipeDay: 12,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Macintosh",
+      estRipeMon: 9,
+      estRipeDay: 6,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Melrose",
+      estRipeMon: 10,
+      estRipeDay: 4,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Mutsu",
+      estRipeMon: 10,
+      estRipeDay: 18,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Northern Spy",
+      estRipeMon: 10,
+      estRipeDay: 22,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Paula Red",
+      estRipeMon: 8,
+      estRipeDay: 18,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Pink Lady",
+      estRipeMon: 10,
+      estRipeDay: 31,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Red Delicious",
+      estRipeMon: 9,
+      estRipeDay: 25,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Rome",
+      estRipeMon: 10,
+      estRipeDay: 1,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Shizuka",
+      estRipeMon: 10,
+      estRipeDay: 11,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Winesap",
+      estRipeMon: 10,
+      estRipeDay: 25,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Yellow Delicious",
+      estRipeMon: 10,
+      estRipeDay: 2,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      type: "APPLES"
+    },
+    {
+      name: "Zestar",
+      estRipeMon: 8,
+      estRipeDay: 14,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
       type: "APPLES"
     }
   ];
