@@ -545,6 +545,13 @@ $(()=>{
     listFruit(pumpkins,"PUMPKINS");
     newHeight();
   })
+  $("#nectarineButton").click(()=>{
+    unselectAll();
+    clearAllTypeList();
+    $("#nectarineButton").css('color','black').css('background-color','white');
+    listFruit(nectarines,"NECTARINES");
+    newHeight();
+  })
   $("#allButton").click(()=>{
     unselectAll();
     clearAllTypeList();
