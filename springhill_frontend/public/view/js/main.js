@@ -3,13 +3,13 @@ $(()=>{
   //Starting variables
   var menuUp = true;
   var contactDown = false;
-  const apples        = [
+  const apples         = [
     {
       name: "Blondee",
       estRipeMon: 9,
       estRipeDay: 6,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "NEEDS INFO",
       type: "APPLES"
     },
     {
@@ -17,7 +17,7 @@ $(()=>{
       estRipeMon: 10,
       estRipeDay: 31,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Sweet, very good for salads",
       type: "APPLES"
     },
     {
@@ -25,7 +25,7 @@ $(()=>{
       estRipeMon: 10,
       estRipeDay: 25,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Sweet, wonderfully crisp",
       type: "APPLES"
     },
     {
@@ -33,7 +33,7 @@ $(()=>{
       estRipeMon: 9,
       estRipeDay: 9,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Tart, very good for baking",
       type: "APPLES"
     },
     {
@@ -41,7 +41,7 @@ $(()=>{
       estRipeMon: 9,
       estRipeDay: 25,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Tart, very good for baking",
       type: "APPLES"
     },
     {
@@ -49,7 +49,7 @@ $(()=>{
       estRipeMon: 10,
       estRipeDay: 31,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "NEEDS INFO",
       type: "APPLES"
     },
     {
@@ -57,7 +57,7 @@ $(()=>{
       estRipeMon: 9,
       estRipeDay: 16,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "NEEDS INFO",
       type: "APPLES"
     },
     {
@@ -65,7 +65,7 @@ $(()=>{
       estRipeMon: 10,
       estRipeDay: 25,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Sweet, wonderfully crisp",
       type: "APPLES"
     },
     {
@@ -73,7 +73,7 @@ $(()=>{
       estRipeMon: 8,
       estRipeDay: 24,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Sweet, very good for salads",
       type: "APPLES"
     },
     {
@@ -81,7 +81,7 @@ $(()=>{
       estRipeMon: 8,
       estRipeDay: 18,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Tangy, very good for baking",
       type: "APPLES"
     },
     {
@@ -89,7 +89,7 @@ $(()=>{
       estRipeMon: 10,
       estRipeDay: 31,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Tangy, very good for baking",
       type: "APPLES"
     },
     {
@@ -97,7 +97,7 @@ $(()=>{
       estRipeMon: 10,
       estRipeDay: 25,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Tart, very good for baking",
       type: "APPLES"
     },
     {
@@ -105,7 +105,7 @@ $(()=>{
       estRipeMon: 9,
       estRipeDay: 5,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Sweet, wonderfully crisp",
       type: "APPLES"
     },
     {
@@ -113,7 +113,7 @@ $(()=>{
       estRipeMon: 8,
       estRipeDay: 27,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Tangy, very good for baking",
       type: "APPLES"
     },
     {
@@ -121,7 +121,7 @@ $(()=>{
       estRipeMon: 9,
       estRipeDay: 12,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Tart, very good for baking",
       type: "APPLES"
     },
     {
@@ -129,7 +129,7 @@ $(()=>{
       estRipeMon: 9,
       estRipeDay: 6,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Tart, very good for baking",
       type: "APPLES"
     },
     {
@@ -137,7 +137,7 @@ $(()=>{
       estRipeMon: 10,
       estRipeDay: 4,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Sweet, very good for baking",
       type: "APPLES"
     },
     {
@@ -145,7 +145,7 @@ $(()=>{
       estRipeMon: 10,
       estRipeDay: 18,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Tangy, very good for baking",
       type: "APPLES"
     },
     {
@@ -153,7 +153,7 @@ $(()=>{
       estRipeMon: 10,
       estRipeDay: 22,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Tart, very good for baking",
       type: "APPLES"
     },
     {
@@ -161,7 +161,7 @@ $(()=>{
       estRipeMon: 8,
       estRipeDay: 18,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Tart, very good for baking",
       type: "APPLES"
     },
     {
@@ -169,7 +169,7 @@ $(()=>{
       estRipeMon: 10,
       estRipeDay: 31,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Tart, very good for baking",
       type: "APPLES"
     },
     {
@@ -177,7 +177,7 @@ $(()=>{
       estRipeMon: 9,
       estRipeDay: 25,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Sweet, very good for salads",
       type: "APPLES"
     },
     {
@@ -185,7 +185,7 @@ $(()=>{
       estRipeMon: 10,
       estRipeDay: 1,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "A mild flavor, well suited for baking",
       type: "APPLES"
     },
     {
@@ -193,7 +193,7 @@ $(()=>{
       estRipeMon: 10,
       estRipeDay: 11,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "UPDATE INFO",
       type: "APPLES"
     },
     {
@@ -201,7 +201,7 @@ $(()=>{
       estRipeMon: 10,
       estRipeDay: 25,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "Tart, very good for baking",
       type: "APPLES"
     },
     {
@@ -209,7 +209,7 @@ $(()=>{
       estRipeMon: 10,
       estRipeDay: 2,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "UPDATE INFO",
       type: "APPLES"
     },
     {
@@ -217,11 +217,11 @@ $(()=>{
       estRipeMon: 8,
       estRipeDay: 14,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
+      description: "UPDATE INFO",
       type: "APPLES"
     }
   ];
-  const pears         = [
+  const pears          = [
     {
       name: "Bosc",
       picture: "http://www.specialtyproduce.com/sppics/7242.png",
@@ -263,7 +263,33 @@ $(()=>{
       type: "PEARS"
     }
   ];
-  const peaches       = [
+  const nectarines     = [
+    {
+      name: "Sunglo",
+      estRipeMon: 9,
+      estRipeDay: 6,
+      picture: "./css/img/nectarine_generic.jpg",
+      description: "NEEDS INFO",
+      type: "NECTARINES"
+    },
+    {
+      name: "Fantasia",
+      estRipeMon: 9,
+      estRipeDay: 6,
+      picture: "./css/img/nectarine_generic.jpg",
+      description: "NEEDS INFO",
+      type: "NECTARINES"
+    },
+    {
+      name: "Zephyr",
+      estRipeMon: 9,
+      estRipeDay: 6,
+      picture: "./css/img/nectarine_generic.jpg",
+      description: "NEEDS INFO",
+      type: "NECTARINES"
+    }
+  ]
+  const peaches        = [
     {
       name: "first peach",
       picture: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Autumn_Red_peaches.jpg",
@@ -313,7 +339,7 @@ $(()=>{
       type: "PEACHES"
     }
   ];
-  const pumpkins      = [
+  const pumpkins       = [
     {
       name: "some pumpkin",
       picture: "http://demandware.edgesuite.net/sits_pod32/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dwa6425655/images/products/vegetables/03978t_01_cargopmr.jpg?sw=774&cx=302&cy=0&cw=1196&ch=1196",
@@ -452,6 +478,7 @@ $(()=>{
     listFruit(pears,"PEARS");
     listFruit(peaches,"PEACHES");
     listFruit(pumpkins,"PUMPKINS");
+    listFruit(nectarines,"NECTARINES");
   }
 
   // For removing the entire list when changing the selected fruit
