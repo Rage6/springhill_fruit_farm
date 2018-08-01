@@ -390,7 +390,9 @@ $(()=>{
   var indexPageHeight = 0;
   var indexNum = 0;
 
-  console.log($.browser);
+  console.log($(screen.availHeight));
+  console.log($(window.height));
+  console.log($(window.availHeight));
 
   //For finding the page's height
   const findHeight = () =>{
