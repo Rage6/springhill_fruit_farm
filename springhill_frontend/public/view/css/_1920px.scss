@@ -203,7 +203,12 @@
       }
     }
     #setDisplay {
-
+      @media only screen and (min-width: $min) {
+        margin: 0 0 0 50%;
+        position: relative;
+        left: -613px;
+        width: 1226px;
+      }
       #locationBox {
 
         #locationShade {
@@ -217,8 +222,8 @@
             padding: 0;
             display: flex;
             justify-content: space-around;
-            top: 250px;
-            width: 1092px;
+            top: 5px;
+            width: 955px;
           }
           iframe {
             @media only screen and (min-width: $min) {
@@ -251,7 +256,7 @@
         #timeShade {
           @media only screen and (min-width: $min) {
             margin-bottom: 50px;
-            height: 450px;
+            height: 395px;
           }
         }
         #timeContent {
@@ -261,8 +266,8 @@
             padding: 0;
             display: flex;
             justify-content: space-around;
-            top: 604px;
-            width: 1092px;
+            top: 360px;
+            width: 955px;
           }
           #imgFlex {
             @media only screen and (min-width: $min) {
