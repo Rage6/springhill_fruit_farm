@@ -10,6 +10,7 @@ $max: 768px;
 body {
   @media only screen and (min-width: $min) and (max-width: $max) {
     background-image: url('img/orchard_flowers.jpg');
+    background-size: cover;
   }
   .shadePage {
 
@@ -230,27 +231,32 @@ body {
 
     }
   }
-  .fruitList {
-    @media only screen and (min-width: $min) and (max-width: $max) {
-      display: flex;
-      flex-wrap: wrap;
+  #typeName {
+    .fruitTitle {
+
     }
-    .oneFruitBox {
+    .fruitList {
       @media only screen and (min-width: $min) and (max-width: $max) {
-        margin: 0 0 30px 4%;
-        width: 34%;
+        display: flex;
+        flex-wrap: wrap;
       }
-      .fruitName {
+      .oneFruitBox {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          margin: 0 0 30px 4%;
+          width: 34%;
+        }
+        .fruitName {
 
-      }
-      .fruitPicture {
+        }
+        .fruitPicture {
 
-      }
-      .fruitDescription {
+        }
+        .fruitDescription {
 
-      }
-      .fruitPrice {
+        }
+        .fruitPrice {
 
+        }
       }
     }
   }
@@ -300,13 +306,15 @@ body {
           }
         }
         #contactAddress {
-          @keyframes openAddress {
-            0%   {font-size: 0rem; padding: 0;}
-            100% {font-size: 1.4rem; padding: 5px 0;}
-          }
-          @keyframes closeAddress {
-            0%   {font-size: 1.4rem; padding: 5px 0;}
-            100% {font-size: 0rem; padding: 0;}
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            @keyframes openAddress {
+              0%   {font-size: 0rem; padding: 0;}
+              100% {font-size: 1.4rem; padding: 5px;}
+            }
+            @keyframes closeAddress {
+              0%   {font-size: 1.4rem; padding: 5px;}
+              100% {font-size: 0rem; padding: 0;}
+            }
           }
         }
       }

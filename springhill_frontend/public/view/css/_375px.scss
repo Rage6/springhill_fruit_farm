@@ -19,83 +19,83 @@ body {
   // START: Index page
   #indexPage {
 
-    #title {
+  }
+  #title {
 
-      #top {
+    #top {
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        font-size: 4rem;
+      }
+    }
+    #bottomBox {
+
+      .bottom {
         @media only screen and (min-width: $min) and (max-width: $max) {
-          font-size: 4rem;
-        }
-      }
-      #bottomBox {
-
-        .bottom {
-          @media only screen and (min-width: $min) and (max-width: $max) {
-            font-size: 3.7
-          }
+          font-size: 3.7
         }
       }
     }
-    #introBox {
+  }
+  #introBox {
 
-      #introBack {
+    #introBack {
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        height: 110px;
+      }
+    }
+  }
+  #introContent {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      top: -93px;
+      font-size: 1.4rem;
+    }
+  }
+  #allTopics {
+
+    a {
+
+      .oneTopic {
         @media only screen and (min-width: $min) and (max-width: $max) {
-          height: 110px;
+          top: 382px;
         }
-      }
-    }
-    #introContent {
-      @media only screen and (min-width: $min) and (max-width: $max) {
-        top: -103px;
-        font-size: 1.4rem;
-      }
-    }
-    #allTopics {
-
-      a {
-
-        .oneTopic {
+        .oneText {
           @media only screen and (min-width: $min) and (max-width: $max) {
-            top: 382px;
+            font-size: 1.9rem;
           }
-          .oneText {
-            @media only screen and (min-width: $min) and (max-width: $max) {
-              font-size: 1.9rem;
-            }
-          }
-          .oneOpac {
-            @media only screen and (min-width: $min) and (max-width: $max) {
-              margin-bottom: 35px;
-              height: 65px;
-            }
+        }
+        .oneOpac {
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            margin-bottom: 35px;
+            height: 65px;
           }
         }
       }
     }
-    #removeApple {
-      @media only screen and (min-width: $min) and (max-width: $max) {
-        margin: 0 22%;
-        width: 56%;
+  }
+  #removeApple {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      margin: 0 22%;
+      width: 56%;
+    }
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      @keyframes wiggleApple {
+        0%   {transform: translate(0px,0px);}
+        25%  {transform: translate(0px,-60px);}
+        50%  {transform: translate(0px,0px);}
+        100% {transform: translate(0px,0px);}
       }
-      @media only screen and (min-width: $min) and (max-width: $max) {
-        @keyframes wiggleApple {
-          0%   {transform: translate(0px,13px);}
-          25%  {transform: translate(0px,-50px);}
-          50%  {transform: translate(0px,13px);}
-          100% {transform: translate(0px,13px);}
-        }
-        @keyframes inAppleBox {
-          0%   {transform: translate(0px,0px) scale(1)}
-          50%  {transform: translate(0px,-200px) scale(0.5)}
-          100% {transform: translate(0px,-60px) scale(0)}
-        }
-      }
-      #rollImg {
-        width: 100%;
+      @keyframes inAppleBox {
+        0%   {transform: translate(0px,0px) scale(1)}
+        50%  {transform: translate(0px,-260px) scale(0.5)}
+        100% {transform: translate(0px,-75px) scale(0)}
       }
     }
-    #familyPic {
+    #rollImg {
+      width: 100%;
+    }
+  }
+  #familyPic {
 
-    }
   }
   // END: Index Page
 
@@ -204,24 +204,29 @@ body {
       #pumpkinButton {}
     }
     #allButton {
-      
+
     }
   }
-  .fruitList {
+  #typeName {
+    .fruitTitle {
 
-    .oneFruitBox {
+    }
+    .fruitList {
 
-      .fruitName {
+      .oneFruitBox {
 
-      }
-      .fruitPicture {
+        .fruitName {
 
-      }
-      .fruitDescription {
+        }
+        .fruitPicture {
 
-      }
-      .fruitPrice {
+        }
+        .fruitDescription {
 
+        }
+        .fruitPrice {
+
+        }
       }
     }
   }
@@ -233,6 +238,8 @@ body {
 
   // START: Contact tab
   #contactBox {
+
+
 
     #contactTab {
 
@@ -271,13 +278,15 @@ body {
           }
         }
         #contactAddress {
-          @keyframes openAddress {
-            0%   {font-size: 0rem; padding: 0;}
-            100% {font-size: 1.4rem; padding: 5px 0;}
-          }
-          @keyframes closeAddress {
-            0%   {font-size: 1.4rem; padding: 5px 0;}
-            100% {font-size: 0rem; padding: 0;}
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            @keyframes openAddress {
+              0%   {font-size: 0rem; padding: 0;}
+              100% {font-size: 1.2rem; padding: 5px;}
+            }
+            @keyframes closeAddress {
+              0%   {font-size: 1.2rem; padding: 5px;}
+              100% {font-size: 0rem; padding: 0;}
+            }
           }
         }
       }

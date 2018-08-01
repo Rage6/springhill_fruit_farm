@@ -2,50 +2,226 @@ $(()=>{
 
   //Starting variables
   var menuUp = true;
-  var contactDown = true;
-  const apples        = [
+  var contactDown = false;
+  const apples         = [
     {
-      name: "Gold Rush",
+      name: "Blondee",
+      estRipeMon: 9,
+      estRipeDay: 6,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
-      cost: 6.00,
-      byDozen: true,
+      description: "NEEDS INFO",
+      type: "APPLES"
+    },
+    {
+      name: "Braeburn",
+      estRipeMon: 10,
+      estRipeDay: 31,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "Sweet, very good for salads",
+      type: "APPLES"
+    },
+    {
+      name: "Cameo",
+      estRipeMon: 10,
+      estRipeDay: 25,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "Sweet, wonderfully crisp",
+      type: "APPLES"
+    },
+    {
+      name: "Cortland",
+      estRipeMon: 9,
+      estRipeDay: 9,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "Tart, very good for baking",
+      type: "APPLES"
+    },
+    {
+      name: "Crimson Crisp",
+      estRipeMon: 9,
+      estRipeDay: 25,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "Tart, very good for baking",
+      type: "APPLES"
+    },
+    {
+      name: "Early Gold",
+      estRipeMon: 10,
+      estRipeDay: 31,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "NEEDS INFO",
+      type: "APPLES"
+    },
+    {
+      name: "Early Fuji",
+      estRipeMon: 9,
+      estRipeDay: 16,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "NEEDS INFO",
+      type: "APPLES"
+    },
+    {
+      name: "Fuji",
+      estRipeMon: 10,
+      estRipeDay: 25,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "Sweet, wonderfully crisp",
+      type: "APPLES"
+    },
+    {
+      name: "Gala",
+      estRipeMon: 8,
+      estRipeDay: 24,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "Sweet, very good for salads",
+      type: "APPLES"
+    },
+    {
+      name: "Ginger Gold",
+      estRipeMon: 8,
+      estRipeDay: 18,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "Tangy, very good for baking",
       type: "APPLES"
     },
     {
       name: "Gold Rush",
+      estRipeMon: 10,
+      estRipeDay: 31,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
-      cost: 6.00,
-      byDozen: true,
+      description: "Tangy, very good for baking",
       type: "APPLES"
     },
     {
-      name: "Gold Rush",
+      name: "Granny Smith",
+      estRipeMon: 10,
+      estRipeDay: 25,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
-      cost: 6.00,
-      byDozen: true,
+      description: "Tart, very good for baking",
       type: "APPLES"
     },
     {
-      name: "Gold Rush",
+      name: "Honeycrisp",
+      estRipeMon: 9,
+      estRipeDay: 5,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
-      cost: 6.00,
-      byDozen: true,
+      description: "Sweet, wonderfully crisp",
       type: "APPLES"
     },
     {
-      name: "Gold Rush",
+      name: "Jonagold",
+      estRipeMon: 8,
+      estRipeDay: 27,
       picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "This hard & tart apple is excellent for baking (apple pie, anyone?) or simply for eating for a quick snack.",
-      cost: 6.00,
-      byDozen: true,
+      description: "Tangy, very good for baking",
+      type: "APPLES"
+    },
+    {
+      name: "Jonathon",
+      estRipeMon: 9,
+      estRipeDay: 12,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "Tart, very good for baking",
+      type: "APPLES"
+    },
+    {
+      name: "Macintosh",
+      estRipeMon: 9,
+      estRipeDay: 6,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "Tart, very good for baking",
+      type: "APPLES"
+    },
+    {
+      name: "Melrose",
+      estRipeMon: 10,
+      estRipeDay: 4,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "Sweet, very good for baking",
+      type: "APPLES"
+    },
+    {
+      name: "Mutsu",
+      estRipeMon: 10,
+      estRipeDay: 18,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "Tangy, very good for baking",
+      type: "APPLES"
+    },
+    {
+      name: "Northern Spy",
+      estRipeMon: 10,
+      estRipeDay: 22,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "Tart, very good for baking",
+      type: "APPLES"
+    },
+    {
+      name: "Paula Red",
+      estRipeMon: 8,
+      estRipeDay: 18,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "Tart, very good for baking",
+      type: "APPLES"
+    },
+    {
+      name: "Pink Lady",
+      estRipeMon: 10,
+      estRipeDay: 31,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "Tart, very good for baking",
+      type: "APPLES"
+    },
+    {
+      name: "Red Delicious",
+      estRipeMon: 9,
+      estRipeDay: 25,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "Sweet, very good for salads",
+      type: "APPLES"
+    },
+    {
+      name: "Rome",
+      estRipeMon: 10,
+      estRipeDay: 1,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "A mild flavor, well suited for baking",
+      type: "APPLES"
+    },
+    {
+      name: "Shizuka",
+      estRipeMon: 10,
+      estRipeDay: 11,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "UPDATE INFO",
+      type: "APPLES"
+    },
+    {
+      name: "Winesap",
+      estRipeMon: 10,
+      estRipeDay: 25,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "Tart, very good for baking",
+      type: "APPLES"
+    },
+    {
+      name: "Yellow Delicious",
+      estRipeMon: 10,
+      estRipeDay: 2,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "UPDATE INFO",
+      type: "APPLES"
+    },
+    {
+      name: "Zestar",
+      estRipeMon: 8,
+      estRipeDay: 14,
+      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
+      description: "UPDATE INFO",
       type: "APPLES"
     }
   ];
-  const pears         = [
+  const pears          = [
     {
       name: "Bosc",
       picture: "http://www.specialtyproduce.com/sppics/7242.png",
@@ -87,7 +263,33 @@ $(()=>{
       type: "PEARS"
     }
   ];
-  const peaches       = [
+  const nectarines     = [
+    {
+      name: "Sunglo",
+      estRipeMon: 9,
+      estRipeDay: 6,
+      picture: "./css/img/nectarine_generic.jpg",
+      description: "NEEDS INFO",
+      type: "NECTARINES"
+    },
+    {
+      name: "Fantasia",
+      estRipeMon: 9,
+      estRipeDay: 6,
+      picture: "./css/img/nectarine_generic.jpg",
+      description: "NEEDS INFO",
+      type: "NECTARINES"
+    },
+    {
+      name: "Zephyr",
+      estRipeMon: 9,
+      estRipeDay: 6,
+      picture: "./css/img/nectarine_generic.jpg",
+      description: "NEEDS INFO",
+      type: "NECTARINES"
+    }
+  ]
+  const peaches        = [
     {
       name: "first peach",
       picture: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Autumn_Red_peaches.jpg",
@@ -137,7 +339,7 @@ $(()=>{
       type: "PEACHES"
     }
   ];
-  const pumpkins      = [
+  const pumpkins       = [
     {
       name: "some pumpkin",
       picture: "http://demandware.edgesuite.net/sits_pod32/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dwa6425655/images/products/vegetables/03978t_01_cargopmr.jpg?sw=774&cx=302&cy=0&cw=1196&ch=1196",
@@ -187,20 +389,15 @@ $(()=>{
   var indexPageHeight = 0;
   var indexNum = 0;
 
-
   //For finding the page's height
   const findHeight = () =>{
-    heightNum = $(document).height() + 30;
+    heightNum = $(window).height();
     browserHeight = heightNum + "px";
-    $(".shadePage").css('height',browserHeight);
-    $('body').css('height',browserHeight);
+    $('.shadePage').css('height',browserHeight);
+    // $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
   };
-
-  // Setting the heights for every page EXCEPT produce.html
-  if (window.location.href != 'http://localhost:4000/produce.html' || window.location.href != 'https://springhill-fruit-farm.herokuapp.com/produce.html') {
-    findHeight();
-  };
+  findHeight();
 
   //For finding the page's width
   const findWidth = () =>{
@@ -209,32 +406,19 @@ $(()=>{
   };
   findWidth();
 
-  console.log(browserHeight);
-  console.log(browserWidth);
+  // console.log("browserHeight: " + browserHeight);
+  // console.log("browserWidth: " + browserWidth);
 
   // Since mobile devices can't use background-attachment: fixed, this will adjust for it depending on the browser's width (mobileMaxWidth)
   if (widthNum <= mobileMaxWidth) {
-    // console.log("less than mobileMaxWidth");
-    $("#indexPage").prepend("<div id='mobileBackground'></div>")
+    $("#indexPage").css('width',browserWidth).css('height',browserHeight);
     if (widthNum <= 414) {
-      $("#mobileBackground").css('background-image','url("./css/img/row-1.jpg")');
+      $("#indexPage").css('background-image','url("./css/img/row-1.jpg")');
     } else {
-      $("#mobileBackground").css('background-image','url("./css/img/orchard_flowers.jpg")');
-    }
-    $("#mobileBackground").
-      css('z-index','-1').
-      css('height',browserHeight).
-      css('width',browserWidth).
-      css('background-size','cover').
-      css('position','fixed');
-    if (window.location.href == 'http://localhost:4000/index.html' || window.location.href == 'https://springhill-fruit-farm.herokuapp.com/index.html') {
-      $("#mobileBackground").css('margin-top','-25px');
-    } else {
-      $("#mobileBackground").css('margin-top','0px')
+      $("#indexPage").css('background-image','url("./css/img/orchard_flowers.jpg")');
     };
-    $("#indexPage").css('background-image','none');
   } else {
-    console.log("greater than mobileMaxWidth");
+    // console.log('This worked');
   };
 
   // For throwing/moving the apple and revealing the buttons
@@ -283,11 +467,10 @@ $(()=>{
         $(fruitID).append("<div class='fruitName'><u>" + typeList[a].name + "</u></div>");
         $(fruitID).append("<img class='fruitPicture' src='" + typeList[a].picture + "'>");
         $(fruitID).append("<div class='fruitDescription'>" + typeList[a].description + "</div>");
-        $(fruitID).append("<div class='fruitPrice'>$" + typeList[a].cost.toFixed(2) + "</div>");
       }
     }
     findHeight();
-    $('body').css('height',browserHeight);
+    // $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
   };
   if (window.location.href == 'http://localhost:4000/produce.html' || window.location.href == 'https://springhill-fruit-farm.herokuapp.com/produce.html') {
@@ -295,6 +478,7 @@ $(()=>{
     listFruit(pears,"PEARS");
     listFruit(peaches,"PEACHES");
     listFruit(pumpkins,"PUMPKINS");
+    listFruit(nectarines,"NECTARINES");
   }
 
   // For removing the entire list when changing the selected fruit
@@ -309,6 +493,7 @@ $(()=>{
     clearOneTypeList(peaches);
     clearOneTypeList(pears);
     clearOneTypeList(pumpkins);
+    clearOneTypeList(nectarines);
     $(".fruitTitle").remove();
     $(".fruitList").remove();
   }
@@ -322,7 +507,7 @@ $(()=>{
     };
     browserHeight = heightNum + "px";
     $(".shadePage").css('height',browserHeight);
-    $('body').css('height',browserHeight);
+    // $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
   }
 
@@ -332,6 +517,7 @@ $(()=>{
     $("#pearButton").css('color','white').css('background-color','transparent');
     $("#peachButton").css('color','white').css('background-color','transparent');
     $("#pumpkinButton").css('color','white').css('background-color','transparent');
+    $("#nectarineButton").css('color','white').css('background-color','transparent');
   }
   $("#appleButton").click(()=>{
     unselectAll();
@@ -361,6 +547,13 @@ $(()=>{
     listFruit(pumpkins,"PUMPKINS");
     newHeight();
   })
+  $("#nectarineButton").click(()=>{
+    unselectAll();
+    clearAllTypeList();
+    $("#nectarineButton").css('color','black').css('background-color','white');
+    listFruit(nectarines,"NECTARINES");
+    newHeight();
+  })
   $("#allButton").click(()=>{
     unselectAll();
     clearAllTypeList();
@@ -368,35 +561,60 @@ $(()=>{
     listFruit(pears,"PEARS");
     listFruit(peaches,"PEACHES");
     listFruit(pumpkins,"PUMPKINS");
+    listFruit(nectarines,"NECTARINES");
     newHeight();
   })
 
   // For scrolling Contact tab up and down
-  $("#contactTab").click(()=>{
+  const contactScroll = () => {
     if (contactDown == true) {
       findHeight();
+      var windowWidth = $(window).outerWidth();
+      var currentTop = $(window).scrollTop();
+      var currentHeight = $(document).outerHeight();
       $("#contactContent").css('animation-name','tabUp');
       $(".shadePage").css('display','block');
       $("#contactAddress").css('animation-name','openAddress');
+      $("#firstList").css('display','flex');
+      $("#secondList").css('display','flex');
       $("#phoneLogo").show();
       $("#facebookLogo").show();
+      $(".contactList").show();
+      scrollToBottom(currentTop, currentHeight, windowWidth);
       contactDown = false;
     } else {
       $("#contactContent").css('animation-name','tabDown');
       $(".shadePage").css('display','none');
       $("#contactAddress").css('animation-name','closeAddress');
+      $("#firstList").css('display','none');
+      $("#secondList").css('display','none');
       $("#phoneLogo").hide();
       $("#facebookLogo").hide();
+      $(".contactList").hide();
       contactDown = true;
     }
+  };
+
+  // To set up the default values on the Contact stuff
+  contactScroll();
+
+  // Using contactScroll on the #contactTab
+  $("#contactTab").click(()=>{
+    contactScroll();
   })
 
-  const setIndexHeight = () => {
-    $("body").css('height',browserHeight);
-    indexNum = heightNum - 25;
-    indexPageHeight = indexNum + "px";
-    $("#indexPage").css('height',indexPageHeight);
+  // To scroll the window down if the view width is >1366px
+  //Note: I'm not sure why, but the heightDiff (5 lines down) would never result with the actual #contactContent height. This forced me to manually insert the correct value (325) instead.
+  const scrollToBottom = (startTop, startHeight, currentWidth) => {
+    if (currentWidth >= 1367) {
+      var newHeight = $(document).outerHeight();
+      var heightDiff = newHeight - startHeight;
+      // var newTop = startTop + heightDiff;
+      var newTop = startTop + 325;
+      $("html, body").animate({
+        scrollTop: newTop
+      }, 300);
+    }
   }
-  setIndexHeight();
 
 })

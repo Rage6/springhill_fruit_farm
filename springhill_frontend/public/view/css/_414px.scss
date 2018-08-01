@@ -19,84 +19,88 @@ body {
   // START: Index page
   #indexPage {
 
-    #title {
+  }
+  #title {
 
-      #top {
+    #top {
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        font-size: 4.5rem;
+      }
+    }
+    #bottomBox {
+      .bottom {
         @media only screen and (min-width: $min) and (max-width: $max) {
-          font-size: 4.5rem;
+          font-size: 4rem;
         }
       }
-      #bottomBox {
-        .bottom {
+    }
+  }
+  #introBox {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      top: 18px;
+    }
+    #introBack {
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        height: 115px;
+      }
+    }
+  }
+  #introContent {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      top: -92px;
+      font-size: 1.5rem;
+    }
+  }
+  #allTopics {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      top: 400px;
+    }
+    a {
+      .oneTopic {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          margin-bottom: 45px;
+        }
+        .oneText {
           @media only screen and (min-width: $min) and (max-width: $max) {
-            font-size: 4rem;
+            font-size: 2rem;
           }
         }
-      }
-    }
-    #introBox {
-      #introBack {
-        @media only screen and (min-width: $min) and (max-width: $max) {
-          height: 115px;
-        }
-      }
-    }
-    #introContent {
-      @media only screen and (min-width: $min) and (max-width: $max) {
-        top: -108px;
-        font-size: 1.5rem;
-      }
-    }
-    #allTopics {
-      @media only screen and (min-width: $min) and (max-width: $max) {
-        top: 400px;
-      }
-      a {
-        .oneTopic {
+        .oneOpac {
           @media only screen and (min-width: $min) and (max-width: $max) {
             margin-bottom: 45px;
           }
-          .oneText {
-            @media only screen and (min-width: $min) and (max-width: $max) {
-              font-size: 2rem;
-            }
-          }
-          .oneOpac {
-            @media only screen and (min-width: $min) and (max-width: $max) {
-              margin-bottom: 45px;
-            }
-          }
         }
       }
-    }
-    #removeApple {
-      @media only screen and (min-width: $min) and (max-width: $max) {
-        margin: 0 21%;
-        width: 58%;
-        position: absolute;
-        bottom: 0px;
-      }
-      @media only screen and (min-width: $min) and (max-width: $max) {
-        @keyframes wiggleApple {
-          0%   {transform: translate(0px,0px);}
-          25%  {transform: translate(0px,-60px);}
-          50%  {transform: translate(0px,0px);}
-          100% {transform: translate(0px,0px);}
-        }
-        @keyframes inAppleBox {
-          0%   {transform: translate(0px,0px) scale(1)}
-          50%  {transform: translate(0px,-300px) scale(0.5)}
-          100% {transform: translate(0px,-80px) scale(0)}
-        }
-      }
-      #rollImg {
-        width: 100%;
-      }
-    }
-    #familyPic {
-
     }
   }
+  #removeApple {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      margin: 0 21%;
+      width: 58%;
+      position: absolute;
+      bottom: 0px;
+    }
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      @keyframes wiggleApple {
+        0%   {transform: translate(0px,0px);}
+        25%  {transform: translate(0px,-60px);}
+        50%  {transform: translate(0px,0px);}
+        100% {transform: translate(0px,0px);}
+      }
+      @keyframes inAppleBox {
+        0%   {transform: translate(0px,0px) scale(1)}
+        50%  {transform: translate(0px,-300px) scale(0.5)}
+        100% {transform: translate(0px,-70px) scale(0)}
+      }
+    }
+    #rollImg {
+      width: 100%;
+    }
+  }
+  #familyPic {
+
+  }
+  // }
   // END: Index Page
 
   // START: Menu bar
@@ -209,21 +213,26 @@ body {
 
     }
   }
-  .fruitList {
+  #typeName {
+    .fruitTitle {
+      
+    }
+    .fruitList {
 
-    .oneFruitBox {
+      .oneFruitBox {
 
-      .fruitName {
+        .fruitName {
 
-      }
-      .fruitPicture {
+        }
+        .fruitPicture {
 
-      }
-      .fruitDescription {
+        }
+        .fruitDescription {
 
-      }
-      .fruitPrice {
+        }
+        .fruitPrice {
 
+        }
       }
     }
   }
@@ -273,13 +282,15 @@ body {
           }
         }
         #contactAddress {
-          @keyframes openAddress {
-            0%   {font-size: 0rem; padding: 0;}
-            100% {font-size: 1.4rem; padding: 5px 0;}
-          }
-          @keyframes closeAddress {
-            0%   {font-size: 1.4rem; padding: 5px 0;}
-            100% {font-size: 0rem; padding: 0;}
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            @keyframes openAddress {
+              0%   {font-size: 0rem; padding: 0;}
+              100% {font-size: 1.2rem; padding: 5px;}
+            }
+            @keyframes closeAddress {
+              0%   {font-size: 1.2rem; padding: 5px;}
+              100% {font-size: 0rem; padding: 0;}
+            }
           }
         }
       }

@@ -11,6 +11,7 @@ $max: 1366px;
 
 body {
   @media only screen and (min-width: $min) and (max-width: $max) {
+    background-attachment: fixed;
     background-image: url('img/tractor-sunset-full copy.jpg');
   }
   .shadePage {
@@ -23,182 +24,186 @@ body {
   // START: Index page
   #indexPage {
     @media only screen and (min-width: $min) and (max-width: $max) {
-      margin: 0 auto;
-      padding: 25px 0 0 0;
-      background-image: url('img/tractor-sunset-full copy.jpg');
-      background-size: cover;
-      background-attachment: fixed;
+      display: none;
     }
-    #title {
+  }
+  #title {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      margin-top: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+    #top {
+      @media only screen and (min-width: $min) and (max-width: 849px) {
+        // border: 1px solid red;
+        font-size: 4rem;
+      }
+      @media only screen and (min-width: 850px) and (max-width: 1100px) {
+        // border: 1px solid red;
+        font-size: 4.5rem;
+      }
+      @media only screen and (min-width: 1101px) and (max-width: $max) {
+        // border: 1px solid green;
+        font-size: 6rem;
+      }
+    }
+    .bottomWide {
+      @media only screen and (min-width: $min) and (max-width: 849px) {
+        display: inherit;
+        // border: 1px solid red;
+        font-size: 4rem;
+      }
+      @media only screen and (min-width: 850px) and (max-width: 1100px) {
+        display: inherit;
+        // border: 1px solid red;
+        font-size: 4.5rem;
+      }
+      @media only screen and (min-width: 1101px) and (max-width: $max) {
+        display: inherit;
+        // border: 1px solid red;
+        font-size: 6rem;
+      }
+    }
+    #bottomBox {
       @media only screen and (min-width: $min) and (max-width: $max) {
-        margin-top: 0;
-        display: flex;
-        justify-content: space-around;
+        margin: 0;
+        // border: 1px solid red;
+        display: none;
       }
-      #top {
-        @media only screen and (min-width: $min) and (max-width: 849px) {
-          // border: 1px solid red;
-          font-size: 4rem;
-        }
-        @media only screen and (min-width: 850px) and (max-width: 1100px) {
-          // border: 1px solid red;
-          font-size: 4.5rem;
-        }
-        @media only screen and (min-width: 1101px) and (max-width: $max) {
-          // border: 1px solid green;
-          font-size: 6rem;
-        }
-      }
-      .bottomWide {
-        @media only screen and (min-width: $min) and (max-width: 849px) {
-          display: inherit;
-          // border: 1px solid red;
-          font-size: 4rem;
-        }
-        @media only screen and (min-width: 850px) and (max-width: 1100px) {
-          display: inherit;
-          // border: 1px solid red;
-          font-size: 4.5rem;
-        }
-        @media only screen and (min-width: 1101px) and (max-width: $max) {
-          display: inherit;
-          // border: 1px solid red;
-          font-size: 6rem;
-        }
-      }
-      #bottomBox {
+      .bottom {
         @media only screen and (min-width: $min) and (max-width: $max) {
-          margin: 0;
           // border: 1px solid red;
-          display: none;
-        }
-        .bottom {
-          @media only screen and (min-width: $min) and (max-width: $max) {
-            // border: 1px solid red;
-            font-size: 5.5rem;
-          }
+          font-size: 5.5rem;
         }
       }
     }
-    #introBox {
-      @media only screen and (min-width: $min) and (max-width: $max) {
-        margin: 0 5%;
-        width: 50%;
-      }
-      #introBack {
-        @media only screen and (min-width: $min) and (max-width: 958px) {
-          margin-top: 40px;
-          height: 168px;
-        }
-        @media only screen and (min-width: 959px) and (max-width: 1305px) {
-          height: 145px;
-        }
-        @media only screen and (min-width: 1306px) and (max-width: $max) {
-          height: 130px;
-        }
-      }
+  }
+  #introBox {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      margin: 0 5%;
+      width: 50%;
     }
-    #introContent {
-      @media only screen and (min-width: $min) and (max-width: 1305px) {
-        top: -145px;
-        left: 12%;
-        // font-size: 2.2rem;
-        width: 36%;
+    #introBack {
+      @media only screen and (min-width: $min) and (max-width: 958px) {
+        margin-top: 40px;
+        height: 168px;
+      }
+      @media only screen and (min-width: 959px) and (max-width: 1305px) {
+        margin-top: 40px;
+        height: 145px;
       }
       @media only screen and (min-width: 1306px) and (max-width: $max) {
-        top: -117px;
-        left: 11%;
-        // font-size: 2.2rem;
-        width: 36%;
-      }
-      @media only screen and (min-width: $min) and (max-width: 958px) {
-        font-size: 1.75rem;
-      }
-      @media only screen and (min-width: 959px) and (max-width: $max) {
-        font-size: 2.2rem;
+        margin-top: 40px;
+        height: 130px;
       }
     }
-    #allTopics {
-      @media only screen and (min-width: $min) and (max-width: 1110px) {
-        left: 40%;
-        width: 40%;
-      }
-      @media only screen and (min-width: 1111px) and (max-width: $max) {
-        left: 555px;
-        width: 40%;
-      }
-      @media only screen and (min-width: $min) and (max-width: 1000px) {
-        top: 400px;
-      }
-      @media only screen and (min-width: 1001px) and (max-width: $max) {
-        top: 383px;
-      }
-      a {
+  }
+  #introContent {
+    // For positioning the content
+    @media only screen and (min-width: $min) and (max-width: 958px) {
+      top: -145px;
+      left: 12%;
+      width: 36%;
+    }
+    @media only screen and (min-width: 959px) and (max-width: 1305px) {
+      top: -138px;
+      left: 12%;
+      width: 36%;
+    }
+    @media only screen and (min-width: 1306px) and (max-width: $max) {
+      top: -107px;
+      left: 11%;
+      // right: 50%;
+      width: 36%;
+    }
+    // For adjusting the content's font-size
+    @media only screen and (min-width: $min) and (max-width: 958px) {
+      font-size: 1.75rem;
+    }
+    @media only screen and (min-width: 959px) and (max-width: $max) {
+      font-size: 2.2rem;
+    }
+  }
+  #allTopics {
+    @media only screen and (min-width: $min) and (max-width: 1110px) {
+      left: 40%;
+      width: 40%;
+    }
+    @media only screen and (min-width: 1111px) and (max-width: $max) {
+      left: 555px;
+      width: 40%;
+    }
+    @media only screen and (min-width: $min) and (max-width: 1000px) {
+      top: 400px;
+    }
+    @media only screen and (min-width: 1001px) and (max-width: $max) {
+      top: 383px;
+    }
+    a {
 
-        .oneTopic {
+      .oneTopic {
 
-          .oneText {
-            @media only screen and (min-width: $min) and (max-width: 1000px) {
-              font-size: 2.5rem;
-            }
-            @media only screen and (min-width: 1001px) and (max-width: $max) {
-              font-size: 3rem;
-            }
+        .oneText {
+          @media only screen and (min-width: $min) and (max-width: 1000px) {
+            font-size: 2.5rem;
           }
-          .oneOpac {
-            @media only screen and (min-width: $min) and (max-width: $max) {
-              margin-bottom: 30px;
-            }
-            @media only screen and (min-width: $min) and (max-width: 1000px) {
-              height: 75px;
-            }
-            @media only screen and (min-width: 1001px) and (max-width: $max) {
-              height: 95px;
-            }
+          @media only screen and (min-width: 1001px) and (max-width: $max) {
+            font-size: 3rem;
+          }
+        }
+        .oneOpac {
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            margin-bottom: 30px;
+          }
+          @media only screen and (min-width: $min) and (max-width: 1000px) {
+            height: 75px;
+          }
+          @media only screen and (min-width: 1001px) and (max-width: $max) {
+            height: 95px;
           }
         }
       }
     }
-    #removeApple {
+  }
+  #removeApple {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      display: none;
+      margin: 0 21%;
+      width: 58%;
+      position: absolute;
+      bottom: 0px;
+      animation-duration: 2s;
+      @keyframes wiggleApple {
+        0%   {transform: translate(0px,0px);}
+        25%  {transform: translate(0px,-100px);}
+        50%  {transform: translate(0px,0px);}
+        100% {transform: translate(0px,0px);}
+      }
+      @keyframes inAppleBox {
+        0%   {transform: translate(0px,0px) scale(1)}
+        50%  {transform: translate(0px,-200px) scale(0.5)}
+        100% {transform: translate(0px,-60px) scale(0)}
+      }
+      @keyframes twistApple {
+        0% {transform: rotateY(0deg); }
+        100% {transform: rotateY(90deg); }
+      }
+    }
+    #rollImg {
       @media only screen and (min-width: $min) and (max-width: $max) {
-        display: none;
-        margin: 0 21%;
-        width: 58%;
-        position: absolute;
-        bottom: 0px;
-        animation-duration: 2s;
-        @keyframes wiggleApple {
-          0%   {transform: translate(0px,0px);}
-          25%  {transform: translate(0px,-100px);}
-          50%  {transform: translate(0px,0px);}
-          100% {transform: translate(0px,0px);}
-        }
-        @keyframes inAppleBox {
-          0%   {transform: translate(0px,0px) scale(1)}
-          50%  {transform: translate(0px,-200px) scale(0.5)}
-          100% {transform: translate(0px,-60px) scale(0)}
-        }
-        @keyframes twistApple {
-          0% {transform: rotateY(0deg); }
-          100% {transform: rotateY(90deg); }
-        }
-      }
-      #rollImg {
-        @media only screen and (min-width: $min) and (max-width: $max) {
-          width: 100%;
-        }
+        width: 100%;
       }
     }
-    #familyPic {
+  }
+  #familyPic {
 
-    }
   }
   // END: Index Page
 
   // START: Menu bar
   #menuBox {
     @media only screen and (min-width: $min) and (max-width: $max) {
-      margin-top: -25px;
+      // margin-top: -25px;
     }
     #menuBar {
       @media only screen and (min-width: $min) {
@@ -220,7 +225,7 @@ body {
   // START: Directions page
   .subpageTitle {
     @media only screen and (min-width: $min) and (max-width: $max) {
-      font-size: 4.5rem;
+      font-size: 5rem;
     }
   }
   #setDisplay {
@@ -235,6 +240,7 @@ body {
 
       #locationShade {
         @media only screen and (min-width: $min) and (max-width: $max) {
+          margin: 0 14% 20px 14%;
           height: 295px;
         }
       }
@@ -242,7 +248,7 @@ body {
         @media only screen and (min-width: $min) and (max-width: $max) {
           display: flex;
           justify-content: space-around;
-          top: 220px;
+          top: 235px;
           width: 70%;
         }
         iframe {
@@ -279,8 +285,7 @@ body {
 
       #timeShade {
         @media only screen and (min-width: $min) and (max-width: $max) {
-          margin-bottom: 50px;
-          // height: 480px;
+          margin: 0 14% 50px 14%;
         }
         @media only screen and (min-width: $min) and (max-width: 1199px) {
           height: 440px;
@@ -366,36 +371,38 @@ body {
 
     }
   }
-  .fruitTitle {
-    @media only screen and (min-width: $min) and (max-width: $max) {
-      border-radius: 0 25px 25px 0;
-      padding-right: 60px;
-      width: 30%;
-      text-align: right;
-      font-size: 2.8rem;
-    }
-  }
-  .fruitList {
-    @media only screen and (min-width: $min) and (max-width: $max) {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .oneFruitBox {
+  #typeName {
+    .fruitTitle {
       @media only screen and (min-width: $min) and (max-width: $max) {
-        margin: 0 0 30px 4%;
-        width: 18%;
+        border-radius: 0 25px 25px 0;
+        padding-right: 60px;
+        width: 30%;
+        text-align: right;
+        font-size: 2.8rem;
       }
-      .fruitName {
-
+    }
+    .fruitList {
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        display: flex;
+        flex-wrap: wrap;
       }
-      .fruitPicture {
+      .oneFruitBox {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          margin: 0 0 30px 4%;
+          width: 18%;
+        }
+        .fruitName {
 
-      }
-      .fruitDescription {
+        }
+        .fruitPicture {
 
-      }
-      .fruitPrice {
+        }
+        .fruitDescription {
 
+        }
+        .fruitPrice {
+
+        }
       }
     }
   }
@@ -445,13 +452,15 @@ body {
           }
         }
         #contactAddress {
-          @keyframes openAddress {
-            0%   {font-size: 0rem; padding: 0;}
-            100% {font-size: 1.4rem; padding: 5px 0;}
-          }
-          @keyframes closeAddress {
-            0%   {font-size: 1.4rem; padding: 5px 0;}
-            100% {font-size: 0rem; padding: 0;}
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            @keyframes openAddress {
+              0%   {font-size: 0rem; padding: 0;}
+              100% {font-size: 1.4rem; padding: 5px 0;}
+            }
+            @keyframes closeAddress {
+              0%   {font-size: 1.4rem; padding: 5px 0;}
+              100% {font-size: 0rem; padding: 0;}
+            }
           }
         }
       }
