@@ -235,6 +235,7 @@
           }
           #locationIntro {
             @media only screen and (min-width: $min) {
+              padding-top: 50px;
               width: 400px;
             }
             #address {

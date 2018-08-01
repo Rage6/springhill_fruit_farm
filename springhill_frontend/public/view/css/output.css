@@ -11,7 +11,7 @@ html {
       opacity: 0.5;
       background-color: black;
       z-index: 2;
-      position: absolute;
+      position: fixed;
       top: 0;
       width: 100%;
       height: 0px; }
@@ -138,7 +138,8 @@ html {
         padding: 5px 0;
         font-size: 1.5rem;
         font-family: 'Walter Turncoat', cursive;
-        background-image: url("img/chalkboard.jpg"); }
+        background-image: url("img/chalkboard.jpg");
+        cursor: pointer; }
       html body #menuBox #allButtons {
         position: absolute;
         z-index: 2;
@@ -180,6 +181,8 @@ html {
     font-size: 0rem;
     height: 0px;
     border-bottom: 0px; } }
+          html body #menuBox #allButtons a #lastButton {
+            border-radius: 0px 0px 15px 15px; }
     html body .subpageTitle {
       margin: 30px 5% 0 5%;
       padding-top: 10px;
@@ -286,14 +289,16 @@ html {
           border-radius: 8px;
           font-size: 1.3rem;
           text-align: center;
-          width: 40%; }
+          width: 40%;
+          cursor: pointer; }
       html body #chooseFruit #allButton {
         margin: 15px auto 5px auto;
         border: 1px solid white;
         border-radius: 8px;
         font-size: 1.3rem;
         text-align: center;
-        width: 40%; }
+        width: 40%;
+        cursor: pointer; }
     html body #typeName .fruitTitle {
       margin-bottom: 20px;
       padding: 5px 0;
@@ -639,44 +644,44 @@ html {
       background-image: url("img/orchard_flowers.jpg");
       background-size: cover; } }
   @media only screen and (min-width: 415px) and (max-width: 768px) {
-    html body #indexPage #title #top {
+    html body #title #top {
       font-size: 6rem; } }
   @media only screen and (min-width: 415px) and (max-width: 768px) {
-    html body #indexPage #title #bottomBox {
+    html body #title #bottomBox {
       margin: 0 10%; } }
   @media only screen and (min-width: 415px) and (max-width: 768px) {
-    html body #indexPage #title #bottomBox .bottom {
+    html body #title #bottomBox .bottom {
       font-size: 4.5rem; } }
   @media only screen and (min-width: 415px) and (max-width: 713px) {
-    html body #indexPage #introBox #introBack {
+    html body #introBox #introBack {
       height: 127px; } }
   @media only screen and (min-width: 714px) and (max-width: 768px) {
-    html body #indexPage #introBox #introBack {
+    html body #introBox #introBack {
       height: 175px; } }
   @media only screen and (min-width: 415px) and (max-width: 713px) {
-    html body #indexPage #introContent {
+    html body #introContent {
       top: -123px;
       left: 22.5%;
       font-size: 1.8rem;
       width: 55%; } }
   @media only screen and (min-width: 714px) and (max-width: 768px) {
-    html body #indexPage #introContent {
+    html body #introContent {
       top: -168px;
       left: 22.5%;
       font-size: 2.5rem;
       width: 55%; } }
   @media only screen and (min-width: 415px) and (max-width: 768px) {
-    html body #indexPage #allTopics {
+    html body #allTopics {
       top: 560px; } }
   @media only screen and (min-width: 415px) and (max-width: 768px) {
-    html body #indexPage #allTopics a .oneTopic .oneText {
+    html body #allTopics a .oneTopic .oneText {
       font-size: 3rem; } }
   @media only screen and (min-width: 415px) and (max-width: 768px) {
-    html body #indexPage #allTopics a .oneTopic .oneOpac {
+    html body #allTopics a .oneTopic .oneOpac {
       margin-bottom: 45px;
       height: 95px; } }
   @media only screen and (min-width: 415px) and (max-width: 768px) {
-    html body #indexPage #removeApple {
+    html body #removeApple {
       display: none; } }
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     html body .subpageTitle {
@@ -929,6 +934,7 @@ html {
       height: 250px; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #setDisplay #locationBox #locationContent #locationIntro {
+      padding-top: 50px;
       width: 40%; } }
   @media only screen and (min-width: 1206px) and (max-width: 1366px) {
     html body #setDisplay #locationBox #locationContent #locationIntro #address {
@@ -1183,6 +1189,7 @@ html {
       height: 280px; } }
   @media only screen and (min-width: 1367px) {
     html body #setDisplay #locationBox #locationContent #locationIntro {
+      padding-top: 50px;
       width: 400px; } }
   @media only screen and (min-width: 1367px) {
     html body #setDisplay #locationBox #locationContent #locationIntro #address {
