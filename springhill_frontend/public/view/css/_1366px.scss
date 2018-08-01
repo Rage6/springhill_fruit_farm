@@ -260,6 +260,7 @@ body {
         }
         #locationIntro {
           @media only screen and (min-width: $min) and (max-width: $max) {
+            padding-top: 50px;
             width: 40%;
           }
           #address {

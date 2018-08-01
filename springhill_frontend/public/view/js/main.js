@@ -406,9 +406,6 @@ $(()=>{
   };
   findWidth();
 
-  // console.log("browserHeight: " + browserHeight);
-  // console.log("browserWidth: " + browserWidth);
-
   // Since mobile devices can't use background-attachment: fixed, this will adjust for it depending on the browser's width (mobileMaxWidth)
   if (widthNum <= mobileMaxWidth) {
     $("#indexPage").css('width',browserWidth).css('height',browserHeight);
