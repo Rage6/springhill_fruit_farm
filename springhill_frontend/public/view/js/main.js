@@ -507,8 +507,8 @@ $(()=>{
     };
     browserHeight = heightNum + "px";
     $(".shadePage").css('height',browserHeight);
-    // $('body').css('height',browserHeight);
-    $('#indexPage').css('height',browserHeight);
+    $('body').css('height',browserHeight);
+    // $('#indexPage').css('height',browserHeight);
   }
 
   // For selecting the fruit types
