@@ -1028,8 +1028,9 @@ html {
         padding: 0; } } }
   @media only screen and (min-width: 1367px) {
     html body {
-      background-image: none;
-      background-color: white; } }
+      background-color: black;
+      background-image: url("img/maple-leaves-background.jpg");
+      background-size: contain; } }
   @media only screen and (min-width: 1367px) {
     html body .shadePage {
       width: 1366px; } }

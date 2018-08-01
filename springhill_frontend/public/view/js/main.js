@@ -493,6 +493,7 @@ $(()=>{
     clearOneTypeList(peaches);
     clearOneTypeList(pears);
     clearOneTypeList(pumpkins);
+    clearOneTypeList(nectarines);
     $(".fruitTitle").remove();
     $(".fruitList").remove();
   }
@@ -516,6 +517,7 @@ $(()=>{
     $("#pearButton").css('color','white').css('background-color','transparent');
     $("#peachButton").css('color','white').css('background-color','transparent');
     $("#pumpkinButton").css('color','white').css('background-color','transparent');
+    $("#nectarineButton").css('color','white').css('background-color','transparent');
   }
   $("#appleButton").click(()=>{
     unselectAll();
@@ -559,6 +561,7 @@ $(()=>{
     listFruit(pears,"PEARS");
     listFruit(peaches,"PEACHES");
     listFruit(pumpkins,"PUMPKINS");
+    listFruit(nectarines,"NECTARINES");
     newHeight();
   })
 
