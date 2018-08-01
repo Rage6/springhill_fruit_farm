@@ -213,6 +213,7 @@
 
         #locationShade {
           @media only screen and (min-width: $min) {
+            margin: 0 10% 20px 10%;
             height: 330px;
           }
         }

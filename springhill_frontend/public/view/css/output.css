@@ -914,12 +914,13 @@ html {
       margin: 30px 15% 0 15%; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #setDisplay #locationBox #locationShade {
+      margin: 0 14% 20px 14%;
       height: 295px; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #setDisplay #locationBox #locationContent {
       display: flex;
       justify-content: space-around;
-      top: 220px;
+      top: 235px;
       width: 70%; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #setDisplay #locationBox #locationContent iframe {
@@ -943,7 +944,7 @@ html {
       font-size: 1.5rem; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #setDisplay #timeBox #timeShade {
-      margin-bottom: 50px; } }
+      margin: 0 14% 50px 14%; } }
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
     html body #setDisplay #timeBox #timeShade {
       height: 440px; } }
@@ -1165,6 +1166,7 @@ html {
       width: 1226px; } }
   @media only screen and (min-width: 1367px) {
     html body #setDisplay #locationBox #locationShade {
+      margin: 0 10% 20px 10%;
       height: 330px; } }
   @media only screen and (min-width: 1367px) {
     html body #setDisplay #locationBox #locationContent {
