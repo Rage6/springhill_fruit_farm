@@ -392,15 +392,14 @@ $(()=>{
   const showHeight = window.screen.height;
   const showInner  = window.innerHeight;
 
-  console.log(showHeight);
-  console.log(showInner);
+  // console.log(showHeight);
+  // console.log(showInner);
 
-  // const testFunc = () => {
-  //   $('#title').append("<p>showHeight: " + showHeight + "</p>");
-  //   $('#title').append("<p>showAvail: " + showAvail + "</p>");
-  //   $('#title').append("<p>showAvail: " + showInner + "</p>");
-  // }
-  // testFunc();
+  const testFunc = () => {
+    $('#title').append("<p>showHeight: " + showHeight + "</p>");
+    $('#title').append("<p>showInner: " + showInner + "</p>");
+  }
+  testFunc();
 
   //For finding the page's height
   const findHeight = () =>{
