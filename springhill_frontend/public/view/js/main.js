@@ -391,10 +391,12 @@ $(()=>{
 
   const showHeight = window.screen.height;
   const showAvail  = window.screen.availHeight;
+  const showInner  = window.innerHeight;
 
   const testFunc = () => {
     $('#title').append("<p>showHeight: " + showHeight + "</p>");
     $('#title').append("<p>showAvail: " + showAvail + "</p>");
+    $('#title').append("<p>showAvail: " + showInner + "</p>");
   }
   testFunc();
 
