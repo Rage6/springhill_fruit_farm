@@ -389,25 +389,16 @@ $(()=>{
   var indexPageHeight = 0;
   var indexNum = 0;
 
+  // The following heights are needed to adjust for
   var fullHeight = window.screen.height;
   var innerHeight = window.innerHeight;
-
-  // console.log(showHeight);
-  // console.log(showInner);
-
-  // const testFunc = () => {
-  //   $('#title').append("<p>showHeight: " + showHeight + "</p>");
-  //   $('#title').append("<p>showInner: " + showInner + "</p>");
-  // }
-  // testFunc();
 
   //For finding the page's height
   const findHeight = () =>{
     menuHeight = fullHeight - innerHeight;
-    heightNum = fullHeight + menuHeight;
+    heightNum = fullHeight + menuHeight; /* the menuHeight is to factor in the browser's menu bar at the bottom and url bar at the top*/
     browserHeight = heightNum + "px";
     $('.shadePage').css('height',browserHeight);
-    // $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
   };
   findHeight();
