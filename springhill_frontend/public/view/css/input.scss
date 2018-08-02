@@ -407,7 +407,48 @@ html {
     // END: Produce page
 
     // START: History page
+    #mission {
+      margin: 30px 12%;
+      border: 3px solid orange;
+      border-radius: 30px;
+      padding: 16px 6%;
+      color: white;
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: 'Walter Turncoat', cursive;
+      background-image: url('img/chalkboard.jpg');
+      // width: 64%;
+      #missionTitle {
+        margin-bottom: 10px;
+        color: orange;
+        text-align: center;
+        font-size: 1.7rem;
+        font-family: 'Stardos Stencil', cursive;
+      }
+    }
+    #histShade {
 
+    }
+    #histContent {
+      color: white;
+      .histColumn {
+        
+        img {
+          margin-left: 10%;
+          width: 80%;
+        }
+        .histWords {
+          margin: 10px 10%;
+          width: 80%;
+        }
+      }
+      #columnOne {
+
+      }
+      #columnTwo {
+
+      }
+    }
     // END: History page
 
     // START: Contact tab

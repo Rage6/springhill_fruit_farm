@@ -396,7 +396,7 @@ $(()=>{
   //For finding the page's height
   const findHeight = () =>{
     menuHeight = fullHeight - innerHeight;
-    heightNum = fullHeight + menuHeight; /* the menuHeight is to factor in the browser's menu bar at the bottom and url bar at the top*/
+    heightNum = fullHeight + menuHeight; /* the menuHeight is to factor in the browser's menu bar at the bottom and url bar at the top */
     browserHeight = heightNum + "px";
     $('.shadePage').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);

@@ -330,6 +330,30 @@ html {
           margin-bottom: 10px;
           font-size: 1.2rem;
           text-align: left; }
+    html body #mission {
+      margin: 30px 12%;
+      border: 3px solid orange;
+      border-radius: 30px;
+      padding: 16px 6%;
+      color: white;
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: 'Walter Turncoat', cursive;
+      background-image: url("img/chalkboard.jpg"); }
+      html body #mission #missionTitle {
+        margin-bottom: 10px;
+        color: orange;
+        text-align: center;
+        font-size: 1.7rem;
+        font-family: 'Stardos Stencil', cursive; }
+    html body #histContent {
+      color: white; }
+      html body #histContent .histColumn img {
+        margin-left: 10%;
+        width: 80%; }
+      html body #histContent .histColumn .histWords {
+        margin: 10px 10%;
+        width: 80%; }
     html body #contactBox {
       font-family: 'Stardos Stencil', cursive;
       z-index: 2;
