@@ -389,21 +389,22 @@ $(()=>{
   var indexPageHeight = 0;
   var indexNum = 0;
 
-  const showHeight = window.screen.height;
-  const showInner  = window.innerHeight;
+  var fullHeight = window.screen.height;
+  var innerHeight = window.innerHeight;
 
   // console.log(showHeight);
   // console.log(showInner);
 
-  const testFunc = () => {
-    $('#title').append("<p>showHeight: " + showHeight + "</p>");
-    $('#title').append("<p>showInner: " + showInner + "</p>");
-  }
-  testFunc();
+  // const testFunc = () => {
+  //   $('#title').append("<p>showHeight: " + showHeight + "</p>");
+  //   $('#title').append("<p>showInner: " + showInner + "</p>");
+  // }
+  // testFunc();
 
   //For finding the page's height
   const findHeight = () =>{
-    heightNum = showInner;
+    menuHeight = fullHeight - innerHeight;
+    heightNum = fullHeight + menuHeight;
     browserHeight = heightNum + "px";
     $('.shadePage').css('height',browserHeight);
     // $('body').css('height',browserHeight);
