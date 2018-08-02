@@ -384,21 +384,25 @@ $(()=>{
   const mobileMaxWidth = 768;
   var browserHeight = null;
   var heightNum = 0;
-  var menuHeight = 0;
   var browserWidth = null;
   var widthNum = 0;
   var indexPageHeight = 0;
   var indexNum = 0;
 
-  console.log($(screen.availHeight));
-  console.log($(window.height));
-  console.log($(window.availHeight));
+  const showHeight = window.screen.height;
+  const showAvail  = window.screen.availHeight;
+
+  const testFunc = () => {
+    $('#title').append("<p>showHeight: " + showHeight + "</p>");
+    $('#title').append("<p>showAvail: " + showAvail + "</p>");
+  }
+  testFunc();
 
   //For finding the page's height
   const findHeight = () =>{
-    heightNum = $(window).height();
+    heightNum = window.screen.height;
     menuHeight = 44; /* This is a temporary solution for factoring in URL bars, etc */
-    browserHeight = heightNum + menuHeight + "px";
+    browserHeight = heightNum + "px";
     $('.shadePage').css('height',browserHeight);
     // $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
