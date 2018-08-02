@@ -346,14 +346,37 @@ html {
         text-align: center;
         font-size: 1.7rem;
         font-family: 'Stardos Stencil', cursive; }
+    html body #histShade {
+      margin-left: 3%;
+      border-radius: 20px;
+      z-index: -1;
+      position: absolute;
+      top: 460px;
+      opacity: 0.8;
+      background-color: white;
+      height: 1620px;
+      width: 94%; }
     html body #histContent {
-      color: white; }
+      margin: 0 3% 90px 3%;
+      color: black;
+      width: 94%; }
       html body #histContent .histColumn img {
         margin-left: 10%;
+        border-radius: 20px;
         width: 80%; }
       html body #histContent .histColumn .histWords {
         margin: 10px 10%;
+        font-size: 1.3rem;
         width: 80%; }
+      html body #histContent #columnOne {
+        display: flex;
+        flex-direction: column; }
+      html body #histContent #columnTwo {
+        display: flex;
+        flex-direction: column-reverse; }
+      html body #histContent #columnThree {
+        display: flex;
+        flex-direction: column-reverse; }
     html body #contactBox {
       font-family: 'Stardos Stencil', cursive;
       z-index: 2;
