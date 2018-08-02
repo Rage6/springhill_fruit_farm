@@ -390,20 +390,21 @@ $(()=>{
   var indexNum = 0;
 
   const showHeight = window.screen.height;
-  const showAvail  = window.screen.availHeight;
   const showInner  = window.innerHeight;
 
-  const testFunc = () => {
-    $('#title').append("<p>showHeight: " + showHeight + "</p>");
-    $('#title').append("<p>showAvail: " + showAvail + "</p>");
-    $('#title').append("<p>showAvail: " + showInner + "</p>");
-  }
-  testFunc();
+  console.log(showHeight);
+  console.log(showInner);
+
+  // const testFunc = () => {
+  //   $('#title').append("<p>showHeight: " + showHeight + "</p>");
+  //   $('#title').append("<p>showAvail: " + showAvail + "</p>");
+  //   $('#title').append("<p>showAvail: " + showInner + "</p>");
+  // }
+  // testFunc();
 
   //For finding the page's height
   const findHeight = () =>{
-    heightNum = window.screen.height;
-    menuHeight = 44; /* This is a temporary solution for factoring in URL bars, etc */
+    heightNum = showInner;
     browserHeight = heightNum + "px";
     $('.shadePage').css('height',browserHeight);
     // $('body').css('height',browserHeight);
