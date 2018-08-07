@@ -429,7 +429,6 @@ html {
     #histShade {
       margin-left: 3%;
       border-radius: 20px;
-      z-index: -1;
       position: absolute;
       top: 460px;
       opacity: 0.8;
@@ -440,6 +439,7 @@ html {
     #histContent {
       margin: 0 3% 90px 3%;
       color: black;
+      z-index: 1;
       width: 94%;
       .histColumn {
 
@@ -530,13 +530,15 @@ html {
           a {
             //display: none;
             text-decoration: none;
-            #phoneLogo {
-              border: 2px solid black;
-              border-radius: 10px;
-              padding: 10px;
-            }
-            #facebookLogo {
+            span {
+              #phoneLogo {
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+              }
+              #facebookLogo {
 
+              }
             }
           }
           #contactAddress {
