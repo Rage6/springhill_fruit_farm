@@ -349,7 +349,6 @@ html {
     html body #histShade {
       margin-left: 3%;
       border-radius: 20px;
-      z-index: -1;
       position: absolute;
       top: 460px;
       opacity: 0.8;
@@ -359,6 +358,7 @@ html {
     html body #histContent {
       margin: 0 3% 90px 3%;
       color: black;
+      z-index: 1;
       width: 94%; }
       html body #histContent .histColumn img {
         margin-left: 10%;
@@ -437,7 +437,7 @@ html {
           justify-content: space-around; }
           html body #contactBox #contactContent .contactList a {
             text-decoration: none; }
-            html body #contactBox #contactContent .contactList a #phoneLogo {
+            html body #contactBox #contactContent .contactList a span #phoneLogo {
               border: 2px solid black;
               border-radius: 10px;
               padding: 10px; }
