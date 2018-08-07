@@ -365,7 +365,8 @@ html {
         border-radius: 20px;
         width: 80%; }
       html body #histContent .histColumn .histWords {
-        margin: 10px 10%;
+        margin: 20px 10%;
+        font-family: 'Walter Turncoat', cursive;
         font-size: 1.3rem;
         width: 80%; }
       html body #histContent #columnOne {
@@ -379,7 +380,7 @@ html {
         flex-direction: column-reverse; }
     html body #contactBox {
       font-family: 'Stardos Stencil', cursive;
-      z-index: 2;
+      z-index: 3;
       position: fixed;
       bottom: 0;
       width: 100%; }
