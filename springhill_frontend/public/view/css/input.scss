@@ -433,12 +433,13 @@ html {
       top: 460px;
       opacity: 0.8;
       background-color: white;
-      height: 1620px;
+      height: 2080px;
       width: 94%;
     }
     #histContent {
       margin: 0 3% 90px 3%;
       color: black;
+      position: relative;
       z-index: 1;
       width: 94%;
       .histColumn {
