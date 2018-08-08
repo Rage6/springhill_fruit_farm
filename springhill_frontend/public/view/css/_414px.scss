@@ -114,7 +114,10 @@ body {
       a {
 
         .menuButton {
-          @media only screen and (min-width: $min) and (max-width: $max) {
+          // @media only screen and (min-width: $min) and (max-width: $max) {
+          @media (min-width: $min) and (max-width: $max) {
+            border-left: red;
+            border-right: red;
             @keyframes slideDown {
               0% {padding: 0 0; font-size: 0rem; height: 0px; border-bottom: 0px;}
               100% {padding: 8px 0; font-size: 1.7rem; height: 43px; border-bottom: 1px solid red;}
