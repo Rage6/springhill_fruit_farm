@@ -177,9 +177,8 @@ html {
           text-decoration: none;
           .menuButton {
             margin: 0 5%;
-            border-left: 1px solid green;
-            border-right: 1px solid green;
-            display: block;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
             font-size: 0rem;
             font-family: 'Walter Turncoat', cursive;
             background-color: grey;
@@ -199,7 +198,7 @@ html {
                 padding: 8px 0;
                 font-size: 1.7rem;
                 height: 43px;
-                border-bottom: 1px solid green;
+                border-bottom: 1px solid black;
               }
             }
             @keyframes slideUp {
@@ -207,7 +206,7 @@ html {
                 padding: 8px 0;
                 font-size: 1.7rem;
                 height: 43px;
-                border-bottom: 1px solid green;
+                border-bottom: 1px solid black;
               }
               100% {
                 padding: 0 0;

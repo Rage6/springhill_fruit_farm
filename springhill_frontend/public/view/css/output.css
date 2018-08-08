@@ -149,9 +149,8 @@ html {
           text-decoration: none; }
           html body #menuBox #allButtons a .menuButton {
             margin: 0 5%;
-            border-left: 1px solid green;
-            border-right: 1px solid green;
-            display: block;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
             font-size: 0rem;
             font-family: 'Walter Turncoat', cursive;
             background-color: grey;
@@ -170,13 +169,13 @@ html {
     padding: 8px 0;
     font-size: 1.7rem;
     height: 43px;
-    border-bottom: 1px solid green; } }
+    border-bottom: 1px solid black; } }
 @keyframes slideUp {
   0% {
     padding: 8px 0;
     font-size: 1.7rem;
     height: 43px;
-    border-bottom: 1px solid green; }
+    border-bottom: 1px solid black; }
   100% {
     padding: 0 0;
     font-size: 0rem;
@@ -515,10 +514,10 @@ html {
         transform: translate(0px, -75px) scale(0); } } }
   html body #removeApple #rollImg {
     width: 100%; }
-  @media all and (min-width: 361px) and (max-width: 375px) {
+  @media only screen and (min-width: 361px) and (max-width: 375px) {
     html body #menuBox #allButtons a .menuButton {
-      border-left: 1px solid blue;
-      border-right: 1px solid blue; }
+      border-left: 1px solid black;
+      border-right: 1px solid black; }
     @keyframes slideDown {
       0% {
         padding: 0 0;
@@ -529,13 +528,13 @@ html {
         padding: 8px 0;
         font-size: 1.7rem;
         height: 43px;
-        border-bottom: 1px solid blue; } }
+        border-bottom: 1px solid black; } }
     @keyframes slideUp {
       0% {
         padding: 8px 0;
         font-size: 1.7rem;
         height: 43px;
-        border-bottom: 1px solid blue; }
+        border-bottom: 1px solid black; }
       100% {
         padding: 0 0;
         font-size: 0rem;
@@ -632,10 +631,10 @@ html {
         transform: translate(0px, -70px) scale(0); } } }
   html body #removeApple #rollImg {
     width: 100%; }
-  @media all and (min-width: 376px) and (max-width: 414px) {
+  @media only screen and (min-width: 376px) and (max-width: 414px) {
     html body #menuBox #allButtons a .menuButton {
-      border-left: 1px solid red;
-      border-right: 1px solid red; }
+      border-left: 1px solid black;
+      border-right: 1px solid black; }
     @keyframes slideDown {
       0% {
         padding: 0 0;
@@ -646,13 +645,13 @@ html {
         padding: 8px 0;
         font-size: 1.7rem;
         height: 43px;
-        border-bottom: 1px solid red; } }
+        border-bottom: 1px solid black; } }
     @keyframes slideUp {
       0% {
         padding: 8px 0;
         font-size: 1.7rem;
         height: 43px;
-        border-bottom: 1px solid red; }
+        border-bottom: 1px solid black; }
       100% {
         padding: 0 0;
         font-size: 0rem;
