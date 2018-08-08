@@ -516,8 +516,8 @@ html {
     width: 100%; }
   @media only screen and (min-width: 361px) and (max-width: 375px) {
     html body #menuBox #allButtons a .menuButton {
-      border-left: blue;
-      border-right: blue; }
+      border-left: 1px solid blue;
+      border-right: 1px solid blue; }
     @keyframes slideDown {
       0% {
         padding: 0 0;
@@ -633,8 +633,8 @@ html {
     width: 100%; }
   @media (min-width: 376px) and (max-width: 414px) {
     html body #menuBox #allButtons a .menuButton {
-      border-left: red;
-      border-right: red; }
+      border-left: 1px solid red;
+      border-right: 1px solid red; }
     @keyframes slideDown {
       0% {
         padding: 0 0;

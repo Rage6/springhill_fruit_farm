@@ -111,8 +111,8 @@ body {
 
         .menuButton {
           @media only screen and (min-width: $min) and (max-width: $max) {
-            border-left: blue;
-            border-right: blue;
+            border-left: 1px solid blue;
+            border-right: 1px solid blue;
             @keyframes slideDown {
               0% {padding: 0 0; font-size: 0rem; height: 0px; border-bottom: 0px;}
               100% {padding: 8px 0; font-size: 1.7rem; height: 43px; border-bottom: 1px solid blue;}
