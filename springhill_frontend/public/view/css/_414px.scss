@@ -115,9 +115,9 @@ body {
 
         .menuButton {
           // @media only screen and (min-width: $min) and (max-width: $max) {
-          @media all and (min-width: $min) and (max-width: $max) {
-            border-left: 1px solid red;
-            border-right: 1px solid red;
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            border-left: 1px solid black;
+            border-right: 1px solid black;
             @keyframes slideDown {
               0% {
                 padding: 0 0;
@@ -129,7 +129,7 @@ body {
                 padding: 8px 0;
                 font-size: 1.7rem;
                 height: 43px;
-                border-bottom: 1px solid red;
+                border-bottom: 1px solid black;
               }
             }
             @keyframes slideUp {
@@ -137,7 +137,7 @@ body {
                 padding: 8px 0;
                 font-size: 1.7rem;
                 height: 43px;
-                border-bottom: 1px solid red;
+                border-bottom: 1px solid black;
               }
               100% {
                 padding: 0 0;
