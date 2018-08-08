@@ -245,7 +245,8 @@ body {
 
     }
     #contactContent {
-      @media only screen and (min-width: $min) and (max-width: $max) {
+      // @media only screen and (min-width: $min) and (max-width: $max) {
+      @media (min-width: $min) and (max-width: $max) {
         @keyframes tabUp {
           0%   {height: 0;
                 padding: 0 0;
