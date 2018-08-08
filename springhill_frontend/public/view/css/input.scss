@@ -179,6 +179,7 @@ html {
             margin: 0 5%;
             border-left: 1px solid green;
             border-right: 1px solid green;
+            display: block;
             font-size: 0rem;
             font-family: 'Walter Turncoat', cursive;
             background-color: grey;
@@ -188,12 +189,32 @@ html {
             animation-duration: 300ms;
             animation-fill-mode: forwards;
             @keyframes slideDown {
-              0% {padding: 0 0; font-size: 0rem; height: 0px; border-bottom: 0px;}
-              100% {padding: 8px 0; font-size: 1.7rem; height: 43px; border-bottom: 1px solid green;}
+              0% {
+                padding: 0 0;
+                font-size: 0rem;
+                height: 0px;
+                border-bottom: 0px;
+              }
+              100% {
+                padding: 8px 0;
+                font-size: 1.7rem;
+                height: 43px;
+                border-bottom: 1px solid green;
+              }
             }
             @keyframes slideUp {
-              0% {padding: 8px 0; font-size: 1.7rem; height: 43px; border-bottom: 1px solid green;}
-              100% {padding: 0 0; font-size: 0rem; height: 0px; border-bottom: 0px;}
+              0% {
+                padding: 8px 0;
+                font-size: 1.7rem;
+                height: 43px;
+                border-bottom: 1px solid green;
+              }
+              100% {
+                padding: 0 0;
+                font-size: 0rem;
+                height: 0px;
+                border-bottom: 0px;
+              }
             }
           }
           #lastButton {
