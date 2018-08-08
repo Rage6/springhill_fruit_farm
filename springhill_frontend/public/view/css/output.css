@@ -151,6 +151,7 @@ html {
             margin: 0 5%;
             border-left: 1px solid green;
             border-right: 1px solid green;
+            display: block;
             font-size: 0rem;
             font-family: 'Walter Turncoat', cursive;
             background-color: grey;
