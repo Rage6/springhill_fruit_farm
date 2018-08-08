@@ -149,8 +149,8 @@ html {
           text-decoration: none; }
           html body #menuBox #allButtons a .menuButton {
             margin: 0 5%;
-            border-left: 1px solid black;
-            border-right: 1px solid black;
+            border-left: 1px solid green;
+            border-right: 1px solid green;
             font-size: 0rem;
             font-family: 'Walter Turncoat', cursive;
             background-color: grey;
@@ -515,6 +515,9 @@ html {
   html body #removeApple #rollImg {
     width: 100%; }
   @media only screen and (min-width: 361px) and (max-width: 375px) {
+    html body #menuBox #allButtons a .menuButton {
+      border-left: blue;
+      border-right: blue; }
     @keyframes slideDown {
       0% {
         padding: 0 0;
@@ -628,7 +631,10 @@ html {
         transform: translate(0px, -70px) scale(0); } } }
   html body #removeApple #rollImg {
     width: 100%; }
-  @media only screen and (min-width: 376px) and (max-width: 414px) {
+  @media (min-width: 376px) and (max-width: 414px) {
+    html body #menuBox #allButtons a .menuButton {
+      border-left: red;
+      border-right: red; }
     @keyframes slideDown {
       0% {
         padding: 0 0;
