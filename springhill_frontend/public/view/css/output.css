@@ -514,7 +514,7 @@ html {
         transform: translate(0px, -75px) scale(0); } } }
   html body #removeApple #rollImg {
     width: 100%; }
-  @media (min-width: 361px) and (max-width: 375px) {
+  @media all and (min-width: 361px) and (max-width: 375px) {
     html body #menuBox #allButtons a .menuButton {
       border-left: 1px solid blue;
       border-right: 1px solid blue; }
@@ -631,7 +631,7 @@ html {
         transform: translate(0px, -70px) scale(0); } } }
   html body #removeApple #rollImg {
     width: 100%; }
-  @media (min-width: 376px) and (max-width: 414px) {
+  @media all and (min-width: 376px) and (max-width: 414px) {
     html body #menuBox #allButtons a .menuButton {
       border-left: 1px solid red;
       border-right: 1px solid red; }
