@@ -110,7 +110,7 @@ body {
       a {
 
         .menuButton {
-          @media (min-width: $min) and (max-width: $max) {
+          @media all and (min-width: $min) and (max-width: $max) {
             border-left: 1px solid blue;
             border-right: 1px solid blue;
             @keyframes slideDown {
