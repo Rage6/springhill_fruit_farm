@@ -410,7 +410,83 @@ body {
   // END: Produce page
 
   // START: History page
+  #mission {
+    @media only screen and (min-width: 1070px) and (max-width: $max) {
+      font-size: 1.5rem;
+    }
+    #missionTitle {
 
+    }
+  }
+  #histShade {
+    @media only screen and (min-width: $min) and (max-width: 1030px) {
+      height: 1000px;
+    }
+    @media only screen and (min-width: 1031px) and (max-width: 1209px) {
+      height: 1172px;
+    }
+    @media only screen and (min-width: 1210px) and (max-width: $max) {
+      height: 1274px;
+    }
+  }
+  #histContent {
+
+    .histColumn {
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        margin-top: 30px;
+        width: 94%;
+      }
+      img {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          width: 40%;
+          height: 40%;
+        }
+      }
+      #topImg {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          margin-top: 81px;
+        }
+      }
+      .histWords {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          margin: 20px 5%;
+        }
+        @media only screen and (min-width: $min) and (max-width: 1030px) {
+          font-size: 1rem;
+        }
+        @media only screen and (min-width: 1031px) and (max-width: 1209px) {
+          font-size: 1.2rem;
+        }
+        @media only screen and (min-width: 1210px) and (max-width: $max) {
+          font-size: 1.4rem;
+        }
+        ul {
+
+        }
+      }
+      #topWord {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          margin-top: 81px;
+        }
+      }
+    }
+    #columnOne {
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        flex-direction: row;
+
+      }
+    }
+    #columnTwo {
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        flex-direction: row;
+      }
+    }
+    #columnThree {
+      @media only screen and (min-width: $min) and (max-width: $max) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
   // END: History page
 
   // START: Contact tab

@@ -38,7 +38,7 @@ html {
     #indexPage {
       background-size: cover;
       position: fixed;
-      z-index: -1;
+      z-index: -2;
       height: 640px;
       width: 360px;
     }
@@ -437,7 +437,6 @@ html {
       font-size: 1.2rem;
       font-family: 'Walter Turncoat', cursive;
       background-image: url('img/chalkboard.jpg');
-      // width: 64%;
       #missionTitle {
         margin-bottom: 10px;
         color: orange;
@@ -450,10 +449,11 @@ html {
       margin-left: 3%;
       border-radius: 20px;
       position: absolute;
+      z-index: -1;
       top: 460px;
       opacity: 0.8;
       background-color: white;
-      height: 2080px;
+      height: 2088px;
       width: 94%;
     }
     #histContent {
@@ -469,11 +469,20 @@ html {
           border-radius: 20px;
           width: 80%;
         }
+        #topImg {
+          margin-top: 15px;
+        }
         .histWords {
           margin: 20px 10%;
           font-family: 'Walter Turncoat', cursive;
           font-size: 1.3rem;
           width: 80%;
+          ul {
+            margin-left: 0px;
+          }
+        }
+        #topWord {
+
         }
       }
       #columnOne {

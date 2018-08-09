@@ -27,7 +27,7 @@ html {
     html body #indexPage {
       background-size: cover;
       position: fixed;
-      z-index: -1;
+      z-index: -2;
       height: 640px;
       width: 360px; }
     html body #title {
@@ -350,10 +350,11 @@ html {
       margin-left: 3%;
       border-radius: 20px;
       position: absolute;
+      z-index: -1;
       top: 460px;
       opacity: 0.8;
       background-color: white;
-      height: 2080px;
+      height: 2088px;
       width: 94%; }
     html body #histContent {
       margin: 0 3% 90px 3%;
@@ -365,11 +366,15 @@ html {
         margin-left: 10%;
         border-radius: 20px;
         width: 80%; }
+      html body #histContent .histColumn #topImg {
+        margin-top: 15px; }
       html body #histContent .histColumn .histWords {
         margin: 20px 10%;
         font-family: 'Walter Turncoat', cursive;
         font-size: 1.3rem;
         width: 80%; }
+        html body #histContent .histColumn .histWords ul {
+          margin-left: 0px; }
       html body #histContent #columnOne {
         display: flex;
         flex-direction: column; }
@@ -660,6 +665,14 @@ html {
   @media only screen and (min-width: 376px) and (max-width: 414px) {
     html body #setDisplay #timeBox #timeShade {
       height: 645px; } }
+  @media only screen and (min-width: 376px) and (max-width: 414px) {
+    html body #histShade {
+      margin-left: 6%;
+      height: 2095px;
+      width: 88%; } }
+  @media only screen and (min-width: 376px) and (max-width: 414px) {
+    html body #histContent .histColumn #topImg {
+      margin-top: 38px; } }
   @media (min-width: 376px) and (max-width: 414px) {
     @keyframes tabUp {
       0% {
@@ -792,6 +805,21 @@ html {
     html body #typeName .fruitList .oneFruitBox {
       margin: 0 0 30px 4%;
       width: 34%; } }
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    html body #histShade {
+      margin-left: 8%;
+      height: 1992px;
+      width: 84%; } }
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    html body #histContent .histColumn img {
+      margin-left: 17%;
+      width: 66%; } }
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    html body #histContent .histColumn #topImg {
+      margin-top: 84px; } }
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    html body #histContent .histColumn .histWords ul {
+      margin-left: 21%; } }
   @media (min-width: 415px) and (max-width: 768px) {
     @keyframes tabUp {
       0% {
@@ -1056,6 +1084,53 @@ html {
     html body #typeName .fruitList .oneFruitBox {
       margin: 0 0 30px 4%;
       width: 18%; } }
+  @media only screen and (min-width: 1070px) and (max-width: 1366px) {
+    html body #mission {
+      font-size: 1.5rem; } }
+  @media only screen and (min-width: 769px) and (max-width: 1030px) {
+    html body #histShade {
+      height: 1000px; } }
+  @media only screen and (min-width: 1031px) and (max-width: 1209px) {
+    html body #histShade {
+      height: 1172px; } }
+  @media only screen and (min-width: 1210px) and (max-width: 1366px) {
+    html body #histShade {
+      height: 1274px; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #histContent .histColumn {
+      margin-top: 30px;
+      width: 94%; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #histContent .histColumn img {
+      width: 40%;
+      height: 40%; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #histContent .histColumn #topImg {
+      margin-top: 81px; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #histContent .histColumn .histWords {
+      margin: 20px 5%; } }
+  @media only screen and (min-width: 769px) and (max-width: 1030px) {
+    html body #histContent .histColumn .histWords {
+      font-size: 1rem; } }
+  @media only screen and (min-width: 1031px) and (max-width: 1209px) {
+    html body #histContent .histColumn .histWords {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 1210px) and (max-width: 1366px) {
+    html body #histContent .histColumn .histWords {
+      font-size: 1.4rem; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #histContent .histColumn #topWord {
+      margin-top: 81px; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #histContent #columnOne {
+      flex-direction: row; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #histContent #columnTwo {
+      flex-direction: row; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #histContent #columnThree {
+      flex-direction: row-reverse; } }
 @keyframes tabUp {
   0% {
     height: 0;
@@ -1316,6 +1391,9 @@ html {
     html body #typeName .fruitList .oneFruitBox {
       margin: 0 0 30px 4%;
       width: 18%; } }
+  @media only screen and (min-width: 1367px) and (max-width: 1366px) {
+    html body #histContent .histColumn #topWord {
+      margin-top: 81px; } }
   @media only screen and (min-width: 1367px) {
     html body #contactBox {
       margin: 0 0 0 50%;

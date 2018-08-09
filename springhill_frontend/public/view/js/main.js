@@ -325,9 +325,17 @@ $(()=>{
   ];
   const pumpkins       = [
     {
-      name: "",
+      name: "Pumpkins",
       picture: "",
-      description: "NEEDS NAMES, PICS, AND INFO",
+      description: "NEEDS NAME(S), PIC(S), AND INFO",
+      cost: 5.50,
+      byDozen: true,
+      type: "PUMPKINS"
+    },
+    {
+      name: "Squash",
+      picture: "",
+      description: "NEEDS NAME(S), PIC(S), AND INFO",
       cost: 5.50,
       byDozen: true,
       type: "PUMPKINS"
@@ -491,6 +499,7 @@ $(()=>{
     $("#peachButton").css('color','white').css('background-color','transparent');
     $("#pumpkinButton").css('color','white').css('background-color','transparent');
     $("#nectarineButton").css('color','white').css('background-color','transparent');
+    $("#plumButton").css('color','white').css('background-color','transparent');
   }
   $("#appleButton").click(()=>{
     unselectAll();
