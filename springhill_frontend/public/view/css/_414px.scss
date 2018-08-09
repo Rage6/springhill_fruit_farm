@@ -263,7 +263,51 @@ body {
   // END: Produce page
 
   // START: History page
+  #mission {
 
+    #missionTitle {
+
+    }
+  }
+  #histShade {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+      margin-left: 6%;
+      height: 2095px;
+      width: 88%;
+    }
+  }
+  #histContent {
+
+    .histColumn {
+
+      img {
+
+      }
+      #topImg {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+          margin-top: 38px;
+        }
+      }
+      .histWords {
+
+        ul {
+
+        }
+      }
+      #topWord {
+
+      }
+    }
+    #columnOne {
+
+    }
+    #columnTwo {
+
+    }
+    #columnThree {
+
+    }
+  }
   // END: History page
 
   // START: Contact tab
