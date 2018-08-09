@@ -8,256 +8,256 @@ $(()=>{
       name: "Blondee",
       estRipeMon: 9,
       estRipeDay: 6,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "NEEDS INFO",
+      picture: "css/img/apples/BLONDEE_edit.jpg",
+      description: "Sweet & crisp. Great for eating, sauce, pies, baking, and cooking.",
       type: "APPLES"
     },
     {
       name: "Braeburn",
       estRipeMon: 10,
       estRipeDay: 31,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Sweet, very good for salads",
+      picture: "css/img/apples/Braeburn_edit.jpg",
+      description: "Hard & tart. Excellent for eating, pies, and baking. Stores well.",
       type: "APPLES"
     },
     {
       name: "Cameo",
       estRipeMon: 10,
       estRipeDay: 25,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Sweet, wonderfully crisp",
+      picture: "css/img/apples/CAMEOO_edit.jpg",
+      description: "Sweet & crisp with a touch of tart. Excellent for eating, pies, and baking.",
       type: "APPLES"
     },
     {
       name: "Cortland",
       estRipeMon: 9,
       estRipeDay: 9,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Tart, very good for baking",
+      picture: "css/img/apples/cortland_edit.jpg",
+      description: "Juicy, Crisp, and Tart. Great for eating, sauce, pies, drying, baking, and cooking.",
       type: "APPLES"
     },
     {
       name: "Crimson Crisp",
       estRipeMon: 9,
       estRipeDay: 25,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Tart, very good for baking",
+      picture: "css/img/apples/crimson_crisp_edit.jpg",
+      description: "Firm, crisp, and tart (with a hint of spice). Wonderful for eating or for salads.",
       type: "APPLES"
     },
     {
-      name: "Early Gold",
+      name: "Earligold",
       estRipeMon: 10,
       estRipeDay: 31,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "NEEDS INFO",
+      picture: "css/img/apples/Earligold_edit.jpg",
+      description: "Tart & crisp, softening over time. Great for eating, sauce, pies, baking, and cooking.",
       type: "APPLES"
     },
     {
       name: "Early Fuji",
       estRipeMon: 9,
       estRipeDay: 16,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "NEEDS INFO",
+      picture: "css/img/apples/Earlyfuji_edit.jpg",
+      description: "Sweet & hard. Excellent for eating, salads, pies, and baking.",
+      type: "APPLES"
+    },
+    {
+      name: "Early Macintosh",
+      estRipeMon: null,
+      estRipeDay: null,
+      picture: "css/img/apples/EARLYMAC_edit.jpg",
+      description: "Tart & mellow. Great for eating and baking.",
       type: "APPLES"
     },
     {
       name: "Fuji",
       estRipeMon: 10,
       estRipeDay: 25,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Sweet, wonderfully crisp",
+      picture: "css/img/apples/Fuji_edit.jpg",
+      description: "Sweet & crisp. Excellent for eating, pies, and baking.",
       type: "APPLES"
     },
     {
       name: "Gala",
       estRipeMon: 8,
       estRipeDay: 24,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Sweet, very good for salads",
+      picture: "css/img/apples/Gala_edit.jpg",
+      description: "Sweet, crisp. light skinned, and aromatic. Great for eating, baking, and cooking.",
       type: "APPLES"
     },
     {
       name: "Ginger Gold",
       estRipeMon: 8,
       estRipeDay: 18,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Tangy, very good for baking",
+      picture: "css/img/apples/Ginger_Gold_edit.jpg",
+      description: "Sweet & tart. Firm & crisp. Great for eating, sauce, pies, baking, and cooking.",
       type: "APPLES"
     },
     {
       name: "Gold Rush",
       estRipeMon: 10,
       estRipeDay: 31,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Tangy, very good for baking",
+      picture: "css/img/apples/Gold_Rush_edit.jpg",
+      description: "Hard & very tart. Excellent for eating, pies, and baking.",
       type: "APPLES"
     },
     {
       name: "Granny Smith",
       estRipeMon: 10,
       estRipeDay: 25,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Tart, very good for baking",
+      picture: "css/img/apples/Granny_Smith_edit.jpg",
+      description: "Hardy & tart. Excellent for eating, pies, and baking.",
       type: "APPLES"
     },
     {
       name: "Honeycrisp",
       estRipeMon: 9,
       estRipeDay: 5,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Sweet, wonderfully crisp",
+      picture: "css/img/apples/Honeycrisp_edit.jpg",
+      description: "Crisp & sweet. Excellent for eating, pies, and salads.",
       type: "APPLES"
     },
     {
       name: "Jonagold",
       estRipeMon: 8,
       estRipeDay: 27,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Tangy, very good for baking",
+      picture: "css/img/apples/JONAGOLD_edit.jpg",
+      description: "Sweet, tangy, and crisp. Great for eating, sauce, pies, baking, and cooking.",
       type: "APPLES"
     },
     {
       name: "Jonathon",
       estRipeMon: 9,
       estRipeDay: 12,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Tart, very good for baking",
+      picture: "css/img/apples/jonathon_edit.jpg",
+      description: "Tart, spicy, and firm. Excellent for eating, salads, freezing, sauce, and pies.",
       type: "APPLES"
     },
     {
       name: "Macintosh",
       estRipeMon: 9,
       estRipeDay: 6,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Tart, very good for baking",
+      picture: "css/img/apples/macintosh_edit.jpg",
+      description: "Spicy & tart, softened once ripe. Excellent for eating and salads. Good for pies, sauce, and baking.",
       type: "APPLES"
     },
     {
       name: "Melrose",
       estRipeMon: 10,
       estRipeDay: 4,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Sweet, very good for baking",
+      picture: "css/img/apples/Melrose_edit.jpg",
+      description: "Crisp & tart. Excellent for eating, salads, sauce, pies, baking, and freezing.",
       type: "APPLES"
     },
     {
       name: "Mutsu",
       estRipeMon: 10,
       estRipeDay: 18,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Tangy, very good for baking",
+      picture: "css/img/apples/Mutsu_edit.jpg",
+      description: "Sweet & crisp (with a zing). Excellent for eating, sauce, pies, and baking.",
       type: "APPLES"
     },
     {
       name: "Northern Spy",
       estRipeMon: 10,
       estRipeDay: 22,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Tart, very good for baking",
+      picture: "css/img/apples/NORTHERN_SPY_edit.jpg",
+      description: "Tart with a hint of sweetness. Excellent for pies or storing.",
       type: "APPLES"
     },
     {
       name: "Paula Red",
       estRipeMon: 8,
       estRipeDay: 18,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Tart, very good for baking",
+      picture: "css/img/apples/Paula_Red_edit.jpg",
+      description: "Tart, juicy, and firm. Great for eating, pies, baking, and cooking.",
       type: "APPLES"
     },
     {
       name: "Pink Lady",
       estRipeMon: 10,
       estRipeDay: 31,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Tart, very good for baking",
+      picture: "css/img/apples/Pink_Lady_edit.jpg",
+      description: "Sweet, tart, and hard. Excellent for eating, pies, and baking.",
       type: "APPLES"
     },
     {
       name: "Red Delicious",
       estRipeMon: 9,
       estRipeDay: 25,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Sweet, very good for salads",
+      picture: "css/img/apples/red-delicious_edit.jpg",
+      description: "Sweet, juicy, and thick-skinned. Excellent for eating and salads.",
       type: "APPLES"
     },
     {
       name: "Rome",
       estRipeMon: 10,
       estRipeDay: 1,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "A mild flavor, well suited for baking",
+      picture: "css/img/apples/Rome_edit.jpg",
+      description: "Mild & firm. Excellent for sauce, pies, baking, and freezing.",
       type: "APPLES"
     },
     {
       name: "Shizuka",
       estRipeMon: 10,
       estRipeDay: 11,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "UPDATE INFO",
+      picture: "",
+      description: "NEEDS PIC AND INFO",
       type: "APPLES"
     },
     {
       name: "Winesap",
       estRipeMon: 10,
       estRipeDay: 25,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "Tart, very good for baking",
+      picture: "css/img/apples/Winesap_edit.jpg",
+      description: "Spicy, tart, and firm. Excellent for eating, sauce, pies, baking and freezing.",
       type: "APPLES"
     },
     {
       name: "Yellow Delicious",
       estRipeMon: 10,
       estRipeDay: 2,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "UPDATE INFO",
+      picture: "css/img/apples/YELLOW_D_edit.jpg",
+      description: "Sweet & semi-firm. Excellent for eating, salads, sauce, pies, baking, and freezing.",
       type: "APPLES"
     },
     {
       name: "Zestar",
       estRipeMon: 8,
       estRipeDay: 14,
-      picture: "http://ediblelandscaping.com/products/trees/Apples/images/site/apple-Gold-Rush-2013.jpg",
-      description: "UPDATE INFO",
+      picture: "css/img/apples/Zestar_edit.jpg",
+      description: "Sweet, tart, and crisp. Great for eating, sauce, pies, baking, and cooking.",
       type: "APPLES"
     }
   ];
   const pears          = [
     {
-      name: "Bosc",
-      picture: "http://www.specialtyproduce.com/sppics/7242.png",
-      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      name: "Bartlett",
+      picture: "css/img/pears/Bartlett_Pear_edit.jpg",
+      description: "NEEDS INFO",
       cost: 5.50,
       byDozen: true,
       type: "PEARS"
     },
     {
       name: "Bosc",
-      picture: "http://www.specialtyproduce.com/sppics/7242.png",
-      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      picture: "css/img/pears/BOSC_Pear_edit.jpg",
+      description: "Firm & juicy. Great for eating, cooking, juicing, and canning.",
       cost: 5.50,
       byDozen: true,
       type: "PEARS"
     },
     {
-      name: "Bosc",
-      picture: "http://www.specialtyproduce.com/sppics/7242.png",
-      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      name: "D'Anjou",
+      picture: "css/img/pears/DAnjou_edit.jpg",
+      description: "Crisp & sweet (with a hint of citrus). Great for eating, cooking, juicing, and canning.",
       cost: 5.50,
       byDozen: true,
       type: "PEARS"
     },
     {
-      name: "Bosc",
-      picture: "http://www.specialtyproduce.com/sppics/7242.png",
-      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
-      cost: 5.50,
-      byDozen: true,
-      type: "PEARS"
-    },
-    {
-      name: "Bosc",
-      picture: "http://www.specialtyproduce.com/sppics/7242.png",
-      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      name: "Shenandoah",
+      picture: "css/img/pears/shenandoah_edit.jpg",
+      description: "Crispy & sweet. Great for eating and canning.",
       cost: 5.50,
       byDozen: true,
       type: "PEARS"
@@ -268,72 +268,56 @@ $(()=>{
       name: "Sunglo",
       estRipeMon: 9,
       estRipeDay: 6,
-      picture: "./css/img/nectarine_generic.jpg",
-      description: "NEEDS INFO",
+      picture: "",
+      description: "NEEDS PIC AND INFO",
       type: "NECTARINES"
     },
     {
       name: "Fantasia",
       estRipeMon: 9,
       estRipeDay: 6,
-      picture: "./css/img/nectarine_generic.jpg",
-      description: "NEEDS INFO",
+      picture: "",
+      description: "NEEDS PIC AND INFO",
       type: "NECTARINES"
     },
     {
       name: "Zephyr",
       estRipeMon: 9,
       estRipeDay: 6,
-      picture: "./css/img/nectarine_generic.jpg",
-      description: "NEEDS INFO",
+      picture: "",
+      description: "NEEDS PIC AND INFO",
       type: "NECTARINES"
     }
-  ]
+  ];
   const peaches        = [
     {
-      name: "first peach",
-      picture: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Autumn_Red_peaches.jpg",
-      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      name: "Contender",
+      picture: "css/img/peaches/Contender_edit.jpg",
+      description: "Sweet & cling-free. Great for canning, pies, jams, jellies, and fresh eating.",
       cost: 5.50,
       byDozen: true,
       type: "PEACHES"
     },
     {
-      name: "second peach",
-      picture: "https://wonderopolis.org/wp-content/uploads/2016/10/Why_Are_Peaches_Fuzzy_fruit_background_xl_20352201_(Custom).jpg",
-      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      name: "Flaming Fury",
+      picture: "css/img/peaches/Flaming_Fury_edit.jpg",
+      description: "NEEDS INFO",
       cost: 5.50,
       byDozen: true,
       type: "PEACHES"
     },
     {
-      name: "first peach",
-      picture: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Autumn_Red_peaches.jpg",
-      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      name: "Harrow Beauty",
+      picture: "css/img/peaches/harrow-beauty_edit.jpg",
+      description: "Sweet, juicy, and cling-free. Excellent for eating, baking, jamming, canning, and freezing.",
       cost: 5.50,
       byDozen: true,
       type: "PEACHES"
     },
     {
-      name: "second peach",
-      picture: "https://wonderopolis.org/wp-content/uploads/2016/10/Why_Are_Peaches_Fuzzy_fruit_background_xl_20352201_(Custom).jpg",
-      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
-      cost: 5.50,
-      byDozen: true,
-      type: "PEACHES"
-    },
-    {
-      name: "first peach",
-      picture: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Autumn_Red_peaches.jpg",
-      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
-      cost: 5.50,
-      byDozen: true,
-      type: "PEACHES"
-    },
-    {
-      name: "second peach",
-      picture: "https://wonderopolis.org/wp-content/uploads/2016/10/Why_Are_Peaches_Fuzzy_fruit_background_xl_20352201_(Custom).jpg",
-      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      name: "Red Haven",
+      picture: "css/img/peaches/Red_Haven_edit.jpg",
+      description: "Sweet & semi-cling. Great for pies, jams, jellies, canning, and fresh eating.",
       cost: 5.50,
       byDozen: true,
       type: "PEACHES"
@@ -341,44 +325,30 @@ $(()=>{
   ];
   const pumpkins       = [
     {
-      name: "some pumpkin",
-      picture: "http://demandware.edgesuite.net/sits_pod32/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dwa6425655/images/products/vegetables/03978t_01_cargopmr.jpg?sw=774&cx=302&cy=0&cw=1196&ch=1196",
-      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      name: "",
+      picture: "",
+      description: "NEEDS NAMES, PICS, AND INFO",
       cost: 5.50,
       byDozen: true,
       type: "PUMPKINS"
+    }
+  ];
+  const plums          = [
+    {
+      name: "German",
+      picture: "css/img/plums/GERMAN_edit.jpg",
+      description: "Sweet & juicy. Excellent for eating, drying, canning, and baking.",
+      cost: 5.50,
+      byDozen: true,
+      type: "PLUMS"
     },
     {
-      name: "some pumpkin",
-      picture: "http://demandware.edgesuite.net/sits_pod32/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dwa6425655/images/products/vegetables/03978t_01_cargopmr.jpg?sw=774&cx=302&cy=0&cw=1196&ch=1196",
-      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
+      name: "Stanley",
+      picture: "css/img/plums/Stanley_edit.jpg",
+      description: "Sweet & juicy. Excellent for eating, drying, canning, and baking.",
       cost: 5.50,
       byDozen: true,
-      type: "PUMPKINS"
-    },
-    {
-      name: "some pumpkin",
-      picture: "http://demandware.edgesuite.net/sits_pod32/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dwa6425655/images/products/vegetables/03978t_01_cargopmr.jpg?sw=774&cx=302&cy=0&cw=1196&ch=1196",
-      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
-      cost: 5.50,
-      byDozen: true,
-      type: "PUMPKINS"
-    },
-    {
-      name: "some pumpkin",
-      picture: "http://demandware.edgesuite.net/sits_pod32/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dwa6425655/images/products/vegetables/03978t_01_cargopmr.jpg?sw=774&cx=302&cy=0&cw=1196&ch=1196",
-      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
-      cost: 5.50,
-      byDozen: true,
-      type: "PUMPKINS"
-    },
-    {
-      name: "some pumpkin",
-      picture: "http://demandware.edgesuite.net/sits_pod32/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dwa6425655/images/products/vegetables/03978t_01_cargopmr.jpg?sw=774&cx=302&cy=0&cw=1196&ch=1196",
-      description: "These firm and juicy pears are great for cooking, juicing, and eating by hand.",
-      cost: 5.50,
-      byDozen: true,
-      type: "PUMPKINS"
+      type: "PLUMS"
     }
   ];
   const mobileMaxWidth = 768;
@@ -478,8 +448,9 @@ $(()=>{
     listFruit(apples,"APPLES");
     listFruit(pears,"PEARS");
     listFruit(peaches,"PEACHES");
-    listFruit(pumpkins,"PUMPKINS");
+    listFruit(plums,"PLUMS");
     listFruit(nectarines,"NECTARINES");
+    listFruit(pumpkins,"PUMPKINS");
   }
 
   // For removing the entire list when changing the selected fruit
@@ -495,6 +466,7 @@ $(()=>{
     clearOneTypeList(pears);
     clearOneTypeList(pumpkins);
     clearOneTypeList(nectarines);
+    clearOneTypeList(plums);
     $(".fruitTitle").remove();
     $(".fruitList").remove();
   }
@@ -555,14 +527,22 @@ $(()=>{
     listFruit(nectarines,"NECTARINES");
     newHeight();
   })
+  $("#plumButton").click(()=>{
+    unselectAll();
+    clearAllTypeList();
+    $("#plumButton").css('color','black').css('background-color','white');
+    listFruit(plums,"PLUMS");
+    newHeight();
+  })
   $("#allButton").click(()=>{
     unselectAll();
     clearAllTypeList();
     listFruit(apples,"APPLES");
     listFruit(pears,"PEARS");
     listFruit(peaches,"PEACHES");
-    listFruit(pumpkins,"PUMPKINS");
+    listFruit(plums,"PLUMS");
     listFruit(nectarines,"NECTARINES");
+    listFruit(pumpkins,"PUMPKINS");
     newHeight();
   })
 
