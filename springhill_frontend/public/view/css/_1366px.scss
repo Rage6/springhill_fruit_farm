@@ -434,7 +434,7 @@ body {
     .histColumn {
       @media only screen and (min-width: $min) and (max-width: $max) {
         margin-top: 30px;
-        width: 94%;
+        // width: 1206px;
       }
       img {
         @media only screen and (min-width: $min) and (max-width: $max) {
@@ -461,7 +461,15 @@ body {
           font-size: 1.4rem;
         }
         ul {
-
+          @media only screen and (min-width: $min) and (max-width: $max) {
+            text-align: center;
+            list-style-type: none;
+            li {
+              @media only screen and (min-width: $min) and (max-width: $max) {
+                margin-bottom: 5px;
+              }
+            }
+          }
         }
       }
       #topWord {
@@ -473,12 +481,12 @@ body {
     #columnOne {
       @media only screen and (min-width: $min) and (max-width: $max) {
         flex-direction: row;
-
       }
     }
     #columnTwo {
       @media only screen and (min-width: $min) and (max-width: $max) {
         flex-direction: row;
+        text-align: right;
       }
     }
     #columnThree {

@@ -388,41 +388,102 @@
 
     // START: History page
     #mission {
-
+      @media only screen and (min-width: $min) {
+        margin: 30px 0 30px 50%;
+        padding: 16px 82px;
+        position: relative;
+        left: -525px;
+        font-size: 1.5rem;
+        width: 868px;
+      }
       #missionTitle {
 
       }
     }
     #histShade {
-
+      @media only screen and (min-width: $min) {
+        margin-left: 50%;
+        // top: 460px;
+        left: -642px;
+        width: 1284px;
+        height: 1280px;
+      }
     }
     #histContent {
-
+      @media only screen and (min-width: $min) {
+        margin: 0 0 90px 50%;
+        position: relative;
+        right: 683px;
+        width: 1366px;
+      }
       .histColumn {
-
+        @media only screen and (min-width: $min) {
+          margin: 30px auto 0 auto;
+          width: 1206px;
+        }
         img {
 
         }
+        #topImg {
+          @media only screen and (min-width: $min) {
+            margin-top: 81px;
+          }
+        }
         .histWords {
-
+          @media only screen and (min-width: $min) {
+            margin: 20px 5%;
+          }
           ul {
-
+            @media only screen and (min-width: $min) {
+              text-align: center;
+              list-style-type: none;
+              li {
+                @media only screen and (min-width: $min) and (max-width: $max) {
+                  margin-bottom: 5px;
+                }
+              }
+            }
           }
         }
         #topWord {
-          @media only screen and (min-width: $min) and (max-width: $max) {
+          @media only screen and (min-width: $min) {
             margin-top: 81px;
           }
         }
       }
       #columnOne {
-
+        @media only screen and (min-width: $min) {
+          flex-direction: row;
+        }
+        img {
+          @media only screen and (min-width: $min) {
+            height: 351px;
+            width: 482px;
+          }
+        }
       }
       #columnTwo {
-
+        @media only screen and (min-width: $min) {
+          flex-direction: row;
+          text-align: right;
+        }
+        img {
+          @media only screen and (min-width: $min) {
+            height: 384px;
+            width: 482px;
+          }
+        }
       }
       #columnThree {
-
+        @media only screen and (min-width: $min) {
+          flex-direction: row-reverse;
+        }
+        img {
+          @media only screen and (min-width: $min) {
+            height: 344px;
+            width: 482px;
+          }
+        }
       }
     }
     // END: History page
