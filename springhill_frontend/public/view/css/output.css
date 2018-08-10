@@ -347,7 +347,7 @@ html {
         font-size: 1.7rem;
         font-family: 'Stardos Stencil', cursive; }
     html body #histShade {
-      margin-left: 3%;
+      margin: 0 0 70px 3%;
       border-radius: 20px;
       position: absolute;
       z-index: -1;
@@ -374,7 +374,11 @@ html {
         font-size: 1.3rem;
         width: 80%; }
         html body #histContent .histColumn .histWords ul {
-          margin-left: 0px; }
+          margin-left: 0px;
+          border-radius: 15px;
+          padding-top: 5px;
+          color: white;
+          background-image: url("img/chalkboard.jpg"); }
       html body #histContent #columnOne {
         display: flex;
         flex-direction: column; }
@@ -819,7 +823,8 @@ html {
       margin-top: 84px; } }
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     html body #histContent .histColumn .histWords ul {
-      margin-left: 21%; } }
+      margin-left: 21%;
+      width: 58%; } }
   @media (min-width: 415px) and (max-width: 768px) {
     @keyframes tabUp {
       0% {
@@ -1089,19 +1094,19 @@ html {
       font-size: 1.5rem; } }
   @media only screen and (min-width: 769px) and (max-width: 1030px) {
     html body #histShade {
-      height: 1000px; } }
+      height: 1110px; } }
   @media only screen and (min-width: 1031px) and (max-width: 1209px) {
     html body #histShade {
-      height: 1172px; } }
+      height: 1324px; } }
   @media only screen and (min-width: 1210px) and (max-width: 1366px) {
     html body #histShade {
-      height: 1274px; } }
+      height: 1437px; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #histContent .histColumn {
-      margin-top: 30px;
-      width: 94%; } }
+      margin-top: 30px; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #histContent .histColumn img {
+      margin-right: 3%;
       width: 40%;
       height: 40%; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
@@ -1120,6 +1125,14 @@ html {
     html body #histContent .histColumn .histWords {
       font-size: 1.4rem; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #histContent .histColumn .histWords ul {
+      text-align: center;
+      list-style-type: none; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) and (min-width: 769px) and (max-width: 1366px) {
+    html body #histContent .histColumn .histWords ul li {
+      margin-bottom: 5px; } }
+
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #histContent .histColumn #topWord {
       margin-top: 81px; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
@@ -1127,7 +1140,8 @@ html {
       flex-direction: row; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #histContent #columnTwo {
-      flex-direction: row; } }
+      flex-direction: row;
+      text-align: right; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #histContent #columnThree {
       flex-direction: row-reverse; } }
@@ -1391,9 +1405,69 @@ html {
     html body #typeName .fruitList .oneFruitBox {
       margin: 0 0 30px 4%;
       width: 18%; } }
-  @media only screen and (min-width: 1367px) and (max-width: 1366px) {
+  @media only screen and (min-width: 1367px) {
+    html body #mission {
+      margin: 30px 0 30px 50%;
+      padding: 16px 82px;
+      position: relative;
+      left: -525px;
+      font-size: 1.5rem;
+      width: 868px; } }
+  @media only screen and (min-width: 1367px) {
+    html body #histShade {
+      margin-left: 50%;
+      left: -642px;
+      width: 1284px;
+      height: 1280px; } }
+  @media only screen and (min-width: 1367px) {
+    html body #histContent {
+      margin: 0 0 90px 50%;
+      position: relative;
+      right: 683px;
+      width: 1366px; } }
+  @media only screen and (min-width: 1367px) {
+    html body #histContent .histColumn {
+      margin: 30px auto 0 auto;
+      width: 1206px; } }
+  @media only screen and (min-width: 1367px) {
+    html body #histContent .histColumn #topImg {
+      margin-top: 81px; } }
+  @media only screen and (min-width: 1367px) {
+    html body #histContent .histColumn .histWords {
+      margin: 20px 5%; } }
+  @media only screen and (min-width: 1367px) {
+    html body #histContent .histColumn .histWords ul {
+      text-align: center;
+      list-style-type: none; } }
+  @media only screen and (min-width: 1367px) and (min-width: 1367px) and (max-width: 1366px) {
+    html body #histContent .histColumn .histWords ul li {
+      margin-bottom: 5px; } }
+
+  @media only screen and (min-width: 1367px) {
     html body #histContent .histColumn #topWord {
       margin-top: 81px; } }
+  @media only screen and (min-width: 1367px) {
+    html body #histContent #columnOne {
+      flex-direction: row; } }
+  @media only screen and (min-width: 1367px) {
+    html body #histContent #columnOne img {
+      height: 351px;
+      width: 482px; } }
+  @media only screen and (min-width: 1367px) {
+    html body #histContent #columnTwo {
+      flex-direction: row;
+      text-align: right; } }
+  @media only screen and (min-width: 1367px) {
+    html body #histContent #columnTwo img {
+      height: 384px;
+      width: 482px; } }
+  @media only screen and (min-width: 1367px) {
+    html body #histContent #columnThree {
+      flex-direction: row-reverse; } }
+  @media only screen and (min-width: 1367px) {
+    html body #histContent #columnThree img {
+      height: 344px;
+      width: 482px; } }
   @media only screen and (min-width: 1367px) {
     html body #contactBox {
       margin: 0 0 0 50%;

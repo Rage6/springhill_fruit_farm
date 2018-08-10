@@ -301,6 +301,7 @@ body {
         ul {
           @media only screen and (min-width: $min) and (max-width: $max) {
             margin-left: 21%;
+            width: 58%;
           }
         }
       }
