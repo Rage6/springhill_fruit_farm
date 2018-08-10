@@ -420,13 +420,13 @@ body {
   }
   #histShade {
     @media only screen and (min-width: $min) and (max-width: 1030px) {
-      height: 1000px;
+      height: 1110px;
     }
     @media only screen and (min-width: 1031px) and (max-width: 1209px) {
-      height: 1172px;
+      height: 1324px;
     }
     @media only screen and (min-width: 1210px) and (max-width: $max) {
-      height: 1274px;
+      height: 1437px;
     }
   }
   #histContent {
@@ -438,6 +438,7 @@ body {
       }
       img {
         @media only screen and (min-width: $min) and (max-width: $max) {
+          margin-right: 3%;
           width: 40%;
           height: 40%;
         }
