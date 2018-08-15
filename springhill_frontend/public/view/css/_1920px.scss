@@ -505,26 +505,6 @@
         @media only screen and (min-width: $min) {
 
         }
-        @keyframes tabUp {
-          0%   {height: 0;
-                padding: 0 0;
-                font-size: 0rem;
-                border: none;}
-          100% {height: inherit;
-                padding: 20px 10%;
-                font-size: 1.1rem;
-                border: 1px solid black;}
-        }
-        @keyframes tabDown {
-          0%   {height: inherit;
-                padding: 20px 10%;
-                font-size: 1.1rem;
-                border: 1px solid black;}
-          100% {height: 0;
-                padding: 0 0;
-                font-size: 0rem;
-                border: none;}
-        }
         .contactList {
 
           a {
@@ -538,14 +518,7 @@
           }
           #contactAddress {
             @media only screen and (min-width: $min) {
-              @keyframes openAddress {
-                0%   {font-size: 0rem; padding: 0;}
-                100% {font-size: 1.4rem; padding: 5px 0;}
-              }
-              @keyframes closeAddress {
-                0%   {font-size: 1.4rem; padding: 5px 0;}
-                100% {font-size: 0rem; padding: 0;}
-              }
+
             }
           }
         }
