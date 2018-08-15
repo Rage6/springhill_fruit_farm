@@ -325,11 +325,15 @@ body {
   #contactBox {
 
     #contactTab {
-
+      @media only screen and (min-width: $min) {
+        margin: 0 40%;
+        width: 20%;
+      }
     }
     #contactContent {
-      @media only screen and (min-width: $min) and (max-width: $max) {
-        
+      @media only screen and (min-width: $min) {
+        margin: 0 19%;
+        width: 42%;
       }
       .contactList {
 
