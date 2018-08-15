@@ -1186,7 +1186,7 @@ html {
     html body {
       background-color: black;
       background-image: url("img/fall-leaves.jpg");
-      background-size: contain; } }
+      background-size: cover; } }
   @media only screen and (min-width: 1367px) {
     html body .shadePage {
       margin-left: 50%;
