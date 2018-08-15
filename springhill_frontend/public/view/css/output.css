@@ -707,6 +707,14 @@ html {
     html body #histContent .histColumn .histWords ul {
       margin-left: 21%;
       width: 58%; } }
+  @media only screen and (min-width: 415px) {
+    html body #contactBox #contactTab {
+      margin: 0 40%;
+      width: 20%; } }
+  @media only screen and (min-width: 415px) {
+    html body #contactBox #contactContent {
+      margin: 0 19%;
+      width: 42%; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body {
       background-attachment: fixed;
@@ -993,7 +1001,7 @@ html {
     html body {
       background-color: black;
       background-image: url("img/fall-leaves.jpg");
-      background-size: cover; } }
+      background-size: contain; } }
   @media only screen and (min-width: 1367px) {
     html body .shadePage {
       margin-left: 50%;

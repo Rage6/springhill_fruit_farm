@@ -11,7 +11,7 @@
     @media only screen and (min-width: $min) {
       background-color: black;
       background-image: url('img/fall-leaves.jpg');
-      background-size: cover;
+      background-size: contain;
     }
     .shadePage {
       @media only screen and (min-width: $min) {

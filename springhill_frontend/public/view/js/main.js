@@ -572,7 +572,7 @@ $(()=>{
       // $("#contactAddress").css('animation-name','openAddress');
       $("#contactAddress")
         .css('font-size','1.4rem')
-        .css('padding','5px 0');
+        .css('padding','5px');
       $("#firstList").css('display','flex');
       $("#secondList").css('display','flex');
       $("#phoneLogo").show();
@@ -584,7 +584,7 @@ $(()=>{
       // $("#contactContent").css('animation-name','tabDown');
       $("#contactContent")
         .css('height','0')
-        .css('padding','0 0')
+        .css('padding','0')
         .css('font-size','0')
         .css('border','none');
       $(".shadePage").css('display','none');
@@ -622,9 +622,6 @@ $(()=>{
       }, 300);
     }
   }
-
-  // To make the Contact info at the bottom of each page pop up and down
-  // Note: I tried to use @keyframes, but they wouldn't work within the @media
 
 
 })
