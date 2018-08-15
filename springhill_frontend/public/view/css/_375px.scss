@@ -31,7 +31,7 @@ body {
 
       .bottom {
         @media only screen and (min-width: $min) and (max-width: $max) {
-          font-size: 3.7
+          font-size: 3.7rem;
         }
       }
     }
