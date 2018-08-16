@@ -418,6 +418,7 @@ html {
         height: 0; }
         html body #contactBox #contactContent .contactList {
           margin: 10px 0 20px 0;
+          display: flex;
           text-align: center;
           justify-content: space-around; }
           html body #contactBox #contactContent .contactList a {
