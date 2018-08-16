@@ -148,13 +148,11 @@ html {
           color: white;
           text-decoration: none; }
           html body #menuBox #allButtons a .menuButton {
-            margin: 0 5%;
             border-left: 1px solid black;
             border-right: 1px solid black;
             font-size: 0rem;
             font-family: 'Walter Turncoat', cursive;
             background-color: grey;
-            width: 90%;
             height: 0px;
             animation-name: none;
             animation-duration: 300ms;
@@ -163,24 +161,20 @@ html {
   0% {
     padding: 0 0;
     font-size: 0rem;
-    height: 0px;
-    border-bottom: 0px; }
+    height: 0px; }
   100% {
     padding: 8px 0;
     font-size: 1.7rem;
-    height: 43px;
-    border-bottom: 1px solid black; } }
+    height: 43px; } }
 @keyframes slideUp {
   0% {
     padding: 8px 0;
     font-size: 1.7rem;
-    height: 43px;
-    border-bottom: 1px solid black; }
+    height: 43px; }
   100% {
     padding: 0 0;
     font-size: 0rem;
-    height: 0px;
-    border-bottom: 0px; } }
+    height: 0px; } }
           html body #menuBox #allButtons a #lastButton {
             border-radius: 0px 0px 15px 15px; }
     html body .subpageTitle {
@@ -1121,8 +1115,8 @@ html {
       width: 1366px; } }
   @media only screen and (min-width: 1367px) {
     html body #menuBox #allButtons a .menuButton {
-      margin: 0 68.3px;
-      width: 1229.4px; } }
+      margin: 0;
+      width: 1366px; } }
   @media only screen and (min-width: 1367px) {
     html body .subpageTitle {
       margin: 30px 0 0 50%;

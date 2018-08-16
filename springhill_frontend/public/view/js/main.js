@@ -419,11 +419,15 @@ $(()=>{
 
   // For sliding the menuBox up and down
   const dropMenu = () => {
-    $(".menuButton").css('animation-name','slideDown');
+    $(".menuButton")
+      .css('animation-name','slideDown')
+      .css('border-bottom','1px solid black');
     menuUp = false;
   }
   const raiseMenu = () => {
-    $(".menuButton").css('animation-name','slideUp');
+    $(".menuButton")
+      .css('animation-name','slideUp')
+      .css('border-bottom','0px');
     menuUp = true;
   }
   $("#menuBar").click(()=>{
@@ -562,14 +566,12 @@ $(()=>{
       var windowWidth = $(window).outerWidth();
       var currentTop = $(window).scrollTop();
       var currentHeight = $(document).outerHeight();
-      // $("#contactContent").css('animation-name','tabUp');
       $("#contactContent")
         .css('height','inherit')
         .css('padding','20px 10%')
         .css('font-size','1.1rem')
         .css('border','1px solid black');
       $(".shadePage").css('display','block');
-      // $("#contactAddress").css('animation-name','openAddress');
       $("#contactAddress")
         .css('font-size','1.4rem')
         .css('padding','5px');
@@ -581,14 +583,12 @@ $(()=>{
       scrollToBottom(currentTop, currentHeight, windowWidth);
       contactDown = false;
     } else {
-      // $("#contactContent").css('animation-name','tabDown');
       $("#contactContent")
         .css('height','0')
         .css('padding','0')
         .css('font-size','0')
         .css('border','none');
       $(".shadePage").css('display','none');
-      // $("#contactAddress").css('animation-name','closeAddress');
       $("#contactAddress")
         .css('font-size','0rem')
         .css('padding','0');
