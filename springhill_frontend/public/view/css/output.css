@@ -194,7 +194,7 @@ html {
         border-radius: 8px;
         background-color: white;
         opacity: 0.7;
-        height: 525px; }
+        height: 550px; }
       html body #setDisplay #locationBox #locationContent {
         margin: 0 10%;
         padding: 0 5%;
@@ -233,7 +233,7 @@ html {
         text-align: center;
         position: absolute;
         z-index: 1;
-        top: 705px; }
+        top: 730px; }
         html body #setDisplay #timeBox #timeContent #imgFlex img {
           margin-top: 15px;
           border: 1px solid black;
@@ -883,18 +883,12 @@ html {
     html body #setDisplay #locationBox #locationContent #locationIntro {
       padding-top: 50px;
       width: 40%; } }
-  @media only screen and (min-width: 1206px) and (max-width: 1366px) {
-    html body #setDisplay #locationBox #locationContent #locationIntro #address {
-      font-size: 2rem; } }
-  @media only screen and (min-width: 769px) and (max-width: 1205px) {
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #setDisplay #locationBox #locationContent #locationIntro #address {
       font-size: 1.5rem; } }
-  @media only screen and (min-width: 1206px) and (max-width: 1366px) {
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #setDisplay #locationBox #locationContent #locationIntro a {
       font-size: 2rem; } }
-  @media only screen and (min-width: 769px) and (max-width: 1205px) {
-    html body #setDisplay #locationBox #locationContent #locationIntro a {
-      font-size: 1.5rem; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #setDisplay #timeBox #timeShade {
       margin: 0 14% 50px 14%; } }
