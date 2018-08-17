@@ -262,7 +262,7 @@ $(()=>{
       name: "Bartlett",
       ripens: false,
       picture: "css/img/pears/Bartlett_Pear_edit.jpg",
-      description: "NEEDS INFO",
+      description: "Weet & juicy. Excellent for eating, canning, jams and jellies.",
       cost: 5.50,
       byDozen: true,
       type: "PEARS"
@@ -329,7 +329,7 @@ $(()=>{
       name: "Flaming Fury",
       ripens: false,
       picture: "css/img/peaches/Flaming_Fury_edit.jpg",
-      description: "NEEDS INFO",
+      description: "Sweet & juicy. Excellent for eating, salads, sauce, pies, baking, and freezing.",
       cost: 5.50,
       byDozen: true,
       type: "PEACHES"
@@ -358,7 +358,7 @@ $(()=>{
       name: "Apple Cider",
       ripens: false,
       picture: "css/img/other/cider2_crop.jpg",
-      description: "NEEDS INFO",
+      description: "",
       cost: 5.50,
       byDozen: true,
       type: "OTHERS"
@@ -367,7 +367,7 @@ $(()=>{
       name: "Pumpkins & Squash",
       ripens: false,
       picture: "css/img/other/pumpkins.jpg",
-      description: "NEEDS INFO",
+      description: "",
       cost: 5.50,
       byDozen: true,
       type: "OTHERS"
@@ -396,7 +396,7 @@ $(()=>{
       name: "Long John",
       ripens: false,
       picture: "css/img/plums/long_john.jpg",
-      description: "NEEDS INFO",
+      description: "Delightfully tart. Freestone with beautiful orange flesh.",
       cost: 5.50,
       byDozen: true,
       type: "PLUMS"
