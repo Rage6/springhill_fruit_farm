@@ -6,6 +6,7 @@ $(()=>{
   const apples         = [
     {
       name: "Blondee",
+      ripens: true,
       estRipeMon: 9,
       estRipeDay: 6,
       picture: "css/img/apples/BLONDEE_edit.jpg",
@@ -14,6 +15,7 @@ $(()=>{
     },
     {
       name: "Braeburn",
+      ripens: true,
       estRipeMon: 10,
       estRipeDay: 31,
       picture: "css/img/apples/Braeburn_edit.jpg",
@@ -22,6 +24,7 @@ $(()=>{
     },
     {
       name: "Cameo",
+      ripens: true,
       estRipeMon: 10,
       estRipeDay: 25,
       picture: "css/img/apples/CAMEOO_edit.jpg",
@@ -30,6 +33,7 @@ $(()=>{
     },
     {
       name: "Cortland",
+      ripens: true,
       estRipeMon: 9,
       estRipeDay: 9,
       picture: "css/img/apples/cortland_edit.jpg",
@@ -38,6 +42,7 @@ $(()=>{
     },
     {
       name: "Crimson Crisp",
+      ripens: true,
       estRipeMon: 9,
       estRipeDay: 25,
       picture: "css/img/apples/crimson_crisp_edit.jpg",
@@ -46,6 +51,7 @@ $(()=>{
     },
     {
       name: "Earligold",
+      ripens: true,
       estRipeMon: 10,
       estRipeDay: 31,
       picture: "css/img/apples/Earligold_edit.jpg",
@@ -54,6 +60,7 @@ $(()=>{
     },
     {
       name: "Early Fuji",
+      ripens: true,
       estRipeMon: 9,
       estRipeDay: 16,
       picture: "css/img/apples/Earlyfuji_edit.jpg",
@@ -62,6 +69,7 @@ $(()=>{
     },
     {
       name: "Early Macintosh",
+      ripens: true,
       estRipeMon: null,
       estRipeDay: null,
       picture: "css/img/apples/EARLYMAC_edit.jpg",
@@ -70,6 +78,7 @@ $(()=>{
     },
     {
       name: "Fuji",
+      ripens: true,
       estRipeMon: 10,
       estRipeDay: 25,
       picture: "css/img/apples/Fuji_edit.jpg",
@@ -78,6 +87,7 @@ $(()=>{
     },
     {
       name: "Gala",
+      ripens: true,
       estRipeMon: 8,
       estRipeDay: 24,
       picture: "css/img/apples/Gala_edit.jpg",
@@ -86,6 +96,7 @@ $(()=>{
     },
     {
       name: "Ginger Gold",
+      ripens: true,
       estRipeMon: 8,
       estRipeDay: 18,
       picture: "css/img/apples/Ginger_Gold_edit.jpg",
@@ -94,6 +105,7 @@ $(()=>{
     },
     {
       name: "Gold Rush",
+      ripens: true,
       estRipeMon: 10,
       estRipeDay: 31,
       picture: "css/img/apples/Gold_Rush_edit.jpg",
@@ -102,6 +114,7 @@ $(()=>{
     },
     {
       name: "Granny Smith",
+      ripens: true,
       estRipeMon: 10,
       estRipeDay: 25,
       picture: "css/img/apples/Granny_Smith_edit.jpg",
@@ -110,6 +123,7 @@ $(()=>{
     },
     {
       name: "Honeycrisp",
+      ripens: true,
       estRipeMon: 9,
       estRipeDay: 5,
       picture: "css/img/apples/Honeycrisp_edit.jpg",
@@ -118,6 +132,7 @@ $(()=>{
     },
     {
       name: "Jonagold",
+      ripens: true,
       estRipeMon: 8,
       estRipeDay: 27,
       picture: "css/img/apples/JONAGOLD_edit.jpg",
@@ -126,6 +141,7 @@ $(()=>{
     },
     {
       name: "Jonathon",
+      ripens: true,
       estRipeMon: 9,
       estRipeDay: 12,
       picture: "css/img/apples/jonathon_edit.jpg",
@@ -134,6 +150,7 @@ $(()=>{
     },
     {
       name: "Macintosh",
+      ripens: true,
       estRipeMon: 9,
       estRipeDay: 6,
       picture: "css/img/apples/macintosh_edit.jpg",
@@ -142,6 +159,7 @@ $(()=>{
     },
     {
       name: "Melrose",
+      ripens: true,
       estRipeMon: 10,
       estRipeDay: 4,
       picture: "css/img/apples/Melrose_edit.jpg",
@@ -150,6 +168,7 @@ $(()=>{
     },
     {
       name: "Mutsu",
+      ripens: true,
       estRipeMon: 10,
       estRipeDay: 18,
       picture: "css/img/apples/Mutsu_edit.jpg",
@@ -158,6 +177,7 @@ $(()=>{
     },
     {
       name: "Northern Spy",
+      ripens: true,
       estRipeMon: 10,
       estRipeDay: 22,
       picture: "css/img/apples/NORTHERN_SPY_edit.jpg",
@@ -166,6 +186,7 @@ $(()=>{
     },
     {
       name: "Paula Red",
+      ripens: true,
       estRipeMon: 8,
       estRipeDay: 18,
       picture: "css/img/apples/Paula_Red_edit.jpg",
@@ -174,6 +195,7 @@ $(()=>{
     },
     {
       name: "Pink Lady",
+      ripens: true,
       estRipeMon: 10,
       estRipeDay: 31,
       picture: "css/img/apples/Pink_Lady_edit.jpg",
@@ -182,6 +204,7 @@ $(()=>{
     },
     {
       name: "Red Delicious",
+      ripens: true,
       estRipeMon: 9,
       estRipeDay: 25,
       picture: "css/img/apples/red-delicious_edit.jpg",
@@ -190,6 +213,7 @@ $(()=>{
     },
     {
       name: "Rome",
+      ripens: true,
       estRipeMon: 10,
       estRipeDay: 1,
       picture: "css/img/apples/Rome_edit.jpg",
@@ -198,14 +222,16 @@ $(()=>{
     },
     {
       name: "Shizuka",
+      ripens: true,
       estRipeMon: 10,
       estRipeDay: 11,
-      picture: "",
-      description: "NEEDS PIC AND INFO",
+      picture: "css/img/apples/Shizuka_edit.jpg",
+      description: "Crisp & sweet. Excellent for eating. Sweeter, less acidic cousin of Matsu apples.",
       type: "APPLES"
     },
     {
       name: "Winesap",
+      ripens: true,
       estRipeMon: 10,
       estRipeDay: 25,
       picture: "css/img/apples/Winesap_edit.jpg",
@@ -214,6 +240,7 @@ $(()=>{
     },
     {
       name: "Yellow Delicious",
+      ripens: true,
       estRipeMon: 10,
       estRipeDay: 2,
       picture: "css/img/apples/YELLOW_D_edit.jpg",
@@ -222,6 +249,7 @@ $(()=>{
     },
     {
       name: "Zestar",
+      ripens: true,
       estRipeMon: 8,
       estRipeDay: 14,
       picture: "css/img/apples/Zestar_edit.jpg",
@@ -232,14 +260,16 @@ $(()=>{
   const pears          = [
     {
       name: "Bartlett",
+      ripens: false,
       picture: "css/img/pears/Bartlett_Pear_edit.jpg",
-      description: "NEEDS INFO",
+      description: "Weet & juicy. Excellent for eating, canning, jams and jellies.",
       cost: 5.50,
       byDozen: true,
       type: "PEARS"
     },
     {
       name: "Bosc",
+      ripens: false,
       picture: "css/img/pears/BOSC_Pear_edit.jpg",
       description: "Firm & juicy. Great for eating, cooking, juicing, and canning.",
       cost: 5.50,
@@ -248,6 +278,7 @@ $(()=>{
     },
     {
       name: "D'Anjou",
+      ripens: false,
       picture: "css/img/pears/DAnjou_edit.jpg",
       description: "Crisp & sweet (with a hint of citrus). Great for eating, cooking, juicing, and canning.",
       cost: 5.50,
@@ -256,6 +287,7 @@ $(()=>{
     },
     {
       name: "Shenandoah",
+      ripens: false,
       picture: "css/img/pears/shenandoah_edit.jpg",
       description: "Crispy & sweet. Great for eating and canning.",
       cost: 5.50,
@@ -265,33 +297,28 @@ $(()=>{
   ];
   const nectarines     = [
     {
-      name: "Sunglo",
-      estRipeMon: 9,
-      estRipeDay: 6,
-      picture: "",
-      description: "NEEDS PIC AND INFO",
-      type: "NECTARINES"
-    },
-    {
       name: "Fantasia",
+      ripens: true,
       estRipeMon: 9,
       estRipeDay: 6,
-      picture: "",
-      description: "NEEDS PIC AND INFO",
+      picture: "css/img/nectarines/Fantasia_edit.jpg",
+      description: "Sweet & juicy. Excellent for eating, canning, and freezing.",
       type: "NECTARINES"
     },
     {
-      name: "Zephyr",
+      name: "Sunglo",
+      ripens: true,
       estRipeMon: 9,
       estRipeDay: 6,
-      picture: "",
-      description: "NEEDS PIC AND INFO",
+      picture: "css/img/nectarines/Sunglo_edit.jpg",
+      description: "Sweet & juicy. The 'Queen' of nectarines. Great for eating, canning, and freezing.",
       type: "NECTARINES"
     }
   ];
   const peaches        = [
     {
       name: "Contender",
+      ripens: false,
       picture: "css/img/peaches/Contender_edit.jpg",
       description: "Sweet & cling-free. Great for canning, pies, jams, jellies, and fresh eating.",
       cost: 5.50,
@@ -300,14 +327,16 @@ $(()=>{
     },
     {
       name: "Flaming Fury",
+      ripens: false,
       picture: "css/img/peaches/Flaming_Fury_edit.jpg",
-      description: "NEEDS INFO",
+      description: "Sweet & juicy. Excellent for eating, salads, sauce, pies, baking, and freezing.",
       cost: 5.50,
       byDozen: true,
       type: "PEACHES"
     },
     {
       name: "Harrow Beauty",
+      ripens: false,
       picture: "css/img/peaches/harrow-beauty_edit.jpg",
       description: "Sweet, juicy, and cling-free. Excellent for eating, baking, jamming, canning, and freezing.",
       cost: 5.50,
@@ -316,6 +345,7 @@ $(()=>{
     },
     {
       name: "Red Haven",
+      ripens: false,
       picture: "css/img/peaches/Red_Haven_edit.jpg",
       description: "Sweet & semi-cling. Great for pies, jams, jellies, canning, and fresh eating.",
       cost: 5.50,
@@ -323,27 +353,39 @@ $(()=>{
       type: "PEACHES"
     }
   ];
-  const pumpkins       = [
+  const others         = [
     {
-      name: "Pumpkins",
-      picture: "",
-      description: "NEEDS NAME(S), PIC(S), AND INFO",
+      name: "Apple Cider",
+      ripens: false,
+      picture: "css/img/other/cider2_crop.jpg",
+      description: "",
       cost: 5.50,
       byDozen: true,
-      type: "PUMPKINS"
+      type: "OTHERS"
     },
     {
-      name: "Squash",
-      picture: "",
-      description: "NEEDS NAME(S), PIC(S), AND INFO",
+      name: "Pumpkins & Squash",
+      ripens: false,
+      picture: "css/img/other/pumpkins.jpg",
+      description: "",
       cost: 5.50,
       byDozen: true,
-      type: "PUMPKINS"
+      type: "OTHERS"
     }
   ];
   const plums          = [
     {
+      name: "Bluebyrd",
+      ripens: false,
+      picture: "css/img/plums/Bluebyrd_edit.jpg",
+      description: "Very sweet. Excellent for eating, jams, jellies, and pies.",
+      cost: 5.50,
+      byDozen: true,
+      type: "PLUMS"
+    },
+    {
       name: "German",
+      ripens: false,
       picture: "css/img/plums/GERMAN_edit.jpg",
       description: "Sweet & juicy. Excellent for eating, drying, canning, and baking.",
       cost: 5.50,
@@ -351,7 +393,17 @@ $(()=>{
       type: "PLUMS"
     },
     {
+      name: "Long John",
+      ripens: false,
+      picture: "css/img/plums/long_john.jpg",
+      description: "Delightfully tart. Freestone with beautiful orange flesh.",
+      cost: 5.50,
+      byDozen: true,
+      type: "PLUMS"
+    },
+    {
       name: "Stanley",
+      ripens: false,
       picture: "css/img/plums/Stanley_edit.jpg",
       description: "Sweet & juicy. Excellent for eating, drying, canning, and baking.",
       cost: 5.50,
@@ -450,6 +502,9 @@ $(()=>{
         $(fruitID).append("<div class='fruitName'><u>" + typeList[a].name + "</u></div>");
         $(fruitID).append("<img class='fruitPicture' src='" + typeList[a].picture + "'>");
         $(fruitID).append("<div class='fruitDescription'>" + typeList[a].description + "</div>");
+        if (typeList[a].ripens == true) {
+          $(fruitID).append("<div class='ripeDate'>Ripe by: " + typeList[a].estRipeMon + "/" + typeList[a].estRipeDay + "</div>");
+        }
       }
     }
     findHeight();
@@ -462,7 +517,7 @@ $(()=>{
     listFruit(peaches,"PEACHES");
     listFruit(plums,"PLUMS");
     listFruit(nectarines,"NECTARINES");
-    listFruit(pumpkins,"PUMPKINS");
+    listFruit(others,"OTHERS");
   }
 
   // For removing the entire list when changing the selected fruit
@@ -476,7 +531,7 @@ $(()=>{
     clearOneTypeList(apples);
     clearOneTypeList(peaches);
     clearOneTypeList(pears);
-    clearOneTypeList(pumpkins);
+    clearOneTypeList(others);
     clearOneTypeList(nectarines);
     clearOneTypeList(plums);
     $(".fruitTitle").remove();
@@ -501,7 +556,7 @@ $(()=>{
     $("#appleButton").css('color','white').css('background-color','transparent');
     $("#pearButton").css('color','white').css('background-color','transparent');
     $("#peachButton").css('color','white').css('background-color','transparent');
-    $("#pumpkinButton").css('color','white').css('background-color','transparent');
+    $("#otherButton").css('color','white').css('background-color','transparent');
     $("#nectarineButton").css('color','white').css('background-color','transparent');
     $("#plumButton").css('color','white').css('background-color','transparent');
   }
@@ -526,11 +581,11 @@ $(()=>{
     listFruit(peaches,"PEACHES");
     newHeight();
   })
-  $("#pumpkinButton").click(()=>{
+  $("#otherButton").click(()=>{
     unselectAll();
     clearAllTypeList();
-    $("#pumpkinButton").css('color','black').css('background-color','white');
-    listFruit(pumpkins,"PUMPKINS");
+    $("#otherButton").css('color','black').css('background-color','white');
+    listFruit(others,"OTHERS");
     newHeight();
   })
   $("#nectarineButton").click(()=>{
@@ -555,7 +610,7 @@ $(()=>{
     listFruit(peaches,"PEACHES");
     listFruit(plums,"PLUMS");
     listFruit(nectarines,"NECTARINES");
-    listFruit(pumpkins,"PUMPKINS");
+    listFruit(others,"OTHERS");
     newHeight();
   })
 
