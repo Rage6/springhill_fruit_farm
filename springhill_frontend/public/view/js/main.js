@@ -260,38 +260,38 @@ $(()=>{
   const pears          = [
     {
       name: "Bartlett",
-      ripens: false,
+      ripens: true,
+      estRipeMon: 9,
+      estRipeDay: 1,
       picture: "css/img/pears/Bartlett_Pear_edit.jpg",
       description: "Weet & juicy. Excellent for eating, canning, jams and jellies.",
-      cost: 5.50,
-      byDozen: true,
       type: "PEARS"
     },
     {
       name: "Bosc",
-      ripens: false,
+      ripens: true,
+      estRipeMon: 9,
+      estRipeDay: 1,
       picture: "css/img/pears/BOSC_Pear_edit.jpg",
       description: "Firm & juicy. Great for eating, cooking, juicing, and canning.",
-      cost: 5.50,
-      byDozen: true,
       type: "PEARS"
     },
     {
       name: "D'Anjou",
-      ripens: false,
+      ripens: true,
+      estRipeMon: 9,
+      estRipeDay: 1,
       picture: "css/img/pears/DAnjou_edit.jpg",
       description: "Crisp & sweet (with a hint of citrus). Great for eating, cooking, juicing, and canning.",
-      cost: 5.50,
-      byDozen: true,
       type: "PEARS"
     },
     {
       name: "Shenandoah",
-      ripens: false,
+      ripens: true,
+      estRipeMon: 9,
+      estRipeDay: 1,
       picture: "css/img/pears/shenandoah_edit.jpg",
       description: "Crispy & sweet. Great for eating and canning.",
-      cost: 5.50,
-      byDozen: true,
       type: "PEARS"
     }
   ];
@@ -318,38 +318,38 @@ $(()=>{
   const peaches        = [
     {
       name: "Contender",
-      ripens: false,
+      ripens: true,
+      estRipeMon: 8,
+      estRipeDay: 7,
       picture: "css/img/peaches/Contender_edit.jpg",
       description: "Sweet & cling-free. Great for canning, pies, jams, jellies, and fresh eating.",
-      cost: 5.50,
-      byDozen: true,
       type: "PEACHES"
     },
     {
       name: "Flaming Fury",
-      ripens: false,
+      ripens: true,
+      estRipeMon: 8,
+      estRipeDay: 7,
       picture: "css/img/peaches/Flaming_Fury_edit.jpg",
       description: "Sweet & juicy. Excellent for eating, salads, sauce, pies, baking, and freezing.",
-      cost: 5.50,
-      byDozen: true,
       type: "PEACHES"
     },
     {
       name: "Harrow Beauty",
-      ripens: false,
+      ripens: true,
+      estRipeMon: 8,
+      estRipeDay: 7,
       picture: "css/img/peaches/harrow-beauty_edit.jpg",
       description: "Sweet, juicy, and cling-free. Excellent for eating, baking, jamming, canning, and freezing.",
-      cost: 5.50,
-      byDozen: true,
       type: "PEACHES"
     },
     {
       name: "Red Haven",
-      ripens: false,
+      ripens: true,
+      estRipeMon: 8,
+      estRipeDay: 7,
       picture: "css/img/peaches/Red_Haven_edit.jpg",
       description: "Sweet & semi-cling. Great for pies, jams, jellies, canning, and fresh eating.",
-      cost: 5.50,
-      byDozen: true,
       type: "PEACHES"
     }
   ];
@@ -359,8 +359,6 @@ $(()=>{
       ripens: false,
       picture: "css/img/other/cider2_crop.jpg",
       description: "",
-      cost: 5.50,
-      byDozen: true,
       type: "OTHERS"
     },
     {
@@ -368,46 +366,44 @@ $(()=>{
       ripens: false,
       picture: "css/img/other/pumpkins.jpg",
       description: "",
-      cost: 5.50,
-      byDozen: true,
       type: "OTHERS"
     }
   ];
   const plums          = [
     {
       name: "Bluebyrd",
-      ripens: false,
+      ripens: true,
+      estRipeMon: 8,
+      estRipeDay: 15,
       picture: "css/img/plums/Bluebyrd_edit.jpg",
       description: "Very sweet. Excellent for eating, jams, jellies, and pies.",
-      cost: 5.50,
-      byDozen: true,
       type: "PLUMS"
     },
     {
       name: "German",
-      ripens: false,
+      ripens: true,
+      estRipeMon: 8,
+      estRipeDay: 15,
       picture: "css/img/plums/GERMAN_edit.jpg",
       description: "Sweet & juicy. Excellent for eating, drying, canning, and baking.",
-      cost: 5.50,
-      byDozen: true,
       type: "PLUMS"
     },
     {
       name: "Long John",
-      ripens: false,
+      ripens: true,
+      estRipeMon: 8,
+      estRipeDay: 15,
       picture: "css/img/plums/long_john.jpg",
       description: "Delightfully tart. Freestone with beautiful orange flesh.",
-      cost: 5.50,
-      byDozen: true,
       type: "PLUMS"
     },
     {
       name: "Stanley",
-      ripens: false,
+      ripens: true,
+      estRipeMon: 8,
+      estRipeDay: 15,
       picture: "css/img/plums/Stanley_edit.jpg",
       description: "Sweet & juicy. Excellent for eating, drying, canning, and baking.",
-      cost: 5.50,
-      byDozen: true,
       type: "PLUMS"
     }
   ];
