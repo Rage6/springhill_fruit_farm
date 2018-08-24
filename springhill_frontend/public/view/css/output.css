@@ -351,10 +351,9 @@ html {
       margin: 0 0 70px 3%;
       border-radius: 20px;
       position: absolute;
-      z-index: -1;
       top: 460px;
-      opacity: 0.8;
       background-color: white;
+      opacity: 0.8;
       height: 2088px;
       width: 94%; }
     html body #histContent {
