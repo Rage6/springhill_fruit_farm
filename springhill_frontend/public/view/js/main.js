@@ -320,7 +320,7 @@ $(()=>{
       name: "Contender",
       ripens: true,
       estRipeMon: 8,
-      estRipeDay: 7,
+      estRipeDay: 20,
       picture: "css/img/peaches/Contender_edit.jpg",
       description: "Sweet & cling-free. Great for canning, pies, jams, jellies, and fresh eating.",
       type: "PEACHES"
@@ -329,7 +329,7 @@ $(()=>{
       name: "Flaming Fury",
       ripens: true,
       estRipeMon: 8,
-      estRipeDay: 7,
+      estRipeDay: 20,
       picture: "css/img/peaches/Flaming_Fury_edit.jpg",
       description: "Sweet & juicy. Excellent for eating, salads, sauce, pies, baking, and freezing.",
       type: "PEACHES"
@@ -338,7 +338,7 @@ $(()=>{
       name: "Harrow Beauty",
       ripens: true,
       estRipeMon: 8,
-      estRipeDay: 7,
+      estRipeDay: 20,
       picture: "css/img/peaches/harrow-beauty_edit.jpg",
       description: "Sweet, juicy, and cling-free. Excellent for eating, baking, jamming, canning, and freezing.",
       type: "PEACHES"
@@ -373,8 +373,8 @@ $(()=>{
     {
       name: "Bluebyrd",
       ripens: true,
-      estRipeMon: 8,
-      estRipeDay: 15,
+      estRipeMon: "N",
+      estRipeDay: "A",
       picture: "css/img/plums/Bluebyrd_edit.jpg",
       description: "Very sweet. Excellent for eating, jams, jellies, and pies.",
       type: "PLUMS"
@@ -391,8 +391,8 @@ $(()=>{
     {
       name: "Long John",
       ripens: true,
-      estRipeMon: 8,
-      estRipeDay: 15,
+      estRipeMon: 9,
+      estRipeDay: 1,
       picture: "css/img/plums/long_john.jpg",
       description: "Delightfully tart. Freestone with beautiful orange flesh.",
       type: "PLUMS"
@@ -400,8 +400,8 @@ $(()=>{
     {
       name: "Stanley",
       ripens: true,
-      estRipeMon: 8,
-      estRipeDay: 15,
+      estRipeMon: 9,
+      estRipeDay: 1,
       picture: "css/img/plums/Stanley_edit.jpg",
       description: "Sweet & juicy. Excellent for eating, drying, canning, and baking.",
       type: "PLUMS"
@@ -489,7 +489,13 @@ $(()=>{
   // For listing all fruit in Produce Page
   const listFruit = (typeList,fruitType) => {
     var idLabel = " id='" + fruitType + "' "
-    $("<div class='fruitTitle'>" + fruitType + "</div>").appendTo("#typeName");
+    if (fruitType == "PEACHES" || fruitType == "PEARS") {
+      console.log(fruitType);
+      $("<div class='fruitTitle'>" + fruitType + "<div class='weather'>Weather permitting, these include:</div></div>").appendTo("#typeName");
+    } else {
+      $("<div class='fruitTitle'>" + fruitType + "</div>").appendTo("#typeName");
+    };
+    // $("<div class='fruitTitle'>" + fruitType + "</div>").appendTo("#typeName");
     $("#typeName").append("<div class='fruitList' " + idLabel + "></div>");
     for (var a = 0; a < typeList.length; a++) {
       if (typeList[a].type == fruitType) {
