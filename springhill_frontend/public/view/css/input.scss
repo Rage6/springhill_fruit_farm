@@ -56,9 +56,11 @@ html {
       background-size: cover;
       #top {
         margin-bottom: 5px;
-        line-height: 100%;
         color: white;
         font-size: 3.8rem;
+        @media only screen and (max-width: 360px) {
+          line-height: 100%;
+        }
       }
       .bottomWide {
         display: none;

@@ -44,9 +44,11 @@ html {
       background-size: cover; }
       html body #title #top {
         margin-bottom: 5px;
-        line-height: 100%;
         color: white;
         font-size: 3.8rem; }
+        @media only screen and (max-width: 360px) {
+          html body #title #top {
+            line-height: 100%; } }
       html body #title .bottomWide {
         display: none; }
       html body #title #bottomBox {
@@ -765,6 +767,9 @@ html {
     html body #title #bottomBox .bottom {
       font-size: 5.5rem; } }
   @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    html body #title #firstYear {
+      display: none; } }
+  @media only screen and (min-width: 769px) and (max-width: 1366px) {
     html body #introBox {
       margin: 0 5%;
       width: 50%; } }
@@ -1029,7 +1034,7 @@ html {
       margin-top: 0;
       display: flex;
       justify-content: space-around;
-      width: 1058px; } }
+      width: 1230px; } }
   @media only screen and (min-width: 1367px) {
     html body #title #top {
       font-size: 6rem; } }
@@ -1044,6 +1049,9 @@ html {
   @media only screen and (min-width: 1367px) {
     html body #title #bottomBox .bottom {
       font-size: 5.5rem; } }
+  @media only screen and (min-width: 1367px) {
+    html body #title #firstYear {
+      display: none; } }
   @media only screen and (min-width: 1367px) {
     html body #introBox {
       margin: 0 50% 0 0;
