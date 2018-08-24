@@ -507,7 +507,7 @@ $(()=>{
     // $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
   };
-  if (window.location.href == 'http://localhost:4000/produce.html' || window.location.href == 'https://springhill-fruit-farm.herokuapp.com/produce.html') {
+  if (window.location.href == 'http://localhost:4000/produce.html' || window.location.href == 'http://www.springhill-fruit-farm.com/produce.html') {
     listFruit(apples,"APPLES");
     listFruit(pears,"PEARS");
     listFruit(peaches,"PEACHES");
