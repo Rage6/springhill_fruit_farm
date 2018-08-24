@@ -495,7 +495,6 @@ $(()=>{
     } else {
       $("<div class='fruitTitle'>" + fruitType + "</div>").appendTo("#typeName");
     };
-    // $("<div class='fruitTitle'>" + fruitType + "</div>").appendTo("#typeName");
     $("#typeName").append("<div class='fruitList' " + idLabel + "></div>");
     for (var a = 0; a < typeList.length; a++) {
       if (typeList[a].type == fruitType) {
