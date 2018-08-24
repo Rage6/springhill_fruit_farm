@@ -43,7 +43,7 @@
         margin-top: 0;
         display: flex;
         justify-content: space-around;
-        width: 1058px;
+        width: 1230px;
       }
       #top {
         @media only screen and (min-width: $min) {
@@ -69,6 +69,11 @@
             // border: 1px solid red;
             font-size: 5.5rem;
           }
+        }
+      }
+      #firstYear {
+        @media only screen and (min-width: $min) {
+          display: none;
         }
       }
     }

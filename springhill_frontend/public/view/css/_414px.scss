@@ -53,12 +53,12 @@ body {
   }
   #allTopics {
     @media only screen and (min-width: $min) and (max-width: $max) {
-      top: 400px;
+      top: 395px;
     }
     a {
       .oneTopic {
         @media only screen and (min-width: $min) and (max-width: $max) {
-          margin-bottom: 45px;
+          margin-bottom: 30px;
         }
         .oneText {
           @media only screen and (min-width: $min) and (max-width: $max) {
@@ -67,7 +67,7 @@ body {
         }
         .oneOpac {
           @media only screen and (min-width: $min) and (max-width: $max) {
-            margin-bottom: 45px;
+            margin-bottom: 30px;
           }
         }
       }
