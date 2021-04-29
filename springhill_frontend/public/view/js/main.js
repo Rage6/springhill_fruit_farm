@@ -52,8 +52,8 @@ $(()=>{
     {
       name: "Earligold",
       ripens: true,
-      estRipeMon: 10,
-      estRipeDay: 31,
+      estRipeMon: 8,
+      estRipeDay: 7,
       picture: "css/img/apples/Earligold_edit.jpg",
       description: "Tart & crisp, softening over time. Great for eating, sauce, pies, baking, and cooking.",
       type: "APPLES"
@@ -67,15 +67,15 @@ $(()=>{
       description: "Sweet & hard. Excellent for eating, salads, pies, and baking.",
       type: "APPLES"
     },
-    {
-      name: "Early Macintosh",
-      ripens: true,
-      estRipeMon: null,
-      estRipeDay: null,
-      picture: "css/img/apples/EARLYMAC_edit.jpg",
-      description: "Tart & mellow. Great for eating and baking.",
-      type: "APPLES"
-    },
+    // {
+    //   name: "Early Macintosh",
+    //   ripens: true,
+    //   estRipeMon: null,
+    //   estRipeDay: null,
+    //   picture: "css/img/apples/EARLYMAC_edit.jpg",
+    //   description: "Tart & mellow. Great for eating and baking.",
+    //   type: "APPLES"
+    // },
     {
       name: "Fuji",
       ripens: true,
@@ -133,7 +133,7 @@ $(()=>{
     {
       name: "Jonagold",
       ripens: true,
-      estRipeMon: 8,
+      estRipeMon: 9,
       estRipeDay: 27,
       picture: "css/img/apples/JONAGOLD_edit.jpg",
       description: "Sweet, tangy, and crisp. Great for eating, sauce, pies, baking, and cooking.",
@@ -490,7 +490,6 @@ $(()=>{
   const listFruit = (typeList,fruitType) => {
     var idLabel = " id='" + fruitType + "' "
     if (fruitType == "PEACHES" || fruitType == "PEARS") {
-      console.log(fruitType);
       $("<div class='fruitTitle'>" + fruitType + "<div class='weather'>Weather permitting, these include:</div></div>").appendTo("#typeName");
     } else {
       $("<div class='fruitTitle'>" + fruitType + "</div>").appendTo("#typeName");
@@ -512,7 +511,8 @@ $(()=>{
     // $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
   };
-  if (window.location.href == 'http://localhost:4000/produce.html' || window.location.href == 'http://www.springhill-fruit-farm.com/produce.html') {
+  if (window.location.href == 'http://localhost:4000/produce.html' || window.location.href == 'http://springhill-fruit-farm.com/produce.html') {
+    console.log("Running listFruit() for all fruit.");
     listFruit(apples,"APPLES");
     listFruit(pears,"PEARS");
     listFruit(peaches,"PEACHES");

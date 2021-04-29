@@ -1,0 +1,1 @@
+- The local host (nodemon) only accepts the home page if it's named 'index.html'. HOWEVER, the HostGator server only accepts 'default.html'.
