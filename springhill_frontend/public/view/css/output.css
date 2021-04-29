@@ -102,6 +102,8 @@ html {
           background-color: white;
           opacity: 0.7;
           height: 65px; }
+        html body #allTopics a #firstTopic {
+          margin-top: 20px; }
       html body #allTopics a:hover {
         cursor: pointer; }
     html body #removeApple {
@@ -1025,8 +1027,7 @@ html {
       margin-left: -683px;
       padding: 0;
       background-image: url("img/tractor-sunset-full copy.jpg");
-      background-size: cover;
-      background-attachment: fixed;
+      background-size: 1366px;
       width: 1366px; } }
   @media only screen and (min-width: 1367px) {
     html body #title {
