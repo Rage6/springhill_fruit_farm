@@ -5,6 +5,16 @@ $(()=>{
   var contactDown = false;
   const apples         = [
     {
+      name: "Ambrosia",
+      ripens: true,
+      estRipeMon: 9,
+      estRipeDay: 26,
+      picture: "css/img/apples/Ambrosia_edit.jpg",
+      description: "Distinct honeyed and slightly perfumed flavor. Juicy, with  crisp texture. Very good for cooking",
+      type: "APPLES",
+      new: true
+    },
+    {
       name: "Blondee",
       ripens: true,
       estRipeMon: 9,
@@ -76,6 +86,16 @@ $(()=>{
     //   description: "Tart & mellow. Great for eating and baking.",
     //   type: "APPLES"
     // },
+    {
+      name: "Evercrisp",
+      ripens: true,
+      estRipeMon: 10,
+      estRipeDay: 25,
+      picture: "css/img/apples/Evercrisp_edit.jpg",
+      description: "Sweet & juicy. Excellent for snacking and holiday cooking. Stores well.",
+      type: "APPLES",
+      new: true
+    },
     {
       name: "Fuji",
       ripens: true,
@@ -219,6 +239,16 @@ $(()=>{
       picture: "css/img/apples/Rome_edit.jpg",
       description: "Mild & firm. Excellent for sauce, pies, baking, and freezing.",
       type: "APPLES"
+    },
+    {
+      name: "Rosalee",
+      ripens: true,
+      estRipeMon: 9,
+      estRipeDay: 26,
+      picture: "css/img/apples/Rosalee_edit.jpg",
+      description: "Crisp, with sweet & tart flavor. Medium-sized fruit.",
+      type: "APPLES",
+      new: true
     },
     {
       name: "Shizuka",
@@ -487,7 +517,7 @@ $(()=>{
   })
 
   // For listing all fruit in Produce Page
-  const listFruit = (typeList,fruitType) => {
+  const listFruit = (typeList,fruitType,onlyNew) => {
     var idLabel = " id='" + fruitType + "' "
     if (fruitType == "PEACHES" || fruitType == "PEARS") {
       $("<div class='fruitTitle'>" + fruitType + "<div class='weather'>Weather permitting, these include:</div></div>").appendTo("#typeName");
@@ -495,18 +525,30 @@ $(()=>{
       $("<div class='fruitTitle'>" + fruitType + "</div>").appendTo("#typeName");
     };
     $("#typeName").append("<div class='fruitList' " + idLabel + "></div>");
+    var isEmpty = true;
     for (var a = 0; a < typeList.length; a++) {
       if (typeList[a].type == fruitType) {
-        var fruitID = "#" + fruitType + a;
-        $("#" + fruitType).append("<div class='oneFruitBox' id=" + fruitType + a + "><div>");
-        $(fruitID).append("<div class='fruitName'><u>" + typeList[a].name + "</u></div>");
-        $(fruitID).append("<img class='fruitPicture' src='" + typeList[a].picture + "'>");
-        $(fruitID).append("<div class='fruitDescription'>" + typeList[a].description + "</div>");
-        if (typeList[a].ripens == true) {
-          $(fruitID).append("<div class='ripeDate'>Ripe by: " + typeList[a].estRipeMon + "/" + typeList[a].estRipeDay + "</div>");
-        }
-      }
-    }
+        if ((onlyNew && typeList[a].new) || !onlyNew) {
+          var fruitID = "#" + fruitType + a;
+          $("#" + fruitType).append("<div class='oneFruitBox' id=" + fruitType + a + "><div>");
+          $(fruitID).append("<div class='fruitName'><u>" + typeList[a].name + "</u></div>");
+          $(fruitID).append("<img class='fruitPicture' src='" + typeList[a].picture + "'>");
+          $(fruitID).append("<div class='fruitDescription'>" + typeList[a].description + "</div>");
+          if (typeList[a].ripens == true) {
+            $(fruitID).append("<div class='ripeDate'>Ripe by: " + typeList[a].estRipeMon + "/" + typeList[a].estRipeDay + "</div>");
+          };
+          isEmpty = false;
+        };
+      };
+    };
+    if (isEmpty) {
+      $("#" + fruitType).append("\
+        <div class='oneFruitBox'>\
+          <div>\
+            Sorry, there is no product of this type at this time!\
+          </div>\
+        <div>");
+    };
     findHeight();
     // $('body').css('height',browserHeight);
     $('#indexPage').css('height',browserHeight);
@@ -612,6 +654,18 @@ $(()=>{
     listFruit(plums,"PLUMS");
     listFruit(nectarines,"NECTARINES");
     listFruit(others,"OTHERS");
+    newHeight();
+  })
+  $("#newButton").click(()=>{
+    unselectAll();
+    clearAllTypeList();
+    $("#newButton").css('color','black').css('background-color','white');
+    listFruit(apples,"APPLES",true);
+    listFruit(pears,"PEARS",true);
+    listFruit(peaches,"PEACHES",true);
+    listFruit(plums,"PLUMS",true);
+    listFruit(nectarines,"NECTARINES",true);
+    listFruit(others,"OTHERS",true);
     newHeight();
   })
 
