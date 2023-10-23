@@ -202,7 +202,8 @@ $(()=>{
       estRipeDay: 22,
       picture: "css/img/apples/NORTHERN_SPY_edit.jpg",
       description: "Tart with a hint of sweetness. Excellent for pies or storing.",
-      type: "APPLES"
+      type: "APPLES",
+      disabled: "Sorry! Due to spring freeze, Nortern Spy's are unavailable this year."
     },
     {
       name: "Paula Red",
@@ -531,11 +532,17 @@ $(()=>{
         if ((onlyNew && typeList[a].new) || !onlyNew) {
           var fruitID = "#" + fruitType + a;
           $("#" + fruitType).append("<div class='oneFruitBox' id=" + fruitType + a + "><div>");
-          $(fruitID).append("<div class='fruitName'><u>" + typeList[a].name + "</u></div>");
-          $(fruitID).append("<img class='fruitPicture' src='" + typeList[a].picture + "'>");
-          $(fruitID).append("<div class='fruitDescription'>" + typeList[a].description + "</div>");
-          if (typeList[a].ripens == true) {
-            $(fruitID).append("<div class='ripeDate'>Ripe by: " + typeList[a].estRipeMon + "/" + typeList[a].estRipeDay + "</div>");
+          if (!typeList[a].disabled) {
+            $(fruitID).append("<div class='fruitName'><u>" + typeList[a].name + "</u></div>");
+            $(fruitID).append("<img class='fruitPicture' src='" + typeList[a].picture + "'>");
+            $(fruitID).append("<div class='fruitDescription'>" + typeList[a].description + "</div>");
+            if (typeList[a].ripens == true) {
+              $(fruitID).append("<div class='ripeDate'>Ripe by: " + typeList[a].estRipeMon + "/" + typeList[a].estRipeDay + "</div>");
+            };
+          } else {
+            $(fruitID).append("<div class='fruitName'><u>" + typeList[a].name + "</u></div>");
+            $(fruitID).append("<img class='fruitPicture' src='" + typeList[a].picture + "'>");
+            $(fruitID).append("<div class='fruitDescription' style='background:rgba(255,0,0,0.7);border-radius:15px;padding:10px'>" + typeList[a].disabled + "</div>");
           };
           isEmpty = false;
         };
@@ -543,11 +550,11 @@ $(()=>{
     };
     if (isEmpty) {
       $("#" + fruitType).append("\
-        <div class='oneFruitBox'>\
+        <div class='emptyFruitBox oneFruitBox'>\
           <div>\
             Sorry, there is no product of this type at this time!\
           </div>\
-        <div>");
+        </div>");
     };
     findHeight();
     // $('body').css('height',browserHeight);
@@ -602,6 +609,7 @@ $(()=>{
     $("#otherButton").css('color','white').css('background-color','transparent');
     $("#nectarineButton").css('color','white').css('background-color','transparent');
     $("#plumButton").css('color','white').css('background-color','transparent');
+    $("#newButton").css('color','white').css('background-color','transparent');
   }
   $("#appleButton").click(()=>{
     unselectAll();
